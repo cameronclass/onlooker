@@ -709,4 +709,43 @@ button {
   width: 181px;
 }
 
+.fourth_footer {
+  margin-top: 71px;
+}
+.fourth_footer_info {
+  width: 757px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 147.5%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  color: #FFFFFF;
+}
+.fourth_footer_info span {
+  color: #0ABD92;
+}
+.fourth_footer_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 734px;
+  height: 67px;
+  border: 0.845953px solid #FFFFFF;
+  border-radius: 52px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0 auto;
+}
+.fourth_footer_text_icon {
+  width: 20.3px;
+  height: 20.3px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
 /* Sliders *//*# sourceMappingURL=style.css.map */

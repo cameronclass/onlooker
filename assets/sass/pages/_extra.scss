@@ -198,6 +198,7 @@
             &:nth-child(1) {
                 margin-left: 0px;
             }
+
             &:hover {
                 transition: 1.5s all;
                 border: 1px solid #0ABD92;
@@ -222,4 +223,48 @@
         }
     }
 
+}
+
+.fourth_footer {
+    margin-top: 71px;
+
+    &_info {
+        width: 757px;
+        font-family: $font;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 147.5%;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 50px;
+
+        color: #FFFFFF;
+
+        span {
+            color: #0ABD92;
+        }
+    }
+
+    &_text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 734px;
+        height: 67px;
+        border: 0.845953px solid #FFFFFF;
+        border-radius: 52px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140%;
+        color: #FFFFFF;
+        text-align: center;
+        margin: 0 auto;
+
+        &_icon {
+            width: 20.3px;
+            height: 20.3px;
+            margin-left: 12px;
+            margin-right: 12px;
+        }
+    }
 }
