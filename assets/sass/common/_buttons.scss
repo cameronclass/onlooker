@@ -1,4 +1,7 @@
 .main-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%);
     box-shadow: -4.17757px 4.17757px 41.7757px rgba(113, 175, 170, 0.16), 0px 20.8878px 34px rgba(0, 0, 0, 0.21);
     border-radius: 50px;
@@ -6,6 +9,7 @@
     color: #FFFFFF;
     font-weight: 600;
     font-size: 16px;
+    cursor: pointer;
 
     &:hover {
         background: radial-gradient(100.79% 1682.74% at 0% 0%, rgba(255, 255, 255, 0.021) 0%, rgba(255, 255, 255, 0.322) 78.13%, rgba(255, 255, 255, 0.091) 100%), linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%), linear-gradient(135.7deg, #7BBAB5 -1.81%, #275B56 104.06%), linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%);
@@ -13,12 +17,16 @@
     }
 
     &-bordered {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         filter: drop-shadow(-4.59496px 4.59496px 45.9496px rgba(113, 175, 170, 0.16)) drop-shadow(0px 22.9748px 37.397px rgba(0, 0, 0, 0.21));
         border-radius: 50px;
         color: $main;
         font-weight: 500;
         font-size: 14px;
         padding: 25px 40px;
+        cursor: pointer;
 
         &:hover {
             background: linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%);
@@ -27,7 +35,9 @@
     }
 
     &-white {
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border: 2px solid #FFFFFF;
         border-radius: 50px;
         background-color: transparent;
@@ -35,6 +45,7 @@
         font-weight: 500;
         font-size: 13px;
         padding: 8px 35px;
+        cursor: pointer;
 
         &:hover {
             background: linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%);

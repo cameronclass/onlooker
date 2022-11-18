@@ -2,6 +2,10 @@
     color: $main;
 }
 
+.color-red {
+    color: $red;
+}
+
 .price {
 
     &__subtitle {
@@ -20,5 +24,124 @@
         font-size: 30px;
         color: #696969;
         text-decoration-line: line-through;
+    }
+}
+
+.icon-card {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        min-width: 60px;
+        min-height: 60px;
+        border-radius: 50%;
+        border: 1px solid $main-second;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        margin-right: 15px;
+
+        &_img {}
+    }
+
+    &__content {}
+
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        opacity: 0.6;
+    }
+}
+
+.title-info {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    background: linear-gradient(275.98deg, #121212 3.53%, #181818 97.46%);
+    box-shadow: 34px 4px 137px rgba(16, 120, 116, 0.06);
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        min-width: 38px;
+        min-height: 38px;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 18px;
+        opacity: 0.6;
+    }
+
+    /* Radius */
+    &-radius {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 452px;
+        background: linear-gradient(275.98deg, #121212 3.53%, #181818 97.46%), #121212;
+        box-shadow: 34px 4px 137px rgba(16, 120, 116, 0.06);
+        border-radius: 50px;
+        padding: 10px 25px;
+
+        &__icon {
+            width: 34px;
+            margin-right: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__text {
+            font-weight: 400;
+            font-size: 18px;
+            opacity: 0.6;
+        }
+    }
+}
+
+.custom-card {
+
+    /* Bordered - Column */
+    &-b-c {
+        width: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        background: $dark-grey;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 9px;
+        cursor: pointer;
+        padding: 15px;
+
+        &__icon {
+            width: auto;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+
+        &__text {
+            font-weight: 600;
+            font-size: 18px;
+            margin-top: 20px;
+            text-align: center;
+            line-height: 1.1;
+        }
+
+        &:hover {
+            border: 1px solid #0ABD92;
+        }
     }
 }
