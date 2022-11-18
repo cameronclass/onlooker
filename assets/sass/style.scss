@@ -5,9 +5,10 @@
 
 /* Template */
 @import "common/fonts";
-@import "common/buttons";
 @import "template";
 @import "classes";
+@import "common/modal";
+@import "common/buttons";
 
 /* Sections for all pages */
 @import "sections/header";

@@ -92,23 +92,7 @@
         max-width: 350px;
         text-align: right;
 
-        &_subtitle {
-            opacity: 0.6;
-            font-weight: 400;
-            font-size: 18px;
-            margin-bottom: 5px;
-        }
 
-        &_new {
-            font-weight: 700;
-            font-size: 40px;
-        }
-
-        &_old {
-            font-size: 30px;
-            color: #696969;
-            text-decoration-line: line-through;
-        }
     }
 
     &__controls {
@@ -133,9 +117,72 @@
     &__bg {
         position: absolute;
         left: 0;
-        bottom: -400px;
+        top: 450px;
         z-index: 2;
         width: 100%;
         max-width: 400px;
+    }
+
+    &__about {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 90px;
+        position: relative;
+        z-index: 2;
+
+        &_card {
+            &_icon {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        &_title {
+            font-weight: 700;
+            font-size: 48px;
+        }
+
+        &_text {
+            margin-top: 5px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+
+    }
+
+    &__video {
+        margin-top: 150px;
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(276.53deg, #121212 3.6%, #1D1D1D 104.04%), #D9D9D9;
+        border-radius: 12px;
+        padding: 40px;
+
+        &_content {
+            width: 50%;
+        }
+
+        &_preview {
+            width: 45%;
+        }
+
+        &_title {
+            font-weight: 800;
+            font-size: 56px;
+        }
+
+        &_subtitle {
+            font-weight: 400;
+            font-size: 24px;
+        }
+
+        &_price {
+            display: flex;
+            align-items: center;
+        }
+
+        &_title {}
     }
 }
