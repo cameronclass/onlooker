@@ -1,0 +1,118 @@
+.thrid__heading_left {
+    .thrid__title {
+        display: flex;
+        align-items: center;
+
+        &_icon {
+            width: 54px;
+            height: 54px;
+        }
+
+        span {
+            font-family: $font;
+            font-weight: 800;
+            font-size: 52px;
+            line-height: 63px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-left: 15px;
+            letter-spacing: 4px;
+        }
+    }
+
+}
+
+.thrid__heading_right {
+    display: flex;
+    align-items: center;
+    column-gap: 74px;
+    margin-top: 27px;
+
+    &_subtitle {
+        width: 663px;
+        font-family: $font;
+        font-weight: 600;
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+
+    &_block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 452px;
+        height: 58px;
+        background: linear-gradient(275.98deg, #121212 3.53%, #181818 97.46%), #121212;
+        box-shadow: 34px 4px 137px rgba(16, 120, 116, 0.06);
+        border-radius: 46px;
+    }
+}
+
+.estrelka_app {
+    &_title {
+        font-family: $font;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 44px;
+        color: #FFFFFF;
+        margin-top: 69px;
+
+        span {
+            color: #C82B2C;
+        }
+    }
+
+    &_card {
+        display: flex;
+        column-gap: 54px;
+        margin-top: 75px;
+
+        &_item {
+            display: flex;
+            align-items: center;
+
+            &_icon {
+                border: 1px solid #009B8D;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &_icon:nth-child(1) {
+                padding: 16px 14px 13px 14px;
+            }
+            &_icon:nth-child(2) {
+                padding: 12px 12.77px 12px 12px;
+            }
+            &_icon:nth-child(3) {
+                padding: 14px 12px 11px 15px;
+            }
+            &_icon:nth-child(4) {
+                padding: 16.17px 11px 12.83px 12px;
+            }
+            &_text {
+                font-family: $font;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                color: #FFFFFF;
+                margin-left: 18px;
+            }
+
+            &_text:nth-child(1) {
+                width: 203px;
+            }
+
+            &_text:nth-child(2) {
+                width: 295px;
+            }
+
+            &_text:nth-child(3) {
+                width: 233px;
+            }
+        }
+    }
+    &_img {
+        text-align: center;
+    }
+}
