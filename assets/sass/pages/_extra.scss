@@ -4,6 +4,7 @@
 
     &__heading {
         display: flex;
+        align-items: center;
         flex-wrap: wrap;
         margin-top: 40px;
 
@@ -151,14 +152,12 @@
 
     &_info {
         width: 757px;
-        font-family: $font;
         font-weight: 700;
         font-size: 32px;
         line-height: 147.5%;
         text-align: center;
         margin: 0 auto;
         padding-bottom: 50px;
-
         color: #FFFFFF;
 
         span {
@@ -188,4 +187,86 @@
             margin-right: 12px;
         }
     }
+}
+
+.fifth {
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+    &__title {
+        display: flex;
+        align-items: center;
+
+        &_icon {
+            width: 59.63px;
+            height: 60px;
+        }
+
+        span {
+            font-weight: 800;
+            font-size: 56px;
+            margin-left: 16px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__heading_right {
+        display: flex;
+        align-items: center;
+        margin-top: 19px;
+
+        &_block {
+            max-width: 550px;
+            margin-left: 69px;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: 36px;
+    }
+
+    &__about {
+        margin-top: 80px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+
+        &_card {
+            margin-top: 50px;
+            cursor: pointer;
+        }
+
+        &_title {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 346px;
+            font-weight: 700;
+            font-size: 20px;
+
+            span {
+                font-weight: 400;
+                font-size: 16px;
+                opacity: 0.6;
+            }
+        }
+
+        &_footer {
+            margin-top: 91px;
+            text-align: center;
+
+            &_text {
+                width: 483px;
+                font-weight: 700;
+                font-size: 22px;
+                opacity: 0.3;
+                margin: 0 auto;
+            }
+            &_img {
+                margin-top: 35px;
+            }
+        }
+    }
+
 }
