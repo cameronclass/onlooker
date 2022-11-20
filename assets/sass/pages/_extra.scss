@@ -273,25 +273,7 @@
 
 .sixth {
     &__title {
-
-        &_text {
-            font-weight: 800;
-            font-size: 56px;
-            margin-left: 16px;
-            text-transform: uppercase;
-        }
-    }
-
-    &__heading_right {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 24px;
-    }
-
-    &__subtitle {
-        font-weight: 600;
-        font-size: 36px;
+        text-transform: none;
     }
 
     &__about {
@@ -423,6 +405,47 @@
                         color: #FFFFFF;
                     }
                 }
+            }
+        }
+    }
+}
+
+.eighth {
+    margin-top: 200px;
+
+    &_heading {
+        justify-content: space-between;
+    }
+
+    &_subtitle {
+        font-weight: 600;
+        font-size: 36px;
+    }
+
+    &__about {
+        margin-top: 85px;
+        margin-bottom: 85px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &_title {
+            max-width: 550px;
+            font-weight: 700;
+            font-size: 20px;
+
+            &_text {
+                opacity: 0.6;
+            }
+        }
+
+        &_footer {
+            text-align: center;
+
+            &_title {
+                font-weight: 700;
+                font-size: 22px;
+                opacity: 0.3;
             }
         }
     }
