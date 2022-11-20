@@ -1011,4 +1011,88 @@ button {
   opacity: 0.3;
 }
 
+.ninth {
+  margin-top: 200px;
+}
+.ninth__heading_title {
+  font-weight: 800;
+  font-size: 56px;
+  text-align: center;
+}
+.ninth__heading_subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 39px;
+}
+.ninth__about {
+  margin-top: 55px;
+}
+.ninth__about_title {
+  font-weight: 700;
+  font-size: 22px;
+  opacity: 0.3;
+  text-align: center;
+}
+.ninth__about_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 65px;
+}
+.ninth__about_info_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 36px;
+}
+.ninth__about_info_card_desc {
+  width: 489px;
+  height: 407px;
+  background: linear-gradient(276.53deg, #121212 3.6%, #1D1D1D 104.04%);
+  border-radius: 0px 0px 12px 12px;
+  margin-top: -5px;
+}
+.ninth__about_info_card_desc_title {
+  font-weight: 900;
+  font-size: 34px;
+  margin-top: 45px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.ninth__about_info_card_desc_column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.ninth__about_info_card_desc_column_line {
+  width: 417px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(217, 217, 217, 0) -2.16%, #D9D9D9 17.07%, #D9D9D9 86.85%, rgba(217, 217, 217, 0) 103.33%);
+  opacity: 0.11;
+  margin: 0 auto;
+}
+.ninth__about_info_card_desc_column_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.ninth__about_info_card_desc_column_text_subtitle {
+  max-width: 338px;
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.ninth__about_info_card_desc_column_text_subtitle_v2 {
+  opacity: 0.3;
+}
+.ninth_footer {
+  font-weight: 800;
+  font-size: 91.0359px;
+  text-align: center;
+  opacity: 0.02;
+}
+
 /* Sliders *//*# sourceMappingURL=style.css.map */
