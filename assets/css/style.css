@@ -923,4 +923,71 @@ button {
   opacity: 0.6;
 }
 
+.seventh {
+  margin-top: 200px;
+}
+.seventh__heading {
+  font-weight: 800;
+  font-size: 56px;
+}
+.seventh__heading_text {
+  margin-top: 31px;
+  font-weight: 600;
+  font-size: 24px;
+}
+.seventh__about {
+  display: flex;
+  align-items: center;
+}
+.seventh__about_right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.seventh__about_right_item_app {
+  padding: 31px;
+  background: linear-gradient(275.98deg, #121212 3.53%, #181818 97.46%), #FFFFFF;
+  border-radius: 11px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.seventh__about_right_item_app_title {
+  font-weight: 700;
+  font-size: 24px;
+}
+.seventh__about_right_item_app_text {
+  opacity: 0.6;
+}
+.seventh__about_right_item_install {
+  font-weight: 400;
+  font-size: 20px;
+}
+.seventh__about_right_item_btn {
+  display: flex;
+  align-items: center;
+}
+.seventh__about_right_item_btn_first {
+  padding: 25px 40px 25px 40px;
+  background: linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%);
+  box-shadow: -4.17757px 4.17757px 41.7757px rgba(113, 175, 170, 0.16), 0px 20.8878px 34px rgba(0, 0, 0, 0.21);
+  border-radius: 66px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.seventh__about_right_item_btn_second {
+  padding: 16px 19px 16px 80px;
+  opacity: 0.6;
+  border: 1px dashed #FFFFFF;
+  border-radius: 38px;
+}
+.seventh__about_right_item_footer {
+  font-weight: 400;
+  font-size: 18px;
+  opacity: 0.3;
+}
+.seventh__about_right_item_footer_link {
+  color: #FFFFFF;
+}
+
 /* Sliders *//*# sourceMappingURL=style.css.map */
