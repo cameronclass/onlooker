@@ -865,4 +865,62 @@ button {
   margin-top: 35px;
 }
 
+.sixth__title_text {
+  font-weight: 800;
+  font-size: 56px;
+  margin-left: 16px;
+  text-transform: uppercase;
+}
+.sixth__heading_right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+.sixth__subtitle {
+  font-weight: 600;
+  font-size: 36px;
+}
+.sixth__about {
+  display: flex;
+}
+.sixth__about_card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.sixth__about_card_icon {
+  width: 47.47px;
+  height: 49px;
+}
+.sixth__about_card_title {
+  font-weight: 700;
+  font-size: 20px;
+}
+.sixth__about_card_text {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.6;
+}
+.sixth__about_color {
+  display: flex;
+  padding: 20.5px 18.6px 20.5px 112px;
+  background: linear-gradient(275.98deg, #121212 3.53%, #181818 97.46%), #121212;
+  border-radius: 10.386px;
+}
+.sixth__about_color_icon {
+  width: 64px;
+  height: 48px;
+}
+.sixth__about_color_title {
+  font-weight: 600;
+  font-size: 23px;
+}
+.sixth__about_color_text {
+  font-weight: 400;
+  font-size: 18px;
+  opacity: 0.6;
+}
+
 /* Sliders *//*# sourceMappingURL=style.css.map */
