@@ -443,4 +443,73 @@
         font-size: 22px;
         opacity: 0.3;
     }
+
+
+    &__video {
+        display: flex;
+        justify-content: space-between;
+
+        &_cards {
+            width: 30%;
+            height: 100%;
+        }
+
+        &_content {
+            width: 70%;
+
+            .main-screen {
+                &__bottom {
+                    object-position: top;
+                }
+
+                &__top {
+                    width: 868px;
+                    height: 410px;
+                    bottom: 310px;
+                    left: 43px;
+                }
+            }
+        }
+
+        &_card {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            max-width: 320px;
+            height: 125px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+
+            &_img {
+                height: 125px;
+                object-fit: cover;
+                filter: brightness(0.3);
+            }
+
+            &_content {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px;
+
+                &_icon {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                &_text {
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: $main;
+                }
+            }
+        }
+    }
 }
