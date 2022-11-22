@@ -437,7 +437,7 @@
     &__subtitle {
         display: block;
         margin-top: 40px;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
         text-align: center;
         font-weight: 500;
         font-size: 22px;
@@ -450,7 +450,8 @@
         justify-content: space-between;
 
         &_cards {
-            width: 30%;
+            width: 100%;
+            max-width: 350px;
             height: 100%;
         }
 
@@ -460,12 +461,13 @@
             .main-screen {
                 &__bottom {
                     object-position: top;
+                    height: auto;
                 }
 
                 &__top {
                     width: 868px;
                     height: 410px;
-                    bottom: 310px;
+                    bottom: 120px;
                     left: 43px;
                 }
             }
@@ -477,9 +479,25 @@
             width: 100%;
             max-width: 320px;
             height: 125px;
-            border-radius: 10px;
+
             overflow: hidden;
             margin-bottom: 20px;
+
+            border: 3px solid transparent;
+            border-image-slice: 1;
+            border-radius: 10px;
+
+            &:hover {
+                border-color: $main;
+
+                .continue__video_card_content_text {
+                    color: $main;
+                }
+
+                .continue__video_card_content_icon {
+                    filter: none;
+                }
+            }
 
             &_img {
                 height: 125px;
@@ -492,7 +510,7 @@
                 top: 0;
                 left: 0;
                 width: 100%;
-                height: 100%;
+                height: 125px;
                 z-index: 1;
                 display: flex;
                 align-items: center;
@@ -502,12 +520,13 @@
                 &_icon {
                     width: 40px;
                     height: 40px;
+                    filter: grayscale(1);
                 }
 
                 &_text {
                     font-weight: 700;
                     font-size: 16px;
-                    color: $main;
+                    color: rgba(255, 255, 255, 0.61);
                 }
             }
         }
