@@ -412,7 +412,6 @@
 
 .continue {
 
-
     &__cards {
         display: flex;
         margin-top: 50px;
@@ -443,7 +442,6 @@
         font-size: 22px;
         opacity: 0.3;
     }
-
 
     &__video {
         display: flex;
@@ -529,6 +527,33 @@
                     color: rgba(255, 255, 255, 0.61);
                 }
             }
+        }
+    }
+
+    &__image {
+        margin-top: 200px;
+
+        &_title {
+            font-weight: 800;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            line-height: 1;
+
+            &_small {
+                font-weight: 400;
+                font-size: 24px;
+                opacity: 0.6;
+            }
+        }
+
+        &_subtitle {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 24px;
+            opacity: 0.6;
         }
     }
 }
