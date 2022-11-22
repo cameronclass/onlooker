@@ -434,7 +434,13 @@
         }
     }
 
-    &__subtitle{
-        
+    &__subtitle {
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 22px;
+        opacity: 0.3;
     }
 }
