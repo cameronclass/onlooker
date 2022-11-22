@@ -6,8 +6,108 @@
     color: $red;
 }
 
-.main-title{
-    
+.main-title {
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    font-size: 52px;
+    text-transform: uppercase;
+
+    &__icon {
+        width: auto;
+        height: 53px;
+        margin-right: 15px;
+    }
+
+    &__card {
+        width: 100%;
+        max-width: 450px;
+        padding: 20px;
+        background: linear-gradient(275.98deg, #121212 3.53%, #181818 97.46%);
+        box-shadow: 34px 4px 137px rgba(16, 120, 116, 0.06);
+        border-radius: 11px;
+        display: flex;
+        align-items: center;
+
+        &_icon {
+            min-width: 38px;
+            min-height: 38px;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &_text {
+            font-weight: 500;
+            font-size: 18px;
+            opacity: 0.6;
+        }
+
+
+        /* Radius */
+        &-radius {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 452px;
+            background: linear-gradient(275.98deg, #121212 3.53%, #181818 97.46%), #121212;
+            box-shadow: 34px 4px 137px rgba(16, 120, 116, 0.06);
+            border-radius: 50px;
+            padding: 10px 25px;
+
+            &__icon {
+                width: 34px;
+                margin-right: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &__text {
+                font-weight: 400;
+                font-size: 18px;
+                opacity: 0.6;
+            }
+        }
+    }
+
+}
+
+.main-subtitle {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 24px;
+
+    &__big {
+        font-weight: 600;
+        font-size: 36px;
+
+    }
+}
+
+.main-screen {
+    display: flex;
+    justify-content: center;
+
+    &__block {
+        position: relative;
+    }
+
+    &__top {
+        position: absolute;
+        max-width: 1094px;
+        height: 520px;
+        object-fit: cover;
+        left: 54px;
+        bottom: 170px;
+    }
+
+    &__bottom {
+        max-width: 1200px;
+        height: 750px;
+        object-fit: contain;
+    }
 }
 
 .price {
@@ -148,4 +248,29 @@
             border: 1px solid #0ABD92;
         }
     }
+
+    /* Column */
+    &-c {
+        &__icon {
+            margin-bottom: 20px;
+
+            &_img {
+                height: 45px;
+                width: auto;
+            }
+        }
+
+        &__title {
+            font-weight: 700;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        &__text {
+            font-weight: 500;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+
 }
