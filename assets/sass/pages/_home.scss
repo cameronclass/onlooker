@@ -906,95 +906,98 @@
 .eighth {
     margin-top: 200px;
 
-    &__heading {
-        font-weight: 800;
-        font-size: 56px;
-
-        &_text {
-            margin-top: 31px;
-            font-weight: 600;
-            font-size: 24px;
-        }
+    &__block {
+        display: flex;
+        justify-content: space-between;
     }
 
-    &__about {
-        display: flex;
-        align-items: center;
+    &__content {
+        width: 50%;
+        max-width: 650px;
 
-        &_right {
-            display: flex;
-            flex-direction: column;
-            row-gap: 30px;
+        &_block {
+            min-width: 800px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            padding: 28px;
+            background: linear-gradient(275.98deg, #121212 3.53%, #181818 97.46%), #FFFFFF;
+            border-radius: 11px;
+            font-weight: 400;
+            font-size: 24px;
 
-            &_item {
-                &_app {
-                    padding: 31px;
-                    background: linear-gradient(275.98deg, #121212 3.53%, #181818 97.46%), #FFFFFF;
-                    border-radius: 11px;
-                    font-size: 18px;
-                    font-weight: 400;
+            &_title {
+                font-weight: 700;
+            }
 
-                    &_title {
-                        font-weight: 700;
-                        font-size: 24px;
-                    }
-
-                    &_text {
-                        opacity: 0.6;
-                    }
-                }
-
-                &_install {
-                    font-weight: 400;
-                    font-size: 20px;
-                }
-
-                &_btn {
-                    display: flex;
-                    align-items: center;
-
-                    &_first {
-                        padding: 25px 40px 25px 40px;
-                        background: linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%);
-                        box-shadow: -4.17757px 4.17757px 41.7757px rgba(113, 175, 170, 0.16), 0px 20.8878px 34px rgba(0, 0, 0, 0.21);
-                        border-radius: 66px;
-                        font-weight: 700;
-                        font-size: 16px;
-                        color: #FFFFFF;
-                    }
-
-                    &_second {
-                        padding: 16px 19px 16px 80px;
-                        opacity: 0.6;
-                        border: 1px dashed #FFFFFF;
-                        border-radius: 38px;
-                    }
-                }
-
-                &_footer {
-                    font-weight: 400;
-                    font-size: 18px;
-                    opacity: 0.3;
-
-                    &_link {
-                        color: #FFFFFF;
-                    }
-                }
+            &_text {
+                opacity: 0.6;
+                font-size: 18px;
             }
         }
+
+        &_subtitle {
+            font-weight: 400;
+            font-size: 20px;
+            margin-top: 40px;
+        }
+
+        &_btn {
+            margin-top: 50px;
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            .main-btn {
+                position: relative;
+                z-index: 2;
+            }
+
+            &_info {
+                position: relative;
+                left: -50px;
+                display: inline-block;
+                opacity: 0.6;
+                border: 1px dashed #FFFFFF;
+                border-radius: 38px;
+                padding: 16px 16px 16px 80px;
+            }
+        }
+
+        &_text {
+            font-weight: 400;
+            font-size: 18px;
+            opacity: 0.3;
+            margin-top: 30px;
+        }
     }
+
+    &__img {
+        width: 100%;
+        max-width: 900px;
+        position: relative;
+        left: -40px;
+
+        &_item {
+            width: 125%;
+        }
+    }
+
 }
 
 .ninth {
     margin-top: 200px;
 
-    &_heading {
-        justify-content: space-between;
+    .main-subtitle {
+        margin: 0;
     }
 
-    &_subtitle {
-        font-weight: 600;
-        font-size: 36px;
+    .icon-card {
+        width: 48%;
+    }
+
+    .icon-card__text {
+        font-weight: 400;
+        font-size: 20px;
     }
 
     &__about {
@@ -1003,16 +1006,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-        &_title {
-            max-width: 550px;
-            font-weight: 700;
-            font-size: 20px;
-
-            &_text {
-                opacity: 0.6;
-            }
-        }
 
         &_footer {
             text-align: center;
