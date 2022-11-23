@@ -556,4 +556,96 @@
             opacity: 0.6;
         }
     }
+
+    &__sd {
+        margin-top: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        &_title {
+            font-weight: 800;
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        &_left {
+            width: 60%;
+            max-width: 750px;
+        }
+
+        &_right {
+            width: 40%;
+            max-width: 540px;
+        }
+
+        &_card {
+            background: linear-gradient(276.53deg, #121212 3.6%, #1D1D1D 104.04%), #D9D9D9;
+            border-radius: 12px;
+            padding: 35px;
+
+            &_title {
+                font-weight: 400;
+                font-size: 28px;
+            }
+
+            &_subtitle {
+                margin-top: 25px;
+            }
+
+            &_value {
+                display: inline-block;
+                margin-bottom: 10px;
+                font-weight: 800;
+                font-size: 45px;
+                color: rgba(255, 255, 255, 0.6);
+            }
+
+            &_small {
+                font-weight: 500;
+                font-size: 20px;
+                opacity: 0.6;
+            }
+
+            &_block {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            &_8 {
+                &_img {
+                    height: 100px;
+                }
+            }
+
+            &_32 {
+                &_img {
+                    height: 130px;
+                }
+            }
+
+            &_64 {
+                &_img {
+                    height: 150px;
+                }
+            }
+
+            &_text {
+                opacity: 0.32;
+                font-weight: 400;
+                font-size: 20px;
+                margin-top: 10px;
+                display: inline-block;
+
+                &_white {
+                    font-weight: 400;
+                    font-size: 20px;
+                    margin-top: 10px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
 }

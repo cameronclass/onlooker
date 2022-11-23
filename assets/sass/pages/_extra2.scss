@@ -2,148 +2,148 @@
 
     margin-top: 200px;
     margin-bottom: 20px;
+
     &__title {
-      font-weight: 800;
-      font-size: 56px;
-      max-width: 990px;
-     
+        font-weight: 800;
+        font-size: 56px;
+        max-width: 990px;
+
     }
-  
+
     &__about {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-  
+
     &__left {
-      flex: 0 1 55%;
+        flex: 0 1 55%;
     }
-  
+
     &__items {
-      max-width: 610px;
-      margin-bottom: 35px;
+        max-width: 610px;
+        margin-bottom: 35px;
     }
-  
+
     &__text {
-      font-size: 24px;
-      font-weight: 600;
-      margin-bottom: 35px;
-      display: block;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 35px;
+        display: block;
     }
-  
+
     &__btn {
-      display: inline-block;
-      text-decoration: none;
-      margin-bottom: 10px;
-      margin-right: 5px;
-      border: 2px solid rgba($color: #ffffff, $alpha: 0.6);
-      position: relative;
+        display: inline-block;
+        text-decoration: none;
+        margin-bottom: 10px;
+        margin-right: 5px;
+        border: 2px solid rgba($color: #ffffff, $alpha: 0.6);
+        position: relative;
     }
-  
-  
+
+
     &__btn:nth-child(1)::before {
-      content: "";
-      position: absolute;
-      left: 10px;
-      top: 6px;
-      height: 18px;
-      width: 18px;
-     
-      background: url(../img/eleventh/eleventh-ico-1.svg) no-repeat center;
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 6px;
+        height: 18px;
+        width: 18px;
+
+        background: url(../img/eleventh/eleventh-ico-1.svg) no-repeat center;
     }
-  
+
     &__btn:nth-child(2)::before {
-      content: "";
-      position: absolute;
-      left: 10px;
-      top: 6px;
-      height: 18px;
-      width: 18px;
-    
-      background: url(../img/eleventh/eleventh-ico-2.svg) no-repeat center;
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 6px;
+        height: 18px;
+        width: 18px;
+
+        background: url(../img/eleventh/eleventh-ico-2.svg) no-repeat center;
     }
-  
+
     &__btn:nth-child(3)::before {
-      content: "";
-      position: absolute;
-      left: 10px;
-      top: 6px;
-      height: 18px;
-      width: 18px;
-      background: url(../img/eleventh/eleventh-ico-3.svg) no-repeat center;
-     
-     
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 6px;
+        height: 18px;
+        width: 18px;
+        background: url(../img/eleventh/eleventh-ico-3.svg) no-repeat center;
+
+
     }
-  
+
     &__btn:nth-child(4)::before {
-      content: "";
-      position: absolute;
-      left: 10px;
-      top: 6px;
-      height: 18px;
-      width: 18px;
-      background: url(../img/eleventh/eleventh-ico-4.svg) no-repeat center;
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 6px;
+        height: 18px;
+        width: 18px;
+        background: url(../img/eleventh/eleventh-ico-4.svg) no-repeat center;
     }
-  
+
     &__btn:nth-child(5)::before {
-      content: "";
-      position: absolute;
-      left: 10px;
-      top: 6px;
-      height: 18px;
-      width: 18px;
-      background: url(../img/eleventh/eleventh-ico-5.svg) no-repeat center;
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 6px;
+        height: 18px;
+        width: 18px;
+        background: url(../img/eleventh/eleventh-ico-5.svg) no-repeat center;
     }
-  
-  
-  
+
+
+
     &__discount {
-      padding: 34px;
-      border-radius: 12px;
-      background-color: #121212;
-     
+        padding: 34px;
+        border-radius: 12px;
+        background-color: #121212;
+
     }
-  
+
     &__discount_title {
-      font-size: 18px;
-      -webkit-text-stroke: 0.3px #000000;
-      margin-bottom: 10px;
+        font-size: 18px;
+        -webkit-text-stroke: 0.3px #000000;
+        margin-bottom: 10px;
     }
-  
+
     &__discount_price {
-      display: flex;
-      align-items: center;
-     
+        display: flex;
+        align-items: center;
+
     }
-  
+
     &__discount_sum {
-      font-size: 40px;
-      font-weight: 700;
-      margin-right: 15px;
+        font-size: 40px;
+        font-weight: 700;
+        margin-right: 15px;
     }
-  
+
     &__discount_sum2 {
-      color: #696969;
-      font-size: 30px;
-      font-weight: 600;
-      text-decoration: line-through;
-      text-decoration-color: #696969;
-      margin-right: 27px;
+        color: #696969;
+        font-size: 30px;
+        font-weight: 600;
+        text-decoration: line-through;
+        text-decoration-color: #696969;
+        margin-right: 27px;
     }
-  
+
     &__discount_btn {
-      padding: 15px 40px 15px 40px
+        padding: 15px 40px 15px 40px
     }
-  
+
     &__right {
-      position: relative;
-      object-fit: contain;
-      z-index: 0;
-      left: -30px;
-      top: 20px;
+        position: relative;
+        object-fit: contain;
+        z-index: 0;
+        left: -30px;
+        top: 20px;
     }
-    
-  
-  
-  }
-  
+
+
+
+}
