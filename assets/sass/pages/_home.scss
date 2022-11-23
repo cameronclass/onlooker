@@ -801,6 +801,10 @@
     margin-top: 200px;
     margin-bottom: 200px;
 
+    .main-title__card-radius {
+        max-width: 100%;
+    }
+
 
     &__about {
         margin-top: 50px;
@@ -809,89 +813,69 @@
 
         &_card {
             margin-top: 50px;
-            cursor: pointer;
-        }
 
-        &_title {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            width: 346px;
+            .icon-card__title {
+                font-size: 20px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    &__footer {
+        margin-top: 70px;
+        text-align: center;
+
+        &_text {
+            max-width: 483px;
             font-weight: 700;
-            font-size: 20px;
-
-            span {
-                font-weight: 400;
-                font-size: 16px;
-                opacity: 0.6;
-            }
-        }
-
-        &_footer {
-            margin-top: 91px;
-            text-align: center;
-
-            &_text {
-                width: 483px;
-                font-weight: 700;
-                font-size: 22px;
-                opacity: 0.3;
-                margin: 0 auto;
-            }
-
-            &_img {
-                margin-top: 35px;
-            }
+            font-size: 22px;
+            opacity: 0.3;
+            margin: 0 auto;
         }
     }
 }
 
 .seventh {
-    &__title {
-        text-transform: none;
+
+    &__block {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
     }
 
     &__about {
+        width: 40%;
+        max-width: 500px;
         display: flex;
+        flex-direction: column;
 
-        &_card {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            flex-direction: column;
-
-
-            &_icon {
-                width: 47.47px;
-                height: 49px;
-            }
-
-            &_title {
-                font-weight: 700;
-                font-size: 20px;
-            }
-
-            &_text {
-                font-weight: 400;
-                font-size: 16px;
-                opacity: 0.6;
-            }
+        .custom-card-c {
+            margin-top: 40px;
         }
 
-        &_color {
+        .custom-card-c__title {
+            font-size: 20px;
+        }
+
+        &_block {
+            margin-top: 40px;
             display: flex;
-            padding: 20.5px 18.6px 20.5px 112px;
+            align-items: center;
+            padding: 24px;
             background: linear-gradient(275.98deg, #121212 3.53%, #181818 97.46%), #121212;
-            border-radius: 10.386px;
+            border-radius: 10px;
+            min-width: 520px;
 
             &_icon {
-                width: 64px;
+                width: auto;
                 height: 48px;
+                margin-right: 20px;
             }
 
             &_title {
                 font-weight: 600;
                 font-size: 23px;
+                margin-bottom: 6px;
             }
 
             &_text {
@@ -899,6 +883,22 @@
                 font-size: 18px;
                 opacity: 0.6;
             }
+        }
+    }
+
+    &__img {
+        width: 60%;
+        width: 900px;
+
+        .main-screen__top {
+            max-width: 91%;
+            height: 370px;
+            left: 42px;
+            bottom: 110px;
+        }
+
+        .main-screen__bottom {
+            height: 505px;
         }
     }
 }

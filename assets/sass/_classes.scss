@@ -13,6 +13,10 @@
     font-size: 52px;
     text-transform: uppercase;
 
+    &__notcase{
+        text-transform: none;
+    }
+
     &__icon {
         width: auto;
         height: 53px;
@@ -153,6 +157,8 @@
     &__icon {
         min-width: 60px;
         min-height: 60px;
+        max-width: 60px;
+        max-height: 60px;
         border-radius: 50%;
         border: 1px solid $main-second;
         display: flex;
