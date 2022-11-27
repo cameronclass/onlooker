@@ -827,10 +827,29 @@
     margin-top: 250px;
     // .fourteen__heading
     &__heading {
-        
+        margin-bottom: 49px;
         // .fourteen__heading_head
         &_head {
             display: flex;
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+        }
+        // .fourteen__heading_label
+        &_label {
+            max-width: 456px;
+            width: 100%;
+            height: 64px;
+            padding: 10px 17px 10px 23px;
+        }
+        // .fourteen__heading_main-title
+        &_main-title {
+            &:not(:last-child) {
+                margin-right: 37px;
+            }
+        }
+        // .fourteen__heading_icon
+        &_icon {
         }
         // .fourteen__heading_head-img
         &_head-img {
@@ -840,6 +859,18 @@
             img {
                 width: 52px;
             }
+            &:not(:last-child) {
+                 margin-right: 16px;   
+            }
+        }
+        // .fourteen__heading_card-text
+        &_card-text {
+            font-weight: 400;
+        }
+        // .fourteen__heading_card-text-span
+        &_card-text-span {
+            font-weight: 700;
+            font-size: 18px;
         }
         // .fourteen__heading_head-title
         &_head-title {
@@ -849,16 +880,29 @@
         }
         // .fourteen__heading_text
         &_text {
+            margin: 0 0 56px 0;
         }
     }
     // .fourteen__tabs
     &__tabs {
         // .fourteen__tabs_navigation
         &_navigation {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
         // .fourteen__tabs_title
         &_title {
-            color: white;
+            width: 100%;
+            max-width: 411px;
+            padding: 19px 28px;
+        }
+        // .fourteen__tabs_title-img
+        &_title-img {
+        } 
+        // .fourteen__tabs_title-text
+        &_title-text {
+
         }
         // .fourteen__tabs_content
         &_content {
@@ -868,23 +912,6 @@
         }
     }
 }
-.main-title {
-    // .main-title__card
-    &__card {
-        // .main-title__card_icon
-        &_icon {
-        }
-        // .main-title__card_text
-        &_text {
-        }
-    }
-}
-.card-item {
-    // .card-item__block
-    &__block {
-    }
-}
-
 
 
 // ==================================
@@ -909,3 +936,36 @@
             }
         }
 }
+
+.text-opacity-gray {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.card-item {
+    // .card-item__block
+    &__block {
+        display: flex;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 12px;
+        gap: 10px;
+    }
+}
+._tab-active {
+    border: 1px solid $main;
+}
+
+._tab-active .card-item {
+    &__block {
+    }
+    &__block-img {
+    }
+    &__block-text {
+        color: $main;
+    }
+}
+
