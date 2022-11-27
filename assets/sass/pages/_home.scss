@@ -1163,11 +1163,13 @@
         margin-top: 50px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
 
         &_card {
             align-items: baseline;
             flex-direction: column;
+            border: 1px solid #D9D9D930;
+            padding: 25px 45px;
+            margin: 0px;
 
             .icon-card__icon {
                 max-width: 35px;
@@ -1185,6 +1187,89 @@
             .icon-card__text {
                 font-size: 18px;
             }
+
+            &:first-child,
+            &:nth-child(3),
+            &:nth-child(7),
+            &:nth-child(9) {
+                border: none;
+            }
+
+
+            &:nth-child(2),
+            &:nth-child(8) {
+                border-top: none;
+                border-bottom: none;
+            }
+
+            &:nth-child(4),
+            &:nth-child(6) {
+                border-left: none;
+                border-right: none;
+            }
+
+
+            &:first-child,
+            &:nth-child(4),
+            &:nth-child(7) {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+.twentieth {
+    margin-top: 200px;
+
+    &__title {
+        width: 100%;
+        max-width: 1000px;
+        margin-bottom: 40px;
+    }
+
+    &__subtitle {
+        margin-bottom: 30px;
+    }
+
+    &__block {
+        display: flex;
+    }
+
+    &__content {
+        width: 50%;
+    }
+
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+
+        .custom-tag {
+            margin-right: 12px;
+            margin-bottom: 12px;
+        }
+    }
+
+    &__img {
+        width: 50%;
+
+        &_img {
+            width: 115%;
+            position: relative;
+            top: -80px;
+            left: -50px;
+        }
+    }
+
+    &__price {
+        background: linear-gradient(275.64deg, #121212 -8.25%, #181818 97.6%), #D9D9D9;
+        box-shadow: 34px 4px 137px rgba(16, 120, 116, 0.06);
+        border-radius: 12px;
+        padding: 30px;
+        width: 130%;
+
+        &_block {
+            display: flex;
+            align-items: center;
         }
     }
 }
