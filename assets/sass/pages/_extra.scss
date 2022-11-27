@@ -624,14 +624,9 @@
     		}
             // .thirteen__about_dimensions-text
             &_dimensions-text {
-                font-weight: 700;
                 font-size: 20px;
-                line-height: 139%;
                 max-width: 518px;
-                span {
-                    font-weight: 400;
-                    opacity: 0.6;
-                }
+                width: 100%;
     		}
     		// .thirteen__about_rear-camera
             &_rear-camera {
@@ -647,14 +642,9 @@
     		}
             // .thirteen__about_rear-camera-text
             &_rear-camera-text {
-                font-weight: 700;
                 font-size: 20px;
-                line-height: 139%;
                 max-width: 495px;
-                span {
-                    font-weight: 400;
-                    opacity: 0.6;
-                }
+                width: 100%;
     		}
     }
     // .thirteen__picture
@@ -954,6 +944,11 @@
         border-radius: 12px;
         gap: 10px;
     }
+    // .card-item__block-img
+    &__block-img {
+        filter: invert(36%) sepia(0%) saturate(0%) hue-rotate(178deg) brightness(92%) contrast(97%);
+    }
+
 }
 ._tab-active {
     border: 1px solid $main;
@@ -963,9 +958,9 @@
     &__block {
     }
     &__block-img {
+        filter: invert(57%) sepia(29%) saturate(5589%) hue-rotate(138deg) brightness(92%) contrast(95%);
     }
     &__block-text {
         color: $main;
     }
 }
-
