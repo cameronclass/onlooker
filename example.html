@@ -30,6 +30,11 @@
   <!-- Styles CSS -->
   <link rel="stylesheet" href="assets/css/libs.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Swiper -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
   <!-- Fonts and Icons-->
   <title>Onlooker</title>
 </head>
@@ -989,7 +994,7 @@
                     <img class="thirteen__heading_title-img" src="/assets/img/icons/006-parked-car (Traced).svg" alt="parked-car">
                     <h2 class="main-title">АССИСТЕНТ ПАРКОВКИ</h2>
                 </div>
-                <div class="thirteen__heading_lable">
+                <div class="thirteen__heading_lable heading-title-lable">
                   <div class="thirteen__heading_lable-img">
                     <img src="/assets/img/icons/011-parking-lot (Traced).svg" alt="parking-lot">
                   </div>
@@ -1005,7 +1010,7 @@
                 </div>
                 <div class="thirteen__about_rear-camera">
                     <div class="thirteen__about_rear-camera-img icon-card__icon">
-                      <img src="/assets/img/icons/011-parking-lot green.png" alt="parking-lot">
+                      <img src="/assets/img/icons/parking-lot.svg" alt="parking-lot">
                     </div>
                     <div class="thirteen__about_rear-camera-text icon-card__text">При включении задней передачи автоматически <b><span class="color-white">включается изображение с задней камеры</span></b></div>
                 </div>
@@ -1116,43 +1121,150 @@
       <div class="container">
         <div class="fifteen__heading">
           <div class="fifteen__heading_head">
-            <div class="fifteen__heading_head-img">
-              <img style="width: 52px;" src="assets/img/icons/camera-360.svg" alt="camera-360">
+            <div class="fifteen__heading_head-picture">
+              <img class="fifteen__heading_head-picture_img" src="assets/img/icons/base_camera-2.svg" alt="base_camera">
             </div>
-            <div class="fifteen__heading_head-title main-title">Усовершенстованая система</div>
+            <div class="fifteen__heading_head-title main-title">24-часовое наблюдение и охрана </div>
           </div>
           <div class="fifteen__heading_head">
-            <div class="fifteen__heading_main-title main-title">помощи водителю - ADAS</div>
-            <div class="fifteen__heading_lable">
-                <div class="fifteen__heading_lable-img">
-                  <img src="/assets/img/icons/011-parking-lot (Traced).svg" alt="parking-lot">
+            <div class="fifteen__heading_main-title main-title">авто на парковке</div>
+            <div class="fifteen__heading_lable heading-title-lable">
+                <div class="fifteen__heading_lable-picture">
+                  <img class="fifteen__heading_lable-picture_img" src="/assets/img/icons/bell.svg" alt="bell">
                 </div>
-                <div class="fifteen__heading_lable-text">Теперь парковка будет&nbsp;<span>легкой</span></div>
+                <div class="fifteen__heading_lable-text"> позволит защитится <span>от вандалов и угонов</span></div>
             </div>
           </div>
         </div>
         <div class="fifteen__sensor_content">
           <div class="fifteen__sensor_descrpt">
-            <div class="fifteen__sensor_title main-subtitle">Находясь в плотном городском потоке <span class="main-color">вы избежите ДТП</span></div>
-            <div class="fifteen__sensor_body">
-
+            <div class="fifteen__sensor_title main-subtitle">В случае удара срабатывает <span class="main-color">G-датчик</span></div>
+            <div class="fifteen__sensor-point">
+              <div class="fifteen__sensor-point_item">
+                <div class="fifteen__sensor-point_picture">
+                  <div class="fifteen__sensor-point_picture-num">1</div>
+                  <img class="fifteen__sensor-point_picture-img" src="assets/img/icons/gps.svg" alt="">
+                </div>
+                <div class="fifteen__sensor-point_text icon-card__text">На смартфон <b><span class="color-white">приходит уведомление</span></b> с отрезком видео с передней и задней камеры <b><span class="color-white">с координатами GPS</span></b></div>
+              </div>
+              <div class="fifteen__sensor-point_item">
+                <div class="fifteen__sensor-point_picture">
+                  <div class="fifteen__sensor-point_picture-num">2</div>
+                  <img class="fifteen__sensor-point_picture-img" src="assets/img/icons/vision-003.svg" alt="">
+                </div>
+                <div class="fifteen__sensor-point_text icon-card__text">Заходите<b><span class="color-white"> в приложение Carkeeper,</span></b> и смотрите что происходит <b><span class="color-white">рядом с авто</span></b></div>
+              </div>
+              <div class="fifteen__sensor-point_item">
+                <div class="fifteen__sensor-point_picture">
+                  <div class="fifteen__sensor-point_picture-num">3</div>
+                  <img class="fifteen__sensor-point_picture-img" src="assets/img/icons/lira-2.svg" alt="">
+                </div>
+                <div class="fifteen__sensor-point_text icon-card__text"><b><span class="color-white">Отличное дополнение</span></b> к штатной сигнализации авто! Удобно, когда на вашей парковке нет камер</div>
+              </div>
+            </div>
+            <div class="fifteen__sensor-picture">
+              <img class="fifteen__sensor-picture_img" src="assets/img/section-15/sensor.png" alt="sensor">
             </div>
           </div>
-                <!-- Оболочка слайдера -->
-            <div class="fifteen__sensor_slider swiper">
-                  <!-- Двигающееся часть слайдера -->
-               <div class="fifteen__sensor_wrapper swiper-wrapper">
-                    <!-- Слайд -->
-                 <div class="fifteen__sensor_slide swiper-slide"></div>
-                    <!-- Слайд -->
-                 <div class="fifteen__sensor_slide swiper-slide"></div>
+          <div class="fifteen__sensor_slider swiper">
+             <div class="fifteen__sensor_wrapper swiper-wrapper">
+               <div class="fifteen__sensor_slide swiper-slide">
+                <div class="fifteen__sensor_slide-picture">
+                  <img src="/assets/img/section-15/slide-01.png" alt="" class="fifteen__sensor_slide-picture_img">
+                </div>
                </div>
-                  <!-- пагинация -->
-               <div class="swiper-pagination"></div>
-                  <!-- навигация (влево/вправо) -->
-               <button type="button" class="swiper-button-prev"></button>
-               <button type="button" class="swiper-button-next"></button>
+               <div class="fifteen__sensor_slide swiper-slide">
+                <div class="fifteen__sensor_slide-picture">
+                  <img src="/assets/img/section-15/slide-02.png" alt="" class="fifteen__sensor_slide-picture_img">
+                </div>
+               </div>
+             </div>
+             <div class="fifteen__sensor_pagination swiper-pagination"></div>
+             <button style="width: 50px; height: 50px;" type="button" class="fifteen__sensor_button_prev swiper-button-prev"></button>
+             <button style="width: 50px; height: 50px" type="button" class="fifteen__sensor_button_next swiper-button-next"></button>
             </div>
+        </div>
+      </div>
+    </section>
+    <!-- sixteen -->
+    <section class="sixteen">
+      <div class="container">
+        <div class="sixteen__wrapper">
+          <div class="sixteen__block-left">
+            <div class="sixteen__block-left_title">
+              Хотите получить <span class="main-color">полностью готовое</span> к работе устройство?
+            </div>
+            <div class="sixteen__block-left_text">
+              Настроим устройство , скачаем карты, активируем все опции перед отправкой. Вам останется <span class="main-color">только подключить к авто!</span>
+            </div>
+            <div class="sixteen__block-left_subtext price__subtitle">Скидка до 22 августа 2022 года</div>
+            <div class="sixteen__block-left_price-block">
+                <div class="sixteen__block-left_price"">
+                  <div class="sixteen__block-left_price-new price__new">17 990 ₽</div>
+                  <div class="sixteen__block-left_price-old price__old">24 890₽</div>
+                </div>
+                <div class="sixteen__block-left_price-btn">
+                  <button class="sixteen__block-left_price-btn-b main-btn">Купить со скидкой</button>
+                  <div class="sixteen__block-left_price-btn-info eighth__content_btn_info">Экономия 6900₽</div>
+                </div>
+            </div>
+          </div>
+          <div class="sixteen__block-right">
+            <div class="sixteen__block-right_text icon-card__text">Заказывайте <b>сегодня!</b></div>
+            <div class="sixteen__block-right_picture">
+              <img src="assets/img/section-16/img-1.png" alt="img" class="sixteen__block-right_picture-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- seventeen -->
+    <section class="seventeen">
+      <div class="container">
+        <div class="seventeen__title-block">
+            <div class="seventeen__title">Дополнительные возможности Onlooker M84 Pro</div>
+        </div>
+        <div class="seventeen__features">
+          <div class="seventeen__features-col">
+            <div class="seventeen__features-col_item">
+              <div class="seventeen__features-col_picture icon-card__icon">
+                <img class="seventeen__features-col_picture-img" src="/assets/img/icons/base_camera-3.svg" alt="camera">
+              </div>
+              <div class="seventeen__features-col_text icon-card__text">
+                <b><span class="seventeen__features-col_text-span color-white">Удаленное наблюдение за авто</span></b><br>
+                Приложение Carkeeper на смартфоне показывает видео в онлайне из любой точки мира, и координаты авто
+              </div>
+            </div>
+            <div class="seventeen__features-col_item">
+              <div class="seventeen__features-col_picture icon-card__icon">
+                <img class="seventeen__features-col_picture-img" src="/assets/img/icons/bluetooth.svg" alt="bluetooth">
+              </div>
+              <div class="seventeen__features-col_text icon-card__text">
+                <b><span class="seventeen__features-col_text-span color-white">Bluetooth подключение</span></b><br>
+                Разговариваете по телефону по громкой связи подключив свой телефон по Bluetooth, или для для передачи любого звука на магнитолу/колонки автомобиля
+              </div>
+            </div>
+          </div>
+          <div class="seventeen__features-col">
+            <div class="seventeen__features-col_item">
+              <div class="seventeen__features-col_picture icon-card__icon">
+                <img class="seventeen__features-col_picture-img" src="/assets/img/icons/wifi.svg" alt="sharing">
+              </div>
+              <div class="seventeen__features-col_text icon-card__text">
+                <b><span class="seventeen__features-col_text-span color-white">Поддержка Sharing 3G/4G</span></b><br>
+                Раздаёте 3G/4G интернет на другие устройства через Sim карту вставленную в устройство
+              </div>
+            </div>
+            <div class="seventeen__features-col_item">
+              <div class="seventeen__features-col_picture icon-card__icon">
+                <img class="seventeen__features-col_picture-img" src="/assets/img/icons/fm.svg" alt="fm">
+              </div>
+              <div class="seventeen__features-col_text icon-card__text">
+                <b><span class="seventeen__features-col_text-span color-white">Fm трансмиттер</span></b><br>
+                Используйте Fm трансмиттер для передачи любого звука на магнитолу/колонки автомобиля
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -1170,7 +1282,8 @@
     <button class="watch-video__btn">Спасибо, уже видел</button>
   </div>
   <!-- Scripts -->
-  <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="assets/js/slider.js"></script>
   <script src="assets/js/libs.min.js"></script>
   <script src="assets/js/main.js"></script>
   

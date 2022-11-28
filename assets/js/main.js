@@ -1,4 +1,4 @@
-// === TABS ===
+// === TABS =============================================
 function tabs() {
   const tabs = document.querySelectorAll("[data-tabs]");
   let tabsActiveHash = [];
@@ -153,3 +153,4 @@ function tabs() {
   }
 }
 tabs();
+
