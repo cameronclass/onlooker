@@ -803,7 +803,7 @@
                 }
             }
     }
-    
+
 }
 
 .fourteen {
@@ -840,7 +840,7 @@
             justify-content: center;
             align-items: center;
             &:not(:last-child) {
-                 margin-right: 16px;   
+                 margin-right: 16px;
             }
         }
         // .fourteen__heading_card-text
@@ -879,7 +879,10 @@
         }
         // .fourteen__tabs_title-img
         &_title-img {
-        } 
+            height: 46px;
+            width: auto;
+            object-fit: contain;
+        }
         // .fourteen__tabs_title-text
         &_title-text {
 
