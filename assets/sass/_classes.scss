@@ -11,6 +11,7 @@
 }
 
 .main-title {
+
     display: flex;
     align-items: center;
     font-weight: 800;
@@ -54,7 +55,6 @@
             font-size: 18px;
             opacity: 0.6;
         }
-
 
         /* Radius */
         &-radius {
@@ -189,13 +189,22 @@
         font-weight: 700;
         font-size: 16px;
     }
+    &__title-white {
+        font-weight: 700;
+        font-size: 16px;
+        color: white;
+    }
 
     &__text {
         font-weight: 400;
         font-size: 16px;
         color: rgba(255, 255, 255, 0.6);
     }
-
+    &__text-fs14 {
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.6);
+    }
     &__link {
         text-decoration: none;
         font-weight: 700;
@@ -403,3 +412,8 @@ input:checked+.slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+
+
+
+
