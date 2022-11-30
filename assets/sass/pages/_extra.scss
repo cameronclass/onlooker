@@ -3,6 +3,183 @@
 
 
 
+
+.thirtythree {
+    margin-top: 250px;
+    // .thirtythree__title-wrap
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    // .thirtythree__title
+    &__title {
+        font-size: 56px;
+        margin-bottom: 55px;
+    }
+    // .thirtythree__cards
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1240px;
+        width: 100%;
+    }
+    // .thirtythree__card
+    &__card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 359px;
+        height: 400px;
+        background: linear-gradient(276.53deg, #121212 3.6%, #1D1D1D 104.04%), url(image.png);
+        border-radius: 16px;
+        padding: 13px 23px 31px 23px;
+        // .thirtythree__card_btm
+        &_btm {
+        }
+        // .thirtythree__card_num
+        &_num {
+            font-weight: 800;
+            font-size: 73px;
+            opacity: 0.2;
+        }
+        // .thirtythree__card_img-1
+        &_img-1 {
+            position: absolute;
+            top: 8px;
+            right: 42px;
+            width: 212px;
+            height: 212px;
+        }
+        // .thirtythree__card_img-2
+        &_img-2 {
+            position: absolute;
+            top: 6px;
+            right: 30px;
+            width: 205px;
+            height: 223px;
+        }
+        // .thirtythree__card_img-3
+        &_img-3 {
+            position: absolute;
+            top: 40px;
+            right: 35px;
+            width: 292px;
+            height: 166px;
+        }
+        // .thirtythree__card_title
+        &_title {
+            margin-bottom: 18px;
+        }
+        // .thirtythree__card_text
+        &_text {
+            &:not(:last-child) {
+                margin-bottom: 13px;
+            }
+        }
+        // .thirtythree__card_btn
+        &_btn {
+            height: 44px;
+            width: 100%;
+            margin-top: 25px;
+        }
+    }
+}
+
+.thirtyfour {
+    margin-top: 250px;
+    // .thirtyfour__wrapper
+    &__wrapper {
+        display: flex;
+    }
+    // .thirtyfour__content
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+    // .thirtyfour__title
+    &__title {
+        max-width: 602px;
+        margin-bottom: 48px;
+        font-size: 56px;
+    }
+    // .thirtyfour__checked
+    &__checked {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 61px;
+    }
+    // .thirtyfour__form
+    &__form {
+        display: flex;
+        max-width: 683px;
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-radius: 90px;
+        height: 58px;
+        &:not(:last-child) {
+            margin-bottom: 26px;
+        }
+    }
+    // .thirtyfour__input
+    &__input {
+        padding: 17px 28px;
+        background: transparent;
+        font-size: 18px;
+        font-family: inherit;
+        outline: 0;
+        color: white;
+        border: 0;
+        width: 100%;
+    }
+    // .thirtyfour__text
+    &__text {
+        display: flex;
+    }
+    // .thirtyfour__text
+    &__type {
+        opacity: 0.6;
+        font-size: 20px;
+    }
+    // .thirtyfour__text-link
+    &__text-link {
+        font-size: 20px;
+        @media (any-hover: hover) {
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+    // .thirtyfour__btn
+    &__btn {
+        width: 100%;
+        max-width: 280px;
+        padding: 18px 41px;
+    }
+    // .thirtyfour__img
+    &__img {
+        position: relative;
+        height: 609px;
+        width: auto;
+    }
+    // .thirtyfour__position
+    &__position {
+        position: absolute;
+        top: 117px;
+        right: 333px;
+        text-align: right;
+    }
+    // .thirtyfour__name
+    &__name {
+        font-size: 24px;
+    }
+    // .thirtyfour__expert
+    &__expert {
+    }
+}
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -126,206 +303,14 @@
     }
 }
 
-.thirtythree {
-    // .thirtythree__title-wrap
-    &__title-wrap {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 55px;
-    }
-    // .thirtythree__title
-    &__title {
-        font-size: 56px;
-    }
-    // .thirtythree__cards
-    &__cards {
-        display: flex;
-    }
-    // .thirtythree__card
-    &__card {
-        display: flex;
-        flex-direction: column;
-        width: 359px;
-        height: 400px;
-        background: linear-gradient(276.53deg, #121212 3.6%, #1D1D1D 104.04%), url(image.png);
-        border-radius: 16px;
-        // .thirtythree__card_num
-        &_num {
-        }
-        // .thirtythree__card_img1
-        &_img1 {
-            width: 212px;
-            height: 212px;
-        }
-        // .thirtythree__card_img2
-        &_img2 {
-
-        }
-        // .thirtythree__card_img3
-        &_img3 {
-
-        }
-        // .thirtythree__card_title
-        &_title {
-        }
-        // .thirtythree__card_text
-        &_text {
-        }
-        // .thirtythree__card_btn
-        &_btn {
-        }
-    }
-}
-
-.thirtyfour {
-    margin-top: 250px;
-    // .thirtyfour__wrapper
-    &__wrapper {
-        display: flex;
-    }
-    // .thirtyfour__content
-    &__content {
-        display: flex;
-        flex-direction: column;
-    }
-    // .thirtyfour__title
-    &__title {
-        max-width: 602px;
-        margin-bottom: 48px;
-        font-size: 56px;
-    }
-    // .thirtyfour__checked
-    &__checked {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 61px;
-    }
-    // .thirtyfour__form
-    &__form {
-        display: flex;
-        max-width: 683px;
-        width: 100%;
-        border: 1px solid rgba(255, 255, 255, 0.6);
-        border-radius: 90px;
-        height: 58px;
-        &:not(:last-child) {
-            margin-bottom: 26px;
-        }
-    }
-    // .thirtyfour__input
-    &__input {
-        padding: 17px 28px;
-        background: transparent;
-        font-size: 18px;
-        font-family: inherit;
-        outline: 0;
-        color: white;
-        border: 0;
-        width: 100%;
-    }
-    // .thirtyfour__text
-    &__text {
-        display: flex;
-    }
-    // .thirtyfour__text
-    &__type {
-        opacity: 0.6;
-        font-size: 20px;
-    }
-    // .thirtyfour__text-link
-    &__text-link {
-        font-size: 20px;
-        @media (any-hover: hover) {
-            &:hover {
-                opacity: 0.6;
-            }
-        }
-    }
-    // .thirtyfour__btn
-    &__btn {
-        width: 100%;
-        max-width: 280px;
-        padding: 18px 41px;
-    }
-    // .thirtyfour__img
-    &__img {
-        position: relative;
-        height: 609px;
-        width: auto;
-    }
-    // .thirtyfour__position
-    &__position {
-        position: absolute;
-        top: 117px;
-        right: 333px;
-        text-align: right;
-    }
-    // .thirtyfour__name
-    &__name {
-        font-size: 24px;
-    }
-    // .thirtyfour__expert
-    &__expert {
-    }
-}
-
-
 
 
 // ==================================
 
-.checked-item {
-    display: flex;
-    margin: 10px 0;
-    align-items: center;
-    height: 24px;
-    &_img {
-        display: flex;
-        width: 18px;
-        height: 21px;
-    }
-
-    // .checked-item_text
-    &_text {
-        margin-left: 10px;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 28px;
-
-        span {
-            font-weight: 400;
-            opacity: 0.6;
-        }
-    }
-}
-
 // ==================================
 
-
-.heading-title-lable {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // padding: 17px 0px;
-    // width: 363px;
-    height: 64px;
-    background: linear-gradient(275.98deg, #121212 3.53%, #181818 97.46%), #121212;
-    box-shadow: 34px 4px 137px rgba(16, 120, 116, 0.06);
-    border-radius: 999px;
-}
-
-.text-opacity-gray {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 140%;
-    text-align: left;
-    color: rgba(255, 255, 255, 0.3);
-}
-
-// ============================
-// tabs
+// tabs (section 14)
 .card-item {
-
     // .card-item__block
     &__block {
         display: flex;
@@ -334,55 +319,48 @@
         border-radius: 12px;
         gap: 10px;
     }
-
     // .card-item__block-img
     &__block-img {
         filter: invert(36%) sepia(0%) saturate(0%) hue-rotate(178deg) brightness(92%) contrast(97%);
     }
-
 }
-
 ._tab-active {
     border: 1px solid $main;
 }
-
 ._tab-active .card-item {
     &__block {}
-
     &__block-img {
         filter: invert(57%) sepia(29%) saturate(5589%) hue-rotate(138deg) brightness(92%) contrast(95%);
     }
-
     &__block-text {
         color: $main;
     }
 }
+.text-opacity-gray {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.3);
+}
+
 
 // ============================
 // SWIPER
 .swiper {}
-
 .swiper-wrapper {}
-
 .swiper-slide {}
-
 .swiper-pagination {}
-
 .swiper-pagination-bullets {}
-
 .swiper-pagination .swiper-pagination-bullet {
     background: white;
     opacity: 1;
 }
-
 .swiper-pagination .swiper-pagination-bullet-active {
     background: $main;
 }
-
 .swiper-button-prev,
 .swiper-button-next {
-    // width: 38px;
-    // height: 38px;
     background: white;
     border-radius: 50%;
 

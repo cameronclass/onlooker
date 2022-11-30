@@ -412,6 +412,29 @@ input:checked+.slider:before {
 }
 
 
+// checked items
+.checked-item {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    height: 24px;
+    &_img {
+        display: flex;
+        width: 18px;
+        height: 21px;
+    }
 
+    // .checked-item_text
+    &_text {
+        margin-left: 10px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
 
+        span {
+            font-weight: 400;
+            opacity: 0.6;
+        }
+    }
+}
 
