@@ -1,182 +1,5 @@
 
-.sixteen {
-    margin-top: 200px;
 
-    // .sixteen__wrapper
-    &__wrapper {
-        display: flex;
-        background: linear-gradient(276.53deg, #121212 3.6%, #1D1D1D 104.04%), #D9D9D9;
-        border-radius: 12px;
-    }
-
-    // .sixteen__block-left
-    &__block-left {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        max-width: 825px;
-        padding: 47px 0 45px 59px;
-
-        // .sixteen__block-left_title
-        &_title {
-            font-size: 50px;
-            font-weight: 800;
-            line-height: 61px;
-            margin-bottom: 34px;
-        }
-
-        // .sixteen__block-left_text
-        &_text {
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 168.5%;
-            margin-bottom: 48px;
-        }
-
-        // .sixteen__block-left_subtext
-        &_subtext {
-            margin-bottom: 12px;
-        }
-
-        // .sixteen__block-left_price-block
-        &_price-block {
-            display: flex;
-            position: relative;
-        }
-
-        // .sixteen__block-left_price
-        &_price {
-            display: flex;
-            align-items: center;
-            column-gap: 16px;
-        }
-
-        // .sixteen__block-left_price-new
-        &_price-new {}
-
-        // .sixteen__block-left_price-old
-        &_price-old {}
-
-        // .sixteen__block-left_price-btn
-        &_price-btn {
-            position: absolute;
-            right: -30px;
-            bottom: 0;
-            display: flex;
-            align-items: center;
-        }
-
-        // .sixteen__block-left_price-btn-b
-        &_price-btn-b {
-            padding: 17px 37px;
-            line-height: 22px;
-            z-index: 2;
-        }
-
-        // .sixteen__block-left_price-btn-info
-        &_price-btn-info {
-            max-height: 45px;
-            padding: 11px 19px 11px 80px;
-        }
-    }
-
-    // .sixteen__block-right
-    &__block-right {
-        position: relative;
-
-        // .sixteen__block-right_text
-        &_text {
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 175px;
-            margin: 30px 30px;
-            text-align: right;
-            font-size: 24px;
-            line-height: 34px;
-        }
-
-        // .sixteen__block-right_picture
-        &_picture {
-            display: flex;
-        }
-
-        // .sixteen__block-right_picture-img
-        &_picture-img {
-            height: 100%;
-            max-height: 444px;
-            width: auto;
-        }
-    }
-}
-
-.seventeen {
-    margin-top: 250px;
-
-    // .seventeen__titel-block
-    &__title-block {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        margin-bottom: 59px;
-    }
-
-    // .seventeen__titel
-    &__title {
-        font-weight: 800;
-        font-size: 56px;
-        line-height: 78px;
-        width: 1038px;
-    }
-
-    // .seventeen__features
-    &__features {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        column-gap: 25px;
-        row-gap: 80px;
-    }
-
-    // .seventeen__features-col
-    &__features-col {
-        display: flex;
-        flex-direction: column;
-        row-gap: 80px;
-
-        // .seventeen__features-col_item
-        &_item {
-            display: flex;
-            width: 100%;
-            min-width: 400px;
-            max-width: 630px;
-        }
-
-        // .seventeen__features-col_picture
-        &_picture {
-            min-width: 74px;
-            min-height: 74px;
-        }
-
-        // .seventeen__features-col_picture-img
-        &_picture-img {
-            width: auto;
-            height: auto;
-            object-fit: contain;
-        }
-
-        // .seventeen__features-col_text
-        &_text {
-            .icon-card__title  {
-                font-size: 22px;
-                margin-bottom: 7px;
-            }
-            .icon-card__text {
-                font-size: 18px;
-            }
-        }
-    }
-}
 
 
 
@@ -186,7 +9,7 @@
     margin-top: 45px;
 	// .footer__bg ---------------------------
 	&__bg {
-		// .footer__bg_top 
+		// .footer__bg_top
 		&_top {
             background: linear-gradient(276.53deg, #121212 3.6%, #1D1D1D 104.04%), linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%);
 		}
@@ -274,7 +97,7 @@
 	}
 	// .footer__legal ---------------------------
 	&__legal {
-		
+
         &:nth-child(2) {
             max-width: 200px;
             line-height: 1.6;
@@ -336,11 +159,11 @@
         }
         // .thirtythree__card_img2
         &_img2 {
-            
+
         }
         // .thirtythree__card_img3
         &_img3 {
-            
+
         }
         // .thirtythree__card_title
         &_title {
