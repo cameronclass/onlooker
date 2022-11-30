@@ -2104,3 +2104,193 @@
         &_button {}
     }
 }
+
+.twenty-two {
+    &__title {
+        text-align: center;
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__subtitle {
+        opacity: 0.3;
+        text-align: center;
+        font-weight: 700;
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    &__block {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__main {
+        position: relative;
+        width: 73%;
+
+        &_block {}
+
+        &_item {
+            width: 25px;
+            height: 25px;
+            background: linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%);
+            border: 1.5px solid;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            font-weight: 600;
+            cursor: pointer;
+            line-height: 1;
+            position: absolute;
+            z-index: 2;
+
+            &:hover::before {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                left: -7.8px;
+                top: -7.5px;
+                border-radius: 50%;
+                width: 33px;
+                height: 33px;
+                background-color: transparent;
+                border: 2px solid white;
+            }
+
+            &:hover {
+                background: white;
+
+                .twenty-two__main_text {
+                    visibility: visible;
+                }
+            }
+
+            &._item-1 {
+                left: 31%;
+                top: 19%;
+            }
+
+            &._item-2 {
+                left: 38%;
+                top: 35%;
+            }
+
+            &._item-3 {
+                left: 18%;
+                top: 38%;
+            }
+
+            &._item-4 {
+                right: 40%;
+                top: 41%;
+            }
+
+            &._item-5 {
+                right: 20%;
+                top: 35%;
+            }
+
+            &._item-6 {
+                right: 9%;
+                bottom: 34%;
+            }
+
+            &._item-7 {
+                right: 6%;
+                bottom: 22%;
+            }
+
+            &._item-8 {
+                right: 42%;
+                bottom: 22%;
+            }
+
+            &._item-21 {
+                right: 52%;
+                top: 25%;
+            }
+
+            &._item-22 {
+                right: 52%;
+                top: 35%;
+            }
+
+            &._item-23 {
+                right: 52%;
+                bottom: 38%;
+            }
+
+            &._item-24 {
+                right: 63%;
+                top: 38%;
+            }
+
+            &._item-25 {
+                right: 63%;
+                top: 48%;
+            }
+
+            &._item-26 {
+                left: 6%;
+                top: 37%;
+            }
+        }
+
+        &_icon {
+            position: relative;
+            top: -1px;
+        }
+
+        &_button {}
+
+        &_text {
+            visibility: hidden;
+            position: absolute;
+            top: -115px;
+            left: 60px;
+            border-bottom: 1px solid;
+            background: #00000095;
+            padding: 10px;
+            font-weight: 700;
+            font-size: 16px;
+            width: max-content;
+            transition: 200ms;
+            z-index: 3;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 88px;
+                height: 1px;
+                background-color: #fff;
+                position: absolute;
+                left: -66px;
+                bottom: -39px;
+                transform: rotate(-60deg);
+            }
+        }
+    }
+
+    &__second {
+        width: 24%;
+        position: relative;
+
+
+        .twenty-two__main_text {
+            left: -211px;
+            width: 180px;
+            line-height: 1.2;
+
+            &::before {
+                right: -66px;
+                left: initial;
+                transform: rotate(60deg);
+            }
+        }
+    }
+}
