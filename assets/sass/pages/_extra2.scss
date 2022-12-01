@@ -26,6 +26,7 @@ body {}
         display: flex;
         align-items: center;
         justify-content: end;
+        opacity: 0.6;
 
     }
 
@@ -238,10 +239,12 @@ body {}
 
     }
     &__footer-text2 {
+        opacity: 0.6;
         
     }
 
     &__footer-price {
+       
     }
 
     &__footer-button {
@@ -259,6 +262,7 @@ body {}
 .prise {
 
     &__subtitle {
+        opacity: 0.6;
     }
 }
 .new {
