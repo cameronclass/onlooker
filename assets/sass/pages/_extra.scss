@@ -1,5 +1,97 @@
 
 
+.thirtytwo {
+    margin-top: 250px;
+    // .thirtytwo__heading
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 27px;
+        .main-title__card {
+            width: 100%;
+            max-width: 495px;
+            height: 64px;
+            .main-title__card-radius__icon {
+                height: 34px;
+                width: auto;
+            }
+        }
+    }
+    // .thirtytwo__title
+    &__title {
+        font-size: 56px;
+    }
+    // .thirtytwo__content
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    // .thirtytwo__descrp
+    &__descrp {
+    }
+    // .thirtytwo__text
+    &__text {
+        margin: 0 0 15px 0;
+    }
+    // .thirtytwo__text-size
+    &__text-size {
+        font-weight: 400;
+    }
+    // .thirtytwo__subtext
+    &__subtext {
+        font-size: 24px;
+    }
+    // .thirtytwo__form-link
+    &__form-link {
+        text-decoration: none;
+        @media (any-hover: hover) {
+            &:hover {
+                color: $main;
+            }
+        }
+    }
+    // .thirtytwo__links
+    &__links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 495px;
+    }
+    // .thirtytwo__links-title
+    &__links-title {
+        margin: 0 0 16px 0;
+        color: red;
+    }
+    // .thirtytwo__links-body
+    &__links-body {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 18px;
+        row-gap: 11px;
+    }
+    // .thirtytwo__link
+    &__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        gap: 8px;
+        @media (any-hover: hover) {
+            &:hover {
+        }
+
+    }
+    // .thirtytwo__link-icon
+    &__link-icon {
+        height: 14px;
+        width: auto;
+    }
+    // .thirtytwo__link-text
+    &__link-text {
+        &.icon-card__text {
+        }
+    }
+}
 
 
 
@@ -373,4 +465,4 @@
             background: $main;
         }
     }
-}
+}}

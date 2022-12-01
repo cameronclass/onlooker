@@ -194,12 +194,13 @@
         font-size: 16px;
         color: white;
     }
-
+    //.icon-card__text
     &__text {
         font-weight: 400;
         font-size: 16px;
         color: rgba(255, 255, 255, 0.6);
     }
+    //.icon-card__text-fs14
     &__text-fs14 {
         font-weight: 400;
         font-size: 14px;
@@ -429,7 +430,7 @@ input:checked+.slider:before {
         margin-left: 10px;
         font-weight: 700;
         font-size: 20px;
-        line-height: 28px;
+        line-height: 1.4;
 
         span {
             font-weight: 400;
