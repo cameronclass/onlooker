@@ -8,7 +8,7 @@
       "savePath": "/assets/css"
     }
   ],
-  "liveSassCompile.settings.showOutputWindowOn": "Information",
-  "liveSassCompile.settings.watchOnLaunch": true,
-  "liveSassCompile.settings.compileOnWatch": true,
+  // "liveSassCompile.settings.showOutputWindowOn": "Information",
+  // "liveSassCompile.settings.watchOnLaunch": true,
+  // "liveSassCompile.settings.compileOnWatch": true,
 }

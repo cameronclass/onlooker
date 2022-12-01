@@ -1,5 +1,201 @@
 
 
+.twentynine {
+    margin-top: 230px;
+    // .twentynine__wrapper
+    &__wrapper {
+        position: relative;
+        padding: 48px 100px 34px 54px;
+        background: linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%), #D9D9D9;
+        border-radius: 12px;
+        overflow: hidden;
+        
+    }
+    // .twentynine__title
+    &__title {
+        font-size: 50px;
+        margin-bottom: 29px;
+    }
+    // .twentynine__certificate-block
+    &__certificate-block {
+        display: flex;
+        align-items: center;
+        column-gap: 46px;
+        width: 100%;
+        max-width: 978px;
+        margin-bottom: 34px;
+    }
+    // .twentynine__block-one
+    &__block-one {
+        display: flex;
+        &:nth-child(1) .twentynine__text {
+            width: 163px;
+            padding-top: 23px;
+        }
+    }
+    // .twentynine__icon-eac
+    &__icon-eac {
+        width: auto;
+        height: 67px;
+        margin-right: 17px;
+    }
+    // .twentynine__text
+    &__text {
+        opacity: 0.7;
+    }
+    // .twentynine__block-two
+    &__block-two {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 28px;
+        row-gap: 16px;
+        align-content: flex-start;
+        flex: 0 0 307px;
+    }
+    // .twentynine__icon-ce
+    &__icon-ce {
+        width: auto;
+        height: 40px;
+    }
+    // .twentynine__icon-rohs
+    &__icon-rohs {
+        width: auto;
+        height: 34px;
+    }
+    // .twentynine__block-three
+    &__block-three {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 13px;
+    }
+    // .twentynine__icon-logo
+    &__icon-logo {
+        width: auto;
+        height: 46px;
+        
+    }
+    // .twentynine__downoload
+    &__downoload {
+        display: flex;
+        gap: 16px;
+        max-width: 980px;
+    }
+    // .twentynine__downld-btn
+    &__downld-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 44px;
+        gap: 13px;
+
+        width: 100%;
+        height: 64px;
+
+        border: 1px solid #FFFFFF;
+        border-radius: 61px;
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.2;
+        @media (any-hover: hover) {
+            &:hover {
+                color: $main;
+                background: white;
+                .twentynine__downld-icon {
+                    filter: invert(60%) sepia(56%) saturate(4106%) hue-rotate(137deg) brightness(91%) contrast(95%);
+                }
+            }
+        }
+    }
+    // .twentynine__downld-icon
+    &__downld-icon {
+        width: auto;
+        height: 26px;
+    }
+    // .twentynine__img-pc
+    &__img-pc {
+        position: absolute;
+        bottom: -40px;
+        right: -2px;
+        width: auto;
+        height: 320px;
+    }
+    // .twentynine__img-mob
+    &__img-mob {
+        display: none;
+    }
+}
+
+.thirtyone {
+    margin-top: 250px;
+    // .thirtyone__heading
+    &__heading {
+        display: flex;
+        margin-bottom: 29px;
+    }
+    // .thirtyone__title
+    &__title {
+        max-width: 800px;
+    }
+    // .thirtyone__card
+    &__card {
+        max-width: 240px;
+        height: 60px;
+        margin-top: 5px;
+    }
+    // .thirtyone__tags
+    &__tags {
+        margin-bottom: 74px;
+    }
+}
+
+.thirty {
+    margin-top: 225px;
+    // .thirty__wrapper
+    &__wrapper {
+        display: flex;
+        column-gap: 45px;
+    }
+    // .thirty__heading
+    &__heading {
+    }
+    // .thirty__title
+    &__title {
+        font-size: 56px;
+        margin-bottom: 17px;
+    }
+    // .thirty__subtitle
+    &__subtitle {
+        font-size: 89px;
+        &:not(:last-child) {
+            margin-bottom: 23px;
+        }
+    }
+    // .thirty__text
+    &__text {
+        font-size: 22px;
+        line-height: 1.6;
+    }
+    // .thirty__guarantee
+    &__guarantee {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 450px;
+        row-gap: 28px;
+        .main-title__card {
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+        .icon-card__title {
+            font-size: 20px;
+            margin-bottom: 7px;
+        }
+    }
+}
+
 .thirtytwo {
     margin-top: 250px;
     // .thirtytwo__heading
@@ -61,7 +257,6 @@
     // .thirtytwo__links-title
     &__links-title {
         margin: 0 0 16px 0;
-        color: red;
     }
     // .thirtytwo__links-body
     &__links-body {
@@ -76,10 +271,6 @@
         align-items: center;
         text-decoration: none;
         gap: 8px;
-        @media (any-hover: hover) {
-            &:hover {
-        }
-
     }
     // .thirtytwo__link-icon
     &__link-icon {
@@ -92,9 +283,6 @@
         }
     }
 }
-
-
-
 
 .thirtythree {
     margin-top: 250px;
@@ -395,7 +583,91 @@
     }
 }
 
-
+// Блок со спойлерами
+// .spollers {
+// 	display: grid;
+// 	gap: 15px;
+// }
+// Спойлер
+// .spollers__item {
+// 	font-size: rem(20);
+// }
+// Заголовок спойлера
+.spollers__title {
+	width: 100%;
+	cursor: default;
+	text-align: left;
+	border: 1px solid rgb(129, 129, 129);
+	padding: rem(10) rem(15);
+	border-radius: rem(5);
+	position: relative;
+	._spoller-init & {
+		cursor: pointer;
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			background-color: rgb(255, 255, 255);
+			height: 2px;
+			width: 15px;
+			transition: transform 0.5s ease 0s;
+		}
+		&::before {
+			transform: translate(-75%, -50%) rotate(40deg);
+		}
+		&::after {
+			transform: translate(0, -50%) rotate(-40deg);
+		}
+		&._spoller-active {
+			&::before {
+				transform: translateX(-75%) rotate(-40deg);
+			}
+			&::after {
+				transform: rotate(40deg);
+			}
+		}
+        // ._spoller-init & {
+        //     position: relative;
+        //     width: 100%;
+        //     text-align: left;
+        //     &::before,
+        //     &::after {
+        //         content: "";
+        //         position: absolute;
+        //         right: 0;
+        //         top: rem(12);
+        //         height: rem(1);
+        //         transition: all 0.3s ease 0s;
+        //         width: rem(10);
+        //         background-color: rgb(255, 255, 255);
+        //     }
+        //     &::before {
+        //         transform: rotate(40deg);
+        //         right: rem(7);
+        //     }
+        //     &::after {
+        //         transform: rotate(-40deg);
+        //     }
+        // }
+        // &._spoller-active {
+        //     &::before {
+        //         transform: rotate(-40deg);
+        //     }
+        //     &::after {
+        //         transform: rotate(40deg);
+        //     }
+        // }
+	}
+    
+}
+// Контент спойлера
+.spollers__body {
+	padding: rem(20);
+	border-radius: rem(5);
+	border: 1px solid rgb(141, 141, 141);
+}
 
 // ==================================
 
@@ -437,32 +709,32 @@
 }
 
 
-// ============================
-// SWIPER
-.swiper {}
-.swiper-wrapper {}
-.swiper-slide {}
-.swiper-pagination {}
-.swiper-pagination-bullets {}
-.swiper-pagination .swiper-pagination-bullet {
-    background: white;
-    opacity: 1;
-}
-.swiper-pagination .swiper-pagination-bullet-active {
-    background: $main;
-}
-.swiper-button-prev,
-.swiper-button-next {
-    background: white;
-    border-radius: 50%;
+// // ============================
+// // SWIPER
+// .swiper {}
+// .swiper-wrapper {}
+// .swiper-slide {}
+// .swiper-pagination {}
+// .swiper-pagination-bullets {}
+// .swiper-pagination .swiper-pagination-bullet {
+//     background: white;
+//     opacity: 1;
+// }
+// .swiper-pagination .swiper-pagination-bullet-active {
+//     background: $main;
+// }
+// .swiper-button-prev,
+// .swiper-button-next {
+//     background: white;
+//     border-radius: 50%;
 
-    &::after {
-        color: #333333;
-    }
+//     &::after {
+//         color: #333333;
+//     }
 
-    @media (any-hover: hover) {
-        &:hover {
-            background: $main;
-        }
-    }
-}}
+//     @media (any-hover: hover) {
+//         &:hover {
+//             background: $main;
+//         }
+//     }
+// }
