@@ -213,3 +213,60 @@ body {}
 
     &__old {}
 }
+
+
+.order {
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(276.53deg, #121212 3.6%, #1D1D1D 104.04%), #D9D9D9;
+        border-radius: 12px;
+        padding: 0 50px;
+        margin: 20px 0 92px 0;
+    }
+
+    &__fooret-info {
+    }
+
+    &__footer-items {
+        display: flex;
+    align-items: center;
+    }
+
+    &__footer-text {
+
+    }
+    &__footer-text2 {
+        
+    }
+
+    &__footer-price {
+    }
+
+    &__footer-button {
+        margin-left: 30px;
+        width: 236px;
+        height: 56px;
+        text-align: center;
+        
+    }
+}
+.color-white {
+    font-weight: bold;
+    font-size: 20px;
+}
+.prise {
+
+    &__subtitle {
+    }
+}
+.new {
+
+    &__price {
+        font-size: 36px;
+    font-weight: bold;
+    }
+}
+.main-btn {
+}
