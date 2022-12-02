@@ -20,6 +20,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        border: 1px solid $main;
         filter: drop-shadow(-4.59496px 4.59496px 45.9496px rgba(113, 175, 170, 0.16)) drop-shadow(0px 22.9748px 37.397px rgba(0, 0, 0, 0.21));
         border-radius: 50px;
         color: $main;
@@ -31,6 +32,7 @@
         &:hover {
             background: linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%);
             box-shadow: -4.59496px 4.59496px 45.9496px rgba(113, 175, 170, 0.16), 0px 22.9748px 37.397px rgba(0, 0, 0, 0.21);
+            color: white;
         }
     }
 
