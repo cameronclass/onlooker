@@ -12,6 +12,25 @@
         justify-content: center;
         gap: 27px;
         margin-bottom: 58px;
+        position: relative;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 271px;
+            height: 243px;  
+            background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
+            filter: blur(250px);
+            z-index: 1;
+        }
+        &::before {
+            right: 300px;
+            top: 350px; 
+        }
+        &::after {
+            left: -180px;
+            top: 700px; 
+        }
     }
     // .twentyeight__nav-title
     &__nav-title {
@@ -35,6 +54,8 @@
     &__title {
         font-size: 56px;
         max-width: 1015px;
+        position: relative;
+        z-index: 2;
     }
     // .twentyeight__terms
     &__terms {
@@ -69,12 +90,16 @@
         flex-direction: column;
         text-align: center;
         justify-content: center;
+        position: relative;
+        z-index: 2;
             // .twentyeight__deliv-block_two
             &_two {
                 display: flex;
                 flex-direction: column;
                 align-items: stretch;
                 row-gap: 12px;
+                position: relative;
+                z-index: 2;
             }
     }
     // .twentyeight__deliv-top
@@ -89,6 +114,8 @@
     &__deliv-text {
         padding: 14px 50px;
         margin-bottom: 71px;
+        position: relative;
+        z-index: 2;
         &_gray {
             color:rgba(255, 255, 255, 0.3);
             font-weight: 400;
@@ -137,6 +164,8 @@
     &__pay {
         display: flex;
         column-gap: 35px;
+        position: relative;
+        z-index: 2;
     }
     // .twentyeight__pay-method
     &__pay-method {
@@ -187,7 +216,9 @@
     }
     // .twentyeight__device-img
     &__device-img {
-        object-fit: cover;
+        object-fit: contain;
+        position: relative;
+        z-index: 2;
     }
     // .twentyeight__tabs-two
     &__tabs-two {
@@ -207,6 +238,8 @@
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     overflow: hidden;
+    position: relative;
+    z-index: 2;
 }
 .spollers__body {
     padding: 20px 26px;
@@ -919,34 +952,3 @@
     text-align: left;
     color: rgba(255, 255, 255, 0.3);
 }
-
-
-// // ============================
-// // SWIPER
-// .swiper {}
-// .swiper-wrapper {}
-// .swiper-slide {}
-// .swiper-pagination {}
-// .swiper-pagination-bullets {}
-// .swiper-pagination .swiper-pagination-bullet {
-//     background: white;
-//     opacity: 1;
-// }
-// .swiper-pagination .swiper-pagination-bullet-active {
-//     background: $main;
-// }
-// .swiper-button-prev,
-// .swiper-button-next {
-//     background: white;
-//     border-radius: 50%;
-
-//     &::after {
-//         color: #333333;
-//     }
-
-//     @media (any-hover: hover) {
-//         &:hover {
-//             background: $main;
-//         }
-//     }
-// }
