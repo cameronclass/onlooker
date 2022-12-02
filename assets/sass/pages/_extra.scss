@@ -1,8 +1,617 @@
 
 
+.twentyeight {
+    margin-top: 155px;
+    // .twentyeight__tabs
+    &__tabs {
+    }
+    // .twentyeight__nav
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 27px;
+        margin-bottom: 58px;
+        position: relative;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 271px;
+            height: 243px;  
+            background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
+            filter: blur(250px);
+            z-index: 1;
+        }
+        &::before {
+            right: 300px;
+            top: 350px; 
+        }
+        &::after {
+            left: -180px;
+            top: 700px; 
+        }
+    }
+    // .twentyeight__nav-title
+    &__nav-title {
+        padding: 19px 29px;
+    }
+    // .twentyeight__nav-icon
+    &__nav-icon {
+        height: 40px;
+        width: auto;
+    }
+    // .twentyeight__nav-text
+    &__nav-text {
+    }
+    // .twentyeight__content
+    &__content {
+    }
+    // .twentyeight__tabs-one
+    &__tabs-one {
+    }
+    // .twentyeight__title
+    &__title {
+        font-size: 56px;
+        max-width: 1015px;
+        position: relative;
+        z-index: 2;
+    }
+    // .twentyeight__terms
+    &__terms {
+        display: flex;
+    }
+    // .twentyeight__terms-content
+    &__terms-content {
+        display: flex;
+        flex-direction: column;
+        flex: 60%;
+    }
+    // .twentyeight__deliv-title
+    &__deliv-title {
+        padding: 0px 146px 0 0;
+        font-size: 26px;
+        line-height: 1.6;
+        margin: 27px 0 46px;
+        color:rgba(255, 255, 255, 0.6);
+        &_white {
+            color:rgba(255, 255, 255, 1);
+        }
+    }
+    // .twentyeight__deliv-method
+    &__deliv-method {
+        display: flex;
+        column-gap: 16px;
+        margin-bottom: 24px;
+    }
+    // .twentyeight__deliv-block
+    &__deliv-block {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+            // .twentyeight__deliv-block_two
+            &_two {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                row-gap: 12px;
+                position: relative;
+                z-index: 2;
+            }
+    }
+    // .twentyeight__deliv-top
+    &__deliv-top {
+        justify-content: center;
+    }
+    // .twentyeight__deliv-bottom
+    &__deliv-bottom {
+        justify-content: center;
+    }
+    // .twentyeight__deliv-text
+    &__deliv-text {
+        padding: 14px 50px;
+        margin-bottom: 71px;
+        position: relative;
+        z-index: 2;
+        &_gray {
+            color:rgba(255, 255, 255, 0.3);
+            font-weight: 400;
+            font-size: 16px;
+        }
+        &_white {
+            color:rgba(255, 255, 255, 1);
+        }
+    }
+    // .twentyeight__icon-cdek
+    &__icon-cdek {
+        height: 49px;
+        margin-bottom: 19px;
+    }
+    // .twentyeight__icon-yandex
+    &__icon-yandex {
+        height: 30px;
+    }
+    // .twentyeight__icon-dpd
+    &__icon-dpd {
+        height: 47px;
+    }
+    // .twentyeight__icon-post
+    &__icon-post {
+        height: 73px;
+        margin-bottom: 15px;
+    }
+    // .twentyeight__icon-delivery
+    &__icon-delivery {
+        height: 36px;
+    }
+    // .twentyeight__icon-rub
+    &__icon-rub {
+        height: 47px;
+        margin-right: 18px;
+    }
+    // .twentyeight__icon-card
+    &__icon-card {
+        height: 60px;
+    }
+    // .twentyeight__icon-bank
+    &__icon-bank {
+        height: 52px;
+    }
+    // .twentyeight__pay
+    &__pay {
+        display: flex;
+        column-gap: 35px;
+        position: relative;
+        z-index: 2;
+    }
+    // .twentyeight__pay-method
+    &__pay-method {
+        display: flex;
+        flex-direction: column;
+    }
+    // .twentyeight__pay-title
+    &__pay-title {
+        font-size: 26px;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+    // .twentyeight__pay-block
+    &__pay-block {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 37px;
+        .main-title__card {
+            padding: 22px 17px;
+        }
+    }
+    // .twentyeight__pay-cash
+    &__pay-cash {
+    }
+    // .twentyeight__pay-card
+    &__pay-card {
+    }
+    // .twentyeight__pay-img
+    &__pay-img {
+    }
+    // .twentyeight__credit
+    &__credit {
+       
+    }
+    // .twentyeight__credit-bank
+    &__credit-bank {
+        padding: 23px 55px;
+        background: linear-gradient(275.98deg, #121212 3.53%, #181818 97.46%), linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%);
+        box-shadow: 16.0966px 1.89372px 64.8599px rgba(16, 120, 116, 0.06);
+        margin-bottom: 40px;
+    }
+    // .twentyeight__credit-text
+    &__credit-text {
+    }
+    // .twentyeight__terms-img
+    &__terms-img {
+        flex: 40%;
+    }
+    // .twentyeight__device-img
+    &__device-img {
+        object-fit: contain;
+        position: relative;
+        z-index: 2;
+    }
+    // .twentyeight__tabs-two
+    &__tabs-two {
+        
+    }
+}
 
+// Блок со спойлерами
+.spollers {
+    margin-top: 51px;
+	display: grid;
+	gap: 19px;
+}
+// Спойлер
+.spollers__item {
+    background: linear-gradient(275.98deg, #121212 3.53%, #181818 97.46%), #FFFFFF;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+.spollers__body {
+    padding: 20px 26px;
+    position: relative;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 96%;
+        height: 1px;
+        background-color:rgb(255, 255, 255, 0.5);
+    }
+}
+.spollers__title {
+	width: 100%;
+    font-size: 22px;
+	cursor: default;
+	text-align: left;
+	// border: 1px solid rgb(129, 129, 129);
+	padding: 26px;
+	border-radius: rem(5);
+	position: relative;
+    @media (any-hover: hover) {
+        &:hover {
+            color: $main;
+            ._spoller-plus {
+                background: linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%);
+                border: none;
+            }
+            ._spoller-init & {
+                &::before,
+                &::after {
+                    background-color: rgb(255, 255, 255, 1);
+                    width: 2px;
+                    z-index: 2;
+                }
+            }
+        }
+    }
+    ._spoller-plus {
+        position: absolute;
+		right: 26px;
+		top: 50%;
+        transform: translate(0, -19px);
+        width: 38px;
+        height: 38px;
+        border: 1px solid rgb(255, 255, 255, 0.3);
+        border-radius: 50%;
+        opacity: 1;
+        transition: all 0.5s ease 0s;
+    }
+	._spoller-init & {
+		cursor: pointer;
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			right: 44px;
+            transform: translate(0, -19px);
+			top: 37%;
+			background-color: rgb(255, 255, 255, 0.3);
+			height: 20px;
+			width: 1px;
+			transition: transform 0.5s ease 0s;
+		}
+		&::before {
+			transform:  rotate(0deg);
+		}
+		&::after {
+			transform:  rotate(90deg);
+		}
+		&._spoller-active {
+            color: $main;
+			&::before {
+				transform: rotate(-45deg);
+			}
+			&::after {
+				transform: rotate(45deg);
+			}
+            ._spoller-plus {
+                opacity: 0;
+            }
+		}
+	}
+}
 
+.twentynine {
+    margin-top: 230px;
+    // .twentynine__wrapper
+    &__wrapper {
+        position: relative;
+        padding: 48px 100px 34px 54px;
+        background: linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%), #D9D9D9;
+        border-radius: 12px;
+        overflow: hidden;
+        
+    }
+    // .twentynine__title
+    &__title {
+        font-size: 50px;
+        margin-bottom: 29px;
+    }
+    // .twentynine__certificate-block
+    &__certificate-block {
+        display: flex;
+        align-items: center;
+        column-gap: 46px;
+        width: 100%;
+        max-width: 978px;
+        margin-bottom: 34px;
+    }
+    // .twentynine__block-one
+    &__block-one {
+        display: flex;
+        &:nth-child(1) .twentynine__text {
+            width: 163px;
+            padding-top: 23px;
+        }
+    }
+    // .twentynine__icon-eac
+    &__icon-eac {
+        width: auto;
+        height: 67px;
+        margin-right: 17px;
+    }
+    // .twentynine__text
+    &__text {
+        opacity: 0.7;
+    }
+    // .twentynine__block-two
+    &__block-two {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 28px;
+        row-gap: 16px;
+        align-content: flex-start;
+        flex: 0 0 307px;
+    }
+    // .twentynine__icon-ce
+    &__icon-ce {
+        width: auto;
+        height: 40px;
+    }
+    // .twentynine__icon-rohs
+    &__icon-rohs {
+        width: auto;
+        height: 34px;
+    }
+    // .twentynine__block-three
+    &__block-three {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 13px;
+    }
+    // .twentynine__icon-logo
+    &__icon-logo {
+        width: auto;
+        height: 46px;
+        
+    }
+    // .twentynine__downoload
+    &__downoload {
+        display: flex;
+        gap: 16px;
+        max-width: 980px;
+    }
+    // .twentynine__downld-btn
+    &__downld-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 44px;
+        gap: 13px;
 
+        width: 100%;
+        height: 64px;
+
+        border: 1px solid #FFFFFF;
+        border-radius: 61px;
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.2;
+        @media (any-hover: hover) {
+            &:hover {
+                color: $main;
+                background: white;
+                .twentynine__downld-icon {
+                    filter: invert(60%) sepia(56%) saturate(4106%) hue-rotate(137deg) brightness(91%) contrast(95%);
+                }
+            }
+        }
+    }
+    // .twentynine__downld-icon
+    &__downld-icon {
+        width: auto;
+        height: 26px;
+    }
+    // .twentynine__img-pc
+    &__img-pc {
+        position: absolute;
+        bottom: -40px;
+        right: -2px;
+        width: auto;
+        height: 320px;
+    }
+    // .twentynine__img-mob
+    &__img-mob {
+        display: none;
+    }
+}
+
+.thirtyone {
+    margin-top: 250px;
+    // .thirtyone__heading
+    &__heading {
+        display: flex;
+        margin-bottom: 29px;
+    }
+    // .thirtyone__title
+    &__title {
+        max-width: 800px;
+    }
+    // .thirtyone__card
+    &__card {
+        max-width: 240px;
+        height: 60px;
+        margin-top: 5px;
+    }
+    // .thirtyone__tags
+    &__tags {
+        margin-bottom: 74px;
+    }
+}
+
+.thirty {
+    margin-top: 225px;
+    // .thirty__wrapper
+    &__wrapper {
+        display: flex;
+        column-gap: 45px;
+    }
+    // .thirty__heading
+    &__heading {
+    }
+    // .thirty__title
+    &__title {
+        font-size: 56px;
+        margin-bottom: 17px;
+    }
+    // .thirty__subtitle
+    &__subtitle {
+        font-size: 89px;
+        &:not(:last-child) {
+            margin-bottom: 23px;
+        }
+    }
+    // .thirty__text
+    &__text {
+        font-size: 22px;
+        line-height: 1.6;
+    }
+    // .thirty__guarantee
+    &__guarantee {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 450px;
+        row-gap: 28px;
+        .main-title__card {
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+        .icon-card__title {
+            font-size: 20px;
+            margin-bottom: 7px;
+        }
+    }
+}
+
+.thirtytwo {
+    margin-top: 250px;
+    // .thirtytwo__heading
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 27px;
+        .main-title__card {
+            width: 100%;
+            max-width: 495px;
+            height: 64px;
+            .main-title__card-radius__icon {
+                height: 34px;
+                width: auto;
+            }
+        }
+    }
+    // .thirtytwo__title
+    &__title {
+        font-size: 56px;
+    }
+    // .thirtytwo__content
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    // .thirtytwo__descrp
+    &__descrp {
+    }
+    // .thirtytwo__text
+    &__text {
+        margin: 0 0 15px 0;
+    }
+    // .thirtytwo__text-size
+    &__text-size {
+        font-weight: 400;
+    }
+    // .thirtytwo__subtext
+    &__subtext {
+        font-size: 24px;
+    }
+    // .thirtytwo__form-link
+    &__form-link {
+        text-decoration: none;
+        @media (any-hover: hover) {
+            &:hover {
+                color: $main;
+            }
+        }
+    }
+    // .thirtytwo__links
+    &__links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 495px;
+    }
+    // .thirtytwo__links-title
+    &__links-title {
+        margin: 0 0 16px 0;
+    }
+    // .thirtytwo__links-body
+    &__links-body {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 18px;
+        row-gap: 11px;
+    }
+    // .thirtytwo__link
+    &__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        gap: 8px;
+    }
+    // .thirtytwo__link-icon
+    &__link-icon {
+        height: 14px;
+        width: auto;
+    }
+    // .thirtytwo__link-text
+    &__link-text {
+        &.icon-card__text {
+        }
+    }
+}
 
 .thirtythree {
     margin-top: 250px;
@@ -342,35 +951,4 @@
     line-height: 140%;
     text-align: left;
     color: rgba(255, 255, 255, 0.3);
-}
-
-
-// ============================
-// SWIPER
-.swiper {}
-.swiper-wrapper {}
-.swiper-slide {}
-.swiper-pagination {}
-.swiper-pagination-bullets {}
-.swiper-pagination .swiper-pagination-bullet {
-    background: white;
-    opacity: 1;
-}
-.swiper-pagination .swiper-pagination-bullet-active {
-    background: $main;
-}
-.swiper-button-prev,
-.swiper-button-next {
-    background: white;
-    border-radius: 50%;
-
-    &::after {
-        color: #333333;
-    }
-
-    @media (any-hover: hover) {
-        &:hover {
-            background: $main;
-        }
-    }
 }
