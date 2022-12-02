@@ -156,6 +156,54 @@
         color: #696969;
         text-decoration-line: line-through;
     }
+
+    &-card {
+        background: linear-gradient(276.53deg, #121212 3.6%, #1D1D1D 104.04%), #D9D9D9;
+        border-radius: 12px;
+        padding: 25px 50px;
+        display: flex;
+        justify-content: space-between;
+
+        &__text {
+            width: 100%;
+            max-width: 580px;
+            display: flex;
+            align-items: center;
+
+            &_title {}
+
+            &_info {
+                margin-left: 30px;
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 22px;
+
+                .color-white {
+                    font-size: 22px;
+                }
+            }
+        }
+
+        &__action {
+            width: 100%;
+            max-width: 450px;
+
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            &_price {
+                line-height: 1.1;
+                margin-right: 26px;
+            }
+
+            &_button {
+
+                .main-btn {
+                    padding: 15px 40px;
+                }
+            }
+        }
+    }
 }
 
 .icon-card {
@@ -189,23 +237,27 @@
         font-weight: 700;
         font-size: 16px;
     }
+
     &__title-white {
         font-weight: 700;
         font-size: 16px;
         color: white;
     }
+
     //.icon-card__text
     &__text {
         font-weight: 400;
         font-size: 16px;
         color: rgba(255, 255, 255, 0.6);
     }
+
     //.icon-card__text-fs14
     &__text-fs14 {
         font-weight: 400;
         font-size: 14px;
         color: rgba(255, 255, 255, 0.6);
     }
+
     &__link {
         text-decoration: none;
         font-weight: 700;
@@ -348,6 +400,117 @@
     }
 }
 
+.slider-card {
+    background: linear-gradient(276.53deg, #121212 3.6%, #1D1D1D 104.04%);
+    border-radius: 12px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    &__content {
+        padding: 20px;
+    }
+
+    &__img {
+        background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), linear-gradient(276.53deg, #121212 3.6%, #1D1D1D 104.04%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 15px;
+        height: 240px;
+
+        &_item {
+            width: 90%;
+            height: 207px;
+            object-fit: contain;
+        }
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        &_old {
+            font-weight: 500;
+            font-size: 14px;
+            text-decoration-line: line-through;
+            opacity: 0.3;
+            margin-left: 15px;
+        }
+
+        &_new {
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+
+    &__button {
+        .main-btn-bordered {
+            width: 100%;
+            padding: 8px 50px;
+        }
+    }
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity: 0.6;
+    background: #FFFFFF;
+    filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, 0.16));
+
+    &:hover {
+        background: linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%);
+        opacity: 1;
+
+
+    }
+
+    &:hover::after {
+        color: white;
+    }
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    color: #333333;
+    opacity: 0.8;
+    font-size: 20px;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    right: -20px;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    left: -20px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: -50px;
+}
+
+.swiper-pagination-bullet {
+    background-color: white;
+    opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+    background: $main;
+}
+
 
 
 
@@ -419,6 +582,7 @@ input:checked+.slider:before {
     margin: 10px 0;
     align-items: center;
     height: 24px;
+
     &_img {
         display: flex;
         width: 18px;
@@ -438,4 +602,3 @@ input:checked+.slider:before {
         }
     }
 }
-

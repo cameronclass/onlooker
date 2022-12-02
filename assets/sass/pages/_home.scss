@@ -2106,6 +2106,9 @@
 }
 
 .twenty-two {
+    margin-top: 200px;
+    margin-bottom: 200px;
+
     &__title {
         text-align: center;
         max-width: 1100px;
@@ -2160,10 +2163,12 @@
                 height: 33px;
                 background-color: transparent;
                 border: 2px solid white;
+                z-index: 3;
             }
 
             &:hover {
                 background: white;
+                z-index: 3;
 
                 .twenty-two__main_text {
                     visibility: visible;
@@ -2282,8 +2287,8 @@
 
 
         .twenty-two__main_text {
-            left: -211px;
-            width: 180px;
+            left: -251px;
+            width: 220px;
             line-height: 1.2;
 
             &::before {
@@ -2292,5 +2297,222 @@
                 transform: rotate(60deg);
             }
         }
+    }
+}
+
+.twenty-three {
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+    &__title {
+        text-align: center;
+        width: 100%;
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    &__card {
+        max-width: 350px;
+        width: 30%;
+        background: linear-gradient(276.53deg, #121212 3.6%, #1D1D1D 104.04%), url(image.png);
+        border-radius: 16px;
+        padding: 20px 30px;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+
+        &_number {
+            opacity: 0.2;
+            font-size: 72px;
+            font-weight: 800;
+            position: relative;
+            z-index: 2;
+        }
+
+        &_img {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: flex;
+
+            &_item {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__button {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.twenty-four {
+    &__block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        width: 60%;
+        max-width: 690px;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__img {
+        width: 40%;
+        position: relative;
+
+        &_item {
+            position: absolute;
+            top: 30px;
+            left: -300px;
+            width: 950px;
+        }
+    }
+
+    &__title {
+        align-items: flex-end;
+        line-height: 0.8;
+
+        &_small {
+            font-weight: 700;
+            font-size: 24px;
+            margin-left: 20px;
+        }
+    }
+
+    &__list {
+        margin-top: 50px;
+
+        &_number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 23px;
+            min-height: 23px;
+            color: #ffffff60;
+            border: 1px solid;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        &_text {
+            color: #ffffff60;
+            font-size: 22px;
+        }
+
+        &_item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 22px;
+
+            &:hover {
+
+                opacity: 1;
+                cursor: pointer;
+                font-weight: 700;
+
+                .twenty-four__list_text {
+                    color: $main;
+                }
+
+                .twenty-four__list_number {
+                    background-color: $main;
+                    color: white;
+                    border-color: $main;
+                }
+            }
+        }
+    }
+
+    &__footer {
+        margin-top: 130px;
+    }
+}
+
+.twenty-five {
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+    &__title {
+        justify-content: center;
+    }
+
+    &__slider {
+        margin-top: 50px;
+        position: relative;
+    }
+}
+
+.twenty-six {
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+    &__block {
+        margin-top: 50px;
+        display: flex;
+        position: relative;
+        border-radius: 11px;
+        overflow: hidden;
+
+        &_text {
+            background: linear-gradient(275.98deg, #121212 3.53%, #181818 97.46%), linear-gradient(0deg, #FFFFFF, #FFFFFF), #121212;
+            border-radius: 11px;
+            position: absolute;
+            padding: 12px 40px;
+            top: 0;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 3px;
+            height: 100%;
+            background-color: $main;
+        }
+    }
+
+    &__left {
+        width: 50%;
+        display: flex;
+        align-items: center;
+
+        &_title {
+            left: 0;
+            border-radius: 11px 0;
+        }
+    }
+
+    &__right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+
+        &_title {
+            right: 0;
+            border-radius: 0 11px;
+        }
+    }
+
+    &__img {
+        height: 660px;
+        object-fit: cover;
     }
 }
