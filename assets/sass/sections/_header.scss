@@ -2,6 +2,11 @@
     padding-top: 40px;
     padding-bottom: 40px;
 
+    @include mobile {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
     &__block {
         display: flex;
         justify-content: space-between;
@@ -42,6 +47,10 @@
                 left: 0;
 
             }
+
+            @include mobile {
+                display: none;
+            }
         }
     }
 
@@ -51,9 +60,19 @@
 
         &_menu {
             margin-left: 40px;
+
+            @include mobile {
+                margin: 0;
+                padding: 0;
+            }
+
         }
 
-        &_btn{}
+        &_btn {
+            @include mobile {
+                display: none;
+            }
+        }
 
         .hamburger {
             display: flex;

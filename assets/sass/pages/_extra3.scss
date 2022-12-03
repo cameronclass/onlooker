@@ -64,7 +64,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
- 
+
 
     &__country {
         width: 45%;
@@ -73,7 +73,7 @@
         border: 1px solid;
         background: black;
         display: flex;
-        
+
     }
 
     &__line {
@@ -92,9 +92,10 @@
         -ms-appearance: none;
         appearance: none;
     }
+
     &__box {
         width: 47%;
-        transform: translate(-50%,50%);
+        transform: translate(-50%, 50%);
         background: black;
         height: 50px;
         border-radius: 50px;
@@ -106,7 +107,7 @@
         align-items: center;
         transform: translateX(100%);
 
-       
+
     }
 
     &__text {
@@ -135,13 +136,11 @@
         text-decoration: none;
     }
 
-    &__fa-solid {
-    }
+    &__fa-solid {}
 
-    &__fa-magnifying-glass {
-    }
-    
-    
+    &__fa-magnifying-glass {}
+
+
 }
 
 
@@ -149,18 +148,18 @@
 
     &__title {
         font-weight: 700;
-font-size: 26px;
-margin: 30px 0;
+        font-size: 26px;
+        margin: 30px 0;
     }
 
     &__map {
         display: flex;
-    
+
     }
 
     &__box {
         width: 34%;
-        transform: translate(-50%,50%);
+        transform: translate(-50%, 50%);
         background: rgba(250, 252, 252, 1);
         height: 50px;
         border-radius: 50px;
@@ -201,12 +200,11 @@ margin: 30px 0;
         text-decoration: none;
     }
 }
-.fa-solid {
-    
-}
-.fa-magnifying-glass {
-  
-}
+
+.fa-solid {}
+
+.fa-magnifying-glass {}
+
 .order {
 
     &__footer {
@@ -218,12 +216,11 @@ margin: 30px 0;
         margin: 20px 0 92px 0;
     }
 
-    &__fooret-info {
-    }
+    &__fooret-info {}
 
     &__footer-items {
         display: flex;
-    align-items: center;
+        align-items: center;
     }
 
     &__footer-text {
@@ -231,19 +228,17 @@ margin: 30px 0;
         opacity: 0.6;
         font-weight: 400;
         font-size: 20px;
-        
+
     }
 
-    &__footer-price {
-       
-    }
+    &__footer-price {}
 
     &__footer-button {
         margin-left: 30px;
         width: 236px;
         height: 56px;
         text-align: center;
-        
+
     }
 }
 
@@ -253,16 +248,13 @@ margin: 30px 0;
         opacity: 0.6;
     }
 }
+
 .new {
 
     &__price {
         font-size: 36px;
-    font-weight: bold;
+        font-weight: bold;
     }
 }
-.main-btn {
-}
 
-
-
-
+.main-btn {}

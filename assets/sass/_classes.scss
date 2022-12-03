@@ -18,6 +18,12 @@
     font-size: 52px;
     text-transform: uppercase;
 
+    @include mobile {
+        flex-direction: column;
+
+        font-size: 28px;
+    }
+
     &__notcase {
         text-transform: none;
     }
@@ -26,6 +32,11 @@
         width: auto;
         height: 53px;
         margin-right: 15px;
+
+        @include mobile {
+            height: 30px;
+            margin: 0 0 10px;
+        }
     }
 
     &__card {
@@ -48,12 +59,21 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include mobile {
+                min-height: 30px;
+                max-height: 30px;
+            }
         }
 
         &_text {
             font-weight: 500;
             font-size: 18px;
             opacity: 0.6;
+
+            @include mobile {
+                font-size: 14px;
+            }
         }
 
         /* Radius */
@@ -75,12 +95,21 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                @include mobile {
+                    width: 35px;
+                    object-fit: cover;
+                }
             }
 
             &__text {
                 font-weight: 400;
                 font-size: 18px;
                 opacity: 0.6;
+
+                @include mobile {
+                    font-size: 16px;
+                }
             }
         }
     }
@@ -91,10 +120,18 @@
     font-weight: 600;
     font-size: 24px;
 
+    @include mobile {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
     &__big {
         font-weight: 600;
         font-size: 36px;
 
+        @include mobile {
+            font-size: 20px;
+        }
     }
 }
 
@@ -104,6 +141,7 @@
 
     &__block {
         position: relative;
+        display: flex;
     }
 
     &__top {
@@ -113,12 +151,25 @@
         object-fit: cover;
         left: 54px;
         bottom: 170px;
+
+        @include mobile {
+            height: calc(100% - 30px);
+            object-fit: cover;
+            bottom: 0;
+            left: 0;
+            top: 0;
+            padding: 17px;
+        }
     }
 
     &__bottom {
         max-width: 1200px;
         height: 750px;
         object-fit: contain;
+
+        @include mobile {
+            height: auto;
+        }
     }
 
     &__play {
@@ -132,6 +183,12 @@
         transform: translate(-50%, -50%);
         padding: 30px;
         cursor: pointer;
+
+        @include mobile {
+            width: 45px;
+            height: 45px;
+            padding: 15px;
+        }
     }
 
     &__icon {}
@@ -360,6 +417,10 @@
             &_img {
                 height: 45px;
                 width: auto;
+
+                @include mobile {
+                    height: 30px;
+                }
             }
         }
 
@@ -367,12 +428,20 @@
             font-weight: 700;
             font-size: 24px;
             margin-bottom: 10px;
+
+            @include mobile {
+                font-size: 19px;
+            }
         }
 
         &__text {
             font-weight: 500;
             font-size: 16px;
             color: rgba(255, 255, 255, 0.6);
+
+            @include mobile {
+                font-size: 14px;
+            }
         }
     }
 
@@ -412,6 +481,7 @@
     &__content {
         padding: 20px;
     }
+
     &__img {
         background: linear-gradient(0deg, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.7)), linear-gradient(276.53deg, #121212 3.6%, #1D1D1D 104.04%);
         display: flex;
@@ -454,7 +524,7 @@
         }
     }
 
-    
+
 }
 
 
@@ -466,10 +536,12 @@
     opacity: 0.6;
     background: #FFFFFF;
     filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, 0.16));
+
     &:hover {
         background: linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%);
         opacity: 1;
     }
+
     &:hover::after {
         color: white;
     }
@@ -485,11 +557,19 @@
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
     right: -20px;
+
+    @include mobile {
+        right: 5px;
+    }
 }
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
     left: -20px;
+
+    @include mobile {
+        left: 5px;
+    }
 }
 
 .swiper-horizontal>.swiper-pagination-bullets,
@@ -583,6 +663,7 @@ input:checked+.slider:before {
         width: auto;
         height: 21px;
     }
+
     &_img-sm {
         width: auto;
         height: 13px;
@@ -600,6 +681,7 @@ input:checked+.slider:before {
             opacity: 0.6;
         }
     }
+
     // .checked-item_text-sm
     &_text-sm {
         font-weight: 400;
