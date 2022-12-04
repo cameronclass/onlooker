@@ -63,11 +63,8 @@ function initSliders() {
     });
   }
 
-  if (document.querySelector(".twenty-seven__slider_block-two")) {
-    // Указываем скласс нужного слайдера
-    // Создаем слайдер
-    new Swiper(".twenty-seven__slider_block-two", {
-      // Указываем скласс нужного слайдера
+  if (document.querySelector(".twenty-seven__slider-two_block")) {
+    new Swiper(".twenty-seven__slider-two_block", {
       slidesPerView: 1,
       spaceBetween: 30,
       speed: 600,
@@ -76,11 +73,31 @@ function initSliders() {
       preloadImages: false,
       parallax: true,
       navigation: {
-        nextEl: ".twenty-seven__slider_block-two .swiper-button-next",
-        prevEl: ".twenty-seven__slider_block-two .swiper-button-prev",
+        nextEl: ".twenty-seven__slider-two .swiper-button-next",
+        prevEl: ".twenty-seven__slider-two .swiper-button-prev",
       },
       pagination: {
-        el: ".twenty-seven__slider_block-two .swiper-pagination",
+        el: ".twenty-seven__slider-two .swiper-pagination",
+        clickable: true,
+      },
+    });
+  }
+
+  if (document.querySelector(".twenty-seven__slider-three_block")) {
+    new Swiper(".twenty-seven__slider-three_block", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      speed: 600,
+      loop: true,
+      loopAdditionalSlides: 5,
+      preloadImages: false,
+      parallax: true,
+      navigation: {
+        nextEl: ".twenty-seven__slider-three .swiper-button-next",
+        prevEl: ".twenty-seven__slider-three .swiper-button-prev",
+      },
+      pagination: {
+        el: ".twenty-seven__slider-three .swiper-pagination",
         clickable: true,
       },
     });
