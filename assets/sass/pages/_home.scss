@@ -1967,11 +1967,21 @@
 
 .twelfth {
     margin-top: 200px;
+    margin-bottom: 200px;
+
+    @include mobile {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
 
     &__title {
         width: 100%;
         max-width: 1000px;
         margin-bottom: 40px;
+
+        @include mobile {
+            margin-bottom: 30px;
+        }
     }
 
     &__subtitle {
@@ -1980,10 +1990,18 @@
 
     &__block {
         display: flex;
+
+        @include mobile {
+            flex-direction: column-reverse;
+        }
     }
 
     &__content {
         width: 50%;
+
+        @include mobile {
+            width: 100%;
+        }
     }
 
     &__tags {
@@ -1999,11 +2017,21 @@
     &__img {
         width: 50%;
 
+        @include mobile {
+            width: 100%;
+        }
+
         &_img {
             width: 115%;
             position: relative;
             top: -80px;
             left: -50px;
+
+            @include mobile {
+                left: 0;
+                top: 0;
+                width: 100%;
+            }
         }
     }
 
@@ -2018,11 +2046,43 @@
             display: flex;
             align-items: center;
         }
+
+        @include mobile {
+            width: 100%;
+
+            text-align: center;
+
+            &_block {
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+
+            &_section {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                margin-bottom: 15px;
+                margin-top: 15px;
+            }
+        }
     }
 }
 
 .thirteen {
-    margin-top: 222px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+    @include mobile {
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        .main-title,
+        .main-title__card-radius {
+            width: 100%;
+        }
+    }
 
     &__heading {
         display: flex;
@@ -2032,6 +2092,10 @@
         position: relative;
         z-index: 2;
         margin-bottom: 93px;
+
+        @include mobile {
+            margin-bottom: 40px;
+        }
     }
 
     &__about {
@@ -2045,6 +2109,10 @@
         row-gap: 30px;
         position: relative;
         z-index: 2;
+
+        @include mobile {
+            flex-direction: column;
+        }
     }
 
     &__picture {
@@ -2075,10 +2143,19 @@
         position: relative;
         margin-top: 150px;
 
+        @include mobile {
+            margin-top: 100px;
+        }
+
         &_heading {
             display: flex;
             align-items: flex-end;
             margin-bottom: 41px;
+
+            @include mobile {
+                flex-direction: column;
+                align-items: center;
+            }
         }
 
         &_title {
@@ -2093,6 +2170,11 @@
             font-size: 20px;
             font-weight: 400;
             opacity: 0.6;
+
+            @include mobile {
+                margin: 20px 0 0;
+                font-size: 16px;
+            }
         }
     }
 
@@ -2100,6 +2182,12 @@
         display: flex;
         column-gap: 37px;
         row-gap: 37px;
+
+        @include mobile {
+            justify-content: space-between;
+            flex-wrap: wrap;
+            column-gap: 10px;
+        }
 
         &_block {
             display: flex;
@@ -2112,11 +2200,21 @@
             background: linear-gradient(276.53deg, #121212 3.6%, #1D1D1D 104.04%), #D9D9D9;
             border-radius: 12px;
             padding: 35px 21px 35px 21px;
+
+            @include mobile {
+                width: 48%;
+                height: auto;
+                padding: 20px 10px;
+            }
         }
 
         &_img {
             height: 170px;
             object-fit: contain;
+
+            @include mobile {
+                height: 92px;
+            }
         }
 
         &_about {
@@ -2130,6 +2228,11 @@
             font-weight: 700;
             text-align: center;
             margin-bottom: 22px;
+
+            @include mobile {
+                font-size: 14px;
+                margin-top: 9px;
+            }
         }
 
         &_link {
@@ -2143,6 +2246,10 @@
                 &:hover {
                     color: $main;
                 }
+            }
+
+            @include mobile {
+                font-size: 12px;
             }
         }
     }
@@ -2172,6 +2279,10 @@
             margin-bottom: 31px;
             color: rgba(255, 255, 255, 0.6);
             font-weight: 400;
+
+            @include mobile {
+                font-size: 16px;
+            }
         }
 
         &_btn {
@@ -2192,7 +2303,14 @@
 }
 
 .fourteen {
-    margin-top: 250px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+    @include mobile {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
 
     &__heading {
         .main-title__card {
@@ -2202,6 +2320,28 @@
         .main-title__card-radius__icon {
             height: 35px;
         }
+
+        &_block {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+
+            .main-title {
+                margin-right: 30px;
+
+                @include mobile {
+                    display: none;
+                }
+            }
+        }
+
+        &_mobile {
+            display: none;
+
+            @include mobile {
+                display: inline;
+            }
+        }
     }
 
 
@@ -2210,14 +2350,24 @@
 
         &_navigation {
             display: flex;
-            align-items: center;
             justify-content: space-between;
+
+            @include mobile {
+                overflow-x: auto;
+                padding-bottom: 25px;
+            }
         }
 
         &_title {
             width: 100%;
             max-width: 411px;
             padding: 19px 28px;
+
+            @include mobile {
+                min-width: 250px;
+                margin-right: 10px;
+                padding: 10px 15px;
+            }
         }
 
         &_title-img {
@@ -2232,13 +2382,45 @@
 
         &_body {}
     }
+
+    .main-subtitle {
+        margin-top: 40px;
+
+        @include mobile {
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
 }
 
 .fifteen {
-    margin-top: 250px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+    @include mobile {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
 
     &__heading {
         margin-bottom: 40px;
+
+        @include mobile {
+            .main-title {
+                text-align: center;
+            }
+        }
+
+    }
+
+    .main-title__card-radius {
+        border-radius: 8px;
+    }
+
+    .main-title__card-radius__icon {
+        object-fit: contain;
+
     }
 
 
@@ -2257,15 +2439,20 @@
         &_text {}
     }
 
-    // .fifteen__sensor
+
     &__sensor {
 
-        // .fifteen__sensor_content
+
         &_content {
             display: flex;
+            align-items: flex-start;
+
+            @include mobile {
+                flex-direction: column;
+            }
         }
 
-        // .fifteen__sensor_descrpt
+
         &_descrpt {
             display: flex;
             flex-direction: column;
@@ -2273,58 +2460,43 @@
             max-width: 940px;
         }
 
-        // .fifteen__sensor_title
+
         &_title {
             font-weight: 700;
             font-size: 36px;
             margin-bottom: 51px;
         }
 
-        // .fifteen__sensor_slider
+
         &_slider {
-            width: 410px;
-            height: 850px;
-            // position: relative;
+            width: 100%;
+            max-width: 410px;
+            position: relative;
+
+            .swiper-button-prev,
+            .swiper-rtl .swiper-button-next {
+                left: -50px;
+            }
+
+            .swiper-button-next,
+            .swiper-rtl .swiper-button-prev {
+                right: -50px;
+            }
         }
 
-        // .fifteen__sensor_wrapper
-        &_wrapper {}
-
-        // .fifteen__sensor_slide
-        &_slide {}
-
-        // .fifteen__sensor_slide-picture
         &_slide-picture {
             padding-top: 10%;
+
+            img {
+                height: 660px;
+                object-fit: contain;
+            }
         }
 
-        // .fifteen__sensor_slide-picture
-        &_slide-picture {}
 
-        // .fifteen__sensor_pagination
-        &_pagination {
-            top: 93%;
-        }
-
-        // .fifteen__sensor_button-arrows
-        &_button-arrows {
-            // position: absolute;
-            // top: 50%;
-            // width: 500px;
-        }
-
-        // .fifteen__sensor_button-prev
-        &_button {
-            &_prev {}
-        }
-
-        // .fifteen__sensor_button-next
-        &_button {
-            &_next {}
-        }
     }
 
-    // .fifteen__sensor-point
+
     &__sensor-point {
         display: flex;
         flex-direction: column;
@@ -2376,16 +2548,19 @@
         }
     }
 
-    // .fifteen__sensor-picture
     &__sensor-picture {
         padding-right: 35px;
+        position: relative;
+        width: 90%;
+
+        @include mobile {
+            width: 100%;
+        }
     }
 
-    // .fifteen__sensor-picture_img
     &__sensor-picture_img {
-        position: relative;
-        top: -21%;
-        left: -4%;
+        position: absolute;
+        top: -120px;
     }
 }
 
@@ -3261,5 +3436,66 @@
     &__img {
         height: 660px;
         object-fit: cover;
+    }
+}
+
+.twenty-seven {
+    &__title {}
+
+    &__subtitle {
+        margin-top: 20px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 26px;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &__block {
+        margin-top: 70px;
+    }
+
+    &__tabs {
+
+        &_head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__content {
+        margin-top: 60px;
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .card-item__block {
+        padding: 15px 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .card-item__block-img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .card-item__block-text {
+        color: rgba(255, 255, 255, 0.3);
+    }
+
+    &__slider {
+        &-one {
+            position: relative;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
     }
 }

@@ -206,12 +206,20 @@
     &__new {
         font-weight: 700;
         font-size: 40px;
+
+        @include mobile {
+            font-size: 30px;
+        }
     }
 
     &__old {
         font-size: 30px;
         color: #696969;
         text-decoration-line: line-through;
+
+        @include mobile {
+            font-size: 22px;
+        }
     }
 
     &-card {
@@ -455,6 +463,10 @@
     border-radius: 50px;
     border: 1px solid rgba(255, 255, 255, 0.6);
 
+    @include mobile {
+        padding: 7px 12px;
+    }
+
     &__icon {
         height: 18px;
         width: 18px;
@@ -466,6 +478,10 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 1.2;
+
+        @include mobile {
+            font-size: 12px;
+        }
     }
 }
 
