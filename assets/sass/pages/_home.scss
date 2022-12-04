@@ -1,7 +1,7 @@
 .first {
     position: relative;
 
-    @include mobile {
+    @include tablet {
         margin-top: 40px;
     }
 
@@ -10,7 +10,7 @@
         font-size: 36px;
         text-align: center;
 
-        @include mobile {
+        @include tablet {
             position: absolute;
             top: 110px;
             left: 0;
@@ -29,7 +29,7 @@
         position: relative;
         z-index: 2;
 
-        @include mobile {
+        @include tablet {
             font-size: 36px;
         }
 
@@ -39,7 +39,7 @@
             position: relative;
             z-index: 0;
 
-            @include mobile {
+            @include tablet {
                 margin: 0;
                 position: absolute;
                 top: 50px;
@@ -50,7 +50,7 @@
         }
 
         &_start {
-            @include mobile {
+            @include tablet {
                 top: 0;
                 position: absolute;
             }
@@ -76,7 +76,7 @@
             margin-right: 10px;
         }
 
-        @include mobile {
+        @include tablet {
             position: absolute;
             top: 180px;
             padding: 12px 20px;
@@ -93,7 +93,7 @@
         flex-direction: column;
         z-index: 3;
 
-        @include mobile {
+        @include tablet {
             margin-top: 200px;
         }
     }
@@ -104,7 +104,7 @@
         position: absolute;
         top: -150px;
 
-        @include mobile {
+        @include tablet {
             top: 0;
             position: relative;
         }
@@ -123,7 +123,7 @@
             font-size: 18px;
             margin-right: 15%;
 
-            @include mobile {
+            @include tablet {
                 padding: 15px 25px;
                 font-size: 14px;
                 margin: 30px 0 0;
@@ -144,7 +144,7 @@
         position: relative;
         z-index: 2;
 
-        @include mobile {
+        @include tablet {
             margin: 50px 0 0;
         }
     }
@@ -155,7 +155,7 @@
         text-align: right;
         margin-left: auto;
 
-        @include mobile {
+        @include tablet {
             margin-right: auto;
             text-align: center;
         }
@@ -167,14 +167,14 @@
         display: flex;
         margin-top: 30px;
 
-        @include mobile {
+        @include tablet {
             justify-content: center;
         }
 
         .main-btn {
             padding: 25px 40px;
 
-            @include mobile {
+            @include tablet {
                 padding: 15px 30px;
             }
         }
@@ -191,7 +191,7 @@
         border: 2px solid $main;
         margin-right: 15px;
 
-        @include mobile {
+        @include tablet {
             width: 62px;
             height: 62px;
         }
@@ -213,13 +213,13 @@
         position: relative;
         z-index: 2;
 
-        @include mobile {
+        @include tablet {
             flex-wrap: wrap;
             margin-top: 80px;
         }
 
         &_card {
-            @include mobile {
+            @include tablet {
                 width: 48%;
                 margin-bottom: 50px;
                 text-align: center;
@@ -235,7 +235,7 @@
             font-weight: 700;
             font-size: 48px;
 
-            @include mobile {
+            @include tablet {
                 font-size: 40px;
             }
         }
@@ -259,7 +259,7 @@
         padding: 40px;
         position: relative;
 
-        @include mobile {
+        @include tablet {
             background: none;
             padding: 0;
             flex-wrap: wrap;
@@ -268,7 +268,7 @@
         }
 
         &_action {
-            @include mobile {
+            @include tablet {
                 position: absolute;
                 top: 330px;
             }
@@ -277,7 +277,7 @@
         &_content {
             width: 50%;
 
-            @include mobile {
+            @include tablet {
                 width: 100%;
             }
         }
@@ -285,7 +285,7 @@
         &_preview {
             width: 45%;
 
-            @include mobile {
+            @include tablet {
                 width: 100%;
             }
         }
@@ -294,7 +294,7 @@
             font-weight: 800;
             font-size: 56px;
 
-            @include mobile {
+            @include tablet {
                 font-size: 26px;
                 text-align: center;
             }
@@ -304,7 +304,7 @@
             font-weight: 400;
             font-size: 24px;
 
-            @include mobile {
+            @include tablet {
                 font-size: 14px;
                 opacity: 0.6;
                 text-align: center;
@@ -315,14 +315,14 @@
             display: flex;
             align-items: center;
 
-            @include mobile {
+            @include tablet {
                 flex-wrap: wrap;
                 justify-content: center;
             }
         }
 
         &_button {
-            @include mobile {
+            @include tablet {
                 display: flex;
                 justify-content: center;
             }
@@ -335,7 +335,7 @@
         &_preview {
             position: relative;
 
-            @include mobile {
+            @include tablet {
                 position: absolute;
                 top: 100px;
             }
@@ -347,7 +347,7 @@
                 color: white;
                 text-decoration: none;
 
-                @include mobile {
+                @include tablet {
                     width: 100%;
                 }
             }
@@ -378,7 +378,7 @@
                 border-radius: 20px;
                 overflow: hidden;
 
-                @include mobile {
+                @include tablet {
                     width: 100%;
                     height: 180px;
                 }
@@ -414,7 +414,7 @@
     margin-top: 200px;
     margin-bottom: 300px;
 
-    @include mobile {
+    @include tablet {
         margin-bottom: 180px;
     }
 
@@ -424,14 +424,14 @@
         flex-wrap: wrap;
         align-items: center;
 
-        @include mobile {
+        @include tablet {
             margin-bottom: 30px;
         }
 
         &_left {
             width: 50%;
 
-            @include mobile {
+            @include tablet {
                 width: 100%;
             }
         }
@@ -439,7 +439,7 @@
         &_right {
             width: 50%;
 
-            @include mobile {
+            @include tablet {
                 width: 100%;
             }
         }
@@ -461,7 +461,7 @@
             display: flex;
             align-items: center;
 
-            @include mobile {
+            @include tablet {
                 margin-top: 20px;
                 padding: 15px;
             }
@@ -474,7 +474,7 @@
         }
 
         .main-subtitle {
-            @include mobile {
+            @include tablet {
                 text-align: center;
 
             }
@@ -490,7 +490,7 @@
         align-items: center;
         margin: 40px auto;
 
-        @include mobile {
+        @include tablet {
             display: none;
         }
 
@@ -528,7 +528,7 @@
         margin-bottom: 80px;
         position: relative;
 
-        @include mobile {
+        @include tablet {
             flex-direction: column;
         }
 
@@ -538,7 +538,7 @@
             z-index: 1;
             width: 100%;
 
-            @include mobile {
+            @include tablet {
                 position: absolute;
                 bottom: 0;
             }
@@ -549,7 +549,7 @@
                 position: absolute;
                 width: 120%;
 
-                @include mobile {
+                @include tablet {
                     top: -500px;
                     right: -250px;
                 }
@@ -572,7 +572,7 @@
             top: 140px;
             right: 0;
 
-            @include mobile {
+            @include tablet {
                 top: 40px;
             }
 
@@ -580,7 +580,7 @@
                 width: 34px;
                 margin-left: 170px;
 
-                @include mobile {
+                @include tablet {
                     margin: 0;
                     width: 25px;
                 }
@@ -592,7 +592,7 @@
                 font-weight: 400;
                 font-size: 18px;
 
-                @include mobile {
+                @include tablet {
                     font-size: 14px;
                 }
             }
@@ -603,7 +603,7 @@
             max-width: 330px;
             margin-right: 70px;
 
-            @include mobile {
+            @include tablet {
                 min-width: initial;
                 max-width: 300px;
                 margin-right: 0;
@@ -613,7 +613,7 @@
                 margin-top: 60px;
                 position: relative;
 
-                @include mobile {
+                @include tablet {
                     margin-top: 40px;
 
                     &._item-1 {
@@ -633,7 +633,7 @@
                     position: absolute;
                     min-width: 700px;
 
-                    @include mobile {
+                    @include tablet {
                         display: none;
                     }
 
@@ -669,7 +669,7 @@
         margin-top: 50px;
         justify-content: space-between;
 
-        @include mobile {
+        @include tablet {
             flex-direction: column;
         }
 
@@ -678,7 +678,7 @@
             min-width: 280px;
             margin-right: 40px;
 
-            @include mobile {
+            @include tablet {
                 width: 100%;
                 display: flex;
                 margin: 0 0 35px;
@@ -687,7 +687,7 @@
             &__text {
                 font-size: 20px;
 
-                @include mobile {
+                @include tablet {
                     font-size: 16px;
                 }
 
@@ -698,7 +698,7 @@
             }
 
             &__icon {
-                @include mobile {
+                @include tablet {
                     margin: 0;
                     width: 35px;
                     display: flex;
@@ -724,7 +724,7 @@
         font-size: 22px;
         opacity: 0.3;
 
-        @include mobile {
+        @include tablet {
             font-size: 18px;
         }
     }
@@ -733,7 +733,7 @@
         display: flex;
         justify-content: space-between;
 
-        @include mobile {
+        @include tablet {
             flex-direction: column-reverse;
         }
 
@@ -742,7 +742,7 @@
             max-width: 350px;
             height: 100%;
 
-            @include mobile {
+            @include tablet {
                 width: 100%;
                 max-width: 100%;
             }
@@ -751,7 +751,7 @@
         &_content {
             width: 70%;
 
-            @include mobile {
+            @include tablet {
                 width: 100%;
                 margin-bottom: 40px;
             }
@@ -768,7 +768,7 @@
                     bottom: 120px;
                     left: 43px;
 
-                    @include mobile {
+                    @include tablet {
                         width: 100%;
                         height: calc(100% - 30px);
                         bottom: 0;
@@ -794,7 +794,7 @@
             border-image-slice: 1;
             border-radius: 10px;
 
-            @include mobile {
+            @include tablet {
                 width: 100%;
                 max-width: 100%;
                 height: 145px;
@@ -818,7 +818,7 @@
                 object-fit: cover;
                 filter: brightness(0.3);
 
-                @include mobile {
+                @include tablet {
                     height: 145px;
                 }
             }
@@ -835,7 +835,7 @@
                 justify-content: space-between;
                 padding: 20px;
 
-                @include mobile {
+                @include tablet {
                     height: 145px;
                 }
 
@@ -857,7 +857,7 @@
     &__image {
         margin-top: 200px;
 
-        @include mobile {
+        @include tablet {
             margin-top: 100px;
         }
 
@@ -869,7 +869,7 @@
             align-items: flex-end;
             line-height: 1;
 
-            @include mobile {
+            @include tablet {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
@@ -883,7 +883,7 @@
                 font-size: 24px;
                 opacity: 0.6;
 
-                @include mobile {
+                @include tablet {
                     font-size: 18px;
                     margin-top: 15px;
                 }
@@ -911,7 +911,7 @@
             font-size: 40px;
             margin-bottom: 30px;
 
-            @include mobile {
+            @include tablet {
                 text-align: center;
                 font-size: 26px;
             }
@@ -921,7 +921,7 @@
             width: 60%;
             max-width: 750px;
 
-            @include mobile {
+            @include tablet {
                 width: 100%;
             }
         }
@@ -930,7 +930,7 @@
             width: 40%;
             max-width: 540px;
 
-            @include mobile {
+            @include tablet {
                 width: 100%;
             }
         }
@@ -944,7 +944,7 @@
                 font-weight: 400;
                 font-size: 28px;
 
-                @include mobile {
+                @include tablet {
                     font-size: 24px;
                     text-align: center;
                 }
@@ -953,7 +953,7 @@
             &_subtitle {
                 margin-top: 25px;
 
-                @include mobile {
+                @include tablet {
                     text-align: center;
                 }
             }
@@ -965,7 +965,7 @@
                 font-size: 45px;
                 color: rgba(255, 255, 255, 0.6);
 
-                @include mobile {
+                @include tablet {
                     font-size: 34px;
                 }
             }
@@ -982,7 +982,7 @@
                 text-align: center;
                 margin-top: 30px;
 
-                @include mobile {
+                @include tablet {
                     justify-content: space-between;
                 }
             }
@@ -992,7 +992,7 @@
                     height: 100px;
                 }
 
-                @include mobile {
+                @include tablet {
 
 
                     &_img {
@@ -1006,7 +1006,7 @@
                     height: 130px;
                 }
 
-                @include mobile {
+                @include tablet {
 
 
                     &_img {
@@ -1020,7 +1020,7 @@
                     height: 150px;
                 }
 
-                @include mobile {
+                @include tablet {
 
 
                     &_img {
@@ -1042,26 +1042,26 @@
                     margin-top: 10px;
                     display: inline-block;
 
-                    @include mobile {
+                    @include tablet {
                         font-size: 14px;
                     }
                 }
 
-                @include mobile {
+                @include tablet {
                     font-size: 14px;
                 }
             }
         }
 
         &_img {
-            @include mobile {
+            @include tablet {
                 margin-bottom: 50px;
             }
         }
     }
 
     .main-title {
-        @include mobile {
+        @include tablet {
             font-size: 22px;
         }
     }
@@ -1071,14 +1071,14 @@
     margin-top: 200px;
     margin-bottom: 200px;
 
-    @include mobile {
+    @include tablet {
         margin-top: 100px;
         margin-bottom: 100px;
     }
 
     .main-title,
     .main-subtitle {
-        @include mobile {
+        @include tablet {
             text-align: center;
         }
     }
@@ -1086,7 +1086,7 @@
     .main-title__card-radius {
         margin-top: 30px;
 
-        @include mobile {
+        @include tablet {
             width: 100%;
             border-radius: 5px;
             padding: 10px 12px;
@@ -1103,7 +1103,7 @@
         flex-wrap: wrap;
         margin-top: 30px;
 
-        @include mobile {
+        @include tablet {
             margin-top: 10px;
         }
 
@@ -1123,7 +1123,7 @@
             margin-top: 50px;
             margin-bottom: 40px;
 
-            @include mobile {
+            @include tablet {
                 font-size: 26px;
                 margin-bottom: 0;
                 text-align: center;
@@ -1143,7 +1143,7 @@
         justify-content: space-between;
 
 
-        @include mobile {
+        @include tablet {
             flex-direction: column;
             margin-top: 40px;
         }
@@ -1153,7 +1153,7 @@
             max-width: 350px;
             margin-right: 20px;
 
-            @include mobile {
+            @include tablet {
                 margin: 0 0 30px;
             }
         }
@@ -1167,7 +1167,7 @@
     }
 
     &__mobile {
-        @include mobile {
+        @include tablet {
             display: flex;
             flex-direction: column-reverse;
         }
@@ -1179,7 +1179,7 @@
     margin-bottom: 100px;
 
     .main-title__card_text {
-        @include mobile {
+        @include tablet {
             font-size: 16px;
         }
     }
@@ -1188,7 +1188,7 @@
         display: flex;
         align-items: center;
 
-        @include mobile {
+        @include tablet {
             flex-direction: column;
         }
 
@@ -1197,7 +1197,7 @@
         &_right {
             margin-left: auto;
 
-            @include mobile {
+            @include tablet {
                 margin: 30px 0 0;
             }
         }
@@ -1209,7 +1209,7 @@
         grid-template-columns: repeat(6, 1fr);
         gap: 10px;
 
-        @include mobile {
+        @include tablet {
             margin-top: 40px;
             grid-template-columns: repeat(2, 1fr);
         }
@@ -1232,7 +1232,7 @@
             font-weight: 700;
             font-size: 32px;
 
-            @include mobile {
+            @include tablet {
                 font-size: 26px;
             }
         }
@@ -1246,7 +1246,7 @@
             width: auto;
             padding: 8px 15px;
 
-            @include mobile {
+            @include tablet {
                 font-size: 16px;
                 text-align: center;
             }
@@ -1264,7 +1264,7 @@
     margin-top: 200px;
     margin-bottom: 200px;
 
-    @include mobile {
+    @include tablet {
         margin-top: 100px;
         margin-bottom: 100px;
     }
@@ -1274,7 +1274,7 @@
         align-items: center;
         margin-top: 30px;
 
-        @include mobile {
+        @include tablet {
             flex-direction: column;
         }
     }
@@ -1282,20 +1282,20 @@
     .main-subtitle__big {
         margin-right: 20px;
 
-        @include mobile {
+        @include tablet {
             margin: 0 0 30px;
         }
     }
 
     .main-title__card-radius {
-        @include mobile {
+        @include tablet {
             border-radius: 5px;
         }
     }
 
     .main-title,
     .main-subtitle__big {
-        @include mobile {
+        @include tablet {
             text-align: center;
         }
     }
@@ -1310,7 +1310,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
 
-        @include mobile {
+        @include tablet {
             margin-top: 10px;
             grid-template-columns: repeat(1, 1fr);
         }
@@ -1336,7 +1336,7 @@
             opacity: 0.3;
             margin: 0 auto;
 
-            @include mobile {
+            @include tablet {
                 font-size: 16px;
             }
         }
@@ -1350,7 +1350,7 @@
         align-items: center;
         margin-top: 30px;
 
-        @include mobile {
+        @include tablet {
             flex-direction: column;
         }
     }
@@ -1358,13 +1358,13 @@
     .main-subtitle__big {
         margin-right: 20px;
 
-        @include mobile {
+        @include tablet {
             margin: 0 0 30px;
         }
     }
 
     .main-title__card-radius {
-        @include mobile {
+        @include tablet {
             width: 100%;
             border-radius: 5px;
         }
@@ -1375,7 +1375,7 @@
         display: flex;
         justify-content: space-between;
 
-        @include mobile {
+        @include tablet {
             flex-direction: column;
             margin-top: 20px;
         }
@@ -1387,7 +1387,7 @@
         display: flex;
         flex-direction: column;
 
-        @include mobile {
+        @include tablet {
             width: 100%;
             margin-bottom: 40px;
         }
@@ -1409,7 +1409,7 @@
             border-radius: 10px;
             min-width: 520px;
 
-            @include mobile {
+            @include tablet {
                 flex-direction: column;
                 min-width: auto;
                 margin-top: 60px;
@@ -1426,7 +1426,7 @@
                 font-size: 23px;
                 margin-bottom: 6px;
 
-                @include mobile {
+                @include tablet {
                     text-align: center;
                 }
             }
@@ -1436,7 +1436,7 @@
                 font-size: 18px;
                 opacity: 0.6;
 
-                @include mobile {
+                @include tablet {
                     font-size: 16px;
                 }
             }
@@ -1447,7 +1447,7 @@
         width: 60%;
         max-width: 900px;
 
-        @include mobile {
+        @include tablet {
             width: 100%;
         }
 
@@ -1457,7 +1457,7 @@
             left: 42px;
             bottom: 110px;
 
-            @include mobile {
+            @include tablet {
                 height: calc(100% - 30px);
                 left: 0;
                 bottom: 0;
@@ -1468,7 +1468,7 @@
         .main-screen__bottom {
             height: 505px;
 
-            @include mobile {
+            @include tablet {
                 height: auto;
             }
         }
@@ -1479,7 +1479,7 @@
     margin-top: 200px;
     margin-bottom: 200px;
 
-    @include mobile {
+    @include tablet {
         margin-top: 100px;
         margin-bottom: 100px;
 
@@ -1492,7 +1492,7 @@
         display: flex;
         justify-content: space-between;
 
-        @include mobile {
+        @include tablet {
             flex-direction: column-reverse;
         }
     }
@@ -1501,7 +1501,7 @@
         width: 50%;
         max-width: 650px;
 
-        @include mobile {
+        @include tablet {
             width: 100%;
             margin-top: 30px;
         }
@@ -1516,7 +1516,7 @@
             font-weight: 400;
             font-size: 24px;
 
-            @include mobile {
+            @include tablet {
                 min-width: auto;
                 font-size: 18px;
                 margin-top: 30px;
@@ -1531,7 +1531,7 @@
                 opacity: 0.6;
                 font-size: 18px;
 
-                @include mobile {
+                @include tablet {
                     font-size: 16px;
                 }
             }
@@ -1542,7 +1542,7 @@
             font-size: 20px;
             margin-top: 40px;
 
-            @include mobile {
+            @include tablet {
                 font-size: 16px;
             }
         }
@@ -1559,7 +1559,7 @@
             display: flex;
             align-items: center;
 
-            @include mobile {
+            @include tablet {
                 flex-direction: column;
                 justify-content: center;
             }
@@ -1580,7 +1580,7 @@
                 border-radius: 38px;
                 padding: 16px 16px 16px 80px;
 
-                @include mobile {
+                @include tablet {
                     width: 100%;
                     left: 0;
                     padding: 0;
@@ -1605,7 +1605,7 @@
         position: relative;
         left: -40px;
 
-        @include mobile {
+        @include tablet {
             left: 0;
             margin-top: 30px;
         }
@@ -1613,7 +1613,7 @@
         &_item {
             width: 125%;
 
-            @include mobile {
+            @include tablet {
                 width: 100%;
             }
         }
@@ -1625,7 +1625,7 @@
     margin-top: 200px;
     margin-bottom: 200px;
 
-    @include mobile {
+    @include tablet {
         margin-top: 100px;
         margin-bottom: 100px;
 
@@ -1637,7 +1637,7 @@
     .main-subtitle {
         margin-right: 20px;
 
-        @include mobile {
+        @include tablet {
             margin: 0 0 20px;
             text-align: center;
         }
@@ -1646,7 +1646,7 @@
     .icon-card {
         width: 48%;
 
-        @include mobile {
+        @include tablet {
             width: 100%;
             margin-bottom: 30px;
         }
@@ -1656,7 +1656,7 @@
         font-weight: 400;
         font-size: 20px;
 
-        @include mobile {
+        @include tablet {
             font-size: 14px;
         }
     }
@@ -1668,7 +1668,7 @@
         align-items: center;
         justify-content: space-between;
 
-        @include mobile {
+        @include tablet {
             flex-direction: column;
             margin-top: 40px;
             margin-bottom: 20px;
@@ -1685,7 +1685,7 @@
             opacity: 0.3;
             margin-bottom: 30px;
 
-            @include mobile {
+            @include tablet {
                 font-size: 18px;
             }
         }
@@ -1696,7 +1696,7 @@
     margin-top: 200px;
     margin-bottom: 200px;
 
-    @include mobile {
+    @include tablet {
         margin-top: 100px;
         margin-bottom: 100px;
     }
@@ -1709,7 +1709,7 @@
         margin-left: auto;
         margin-right: auto;
 
-        @include mobile {
+        @include tablet {
             text-align: left;
         }
     }
@@ -1717,7 +1717,7 @@
     .main-subtitle {
         margin-top: 40px;
 
-        @include mobile {
+        @include tablet {
             margin-top: 20px;
         }
     }
@@ -1730,7 +1730,7 @@
         opacity: 0.3;
         text-align: center;
 
-        @include mobile {
+        @include tablet {
             font-size: 18px;
             margin-top: 40px;
             margin-bottom: 40px;
@@ -1741,7 +1741,7 @@
         display: flex;
         justify-content: center;
 
-        @include mobile {
+        @include tablet {
             flex-direction: column;
         }
     }
@@ -1756,7 +1756,7 @@
         margin-left: 20px;
         margin-right: 20px;
 
-        @include mobile {
+        @include tablet {
             margin-left: 0;
             margin-right: 0;
             margin-bottom: 20px;
@@ -1765,7 +1765,7 @@
         &_content {
             padding: 45px 60px 10px;
 
-            @include mobile {
+            @include tablet {
                 padding: 30px;
             }
         }
@@ -1776,7 +1776,7 @@
             text-align: center;
             margin-bottom: 20px;
 
-            @include mobile {
+            @include tablet {
                 font-size: 26px;
             }
         }
@@ -1814,7 +1814,7 @@
         &_text {
             color: #ffffff99;
 
-            @include mobile {
+            @include tablet {
                 font-size: 15px;
             }
         }
@@ -1826,7 +1826,7 @@
         opacity: 0.02;
         font-size: 91px;
 
-        @include mobile {
+        @include tablet {
             display: none;
         }
     }
@@ -1837,7 +1837,7 @@
     margin-top: 200px;
     margin-bottom: 200px;
 
-    @include mobile {
+    @include tablet {
         margin-top: 100px;
         margin-bottom: 100px;
 
@@ -1851,7 +1851,7 @@
         justify-content: space-between;
         align-items: center;
 
-        @include mobile {
+        @include tablet {
             flex-direction: column;
         }
 
@@ -1866,7 +1866,7 @@
             border-radius: 50px;
             box-shadow: 34px 4px 137px rgba(16, 120, 116, 0.06);
 
-            @include mobile {
+            @include tablet {
                 margin-top: 30px;
             }
 
@@ -1879,7 +1879,7 @@
                     color: $main;
                 }
 
-                @include mobile {
+                @include tablet {
                     font-size: 18px;
                 }
             }
@@ -1891,7 +1891,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
 
-        @include mobile {
+        @include tablet {
             grid-template-columns: repeat(2, 1fr);
             gap: 40px 20px;
         }
@@ -1915,7 +1915,7 @@
                 font-size: 22px;
                 margin-bottom: 8px;
 
-                @include mobile {
+                @include tablet {
                     font-size: 16px;
                 }
             }
@@ -1923,7 +1923,7 @@
             .icon-card__text {
                 font-size: 18px;
 
-                @include mobile {
+                @include tablet {
                     font-size: 14px;
                 }
             }
@@ -1955,7 +1955,7 @@
                 padding-left: 0;
             }
 
-            @include mobile {
+            @include tablet {
                 border: none;
                 padding: 0;
                 align-items: center;
@@ -1969,7 +1969,7 @@
     margin-top: 200px;
     margin-bottom: 200px;
 
-    @include mobile {
+    @include tablet {
         margin-top: 100px;
         margin-bottom: 100px;
     }
@@ -1979,7 +1979,7 @@
         max-width: 1000px;
         margin-bottom: 40px;
 
-        @include mobile {
+        @include tablet {
             margin-bottom: 30px;
         }
     }
@@ -1991,7 +1991,7 @@
     &__block {
         display: flex;
 
-        @include mobile {
+        @include tablet {
             flex-direction: column-reverse;
         }
     }
@@ -1999,7 +1999,7 @@
     &__content {
         width: 50%;
 
-        @include mobile {
+        @include tablet {
             width: 100%;
         }
     }
@@ -2017,7 +2017,7 @@
     &__img {
         width: 50%;
 
-        @include mobile {
+        @include tablet {
             width: 100%;
         }
 
@@ -2027,7 +2027,7 @@
             top: -80px;
             left: -50px;
 
-            @include mobile {
+            @include tablet {
                 left: 0;
                 top: 0;
                 width: 100%;
@@ -2047,7 +2047,7 @@
             align-items: center;
         }
 
-        @include mobile {
+        @include tablet {
             width: 100%;
 
             text-align: center;
@@ -2074,7 +2074,7 @@
     margin-top: 200px;
     margin-bottom: 200px;
 
-    @include mobile {
+    @include tablet {
         margin-top: 100px;
         margin-bottom: 100px;
 
@@ -2093,7 +2093,7 @@
         z-index: 2;
         margin-bottom: 93px;
 
-        @include mobile {
+        @include tablet {
             margin-bottom: 40px;
         }
     }
@@ -2110,7 +2110,7 @@
         position: relative;
         z-index: 2;
 
-        @include mobile {
+        @include tablet {
             flex-direction: column;
         }
     }
@@ -2143,7 +2143,7 @@
         position: relative;
         margin-top: 150px;
 
-        @include mobile {
+        @include tablet {
             margin-top: 100px;
         }
 
@@ -2152,7 +2152,7 @@
             align-items: flex-end;
             margin-bottom: 41px;
 
-            @include mobile {
+            @include tablet {
                 flex-direction: column;
                 align-items: center;
             }
@@ -2171,7 +2171,7 @@
             font-weight: 400;
             opacity: 0.6;
 
-            @include mobile {
+            @include tablet {
                 margin: 20px 0 0;
                 font-size: 16px;
             }
@@ -2183,7 +2183,7 @@
         column-gap: 37px;
         row-gap: 37px;
 
-        @include mobile {
+        @include tablet {
             justify-content: space-between;
             flex-wrap: wrap;
             column-gap: 10px;
@@ -2201,7 +2201,7 @@
             border-radius: 12px;
             padding: 35px 21px 35px 21px;
 
-            @include mobile {
+            @include tablet {
                 width: 48%;
                 height: auto;
                 padding: 20px 10px;
@@ -2212,7 +2212,7 @@
             height: 170px;
             object-fit: contain;
 
-            @include mobile {
+            @include tablet {
                 height: 92px;
             }
         }
@@ -2229,7 +2229,7 @@
             text-align: center;
             margin-bottom: 22px;
 
-            @include mobile {
+            @include tablet {
                 font-size: 14px;
                 margin-top: 9px;
             }
@@ -2248,7 +2248,7 @@
                 }
             }
 
-            @include mobile {
+            @include tablet {
                 font-size: 12px;
             }
         }
@@ -2280,7 +2280,7 @@
             color: rgba(255, 255, 255, 0.6);
             font-weight: 400;
 
-            @include mobile {
+            @include tablet {
                 font-size: 16px;
             }
         }
@@ -2306,7 +2306,7 @@
     margin-top: 200px;
     margin-bottom: 200px;
 
-    @include mobile {
+    @include tablet {
         margin-top: 100px;
         margin-bottom: 100px;
     }
@@ -2329,7 +2329,7 @@
             .main-title {
                 margin-right: 30px;
 
-                @include mobile {
+                @include tablet {
                     display: none;
                 }
             }
@@ -2338,7 +2338,7 @@
         &_mobile {
             display: none;
 
-            @include mobile {
+            @include tablet {
                 display: inline;
             }
         }
@@ -2352,7 +2352,7 @@
             display: flex;
             justify-content: space-between;
 
-            @include mobile {
+            @include tablet {
                 overflow-x: auto;
                 padding-bottom: 25px;
             }
@@ -2363,7 +2363,7 @@
             max-width: 411px;
             padding: 19px 28px;
 
-            @include mobile {
+            @include tablet {
                 min-width: 250px;
                 margin-right: 10px;
                 padding: 10px 15px;
@@ -2386,7 +2386,7 @@
     .main-subtitle {
         margin-top: 40px;
 
-        @include mobile {
+        @include tablet {
             text-align: center;
             padding-left: 20px;
             padding-right: 20px;
@@ -2398,7 +2398,7 @@
     margin-top: 200px;
     margin-bottom: 200px;
 
-    @include mobile {
+    @include tablet {
         margin-top: 100px;
         margin-bottom: 100px;
     }
@@ -2406,7 +2406,7 @@
     &__heading {
         margin-bottom: 40px;
 
-        @include mobile {
+        @include tablet {
             .main-title {
                 text-align: center;
             }
@@ -2447,7 +2447,7 @@
             display: flex;
             align-items: flex-start;
 
-            @include mobile {
+            @include tablet {
                 flex-direction: column;
             }
         }
@@ -2553,7 +2553,7 @@
         position: relative;
         width: 90%;
 
-        @include mobile {
+        @include tablet {
             width: 100%;
         }
     }
