@@ -2420,7 +2420,6 @@
 
     .main-title__card-radius__icon {
         object-fit: contain;
-
     }
 
 
@@ -2476,11 +2475,19 @@
             .swiper-button-prev,
             .swiper-rtl .swiper-button-next {
                 left: -50px;
+
+                @include tablet {
+                    left: 0;
+                }
             }
 
             .swiper-button-next,
             .swiper-rtl .swiper-button-prev {
                 right: -50px;
+
+                @include tablet {
+                    right: 0;
+                }
             }
         }
 
@@ -2490,6 +2497,10 @@
             img {
                 height: 660px;
                 object-fit: contain;
+
+                @include mobile {
+                    height: 570px;
+                }
             }
         }
 
@@ -2504,13 +2515,13 @@
         width: 100%;
         max-width: 575px;
 
-        // .fifteen__sensor-point_item
+
         &_item {
             display: flex;
             align-items: center;
         }
 
-        // .fifteen__sensor-point_picture
+
         &_picture {
             position: relative;
 
@@ -2519,7 +2530,7 @@
             }
         }
 
-        // .fifteen__sensor-point_picture-num
+
         &_picture-num {
             position: absolute;
             top: -10px;
@@ -2536,13 +2547,13 @@
             justify-content: center;
         }
 
-        // .fifteen__sensor-point_picture-img
+
         &_picture-img {
             width: auto;
             height: 50px;
         }
 
-        // .fifteen__sensor-point_text
+
         &_text {
             line-height: 27px;
         }
@@ -2555,26 +2566,45 @@
 
         @include tablet {
             width: 100%;
+            padding: 0;
+            margin-top: 30px;
         }
     }
 
     &__sensor-picture_img {
         position: absolute;
         top: -120px;
+
+        @include tablet {
+            position: relative;
+            top: 0;
+        }
     }
 }
 
 .sixteen {
     margin-top: 200px;
+    margin-bottom: 200px;
 
-    // .sixteen__wrapper
-    &__wrapper {
-        display: flex;
-        background: linear-gradient(276.53deg, #121212 3.6%, #1D1D1D 104.04%), #D9D9D9;
-        border-radius: 12px;
+    @include tablet {
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
 
-    // .sixteen__block-left
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(276.53deg, #121212 3.6%, #1D1D1D 104.04%), #D9D9D9;
+        border-radius: 12px;
+
+        @include tablet {
+            padding: 15px;
+            flex-direction: column;
+        }
+    }
+
+
     &__block-left {
         display: flex;
         flex-direction: column;
@@ -2582,7 +2612,11 @@
         max-width: 825px;
         padding: 47px 0 45px 59px;
 
-        // .sixteen__block-left_title
+        @include tablet {
+            padding: 0;
+        }
+
+
         &_title {
             font-size: 50px;
             font-weight: 800;
@@ -2590,7 +2624,7 @@
             margin-bottom: 34px;
         }
 
-        // .sixteen__block-left_text
+
         &_text {
             font-weight: 400;
             font-size: 22px;
@@ -2598,31 +2632,31 @@
             margin-bottom: 48px;
         }
 
-        // .sixteen__block-left_subtext
+
         &_subtext {
             margin-bottom: 12px;
         }
 
-        // .sixteen__block-left_price-block
+
         &_price-block {
             display: flex;
             position: relative;
         }
 
-        // .sixteen__block-left_price
+
         &_price {
             display: flex;
             align-items: center;
             column-gap: 16px;
         }
 
-        // .sixteen__block-left_price-new
+
         &_price-new {}
 
-        // .sixteen__block-left_price-old
+
         &_price-old {}
 
-        // .sixteen__block-left_price-btn
+
         &_price-btn {
             position: absolute;
             right: -30px;
@@ -2631,21 +2665,21 @@
             align-items: center;
         }
 
-        // .sixteen__block-left_price-btn-b
+
         &_price-btn-b {
             padding: 17px 37px;
             line-height: 22px;
             z-index: 2;
         }
 
-        // .sixteen__block-left_price-btn-info
+
         &_price-btn-info {
             max-height: 45px;
             padding: 11px 19px 11px 80px;
         }
     }
 
-    // .sixteen__block-right
+
     &__block-right {
         position: relative;
 
@@ -2664,6 +2698,8 @@
         // .sixteen__block-right_picture
         &_picture {
             display: flex;
+            height: 100%;
+            align-items: flex-end;
         }
 
         // .sixteen__block-right_picture-img
