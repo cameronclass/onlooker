@@ -40,7 +40,7 @@
     <div class="container-fluid">
       <div class="header__block">
         <a href="#" class="header__logo">
-          <img class="header__logo_img" src="assets/img/logo.svg" alt="">
+          <img class="header__logo_img lazyload" src="assets/img/logo.svg" alt="images">
           <span class="header__logo_text">Видеорегистратор- <br> автопланшет</span>
         </a>
         <div class="header__sidebar">
@@ -62,17 +62,23 @@
     <section class="first">
       <div class="container">
         <div class="first__title">Onlooker M84 Pro</div>
-        <div class="first__subtitle">Комбо
+        <div class="first__subtitle">
+          <span class="first__subtitle_start">Комбо</span>
           <span class="first__shield">
-            <img class="first__shield_img" src="assets/img/icons/shield.svg" alt="">
+            <img class="first__shield_img" src="assets/img/icons/shield.svg" alt="images">
             <span>Теперь вы в полной безопасности на дороге</span>
           </span>
         </div>
         <div class="first__subtitle first__subtitle_end">устройство 5в1</div>
         <div class="first__block">
-          <div class="first__img"><img src="assets/img/section-1/1.png" alt=""></div>
+          <div class="first__img">
+            <picture>
+              <source srcset="assets/img/section-1/1.webp" type="image/webp">
+              <img loading="lazy" class="lazyload" src="assets/img/section-1/1.png" alt="images">
+            </picture>
+          </div>
           <div class="first__img_about">
-            <img class="first__img_icon" src="assets/img/icons/percent.svg" alt="">
+            <img class="first__img_icon lazyload" src="assets/img/icons/percent.svg" alt="images">
             <span class="first__img_text">Экономия <b>от 26 000 руб.</b> , если покупать все отдельно</span>
           </div>
           <div class="first__right">
@@ -84,19 +90,24 @@
               </div>
             </div>
             <div class="first__controls">
-              <button class="first__play"><img src="assets/img/icons/play.svg" alt=""></button>
+              <button class="first__play"><img class="lazyload" src="assets/img/icons/play.svg" alt="images"></button>
               <button class="first__buy main-btn">Заказать видеорегистратор</button>
             </div>
           </div>
         </div>
-        <div class="first__bg"><img src="assets/img/bg/1.png" alt=""></div>
+        <div class="first__bg">
+          <picture>
+            <source srcset="assets/img/bg/1.webp" type="image/webp">
+            <img  loading="lazy" class="lazyload" src="assets/img/bg/1.png" alt="images">
+          </picture>
+        </div>
         <div class="first__about">
           <div class="first__about_card">
             <div class="first__about_title">1 200</div>
             <div class="first__about_text">положительных отзывов</div>
           </div>
           <div class="first__about_card">
-            <div class="first__about_title">5 <img class="first__about_card_icon" src="assets/img/icons/star.svg" alt=""></div>
+            <div class="first__about_title">5 <img class="first__about_card_icon lazyload" src="assets/img/icons/star.svg" alt="images"></div>
             <div class="first__about_text">В рейтинге на Яндекс <br> Маркете</div>
           </div>
           <div class="first__about_card">
@@ -113,21 +124,28 @@
           <div class="first__video_content">
             <div class="first__video_subtitle mb-3">Смотрите полный видео-обзор устройства</div>
             <div class="first__video_title mb-5">Onlooker M84 PRO 4g</div>
-            <div class="first__video_price">
-              <div class="price__new me-3">17 990 ₽</div>
-              <div class="price__old me-3">24 890₽</div>
-              <div class="price__subtitle">До 22 августа 2022 года</div>
+            <div class="first__video_action">
+              <div class="first__video_price">
+                <div class="price__new me-3">17 990 ₽</div>
+                <div class="price__old me-3">24 890₽</div>
+                <div class="price__subtitle">До 22 августа 2022 года</div>
+              </div>
+              <div class="first__video_button">
+                <button class="main-btn mt-4">Заказать видеорегистратор</button>
+              </div>
             </div>
-            <button class="main-btn mt-4">Заказать видеорегистратор</button>
           </div>
           <div class="first__video_preview">
             <a class="first__video_preview_link" href="#">
               <span class="first__video_preview_subtitle">Видео-обзор</span>
               <span class="first__video_preview_title">Onlooker M84 Pro</span>
               <span class="first__video_preview_img">
-                <img src="assets/img/video/2.png" alt="">
+                <picture>
+                  <source srcset="assets/img/video/2.webp" type="image/webp">
+                  <img class="first__video_preview_item lazyload" loading="lazy" src="assets/img/video/2.png" alt="images">
+                </picture>
                 <span class="first__video_preview_block">
-                  <img class="first__video_preview_icon" src="assets/img/icons/play-white.svg" alt="">
+                  <img class="first__video_preview_icon lazyload" src="assets/img/icons/play-white.svg" alt="images">
                 </span>
               </span>
             </a>
@@ -143,7 +161,7 @@
         <div class="second__heading">
           <div class="second__heading_left">
             <div class="main-title">
-              <img class="main-title__icon" src="assets/img/icons/camera.svg" alt="">
+              <img class="main-title__icon lazyload" src="assets/img/icons/camera.svg" alt="images">
               <span>Видеорегистратор</span>
             </div>
             <div class="main-subtitle">
@@ -152,7 +170,7 @@
           </div>
           <div class="second__heading_right">
             <div class="main-title__card second__heading_block">
-              <div class="main-title__card_icon"><img src="assets/img/icons/security-camera.svg" alt=""></div>
+              <div class="main-title__card_icon"><img class="lazyload" src="assets/img/icons/security-camera.svg" alt="images"></div>
               <div class="main-title__card_text">В случае ДТП <span class="main-color">вы будете
                   защищены</span> и сможете доказать свою невиновность</div>
             </div>
@@ -161,23 +179,29 @@
         <div class="second__about">
           <div class="second__about_title">Позволяет видеть:</div>
           <div class="second__about_card">
-            <div class="second__about_icon"><img class="second__about_img" src="assets/img/icons/directions_car.svg" alt=""></div>
+            <div class="second__about_icon"><img class="second__about_img lazyload" src="assets/img/icons/directions_car.svg" alt="images"></div>
             <div class="second__about_text">Номера авто</div>
           </div>
           <div class="second__about_card">
-            <div class="second__about_icon"><img class="second__about_img" src="assets/img/icons/warning.svg" alt=""></div>
+            <div class="second__about_icon"><img class="second__about_img lazyload" src="assets/img/icons/warning.svg" alt="images"></div>
             <div class="second__about_text">Дорожные знаки</div>
           </div>
           <div class="second__about_card">
-            <div class="second__about_icon"><img class="second__about_img" src="assets/img/icons/directions_run.svg" alt=""></div>
+            <div class="second__about_icon"><img class="second__about_img lazyload" src="assets/img/icons/directions_run.svg" alt="images"></div>
             <div class="second__about_text">Пешеходов</div>
           </div>
         </div>
 
         <div class="main-screen">
           <div class="main-screen__block">
-            <img class="main-screen__bottom" src="assets/img/screen.png" alt="">
-            <img class="main-screen__top" src="assets/img/screen/1.jpg" alt="">
+            <picture>
+              <source srcset="assets/img/screen.webp" type="image/webp">
+              <img loading="lazy" class="main-screen__bottom lazyload" src="assets/img/screen.png" alt="images">
+            </picture>
+						<picture>
+              <source srcset="assets/img/screen/1.webp" type="image/webp">
+              <img loading="lazy" class="main-screen__top lazyload" src="assets/img/screen/1.jpg" alt="images">
+            </picture>
           </div>
         </div>
 
@@ -187,34 +211,37 @@
         <div class="second__camera">
           <div class="second__camera_cards">
             <div class="custom-card-c">
-              <div class="custom-card-c__icon"><img class="custom-card-c__icon_img" src="assets/img/icons/1080p.svg" alt=""></div>
+              <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/icons/1080p.svg" alt="images"></div>
               <div class="custom-card-c__title">Высокое качество съемки</div>
               <div class="custom-card-c__text">Разрешение Full HD 1080p, 12MP, F=1.8</div>
-              <img class="custom-card-c__line custom-card-c__line_1" src="assets/img/section-2/line1.svg" alt="">
+              <img class="custom-card-c__line custom-card-c__line_1 lazyload" src="assets/img/section-2/line1.svg" alt="images">
             </div>
-            <div class="custom-card-c">
-              <div class="custom-card-c__icon"><img class="custom-card-c__icon_img" src="assets/img/icons/6g-glass.svg" alt=""></div>
+            <div class="custom-card-c _item-1">
+              <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/icons/6g-glass.svg" alt="images"></div>
               <div class="custom-card-c__title">Оптика 6G+</div>
               <div class="custom-card-c__text">Разрешение Full HD 1080p, 12MP, F=1.8</div>
-              <img class="custom-card-c__line custom-card-c__line_2" src="assets/img/section-2/line2.svg" alt="">
+              <img class="custom-card-c__line custom-card-c__line_2 lazyload" src="assets/img/section-2/line2.svg" alt="images">
             </div>
-            <div class="custom-card-c">
-              <div class="custom-card-c__icon"><img class="custom-card-c__icon_img" src="assets/img/icons/camera-lens.svg" alt=""></div>
+            <div class="custom-card-c _item-2">
+              <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/icons/camera-lens.svg" alt="images"></div>
               <div class="custom-card-c__title">Высокое качество съемки</div>
               <div class="custom-card-c__text">Разрешение Full HD 1080p, 12MP, F=1.8</div>
-              <img class="custom-card-c__line custom-card-c__line_3" src="assets/img/section-2/line3.svg" alt="">
+              <img class="custom-card-c__line custom-card-c__line_3 lazyload" src="assets/img/section-2/line3.svg" alt="images">
             </div>
             <div class="custom-card-c">
-              <div class="custom-card-c__icon"><img class="custom-card-c__icon_img" src="assets/img/icons/capacitor.svg" alt=""></div>
+              <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/icons/capacitor.svg" alt="images"></div>
               <div class="custom-card-c__title">Высокое качество съемки</div>
               <div class="custom-card-c__text">Разрешение Full HD 1080p, 12MP, F=1.8</div>
-              <img class="custom-card-c__line custom-card-c__line_4" src="assets/img/section-2/line4.svg" alt="">
+              <img class="custom-card-c__line custom-card-c__line_4 lazyload" src="assets/img/section-2/line4.svg" alt="images">
             </div>
           </div>
           <div class="second__camera_img">
-            <img class="second__camera_img_item" src="assets/img/section-2/camera.png" alt="">
+            <picture>
+              <source srcset="assets/img/section-2/camera.webp" type="image/webp">
+              <img loading="lazy" class="second__camera_img_item lazyload" src="assets/img/section-2/camera.png" alt="images">
+            </picture>
             <div class="second__camera_text">
-              <img class="second__camera_text_icon" src="assets/img/section-2/camera-lens.svg" alt="">
+              <img class="second__camera_text_icon lazyload" src="assets/img/section-2/camera-lens.svg" alt="images">
               <span class="second__camera_text_text">Камера поворачивается под нужным углом</span>
             </div>
           </div>
@@ -230,19 +257,19 @@
         </div>
         <div class="third__cards">
           <div class="custom-card-c">
-            <div class="custom-card-c__icon"><img class="custom-card-c__icon_img" src="assets/img/icons/electronics.svg" alt=""></div>
+            <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/icons/electronics.svg" alt="images"></div>
             <div class="custom-card-c__text">Видны номера, лица, знаки <span class="custom-card-c__text_white">при съемке до 10 метров</span></div>
           </div>
           <div class="custom-card-c">
-            <div class="custom-card-c__icon"><img class="custom-card-c__icon_img" src="assets/img/icons/optical.svg" alt=""></div>
+            <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/icons/optical.svg" alt="images"></div>
             <div class="custom-card-c__text">Оптическая стабилизация <span class="custom-card-c__text_white"> не дает размытия и ряби</span></div>
           </div>
           <div class="custom-card-c">
-            <div class="custom-card-c__icon"><img class="custom-card-c__icon_img" src="assets/img/icons/6g-glass.svg" alt=""></div>
+            <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/icons/6g-glass.svg" alt="images"></div>
             <div class="custom-card-c__text">Изображение <span class="custom-card-c__text_white">не бликует от фонарей</span></div>
           </div>
           <div class="custom-card-c">
-            <div class="custom-card-c__icon"><img class="custom-card-c__icon_img" src="assets/img/icons/idea.svg" alt=""></div>
+            <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/icons/idea.svg" alt="images"></div>
             <div class="custom-card-c__text">Технология WDR <span class="custom-card-c__text_white">дает четкую картинку при перепаде уровня освещенности, </span> например при выезде из тоннеля</div>
           </div>
         </div>
@@ -254,41 +281,59 @@
         <div class="third__video">
           <div class="third__video_cards">
             <a href="" class="third__video_card">
-              <img class="third__video_card_img" src="assets/img/section-3/1.png" alt="">
+              <picture>
+                <source srcset="assets/img/section-3/1.webp" type="image/webp">
+                <img loading="lazy" class="third__video_card_img lazyload" src="assets/img/section-3/1.png" alt="images">
+              </picture>
               <div class="third__video_card_content">
                 <span class="third__video_card_content_text">Передняя камера днем</span>
-                <img class="third__video_card_content_icon" src="assets/img/section-3/play.svg" alt="">
+                <img class="third__video_card_content_icon lazyload" src="assets/img/section-3/play.svg" alt="images">
               </div>
             </a>
             <a href="" class="third__video_card">
-              <img class="third__video_card_img" src="assets/img/section-3/2.png" alt="">
+              <picture>
+                <source srcset="assets/img/section-3/2.webp" type="image/webp">
+                <img loading="lazy" class="third__video_card_img lazyload" src="assets/img/section-3/2.png" alt="images">
+              </picture>
               <div class="third__video_card_content">
                 <span class="third__video_card_content_text">Передняя камера днем</span>
-                <img class="third__video_card_content_icon" src="assets/img/section-3/play.svg" alt="">
+                <img class="third__video_card_content_icon lazyload" src="assets/img/section-3/play.svg" alt="images">
               </div>
             </a>
             <a href="" class="third__video_card">
-              <img class="third__video_card_img" src="assets/img/section-3/3.png" alt="">
+              <picture>
+                <source srcset="assets/img/section-3/3.webp" type="image/webp">
+                <img loading="lazy" class="third__video_card_img lazyload" src="assets/img/section-3/3.png" alt="images">
+              </picture>
               <div class="third__video_card_content">
                 <span class="third__video_card_content_text">Задняя камера днем</span>
-                <img class="third__video_card_content_icon" src="assets/img/section-3/play.svg" alt="">
+                <img class="third__video_card_content_icon lazyload" src="assets/img/section-3/play.svg" alt="images">
               </div>
             </a>
             <a href="" class="third__video_card">
-              <img class="third__video_card_img" src="assets/img/section-3/4.png" alt="">
+              <picture>
+                <source srcset="assets/img/section-3/4.webp" type="image/webp">
+                <img loading="lazy" class="third__video_card_img lazyload" src="assets/img/section-3/4.png" alt="images">
+              </picture>
               <div class="third__video_card_content">
                 <span class="third__video_card_content_text">Задняя камера ночью</span>
-                <img class="third__video_card_content_icon" src="assets/img/section-3/play.svg" alt="">
+                <img class="third__video_card_content_icon lazyload" src="assets/img/section-3/play.svg" alt="images">
               </div>
             </a>
           </div>
           <div class="third__video_content">
             <div class="main-screen">
               <div class="main-screen__block">
-                <img class="main-screen__bottom" src="assets/img/screen.png" alt="">
-                <img class="main-screen__top" src="assets/img/section-3/1.png" alt="">
+                <picture>
+                  <source srcset="assets/img/screen.webp" type="image/webp">
+                  <img loading="lazy" class="main-screen__bottom lazyload" src="assets/img/screen.png" alt="images">
+                </picture>
+                <picture>
+                  <source srcset="assets/img/section-3/1.webp" type="image/webp">
+                  <img loading="lazy" class="main-screen__top lazyload" src="assets/img/section-3/1.png" alt="images">
+                </picture>
                 <div class="main-screen__play">
-                  <img class="main-screen__icon" src="assets/img/icons/play.svg" alt="">
+                  <img class="main-screen__icon lazyload" src="assets/img/icons/play.svg" alt="images">
                 </div>
               </div>
             </div>
@@ -305,8 +350,14 @@
           </div>
           <div class="main-screen mt-4">
             <div class="main-screen__block">
-              <img class="main-screen__bottom" src="assets/img/screen.png" alt="">
-              <img class="main-screen__top" src="assets/img/section-3/image.png" alt="">
+              <picture>
+                <source srcset="assets/img/screen.webp" type="image/webp">
+                <img loading="lazy" class="main-screen__bottom lazyload" src="assets/img/screen.png" alt="images">
+              </picture>
+              <picture>
+                <source srcset="assets/img/section-3/image.webp" type="image/webp">
+                <img loading="lazy" class="main-screen__top lazyload" src="assets/img/section-3/image.png" alt="images">
+              </picture>
             </div>
           </div>
         </div>
@@ -315,7 +366,10 @@
           <div class="third__sd_left">
             <div class="third__sd_title">Сохраняет все данные о поездке в реальном времени через GPS</div>
             <div class="third__sd_img">
-              <img src="assets/img/section-3/sd-img.png" alt="">
+              <picture>
+                <source srcset="assets/img/section-3/sd-img.webp" type="image/webp">
+                <img loading="lazy" class="lazyload" src="assets/img/section-3/sd-img.png" alt="images">
+              </picture>
             </div>
           </div>
           <div class="third__sd_right">
@@ -330,15 +384,15 @@
               </div>
               <div class="third__sd_card_block">
                 <div class="third__sd_card_8">
-                  <img class="third__sd_card_8_img" src="assets/img/section-3/8gb.svg" alt="">
+                  <img class="third__sd_card_8_img lazyload" src="assets/img/section-3/8gb.svg" alt="images">
                   <span class="third__sd_card_text">25 минут</span>
                 </div>
                 <div class="third__sd_card_32">
-                  <img class="third__sd_card_32_img" src="assets/img/section-3/32gb.svg" alt="">
+                  <img class="third__sd_card_32_img lazyload" src="assets/img/section-3/32gb.svg" alt="images">
                   <span class="third__sd_card_text">120 минут</span>
                 </div>
                 <div class="third__sd_card_64">
-                  <img class="third__sd_card_64_img" src="assets/img/section-3/64gb.svg" alt="">
+                  <img class="third__sd_card_64_img lazyload" src="assets/img/section-3/64gb.svg" alt="images">
                   <span class="third__sd_card_text_white">до <b>720 минут</b></span>
                 </div>
               </div>
@@ -351,60 +405,68 @@
     <!-- fourth -->
     <section class="fourth">
       <div class="container">
-        <div class="fourth__title">
-          <img class="fourth__title_icon" src="assets/img/icons/radar.svg" alt="">
+        <div class="main-title">
+          <img class="main-title__icon lazyload" src="assets/img/icons/radar.svg" alt="images">
           <span>GPS радар-детектор-информатор</span>
         </div>
         <div class="fourth__heading">
-          <div class="fourth__subtitle">
+          <div class="main-subtitle fourth__heading_left">
             предупредит о стационарных <span class="main-color">камерах и опасностях</span> на дороге
             <span class="main-color">за 500-1000 метров</span>
           </div>
           <div class="main-title__card-radius">
-            <img class="main-title__card-radius__icon" src="assets/img/icons/no-wifi.svg" alt="">
+            <img class="main-title__card-radius__icon lazyload" src="assets/img/icons/no-wifi.svg" alt="images">
             <div class="main-title__card-radius__text">Даже в зоне, <b>где нет интернета и связи</b></div>
           </div>
         </div>
         <div class="fourth__title_2">Работает на базе проверенного приложения <span class="color-red">еСтрелка</span></div>
-        <div class="fourth__about">
-          <div class="icon-card fourth__about_card">
-            <div class="icon-card__icon">
-              <img class="icon-card__icon_img" src="assets/img/icons/license.svg" alt="">
+        <div class="fourth__mobile">
+          <div class="fourth__about">
+            <div class="icon-card fourth__about_card">
+              <div class="icon-card__icon">
+                <img class="icon-card__icon_img lazyload" src="assets/img/icons/license.svg" alt="images">
+              </div>
+              <div class="icon-card__content">
+                <div class="icon-card__title">Включена пожизненная лицензия</div>
+              </div>
             </div>
-            <div class="icon-card__content">
-              <div class="icon-card__title">Включена пожизненная лицензия</div>
+            <div class="icon-card fourth__about_card">
+              <div class="icon-card__icon">
+                <img class="icon-card__icon_img lazyload" src="assets/img/icons/update.svg" alt="images">
+              </div>
+              <div class="icon-card__content">
+                <div class="icon-card__title">Автоматические ежедневные обновления через интернет без
+                  подключения к ПК и смартфону</div>
+              </div>
+            </div>
+            <div class="icon-card fourth__about_card">
+              <div class="icon-card__icon">
+                <img class="icon-card__icon_img lazyload" src="assets/img/icons/google-play.svg" alt="images">
+              </div>
+              <div class="icon-card__content">
+                <div class="icon-card__title">Больше 100 тыс скачиваний в GooglePlay и 9к отзывов</div>
+              </div>
+            </div>
+            <div class="icon-card fourth__about_card">
+              <div class="icon-card__icon">
+                <img class="icon-card__icon_img lazyload" src="assets/img/icons/vision.svg" alt="images">
+              </div>
+              <div class="icon-card__content">
+                <div class="icon-card__title">Нет ложных срабатываний</div>
+              </div>
             </div>
           </div>
-          <div class="icon-card fourth__about_card">
-            <div class="icon-card__icon">
-              <img class="icon-card__icon_img" src="assets/img/icons/update.svg" alt="">
+          <div class="main-screen mt-5">
+            <div class="main-screen__block">
+              <picture>
+                <source srcset="assets/img/screen.webp" type="image/webp">
+                <img loading="lazy" class="main-screen__bottom lazyload" src="assets/img/screen.png" alt="images">
+              </picture>
+              <picture>
+                <source srcset="assets/img/section-4/1.webp" type="image/webp">
+                <img loading="lazy" class="main-screen__top lazyload" src="assets/img/section-4/1.png" alt="images">
+              </picture>
             </div>
-            <div class="icon-card__content">
-              <div class="icon-card__title">Автоматические ежедневные обновления через интернет без
-                подключения к ПК и смартфону</div>
-            </div>
-          </div>
-          <div class="icon-card fourth__about_card">
-            <div class="icon-card__icon">
-              <img class="icon-card__icon_img" src="assets/img/icons/google-play.svg" alt="">
-            </div>
-            <div class="icon-card__content">
-              <div class="icon-card__title">Больше 100 тыс скачиваний в GooglePlay и 9к отзывов</div>
-            </div>
-          </div>
-          <div class="icon-card fourth__about_card">
-            <div class="icon-card__icon">
-              <img class="icon-card__icon_img" src="assets/img/icons/vision.svg" alt="">
-            </div>
-            <div class="icon-card__content">
-              <div class="icon-card__title">Нет ложных срабатываний</div>
-            </div>
-          </div>
-        </div>
-        <div class="main-screen mt-5">
-          <div class="main-screen__block">
-            <img class="main-screen__bottom" src="assets/img/screen.png" alt="">
-            <img class="main-screen__top" src="assets/img/section-4/1.png" alt="">
           </div>
         </div>
       </div>
@@ -415,61 +477,61 @@
       <div class="container">
         <div class="fifth__heading">
           <div class="fifth__heading_left">
-            <div class="fifth__title">Определяет все известные камеры и засады</div>
+            <div class="main-title main-title__notcase">Определяет все известные камеры и засады</div>
           </div>
           <div class="fifth__heading_right main-title__card">
-            <div class="main-title__card_icon"><img src="assets/img/icons/base_camera.svg" alt=""></div>
+            <div class="main-title__card_icon"><img class="lazyload" src="assets/img/icons/base_camera.svg" alt="images"></div>
             <div class="main-title__card_text">В базе <span class="main-color">более 60 000 камер</span> и других
               объектов России, СНГ, Европы</div>
           </div>
         </div>
         <div class="fifth__cards">
           <div class="custom-card-b-c">
-            <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img" src="assets/img/icons/policeman.svg" alt=""></div>
+            <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img lazyload" src="assets/img/icons/policeman.svg" alt="images"></div>
             <div class="custom-card-b-c__text">Посты ДПС</div>
           </div>
           <div class="custom-card-b-c">
-            <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img" src="assets/img/icons/traffic-light.svg" alt=""></div>
+            <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img lazyload" src="assets/img/icons/traffic-light.svg" alt="images"></div>
             <div class="custom-card-b-c__text">Контроль автобусной полосы и перекрестков</div>
           </div>
           <div class="custom-card-b-c">
-            <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img" src="assets/img/icons/arrow.svg" alt=""></div>
+            <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img lazyload" src="assets/img/icons/arrow.svg" alt="images"></div>
             <div class="custom-card-b-c__text">Стрелка</div>
           </div>
           <div class="custom-card-b-c">
-            <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img" src="assets/img/icons/avtodoriya.svg" alt=""></div>
+            <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img lazyload" src="assets/img/icons/avtodoriya.svg" alt="images"></div>
             <div class="custom-card-b-c__text">Автодория</div>
           </div>
           <div class="custom-card-b-c">
-            <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img" src="assets/img/icons/robot.svg" alt=""></div>
+            <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img lazyload" src="assets/img/icons/robot.svg" alt="images"></div>
             <div class="custom-card-b-c__text">Robot</div>
           </div>
           <div class="custom-card-b-c">
-            <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img" src="assets/img/icons/avtouragan.svg" alt=""></div>
+            <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img lazyload" src="assets/img/icons/avtouragan.svg" alt="images"></div>
             <div class="custom-card-b-c__text">Автоураган</div>
           </div>
           <div class="custom-card-b-c">
-            <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img" src="assets/img/icons/flow.svg" alt=""></div>
+            <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img lazyload" src="assets/img/icons/flow.svg" alt="images"></div>
             <div class="custom-card-b-c__text">Поток</div>
           </div>
           <div class="custom-card-b-c">
-            <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img" src="assets/img/icons/chris.svg" alt=""></div>
+            <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img lazyload" src="assets/img/icons/chris.svg" alt="images"></div>
             <div class="custom-card-b-c__text">Крис</div>
           </div>
           <div class="custom-card-b-c">
-            <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img" src="assets/img/icons/lira.svg" alt=""></div>
+            <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img lazyload" src="assets/img/icons/lira.svg" alt="images"></div>
             <div class="custom-card-b-c__text">Лира</div>
           </div>
           <div class="custom-card-b-c">
-            <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img" src="assets/img/icons/kordon.svg" alt=""></div>
+            <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img lazyload" src="assets/img/icons/kordon.svg" alt="images"></div>
             <div class="custom-card-b-c__text">Кордон</div>
           </div>
           <div class="custom-card-b-c">
-            <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img" src="assets/img/icons/arena.svg" alt=""></div>
+            <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img lazyload" src="assets/img/icons/arena.svg" alt="images"></div>
             <div class="custom-card-b-c__text">Арена</div>
           </div>
           <div class="custom-card-b-c">
-            <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img" src="assets/img/icons/krechet.svg" alt=""></div>
+            <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img lazyload" src="assets/img/icons/krechet.svg" alt="images"></div>
             <div class="custom-card-b-c__text">Кречет</div>
           </div>
         </div>
@@ -480,9 +542,9 @@
           </div>
           <div class="d-flex justify-content-center">
             <div class="main-btn-white fifth__footer_text">
-              <img class="fifth__footer_icon" src="assets/img/icons/shield.svg" alt="">
+              <img class="fifth__footer_icon lazyload" src="assets/img/icons/shield.svg" alt="images">
               Вы успеваете заранее среагировать и затормозить
-              <img class="fifth__footer_icon" src="assets/img/icons/shield.svg" alt="">
+              <img class="fifth__footer_icon lazyload" src="assets/img/icons/shield.svg" alt="images">
             </div>
           </div>
 
@@ -495,16 +557,16 @@
       <div class="container">
 
         <div class="main-title">
-          <img class="main-title__icon" src="assets/img/icons/satellite-dish.svg" alt="">
-          <span>Мультиплатформенный GPS навигатор</span>
+          <img class="main-title__icon lazyload" src="assets/img/icons/satellite-dish.svg" alt="images">
+          <span>Мульти-платформенный GPS навигатор</span>
         </div>
 
-        <div class="mt-4 d-flex align-items-center">
-          <div class="main-subtitle__big me-5">
+        <div class="sixth__heading">
+          <div class="main-subtitle__big">
             работает даже <span class="main-color">без доступа к интернет</span>
           </div>
           <div class="main-title__card-radius">
-            <img class="main-title__card-radius__icon" src="assets/img/icons/directions.svg" alt="">
+            <img class="main-title__card-radius__icon lazyload" src="assets/img/icons/directions.svg" alt="images">
             <div class="main-title__card-radius__text">Дает уверенность при поездках в любом городе</div>
           </div>
         </div>
@@ -512,7 +574,7 @@
         <div class="sixth__about">
           <div class="icon-card sixth__about_card">
             <div class="icon-card__icon">
-              <img class="icon-card__icon_img" src="assets/img/icons/google-play.svg" alt="">
+              <img class="icon-card__icon_img lazyload" src="assets/img/icons/google-play.svg" alt="images">
             </div>
             <div class="icon-card__content">
               <div class="icon-card__title">
@@ -526,7 +588,7 @@
           </div>
           <div class="icon-card sixth__about_card">
             <div class="icon-card__icon">
-              <img class="icon-card__icon_img" src="assets/img/icons/processor.svg" alt="">
+              <img class="icon-card__icon_img lazyload" src="assets/img/icons/processor.svg" alt="images">
             </div>
             <div class="icon-card__content">
               <div class="icon-card__title">
@@ -541,7 +603,7 @@
           </div>
           <div class="icon-card sixth__about_card">
             <div class="icon-card__icon">
-              <img class="icon-card__icon_img" src="assets/img/icons/internet-speed.svg" alt="">
+              <img class="icon-card__icon_img lazyload" src="assets/img/icons/internet-speed.svg" alt="images">
             </div>
             <div class="icon-card__content">
               <div class="icon-card__title">
@@ -554,7 +616,7 @@
           </div>
           <div class="icon-card sixth__about_card">
             <div class="icon-card__icon">
-              <img class="icon-card__icon_img" src="assets/img/icons/gps.svg" alt="">
+              <img class="icon-card__icon_img lazyload" src="assets/img/icons/gps.svg" alt="images">
             </div>
             <div class="icon-card__content">
               <div class="icon-card__title">
@@ -567,7 +629,7 @@
           </div>
           <div class="icon-card sixth__about_card">
             <div class="icon-card__icon">
-              <img class="icon-card__icon_img" src="assets/img/icons/voice-search.svg" alt="">
+              <img class="icon-card__icon_img lazyload" src="assets/img/icons/voice-search.svg" alt="images">
             </div>
             <div class="icon-card__content">
               <div class="icon-card__title">
@@ -580,7 +642,7 @@
           </div>
           <div class="icon-card sixth__about_card">
             <div class="icon-card__icon">
-              <img class="icon-card__icon_img" src="assets/img/icons/satellite.svg" alt="">
+              <img class="icon-card__icon_img lazyload" src="assets/img/icons/satellite.svg" alt="images">
             </div>
             <div class="icon-card__content">
               <div class="icon-card__title">
@@ -600,8 +662,14 @@
           </div>
           <div class="main-screen mt-4">
             <div class="main-screen__block">
-              <img class="main-screen__bottom" src="assets/img/screen.png" alt="">
-              <img class="main-screen__top" src="assets/img/section-6/1.png" alt="">
+              <picture>
+                <source srcset="assets/img/screen.webp" type="image/webp">
+                <img loading="lazy" class="main-screen__bottom lazyload" src="assets/img/screen.png" alt="images">
+              </picture>
+              <picture>
+                <source srcset="assets/img/section-6/1.webp" type="image/webp">
+                <img loading="lazy" class="main-screen__top lazyload" src="assets/img/section-6/1.png" alt="images">
+              </picture>
             </div>
           </div>
 
@@ -617,12 +685,12 @@
           <span>Размер сенсорного IPS экрана 7 дюймов</span>
         </div>
 
-        <div class="mt-4 d-flex align-items-center">
+        <div class="seventh__heading">
           <div class="main-subtitle__big me-5">
             Даже в солнечную погоду <span class="main-color">нет бликов </span>
           </div>
           <div class="main-title__card-radius">
-            <img class="main-title__card-radius__icon" src="assets/img/icons/vision-002.svg" alt="">
+            <img class="main-title__card-radius__icon lazyload" src="assets/img/icons/vision-002.svg" alt="images">
             <div class="main-title__card-radius__text">Информация считывается легко</div>
           </div>
         </div>
@@ -630,18 +698,18 @@
         <div class="seventh__block">
           <div class="seventh__about">
             <div class="custom-card-c">
-              <div class="custom-card-c__icon"><img class="custom-card-c__icon_img" src="assets/img/icons/fighting.svg" alt=""></div>
+              <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/icons/fighting.svg" alt="images"></div>
               <div class="custom-card-c__title">Экран защищен от ударов</div>
               <div class="custom-card-c__text">прочным стеклом, дополнительно наклеена пленка</span></div>
             </div>
             <div class="custom-card-c">
-              <div class="custom-card-c__icon"><img class="custom-card-c__icon_img" src="assets/img/icons/apple.svg" alt=""></div>
+              <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/icons/apple.svg" alt="images"></div>
               <div class="custom-card-c__title">IPS матрица</div>
               <div class="custom-card-c__text">производится на том же заводе, где изготавливают дисплей для устройств Apple</span></div>
             </div>
 
             <div class="seventh__about_block">
-              <img class="seventh__about_block_icon" src="assets/img/icons/360-degree.svg" alt="">
+              <img class="seventh__about_block_icon lazyload" src="assets/img/icons/360-degree.svg" alt="images">
               <div class="seventh__about_block_content">
                 <div class="seventh__about_block_title">Углы обзора:</div>
                 <div class="seventh__about_block_text">
@@ -657,8 +725,14 @@
 
             <div class="main-screen">
               <div class="main-screen__block">
-                <img class="main-screen__bottom" src="assets/img/screen.png" alt="">
-                <img class="main-screen__top" src="assets/img/section-3/1.png" alt="">
+                <picture>
+                  <source srcset="assets/img/screen.webp" type="image/webp">
+                  <img loading="lazy" class="main-screen__bottom lazyload" src="assets/img/screen.png" alt="images">
+                </picture>
+                <picture>
+                  <source srcset="assets/img/section-3/1.webp" type="image/webp">
+                  <img loading="lazy" class="main-screen__top lazyload" src="assets/img/section-3/1.png" alt="images">
+                </picture>
               </div>
             </div>
 
@@ -693,11 +767,14 @@
               <span class="eighth__content_btn_info">и получить Навител в подарок</span>
             </div>
             <div class="eighth__content_text">
-              Так же можно сразу получить 2 года лицензии Навител - Узнать как
+              Так же можно сразу получить 2 года лицензии Навител - <a class="eighth__content_link" href="#">Узнать как</a>
             </div>
           </div>
           <div class="eighth__img">
-            <img class="eighth__img_item" src="assets/img/section-8/1.png" alt="">
+            <picture>
+              <source srcset="assets/img/section-8/1.webp" type="image/webp">
+              <img loading="lazy" class="eighth__img_item lazyload" src="assets/img/section-8/1.png" alt="images">
+            </picture>
           </div>
         </div>
 
@@ -708,16 +785,16 @@
     <section class="ninth">
       <div class="container">
         <div class="main-title main-title__notcase">
-          <img class="main-title__icon" src="assets/img/icons/car-on-tablet.svg" alt="">
+          <img class="main-title__icon lazyload" src="assets/img/icons/car-on-tablet.svg" alt="images">
           <span>Автомобильный планшет на Android 8.1</span>
         </div>
 
-        <div class="mt-4 d-flex align-items-center">
-          <div class="main-subtitle me-5">
+        <div class="seventh__heading">
+          <div class="main-subtitle">
             Полный аналог Android магнитолы, <span class="main-color">только лучше</span>
           </div>
           <div class="main-title__card">
-            <img class="main-title__card-radius__icon" src="assets/img/icons/019-google-play.svg" alt="">
+            <img class="main-title__card-radius__icon lazyload" src="assets/img/icons/019-google-play.svg" alt="images">
             <div class="main-title__card-radius__text">с возможностью скачивания приложений <b>с Google Play</b></div>
           </div>
         </div>
@@ -725,7 +802,7 @@
         <div class="ninth__about">
           <div class="icon-card">
             <div class="icon-card__icon">
-              <img class="icon-card__icon_img" src="assets/img/icons/chip.svg" alt="">
+              <img class="icon-card__icon_img lazyload" src="assets/img/icons/chip.svg" alt="images">
             </div>
             <div class="icon-card__content">
               <div class="icon-card__text">
@@ -736,7 +813,7 @@
           </div>
           <div class="icon-card">
             <div class="icon-card__icon">
-              <img class="icon-card__icon_img" src="assets/img/icons/processor.svg" alt="">
+              <img class="icon-card__icon_img lazyload" src="assets/img/icons/processor.svg" alt="images">
             </div>
             <div class="icon-card__content">
               <div class="icon-card__text">
@@ -750,8 +827,14 @@
 
           <div class="main-screen">
             <div class="main-screen__block">
-              <img class="main-screen__bottom" src="assets/img/screen.png" alt="">
-              <img class="main-screen__top" src="assets/img/section-3/1.png" alt="">
+              <picture>
+                <source srcset="assets/img/screen.webp" type="image/webp">
+                <img loading="lazy" class="main-screen__bottom lazyload" src="assets/img/screen.png" alt="images">
+              </picture>
+              <picture>
+                <source srcset="assets/img/section-3/1.webp" type="image/webp">
+                <img loading="lazy" class="main-screen__top lazyload" src="assets/img/section-3/1.png" alt="images">
+              </picture>
             </div>
           </div>
         </div>
@@ -762,111 +845,91 @@
     <!-- tenth -->
     <section class="tenth">
       <div class="container">
-        <div class="tenth__heading">
-          <div class="tenth__heading_title">
-            Onlooker M84 PRO - так же
-            и <span class="main-color">замена магнитоле</span> на Android
-          </div>
-          <div class="tenth__heading_subtitle">
-            Если вы задумывались об установке
-            <b>отдельной Android магнитолы</b>
-          </div>
+        <div class="main-title main-title__notcase">
+          Onlooker M84 PRO - так же
+          и <span class="main-color">замена магнитоле</span> на Android
         </div>
-        <div class="tenth__about">
-          <div class="tenth__about_title">
-            Посмотрите минусы такого варианта
-          </div>
-          <div class="tenth__about_info">
-            <div class="tenth__about_info_card">
-              <div class="tenth__about_info_card_img">
-                <img class="tenth__about_card_img-v1" src="assets/img/section-10/1.png" alt="">
-              </div>
-              <div class="tenth__about_info_card_desc">
-                <div class="tenth__about_info_card_desc_title">
-                  ANDROID магнитола
+        <div class="main-subtitle">
+          Если вы задумывались об установке
+          <b>отдельной Android магнитолы</b>
+        </div>
+
+        <div class="tenth__subtitle">Посмотрите минусы такого варианта</div>
+
+        <div class="tenth__cards">
+          <div class="tenth__card">
+            <picture>
+              <source srcset="assets/img/section-10/1.webp" type="image/webp">
+              <img loading="lazy" class="tenth__card_img lazyload" src="assets/img/section-10/1.png" alt="images">
+            </picture>
+            <div class="tenth__card_content">
+              <div class="tenth__card_title">ANDROID магнитола</div>
+              <div class="tenth__card_list">
+                <div class="tenth__card_icon">
+                  <img class="tenth__card_icon_item lazyload" src="assets/img/icons/negative.svg" alt="images">
                 </div>
-                <div class="tenth__about_info_card_desc_column">
-                  <div class="tenth__about_info_card_desc_column_line"></div>
-                  <div class="tenth__about_info_card_desc_column_text">
-                    <div class="tenth__about_info_card_desc_column_text_icon">
-                      <img src="assets/img/icons/negative.svg" alt="">
-                    </div>
-                    <div class="tenth__about_info_card_desc_column_text_subtitle">
-                      Нужно платить деньги
-                      за подключение, <span class="tenth__about_info_card_desc_column_text_subtitle_v2">если
-                        не можешь сделать сам</span>
-                    </div>
-                  </div>
-                  <div class="tenth__about_info_card_desc_column_line"></div>
-                  <div class="tenth__about_info_card_desc_column_text">
-                    <div class="tenth__about_info_card_desc_column_text_icon">
-                      <img src="assets/img/icons/negative.svg" alt="">
-                    </div>
-                    <div class="tenth__about_info_card_desc_column_text_subtitle">
-                      <span class="tenth__about_info_card_desc_column_text_subtitle_v2">Приходится</span>
-                      разбирать
-                      всю переднюю часть авто,
-                      <span class="tenth__about_info_card_desc_column_text_subtitle_v2">чтобы
-                        провести провода автомагнитолы</span>
-                    </div>
-                  </div>
-                  <div class="tenth__about_info_card_desc_column_line"></div>
-                  <div class="tenth__about_info_card_desc_column_text">
-                    <div class="tenth__about_info_card_desc_column_text_icon">
-                      <img src="assets/img/icons/negative.svg" alt="">
-                    </div>
-                    <div class="tenth__about_info_card_desc_column_text_subtitle">
-                      Есть риск спалить проводку <span class="tenth__about_info_card_desc_column_text_subtitle_v2">автомобиля</span>
-                    </div>
-                  </div>
+                <div class="tenth__card_text">
+                  <span class="color-white"><b>Нужно платить деньги за подключение,</b></span> если не можешь сделать сам
                 </div>
               </div>
+              <div class="tenth__card_list">
+                <div class="tenth__card_icon">
+                  <img class="tenth__card_icon_item lazyload" src="assets/img/icons/negative.svg" alt="images">
+                </div>
+                <div class="tenth__card_text">
+                  Приходится <span class="color-white"><b>разбирать всю переднюю часть авто,</b></span> чтобы провести провода автомагнитолы
+                </div>
+              </div>
+
+              <div class="tenth__card_list">
+                <div class="tenth__card_icon">
+                  <img class="tenth__card_icon_item lazyload" src="assets/img/icons/negative.svg" alt="images">
+                </div>
+                <div class="tenth__card_text">
+                  <span class="color-white"><b>Есть риск спалить проводку </b></span> автомобиля
+                </div>
+              </div>
+
             </div>
-            <div class="tenth__about_info_card">
-              <div class="tenth__about_info_card_img">
-                <img class="tenth__about_card_img-v1" src="assets/img/section-10/2.png" alt="">
-              </div>
-              <div class="tenth__about_info_card_desc">
-                <div class="tenth__about_info_card_desc_title">
-                  Onlooker M84 Pro
+          </div>
+          <div class="tenth__card">
+            <picture>
+              <source srcset="assets/img/section-10/2.webp" type="image/webp">
+              <img loading="lazy" class="tenth__card_img lazyload" src="assets/img/section-10/2.png" alt="images">
+            </picture>
+            <div class="tenth__card_content">
+              <div class="tenth__card_title">Onlooker M84 Pro</div>
+              <div class="tenth__card_list">
+                <div class="tenth__card_icon">
+                  <img class="tenth__card_icon_item lazyload" src="assets/img/icons/positive.svg" alt="images">
                 </div>
-                <div class="tenth__about_info_card_desc_column">
-                  <div class="tenth__about_info_card_desc_column_line"></div>
-                  <div class="tenth__about_info_card_desc_column_text">
-                    <div class="tenth__about_info_card_desc_column_text_icon">
-                      <img src="assets/img/icons/positive.svg" alt="">
-                    </div>
-                    <div class="tenth__about_info_card_desc_column_text_subtitle">
-                      Не надо никому платить. <span class="tenth__about_info_card_desc_column_text_subtitle_v2">Все умеют
-                        подключать в прикуриватель</span>
-                    </div>
-                  </div>
-                  <div class="tenth__about_info_card_desc_column_line"></div>
-                  <div class="tenth__about_info_card_desc_column_text">
-                    <div class="tenth__about_info_card_desc_column_text_icon">
-                      <img src="assets/img/icons/positive.svg" alt="">
-                    </div>
-                    <div class="tenth__about_info_card_desc_column_text_subtitle">
-                      Подключается <span class="tenth__about_info_card_desc_column_text_subtitle_v2">через
-                        прикуриватель</span> за минуту
-                    </div>
-                  </div>
-                  <div class="tenth__about_info_card_desc_column_line"></div>
-                  <div class="tenth__about_info_card_desc_column_text">
-                    <div class="tenth__about_info_card_desc_column_text_icon">
-                      <img src="assets/img/icons/positive.svg" alt="">
-                    </div>
-                    <div class="tenth__about_info_card_desc_column_text_subtitle">
-                      <span class="tenth__about_info_card_desc_column_text_subtitle_v2">Устройство
-                        никак</span> не затрагивает проводку <span class="tenth__about_info_card_desc_column_text_subtitle_v2"> авто</span>
-                    </div>
-                  </div>
+                <div class="tenth__card_text">
+                  <span class="color-white"><b>Не надо никому платить. </b></span> Все умеют подключать в прикуриватель
                 </div>
               </div>
+              <div class="tenth__card_list">
+                <div class="tenth__card_icon">
+                  <img class="tenth__card_icon_item lazyload" src="assets/img/icons/positive.svg" alt="images">
+                </div>
+                <div class="tenth__card_text">
+                  <span class="color-white"><b>Подключается</b></span> через прикуриватель <span class="color-white"><b>за минуту</b></span>
+                </div>
+              </div>
+
+              <div class="tenth__card_list">
+                <div class="tenth__card_icon">
+                  <img class="tenth__card_icon_item lazyload" src="assets/img/icons/positive.svg" alt="images">
+                </div>
+                <div class="tenth__card_text">
+                  Устройство никак <span class="color-white"><b>не затрагивает проводку </b></span> авто
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
-        <div class="tenth_footer">
+
+        <div class="tenth__footer">
           Onlooker M84 PRO
         </div>
       </div>
@@ -876,7 +939,7 @@
     <section class="eleventh">
       <div class="container">
         <div class="eleventh__heading">
-          <div class="eleventh__heading_title">
+          <div class="main-title main-title__notcase">
             Технические характеристики Onlooker M84 PRO
           </div>
           <div class="eleventh__heading_info">
@@ -891,49 +954,49 @@
         </div>
         <div class="eleventh__about">
           <div class="icon-card eleventh__about_card">
-            <img class="icon-card__icon _borderless" src="assets/img/icons/processor.svg" alt="">
+            <img class="icon-card__icon _borderless lazyload" src="assets/img/icons/processor.svg" alt="images">
             <div class="icon-card__title">Мощный процессор</div>
             <div class="icon-card__text">На борту четырехъядерный CORTEX-A7 1.5*4 GHZ</div>
           </div>
           <div class="icon-card eleventh__about_card">
-            <img class="icon-card__icon _borderless" src="assets/img/icons/wifi.svg" alt="">
+            <img class="icon-card__icon _borderless lazyload" src="assets/img/icons/wifi.svg" alt="images">
             <div class="icon-card__title">Быстрое подключение</div>
             <div class="icon-card__text">Подключение к интернету 3G, 4G через Sim карту</div>
           </div>
           <div class="icon-card eleventh__about_card">
-            <img class="icon-card__icon _borderless" src="assets/img/icons/resolution.svg" alt="">
+            <img class="icon-card__icon _borderless lazyload" src="assets/img/icons/resolution.svg" alt="images">
             <div class="icon-card__title">Задняя камера</div>
             <div class="icon-card__text">Разрешение съёмки задней камеры - HD 1280х720 25к/с</div>
           </div>
 
           <div class="icon-card eleventh__about_card">
-            <img class="icon-card__icon _borderless" src="assets/img/icons/1080p.svg" alt="">
+            <img class="icon-card__icon _borderless lazyload" src="assets/img/icons/1080p.svg" alt="images">
             <div class="icon-card__title">Разрешение FULL HD</div>
             <div class="icon-card__text">съёмка передней камеры в FULL HD 1920х1080P 30к/с</div>
           </div>
           <div class="icon-card eleventh__about_card">
-            <img class="icon-card__icon _borderless" src="assets/img/icons/satellite-dish.svg" alt="">
+            <img class="icon-card__icon _borderless lazyload" src="assets/img/icons/satellite-dish.svg" alt="images">
             <div class="icon-card__title">GPS/GLONASS Навигация</div>
             <div class="icon-card__text">Поддержка любых онлайн и офлайн карт (Я.Навигатор, Google Map, Навител и т.д)</div>
           </div>
           <div class="icon-card eleventh__about_card">
-            <img class="icon-card__icon _borderless" src="assets/img/icons/camera-lens.svg" alt="">
+            <img class="icon-card__icon _borderless lazyload" src="assets/img/icons/camera-lens.svg" alt="images">
             <div class="icon-card__title">Светосильный объектив 6G</div>
             <div class="icon-card__text">+ стеклянные линзы с диафрагмой 1.8</div>
           </div>
 
           <div class="icon-card eleventh__about_card">
-            <img class="icon-card__icon _borderless" src="assets/img/icons/360-degree-green.svg" alt="">
+            <img class="icon-card__icon _borderless lazyload" src="assets/img/icons/360-degree-green.svg" alt="images">
             <div class="icon-card__title">Широкий угол обзора</div>
             <div class="icon-card__text">Угол обзора передней камеры: 170°</div>
           </div>
           <div class="icon-card eleventh__about_card">
-            <img class="icon-card__icon _borderless" src="assets/img/icons/ram.svg" alt="">
+            <img class="icon-card__icon _borderless lazyload" src="assets/img/icons/ram.svg" alt="images">
             <div class="icon-card__title">Оперативная память</div>
             <div class="icon-card__text">2 Gb DDR3, повышают быстродействие</div>
           </div>
           <div class="icon-card eleventh__about_card">
-            <img class="icon-card__icon _borderless" src="assets/img/icons/memory-card.svg" alt="">
+            <img class="icon-card__icon _borderless lazyload" src="assets/img/icons/memory-card.svg" alt="images">
             <div class="icon-card__title">Вместительное хранилище</div>
             <div class="icon-card__text">32 Gb встроенной памяти</div>
           </div>
@@ -950,38 +1013,43 @@
           <div class="twelfth__content">
             <div class="twelfth__tags">
               <div class="custom-tag">
-                <img class="custom-tag__icon" src="assets/img/section-12/1.svg" alt="">
+                <img class="custom-tag__icon lazyload" src="assets/img/section-12/1.svg" alt="images">
                 <span class="custom-tag__text">Видеорегистратор</span>
               </div>
               <div class="custom-tag">
-                <img class="custom-tag__icon" src="assets/img/section-12/2.svg" alt="">
+                <img class="custom-tag__icon lazyload" src="assets/img/section-12/2.svg" alt="images">
                 <span class="custom-tag__text">Навигатор</span>
               </div>
               <div class="custom-tag">
-                <img class="custom-tag__icon" src="assets/img/section-12/3.svg" alt="">
+                <img class="custom-tag__icon lazyload" src="assets/img/section-12/3.svg" alt="images">
                 <span class="custom-tag__text">GPS радар-детектор</span>
               </div>
               <div class="custom-tag">
-                <img class="custom-tag__icon" src="assets/img/section-12/4.svg" alt="">
+                <img class="custom-tag__icon lazyload" src="assets/img/section-12/4.svg" alt="images">
                 <span class="custom-tag__text">Автопланшет</span>
               </div>
               <div class="custom-tag">
-                <img class="custom-tag__icon" src="assets/img/section-12/5.svg" alt="">
+                <img class="custom-tag__icon lazyload" src="assets/img/section-12/5.svg" alt="images">
                 <span class="custom-tag__text">Ассистент парковки</span>
               </div>
             </div>
             <div class="main-subtitle twelfth__subtitle">и сэкономьте 6900₽</div>
             <div class="twelfth__price">
-              <div class="price__subtitle mb-3">Скидка до 22 августа 2022 года</div>
+              <div class="price__subtitle">Скидка до 22 августа 2022 года</div>
               <div class="twelfth__price_block">
-                <div class="price__new me-3">17 990 ₽</div>
-                <div class="price__old me-5">24 890₽</div>
+                <div class="twelfth__price_section">
+                  <div class="price__new">17 990 ₽</div>
+                  <div class="price__old">24 890₽</div>
+                </div>
                 <button class="main-btn main-btn-small">Купить со скидкой</button>
               </div>
             </div>
           </div>
           <div class="twelfth__img">
-            <img class="twelfth__img_img" src="assets/img/section-12/main.png" alt="">
+            <picture>
+              <source srcset="assets/img/section-12/main.webp" type="image/webp">
+              <img loading="lazy" class="twelfth__img_img lazyload" src="assets/img/section-12/main.png" alt="images">
+            </picture>
           </div>
         </div>
       </div>
@@ -993,11 +1061,11 @@
 
         <div class="thirteen__heading">
           <div class="main-title">
-            <img class="main-title__icon" src="/assets/img/icons/parked-car.svg" alt="parked-car">
+            <img class="main-title__icon lazyload" src="/assets/img/icons/parked-car.svg" alt="parked-car">
             <span>АССИСТЕНТ ПАРКОВКИ</span>
           </div>
           <div class="main-title__card-radius">
-            <img class="main-title__card-radius__icon" src="/assets/img/icons/parking-lot-white.svg" alt="">
+            <img class="main-title__card-radius__icon lazyload" src="/assets/img/icons/parking-lot-white.svg" alt="images">
             <div class="main-title__card-radius__text">Теперь парковка будет <span>легкой</span></div>
           </div>
         </div>
@@ -1005,7 +1073,7 @@
         <div class="thirteen__about">
           <div class="icon-card">
             <div class="icon-card__icon">
-              <img src="/assets/img/icons/camera-1.svg" alt="camera">
+              <img class="lazyload" src="/assets/img/icons/camera-1.svg" alt="camera">
             </div>
             <div class="icon-card__content">
               <div class="icon-card__text">
@@ -1015,7 +1083,7 @@
           </div>
           <div class="icon-card">
             <div class="icon-card__icon">
-              <img src="/assets/img/icons/parking-lot.svg" alt="parking-lot">
+              <img class="lazyload" src="/assets/img/icons/parking-lot.svg" alt="parking-lot">
             </div>
             <div class="icon-card__content">
               <div class="icon-card__text">
@@ -1030,26 +1098,34 @@
         </div>
 
         <div class="thirteen__picture">
-          <img class="thirteen__picture_img" src="/assets/img/section-13/1.png" alt="">
+          <picture>
+            <source srcset="assets/img/section-13/1.webp" type="image/webp">
+            <img loading="lazy" class="thirteen__picture_img lazyload" src="assets/img/section-13/1.png" alt="images">
+          </picture>
           <div class="thirteen__picture_backgr"></div>
         </div>
 
         <div class="thirteen__type-camera">
           <div class="thirteen__type-camera_heading">
-            <h3 class="thirteen__type-camera_title">2 вида задних камер</h3>
+            <div class="main-title main-title__notcase">2 вида задних камер</div>
             <div class="thirteen__type-camera_lable">(Выбирается при оформлении и заказа)</div>
           </div>
           <div class="thirteen__choice-type-camera">
             <div class="thirteen__choice-type-camera_block">
-              <img class="thirteen__choice-type-camera_img" src="assets/img/section-13/2.png" alt="rear-camera-one">
+              <picture>
+                <source srcset="assets/img/section-13/2.webp" type="image/webp">
+                <img loading="lazy" class="thirteen__choice-type-camera_img lazyload" src="assets/img/section-13/2.png" alt="images">
+              </picture>
               <div class="thirteen__choice-type-camera_about">
                 <div class="thirteen__choice-type-camera_title">Без инфракрасной подсветки</div>
                 <a href="#" class="thirteen__choice-type-camera_link">Смотреть характеристики</a>
               </div>
             </div>
             <div class="thirteen__choice-type-camera_block">
-              <img class="thirteen__choice-type-camera_img" src="assets/img/section-13/3.png" alt="rear-camera-one">
-
+              <picture>
+                <source srcset="assets/img/section-13/3.webp" type="image/webp">
+                <img loading="lazy" class="thirteen__choice-type-camera_img lazyload" src="assets/img/section-13/3.png" alt="images">
+              </picture>
               <div class="thirteen__choice-type-camera_about">
                 <div class="thirteen__choice-type-camera_title">Со светодиодной подсветкой</div>
                 <a href="#" class="thirteen__choice-type-camera_link">Смотреть характеристики</a>
@@ -1059,15 +1135,15 @@
               <div class="thirteen__description_title">Задняя камера</div>
               <div class="thirteen__description_about">
                 <div class="checked-item">
-                  <img src="/assets/img/icons/positive.svg" alt="">
+                  <img class="checked-item_img lazyload" src="/assets/img/icons/positive.svg" alt="images">
                   <div class="thirteen__description_about-text checked-item_text"><span>Разрешение</span> Full HD 720p</div>
                 </div>
                 <div class="checked-item">
-                  <img src="/assets/img/icons/positive.svg" alt="">
+                  <img class="checked-item_img lazyload" src="/assets/img/icons/positive.svg" alt="images">
                   <div class="thirteen__description_about-text checked-item_text"><span>Защита от воды</span> IP65</div>
                 </div>
                 <div class="checked-item">
-                  <img src="/assets/img/icons/positive.svg" alt="">
+                  <img class="checked-item_img lazyload" src="/assets/img/icons/positive.svg" alt="images">
                   <div class="thirteen__description_about-text checked-item_text"><span>Инфракрасная</span> подсветко</div>
                 </div>
               </div>
@@ -1083,50 +1159,59 @@
       </div>
     </section>
 
-    <!-- fourteen 14 Finished -->
+    <!-- fourteen Finished -->
     <section class="fourteen">
       <div class="container">
         <div class="fourteen__heading">
           <div class="main-title">
-            <img class="main-title__icon" src="assets/img/icons/camera-360.svg" alt="">
-            <span>Усовершенстованая система</span>
+            <img class="main-title__icon lazyload" src="assets/img/icons/camera-360.svg" alt="images">
+            <span>Усовершенстованая система <span class="fourteen__heading_mobile">помощи водителю - ADAS</span></span>
           </div>
-          <div class="mt-2 d-flex align-items-center">
-            <div class="main-title me-5">
+          <div class="fourteen__heading_block">
+            <div class="main-title">
               помощи водителю - ADAS
             </div>
             <div class="main-title__card">
-              <img class="main-title__card-radius__icon" src="/assets/img/icons/car.svg" alt="">
+              <img class="main-title__card-radius__icon lazyload" src="/assets/img/icons/car.svg" alt="images">
               <div class="main-title__card-radius__text">Сканирует ваше окружение и <br> <b>предупреждает звуками об опасности</b> </div>
             </div>
           </div>
-          <div class="mt-5 main-subtitle">Находясь в плотном городском потоке <span class="main-color">вы избежите ДТП</span></div>
+          <div class="main-subtitle">Находясь в плотном городском потоке <span class="main-color">вы избежите ДТП</span></div>
         </div>
 
         <div data-tabs class="fourteen__tabs">
           <nav data-tabs-titles class="fourteen__tabs_navigation">
             <button type="button" class="fourteen__tabs_title _tab-active card-item__block">
-              <img class="fourteen__tabs_title-img card-item__block-img" src="/assets/img/icons/warning-car.svg" alt="warning">
+              <img class="fourteen__tabs_title-img card-item__block-img lazyload" src="/assets/img/icons/warning-car.svg" alt="warning">
               <div class="fourteen__tabs_title-text card-item__block-text text-opacity-gray">При потери полосы движения</div>
             </button>
             <button type="button" class="fourteen__tabs_title card-item__block">
-              <img class="fourteen__tabs_title-img card-item__block-img" src="/assets/img/icons/car-two.svg" alt="car-two">
+              <img class="fourteen__tabs_title-img card-item__block-img lazyload" src="/assets/img/icons/car-two.svg" alt="car-two">
               <div class="fourteen__tabs_title-text card-item__block-text text-opacity-gray">При приближении впереди едущего транспорта</div>
             </button>
             <button type="button" class="fourteen__tabs_title card-item__block">
-              <img class="fourteen__tabs_title-img card-item__block-img" src="/assets/img/icons/street.svg" alt="street">
+              <img class="fourteen__tabs_title-img card-item__block-img lazyload" src="/assets/img/icons/street.svg" alt="street">
               <div class="fourteen__tabs_title-text card-item__block-text text-opacity-gray">При трогании автомобиля стоящего впереди на светофоре</div>
             </button>
           </nav>
           <div data-tabs-body class="fourteen__tabs_content">
             <div class="fourteen__tabs_body">
-              <img src="/assets/img/section-14/img-1.png" alt="img-1">
+              <picture>
+                <source srcset="assets/img/section-14/img-1.webp" type="image/webp">
+                <img loading="lazy" class="lazyload" src="assets/img/section-14/img-1.png" alt="images">
+              </picture>
             </div>
             <div class="fourteen__tabs_body">
-              <img src="/assets/img/section-14/img-2.png" alt="img-2">
+              <picture>
+                <source srcset="assets/img/section-14/img-2.webp" type="image/webp">
+                <img loading="lazy" class="lazyload" src="assets/img/section-14/img-2.png" alt="images">
+              </picture>
             </div>
             <div class="fourteen__tabs_body">
-              <img src="/assets/img/section-14/img-3.png" alt="img-3">
+              <picture>
+                <source srcset="assets/img/section-14/img-3.webp" type="image/webp">
+                <img loading="lazy" class="lazyload" src="assets/img/section-14/img-3.png" alt="images">
+              </picture>
             </div>
           </div>
         </div>
@@ -1138,15 +1223,15 @@
       <div class="container">
         <div class="fifteen__heading">
           <div class="main-title">
-            <img class="main-title__icon" src="assets/img/icons/base_camera-2.svg" alt="">
-            <span>24-часовое наблюдение и охрана</span>
+            <img class="main-title__icon lazyload" src="assets/img/icons/base_camera-2.svg" alt="images">
+            <span>24-часовое наблюдение и охрана <span class="fourteen__heading_mobile">авто на парковке</span> </span>
           </div>
-          <div class="mt-2 d-flex align-items-center">
-            <div class="main-title me-5">
+          <div class="fourteen__heading_block">
+            <div class="main-title">
               авто на парковке
             </div>
             <div class="main-title__card-radius">
-              <img class="main-title__card-radius__icon" src="/assets/img/icons/bell.svg" alt="">
+              <img class="main-title__card-radius__icon lazyload" src="/assets/img/icons/bell.svg" alt="images">
               <div class="main-title__card-radius__text">позволит защитится <b>от вандалов и угонов</b></div>
             </div>
           </div>
@@ -1159,7 +1244,7 @@
               <div class="fifteen__sensor-point_item">
                 <div class="fifteen__sensor-point_picture">
                   <div class="fifteen__sensor-point_picture-num">1</div>
-                  <img class="fifteen__sensor-point_picture-img" src="assets/img/icons/gps.svg" alt="">
+                  <img class="fifteen__sensor-point_picture-img lazyload" src="assets/img/icons/gps.svg" alt="images">
                 </div>
                 <div class="fifteen__sensor-point_text icon-card__text">На смартфон <b><span class="color-white">приходит уведомление</span></b> с отрезком видео с передней и задней камеры <b><span class="color-white">с координатами GPS</span></b>
                 </div>
@@ -1167,38 +1252,51 @@
               <div class="fifteen__sensor-point_item">
                 <div class="fifteen__sensor-point_picture">
                   <div class="fifteen__sensor-point_picture-num">2</div>
-                  <img class="fifteen__sensor-point_picture-img" src="assets/img/icons/vision-003.svg" alt="">
+                  <img class="fifteen__sensor-point_picture-img lazyload" src="assets/img/icons/vision-003.svg" alt="images">
                 </div>
                 <div class="fifteen__sensor-point_text icon-card__text">Заходите<b><span class="color-white"> в приложение Carkeeper,</span></b> и смотрите что происходит <b><span class="color-white">рядом с авто</span></b></div>
               </div>
               <div class="fifteen__sensor-point_item">
                 <div class="fifteen__sensor-point_picture">
                   <div class="fifteen__sensor-point_picture-num">3</div>
-                  <img class="fifteen__sensor-point_picture-img" src="assets/img/icons/lira-2.svg" alt="">
+                  <img class="fifteen__sensor-point_picture-img lazyload" src="assets/img/icons/lira-2.svg" alt="images">
                 </div>
                 <div class="fifteen__sensor-point_text icon-card__text"><b><span class="color-white">Отличное дополнение</span></b> к штатной сигнализации авто! Удобно, когда на вашей парковке нет камер</div>
               </div>
             </div>
             <div class="fifteen__sensor-picture">
-              <img class="fifteen__sensor-picture_img" src="assets/img/section-15/sensor.png" alt="sensor">
+              <picture>
+                <source srcset="assets/img/section-15/sensor.webp" type="image/webp">
+                <img loading="lazy" class="fifteen__sensor-picture_img lazyload" src="assets/img/section-15/sensor.png" alt="images">
+              </picture>
             </div>
           </div>
-          <div class="fifteen__sensor_slider swiper">
-            <div class="fifteen__sensor_wrapper swiper-wrapper">
-              <div class="fifteen__sensor_slide swiper-slide">
-                <div class="fifteen__sensor_slide-picture">
-                  <img src="/assets/img/section-15/slide-01.png" alt="" class="fifteen__sensor_slide-picture_img">
+
+          <div class="fifteen__sensor_slider">
+            <div class="swiper fifteen__sensor_slider_block">
+              <div class="fifteen__sensor_wrapper swiper-wrapper">
+                <div class="fifteen__sensor_slide swiper-slide">
+                  <div class="fifteen__sensor_slide-picture">
+                    <picture>
+                      <source srcset="assets/img/section-15/slide-01.webp" type="image/webp">
+                      <img loading="lazy" class="fifteen__sensor_slide-picture_img lazyload" src="assets/img/section-15/slide-01.png" alt="images">
+                    </picture>
+                  </div>
                 </div>
-              </div>
-              <div class="fifteen__sensor_slide swiper-slide">
-                <div class="fifteen__sensor_slide-picture">
-                  <img src="/assets/img/section-15/slide-02.png" alt="" class="fifteen__sensor_slide-picture_img">
+                <div class="fifteen__sensor_slide swiper-slide">
+                  <div class="fifteen__sensor_slide-picture">
+                    <picture>
+                      <source srcset="assets/img/section-15/slide-02.webp" type="image/webp">
+                      <img loading="lazy" class="fifteen__sensor_slide-picture_img lazyload" src="assets/img/section-15/slide-02.png" alt="images">
+                    </picture>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="fifteen__sensor_pagination swiper-pagination"></div>
-            <button style="width: 50px; height: 50px;" type="button" class="fifteen__sensor_button_prev swiper-button-prev"></button>
-            <button style="width: 50px; height: 50px" type="button" class="fifteen__sensor_button_next swiper-button-next"></button>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
 
@@ -1231,7 +1329,10 @@
         <div class="sixteen__block-right">
           <div class="sixteen__block-right_text icon-card__text">Заказывайте <b>сегодня!</b></div>
           <div class="sixteen__block-right_picture">
-            <img src="assets/img/section-16/img-1.png" alt="img" class="sixteen__block-right_picture-img">
+            <picture>
+              <source srcset="assets/img/section-16/img-1.webp" type="image/webp">
+              <img loading="lazy" class="sixteen__block-right_picture-img lazyload" src="assets/img/section-16/img-1.png" alt="images">
+            </picture>
           </div>
         </div>
       </div>
@@ -1248,7 +1349,7 @@
           <div class="seventeen__features-col">
             <div class="seventeen__features-col_item">
               <div class="seventeen__features-col_picture icon-card__icon">
-                <img class="seventeen__features-col_picture-img" src="/assets/img/icons/base_camera-3.svg" alt="camera">
+                <img class="seventeen__features-col_picture-img lazyload" src="/assets/img/icons/base_camera-3.svg" alt="camera">
               </div>
               <div class="seventeen__features-col_text icon-card__text">
                 <b><span class="seventeen__features-col_text-span color-white">Удаленное наблюдение за авто</span></b><br>
@@ -1257,7 +1358,7 @@
             </div>
             <div class="seventeen__features-col_item">
               <div class="seventeen__features-col_picture icon-card__icon">
-                <img class="seventeen__features-col_picture-img" src="/assets/img/icons/bluetooth.svg" alt="bluetooth">
+                <img class="seventeen__features-col_picture-img lazyload" src="/assets/img/icons/bluetooth.svg" alt="bluetooth">
               </div>
               <div class="seventeen__features-col_text icon-card__text">
                 <b><span class="seventeen__features-col_text-span color-white">Bluetooth подключение</span></b><br>
@@ -1268,7 +1369,7 @@
           <div class="seventeen__features-col">
             <div class="seventeen__features-col_item">
               <div class="seventeen__features-col_picture icon-card__icon">
-                <img class="seventeen__features-col_picture-img" src="/assets/img/icons/wifi.svg" alt="sharing">
+                <img class="seventeen__features-col_picture-img lazyload" src="/assets/img/icons/wifi.svg" alt="sharing">
               </div>
               <div class="seventeen__features-col_text icon-card__text">
                 <b><span class="seventeen__features-col_text-span color-white">Поддержка Sharing 3G/4G</span></b><br>
@@ -1277,7 +1378,7 @@
             </div>
             <div class="seventeen__features-col_item">
               <div class="seventeen__features-col_picture icon-card__icon">
-                <img class="seventeen__features-col_picture-img" src="/assets/img/icons/fm.svg" alt="fm">
+                <img class="seventeen__features-col_picture-img lazyload" src="/assets/img/icons/fm.svg" alt="fm">
               </div>
               <div class="seventeen__features-col_text icon-card__text">
                 <b><span class="seventeen__features-col_text-span color-white">Fm трансмиттер</span></b><br>
@@ -1307,53 +1408,59 @@
             </div>
           </div>
           <div class="eighteenth__card">
-            <img class="eighteenth__card_img" src="assets/img/section-18/1.png" alt="">
+            <picture>
+              <source srcset="assets/img/section-18/1.webp" type="image/webp">
+              <img loading="lazy" class="eighteenth__card_img lazyload" src="assets/img/section-18/1.png" alt="images">
+            </picture>
             <div class="eighteenth__card_title">Обычное комбо 3в1</div>
             <div class="eighteenth__card_icon">
-              <img class="eighteenth__card_item" src="assets/img/section-18/close.svg" alt="">
+              <img class="eighteenth__card_item lazyload" src="assets/img/section-18/close.svg" alt="images">
             </div>
             <div class="eighteenth__card_icon">
-              <img class="eighteenth__card_item" src="assets/img/section-18/close.svg" alt="">
+              <img class="eighteenth__card_item lazyload" src="assets/img/section-18/close.svg" alt="images">
             </div>
             <div class="eighteenth__card_icon">
-              <img class="eighteenth__card_item" src="assets/img/section-18/close.svg" alt="">
+              <img class="eighteenth__card_item lazyload" src="assets/img/section-18/close.svg" alt="images">
             </div>
             <div class="eighteenth__card_icon">
-              <img class="eighteenth__card_item" src="assets/img/section-18/close.svg" alt="">
+              <img class="eighteenth__card_item lazyload" src="assets/img/section-18/close.svg" alt="images">
             </div>
             <div class="eighteenth__card_icon">
-              <img class="eighteenth__card_item" src="assets/img/section-18/close.svg" alt="">
+              <img class="eighteenth__card_item lazyload" src="assets/img/section-18/close.svg" alt="images">
             </div>
             <div class="eighteenth__card_icon">
-              <img class="eighteenth__card_item" src="assets/img/section-18/close.svg" alt="">
+              <img class="eighteenth__card_item lazyload" src="assets/img/section-18/close.svg" alt="images">
             </div>
             <div class="eighteenth__card_icon">
-              <img class="eighteenth__card_item" src="assets/img/section-18/close.svg" alt="">
+              <img class="eighteenth__card_item lazyload" src="assets/img/section-18/close.svg" alt="images">
             </div>
           </div>
           <div class="eighteenth__card">
-            <img class="eighteenth__card_img" src="assets/img/section-18/2.png" alt="">
+            <picture>
+              <source srcset="assets/img/section-18/2.webp" type="image/webp">
+              <img loading="lazy" class="eighteenth__card_img lazyload" src="assets/img/section-18/2.png" alt="images">
+            </picture>
             <div class="eighteenth__card_title"><span class="main-color">Onlooker M84 Pro</span></div>
             <div class="eighteenth__card_icon">
-              <img class="eighteenth__card_item" src="assets/img/section-18/confirm.svg" alt="">
+              <img class="eighteenth__card_item lazyload" src="assets/img/section-18/confirm.svg" alt="images">
             </div>
             <div class="eighteenth__card_icon">
-              <img class="eighteenth__card_item" src="assets/img/section-18/confirm.svg" alt="">
+              <img class="eighteenth__card_item lazyload" src="assets/img/section-18/confirm.svg" alt="images">
             </div>
             <div class="eighteenth__card_icon">
-              <img class="eighteenth__card_item" src="assets/img/section-18/confirm.svg" alt="">
+              <img class="eighteenth__card_item lazyload" src="assets/img/section-18/confirm.svg" alt="images">
             </div>
             <div class="eighteenth__card_icon">
-              <img class="eighteenth__card_item" src="assets/img/section-18/confirm.svg" alt="">
+              <img class="eighteenth__card_item lazyload" src="assets/img/section-18/confirm.svg" alt="images">
             </div>
             <div class="eighteenth__card_icon">
-              <img class="eighteenth__card_item" src="assets/img/section-18/confirm.svg" alt="">
+              <img class="eighteenth__card_item lazyload" src="assets/img/section-18/confirm.svg" alt="images">
             </div>
             <div class="eighteenth__card_icon">
-              <img class="eighteenth__card_item" src="assets/img/section-18/confirm.svg" alt="">
+              <img class="eighteenth__card_item lazyload" src="assets/img/section-18/confirm.svg" alt="images">
             </div>
             <div class="eighteenth__card_icon">
-              <img class="eighteenth__card_item" src="assets/img/section-18/confirm.svg" alt="">
+              <img class="eighteenth__card_item lazyload" src="assets/img/section-18/confirm.svg" alt="images">
             </div>
           </div>
         </div>
@@ -1366,7 +1473,10 @@
         <div class="nineteenth__title main-title main-title__notcase">Все функции работают при прямых солнечных лучах и сильном морозе,</div>
         <div class="nineteenth__subtitle main-subtitle">благодаря <span class="main-color">уникальной системе питания,</span> разработанной корейскими инженерами</div>
       </div>
-      <img class="nineteenth__img" src="assets/img/section-19/1.png" alt="">
+      <picture>
+        <source srcset="assets/img/section-19/1.webp" type="image/webp">
+        <img loading="lazy" class="nineteenth__img lazyload" src="assets/img/section-19/1.png" alt="images">
+      </picture>
     </section>
 
     <!-- twentieth -->
@@ -1387,19 +1497,19 @@
 
               <div class="icon-card">
                 <div class="icon-card__icon">
-                  <img src="assets/img/section-20/1.svg" alt="">
+                  <img class="lazyload" src="assets/img/section-20/1.svg" alt="images">
                 </div>
                 <div class="icon-card__text"><span class="color-white"><b>6900 рублей</b></span> гарантированной скидки на покупку</div>
               </div>
               <div class="icon-card">
                 <div class="icon-card__icon">
-                  <img src="assets/img/section-20/2.svg" alt="">
+                  <img class="lazyload" src="assets/img/section-20/2.svg" alt="images">
                 </div>
                 <div class="icon-card__text">Полную <span class="color-white"><b>настройку и закачку</b></span> карт на устройство</div>
               </div>
               <div class="icon-card">
                 <div class="icon-card__icon">
-                  <img src="assets/img/section-20/3.svg" alt="">
+                  <img class="lazyload" src="assets/img/section-20/3.svg" alt="images">
                 </div>
                 <div class="icon-card__text">Активация лицензии <span class="color-white"><b>еСтрелка и Навител</b></span></div>
               </div>
@@ -1420,32 +1530,32 @@
             <div class="twenty-one__text">Смартфоны не предназначены для таких жестких условий эксплуатации!</div>
             <div class="twenty-one__cards">
               <div class="custom-card-c">
-                <div class="custom-card-c__icon"><img class="custom-card-c__icon_img" src="assets/img/section-21/1.svg" alt=""></div>
+                <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/section-21/1.svg" alt="images"></div>
                 <div class="custom-card-c__title">Изнашивается аккумулятор смартфона</div>
                 <div class="custom-card-c__text">Нельзя использовать телефон с постоянно подключенным кабелем</div>
               </div>
               <div class="custom-card-c">
-                <div class="custom-card-c__icon"><img class="custom-card-c__icon_img" src="assets/img/section-21/2.svg" alt=""></div>
+                <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/section-21/2.svg" alt="images"></div>
                 <div class="custom-card-c__title">Не будет второй камеры</div>
                 <div class="custom-card-c__text">Не возможно подключить вторую камеру для съемки позади авто</div>
               </div>
               <div class="custom-card-c">
-                <div class="custom-card-c__icon"><img class="custom-card-c__icon_img" src="assets/img/section-21/3.svg" alt=""></div>
+                <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/section-21/3.svg" alt="images"></div>
                 <div class="custom-card-c__title">Сложно подобрать надежные крепежи</div>
                 <div class="custom-card-c__text">Чтобы снимал под правильным углом дорогу и не надоедал дребезжанием</div>
               </div>
               <div class="custom-card-c">
-                <div class="custom-card-c__icon"><img class="custom-card-c__icon_img" src="assets/img/section-21/4.svg" alt=""></div>
+                <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/section-21/4.svg" alt="images"></div>
                 <div class="custom-card-c__title">Телефон будет разряжаться</div>
                 <div class="custom-card-c__text">Даже если подключен кабель, питания не хватает для его 100% зарядки</div>
               </div>
               <div class="custom-card-c">
-                <div class="custom-card-c__icon"><img class="custom-card-c__icon_img" src="assets/img/section-21/5.svg" alt=""></div>
+                <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/section-21/5.svg" alt="images"></div>
                 <div class="custom-card-c__title">В глуши не будет ловить GPS сигнал</div>
                 <div class="custom-card-c__text">Встроенная антенна телефона слабая для приема в удаленных местах</div>
               </div>
               <div class="custom-card-c">
-                <div class="custom-card-c__icon"><img class="custom-card-c__icon_img" src="assets/img/section-21/6.svg" alt=""></div>
+                <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/section-21/6.svg" alt="images"></div>
                 <div class="custom-card-c__title">Нет ADAS системы у смартфона</div>
                 <div class="custom-card-c__text">Не будет уведомления о пересечении полосы разметки и приближении встречного авто</div>
               </div>
@@ -1461,7 +1571,10 @@
 
           </div>
           <div class="twenty-one__img">
-            <img class="twenty-one__img_item" src="assets/img/section-21/1.png" alt="">
+            <picture>
+              <source srcset="assets/img/section-21/1.webp" type="image/webp">
+              <img loading="lazy" class="twenty-one__img_item lazyload" src="assets/img/section-21/1.png" alt="images">
+            </picture>
           </div>
         </div>
       </div>
@@ -1474,7 +1587,10 @@
         <div class="twenty-two__subtitle">Размеры устройства 183*105*40 мм</div>
         <div class="twenty-two__block">
           <div class="twenty-two__main">
-            <img class="twenty-two__main_img" src="assets/img/section-22/main.png" alt="">
+            <picture>
+              <source srcset="assets/img/section-22/main.webp" type="image/webp">
+              <img loading="lazy" class="twenty-two__main_img lazyload" src="assets/img/section-22/main.png" alt="images">
+            </picture>
             <div class="twenty-two__main_block">
               <div class="twenty-two__main_item _item-1">
                 <div class="twenty-two__main_button"><span class="twenty-two__main_icon">+</span></div>
@@ -1527,7 +1643,10 @@
             </div>
           </div>
           <div class="twenty-two__second">
-            <img src="assets/img/section-22/second.png" alt="">
+            <picture>
+              <source srcset="assets/img/section-22/second.webp" type="image/webp">
+              <img loading="lazy" class="lazyload" src="assets/img/section-22/second.png" alt="images">
+            </picture>
             <div class="twenty-two__main_block">
               <div class="twenty-two__main_item _item-21">
                 <div class="twenty-two__main_button"><span class="twenty-two__main_icon">+</span></div>
@@ -1572,17 +1691,121 @@
       </div>
     </section>
 
+    <!-- twenty-three -->
+    <section class="twenty-three">
+      <div class="container">
+        <div class="twenty-three__title main-title main-title__notcase">Смотрите, как просто подключить Onlooker M84 Pro</div>
+        <div class="twenty-three__cards">
+          <div class="twenty-three__card">
+            <div class="twenty-three__card_number">01</div>
+            <div class="twenty-three__card_img">
+              <picture>
+                <source srcset="assets/img/section-23/1.webp" type="image/webp">
+                <img loading="lazy" class="twenty-three__card_img_item lazyload" src="assets/img/section-23/1.png" alt="images">
+              </picture>
+            </div>
+          </div>
+          <div class="twenty-three__card">
+            <div class="twenty-three__card_number">02</div>
+            <div class="twenty-three__card_img">
+              <picture>
+                <source srcset="assets/img/section-23/2.webp" type="image/webp">
+                <img loading="lazy" class="twenty-three__card_img_item lazyload" src="assets/img/section-23/2.png" alt="images">
+              </picture>
+            </div>
+          </div>
+          <div class="twenty-three__card">
+            <div class="twenty-three__card_number">03</div>
+            <div class="twenty-three__card_img">
+              <picture>
+                <source srcset="assets/img/section-23/3.webp" type="image/webp">
+                <img loading="lazy" class="twenty-three__card_img_item lazyload" src="assets/img/section-23/3.png" alt="images">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="twenty-three__button">
+          <button class="main-btn">Посмотреть видео установки</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- twenty-four -->
+    <section class="twenty-four">
+      <div class="container">
+        <div class="twenty-four__block">
+          <div class="twenty-four__content">
+            <div class="twenty-four__title main-title main-title__notcase">
+              Комплектация
+              <span class="twenty-four__title_small">с задней камерой</span>
+            </div>
+            <div class="twenty-four__list">
+              <div class="twenty-four__list_item">
+                <div class="twenty-four__list_number">1</div>
+                <div class="twenty-four__list_text">Устройство Onlooker M84 Pro с 32GB встроенной памяти</div>
+              </div>
+              <div class="twenty-four__list_item">
+                <div class="twenty-four__list_number">2</div>
+                <div class="twenty-four__list_text">Задняя камера с креплениями и кабелем 6 метров</div>
+              </div>
+              <div class="twenty-four__list_item">
+                <div class="twenty-four__list_number">3</div>
+                <div class="twenty-four__list_text">Крепление на лобовое стекло</div>
+              </div>
+              <div class="twenty-four__list_item">
+                <div class="twenty-four__list_number">4</div>
+                <div class="twenty-four__list_text">Зарядное устройство в прикуриватель</div>
+              </div>
+              <div class="twenty-four__list_item">
+                <div class="twenty-four__list_number">5</div>
+                <div class="twenty-four__list_text">GPS модуль</div>
+              </div>
+              <div class="twenty-four__list_item">
+                <div class="twenty-four__list_number">6</div>
+                <div class="twenty-four__list_text">Инструкция и гарантийный талон</div>
+              </div>
+            </div>
+          </div>
+          <div class="twenty-four__img">
+            <picture>
+              <source srcset="assets/img/section-24/1.webp" type="image/webp">
+              <img loading="lazy" class="twenty-four__img_item lazyload" src="assets/img/section-24/1.png" alt="images">
+            </picture>
+          </div>
+        </div>
+        <div class="twenty-four__footer price-card">
+          <div class="price-card__text">
+            <div class="price-card__text_title main-title main-title__notcase">Акция</div>
+            <div class="price-card__text_info">Специальная цена <span class="color-white">до 22 августа</span> и приятными <span class="color-white">бонусами в подарок</span></div>
+          </div>
+          <div class="price-card__action">
+            <div class="price-card__action_price">
+              <div class="price__old">24 890₽</div>
+              <div class="price__new">17 990 ₽</div>
+            </div>
+            <div class="price-card__action_button">
+              <button class="main-btn">Купить со скидкой</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- twenty-five -->
     <section class="twenty-five">
       <div class="container">
         <div class="twenty-five__title main-title main-title__notcase">Дополнительные аксессуары</div>
         <div class="twenty-five__slider">
+
           <div class="twenty-five__slider_block swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="slider-card">
                   <div class="slider-card__img">
-                    <img class="slider-card__img_item" src="assets/img/section-25/1.png" alt="">
+                    <picture>
+                      <source srcset="assets/img/section-25/1.webp" type="image/webp">
+                      <img loading="lazy" class="slider-card__img_item lazyload" src="assets/img/section-25/1.png" alt="images">
+                    </picture>
                   </div>
                   <div class="slider-card__content">
                     <div class="slider-card__title">Стандартная задняя камера</div>
@@ -1596,10 +1819,14 @@
                   </div>
                 </div>
               </div>
+
               <div class="swiper-slide">
                 <div class="slider-card">
                   <div class="slider-card__img">
-                    <img class="slider-card__img_item" src="assets/img/section-25/2.png" alt="">
+                    <picture>
+                      <source srcset="assets/img/section-25/2.webp" type="image/webp">
+                      <img loading="lazy" class="slider-card__img_item lazyload" src="assets/img/section-25/2.png" alt="images">
+                    </picture>
                   </div>
                   <div class="slider-card__content">
                     <div class="slider-card__title">Стандартная задняя камера</div>
@@ -1613,10 +1840,14 @@
                   </div>
                 </div>
               </div>
+
               <div class="swiper-slide">
                 <div class="slider-card">
                   <div class="slider-card__img">
-                    <img class="slider-card__img_item" src="assets/img/section-25/3.png" alt="">
+                    <picture>
+                      <source srcset="assets/img/section-25/3.webp" type="image/webp">
+                      <img loading="lazy" class="slider-card__img_item lazyload" src="assets/img/section-25/3.png" alt="images">
+                    </picture>
                   </div>
                   <div class="slider-card__content">
                     <div class="slider-card__title">Стандартная задняя камера</div>
@@ -1630,10 +1861,14 @@
                   </div>
                 </div>
               </div>
+
               <div class="swiper-slide">
                 <div class="slider-card">
                   <div class="slider-card__img">
-                    <img class="slider-card__img_item" src="assets/img/section-25/4.png" alt="">
+                    <picture>
+                      <source srcset="assets/img/section-25/4.webp" type="image/webp">
+                      <img loading="lazy" class="slider-card__img_item lazyload" src="assets/img/section-25/4.png" alt="images">
+                    </picture>
                   </div>
                   <div class="slider-card__content">
                     <div class="slider-card__title">Стандартная задняя камера</div>
@@ -1647,10 +1882,14 @@
                   </div>
                 </div>
               </div>
+
               <div class="swiper-slide">
                 <div class="slider-card">
                   <div class="slider-card__img">
-                    <img class="slider-card__img_item" src="assets/img/section-25/5.png" alt="">
+                    <picture>
+                      <source srcset="assets/img/section-25/5.webp" type="image/webp">
+                      <img loading="lazy" class="slider-card__img_item lazyload" src="assets/img/section-25/5.png" alt="images">
+                    </picture>
                   </div>
                   <div class="slider-card__content">
                     <div class="slider-card__title">Стандартная задняя камера</div>
@@ -1664,8 +1903,10 @@
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
+
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
@@ -1675,116 +1916,153 @@
     </section>
 
     <!-- twenty-six -->
-    <!-- <section class="twenty-six">
+    <section class="twenty-six">
       <div class="container">
         <div class="twenty-six__title main-title main-title__notcase">
           Легко устанавливается на лобовое или на панель не мешая обзору
           <div class="main-title__card ms-3">
-            <img class="main-title__card-radius__icon" src="assets/img/icons/019-google-play.svg" alt="">
+            <img class="main-title__card-radius__icon lazyload" src="assets/img/icons/019-google-play.svg" alt="images">
             <div class="main-title__card-radius__text">с возможностью скачивания приложений <b>с Google Play</b></div>
           </div>
         </div>
         <div class="twenty-six__block">
           <div class="twenty-six__left">
             <div class="twenty-six__left_title twenty-six__block_text">На присоске</div>
-            <img class="twenty-six__img" src="assets/img/section-26/1.png">
+            <picture>
+              <source srcset="assets/img/section-26/1.webp" type="image/webp">
+              <img loading="lazy" class="twenty-six__img lazyload" src="assets/img/section-26/1.png" alt="images">
+            </picture>
           </div>
           <div class="twenty-six__right">
             <div class="twenty-six__right_title twenty-six__block_text">На панели</div>
-            <img class="twenty-six__img" src="assets/img/section-26/2.png">
+            <picture>
+              <source srcset="assets/img/section-26/2.webp" type="image/webp">
+              <img loading="lazy" class="twenty-six__img lazyload" src="assets/img/section-26/2.png" alt="images">
+            </picture>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- twenty-seven -->
     <section class="twenty-seven">
       <div class="container">
-        <div class="twenty-seven__heading">
-          <div class="twenty-seven__title">Пробный заголовок для миксина</div>
-          <div class="twenty-seven__subtitle"></div>
-        </div>
-        <div data-tabs class="twenty-seven">
-          <div class="twenty-seven__tabs-head">
-            <div class="twenty-seven__text">dd</div>
+        <div class="twenty-seven__title main-title">Onlooker M84 Pro - проверен тысячами автомобилистов и продается с 2021 года</div>
+        <div class="twenty-seven__subtitle main-subtitle__big">Гаджет постоянно улучшается <span class="main-color">на протяжении всего времени</span></div>
+        <div data-tabs class="twenty-seven__block">
+          <div class="twenty-seven__tabs_head">
+            <div class="twenty-seven__text">Рекомендуют <span class="color-white"><b>97% пользователей!</b></span></div>
             <nav data-tabs-titles class="twenty-seven__navigation">
-              <button type="button" class="twenty-seven__title _tab-active">Таб №1</button>
-              <button type="button" class="twenty-seven__title">Таб №2</button>
-              <button type="button" class="twenty-seven__title">Таб №3</button>
+              <button type="button" class="card-item__block _tab-active">
+                <img class="card-item__block-img lazyload" src="assets/img/section-tab/1.svg" alt="images">
+                <span class="card-item__block-text">Видео обзоры</span>
+              </button>
+              <button type="button" class="card-item__block">
+                <img class="card-item__block-img lazyload" src="assets/img/section-tab/2.svg" alt="images">
+                <span class="card-item__block-text">Отзывы Яндекс Маркет</span>
+              </button>
+              <button type="button" class="card-item__block">
+                <img class="card-item__block-img lazyload" src="assets/img/section-tab/3.svg" alt="images">
+                <span class="card-item__block-text">Статьи на известных сайтах</span>
+              </button>
             </nav>
           </div>
           <div data-tabs-body class="twenty-seven__content">
             <!-- TAB-CONTENT-1 ---------------------------------------------------->
             <div class="twenty-seven__body">
               <div class="twenty-seven__slider-one">
-                <div class="twenty-seven__slider_block-one swiper">
+                <div class="twenty-seven__slider-one_block swiper">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <div class="slider-card">
-                        <div class="slider-card__content">
-                          <div class="slider-card__title"><b>Заголовок</b></div>
-                        </div>
-                        <img src="/assets/img/section-27/video-slide.png" alt="" class="slider-card__img_item">
-                        <div class="slider-card__content">
-                            <div class="slider-card__title"><b>Заголовок</b></div>
+                      <div class="twenty-seven__card">
+                        <div class="twenty-seven__card_title">Видео-отзыв о покупке устройства Onlooker M84 Pro</div>
+                        <a href="#" class="twenty-seven__card_video">
+                          <picture>
+                            <source srcset="assets/img/section-27/video-slide.webp" type="image/webp">
+                            <img class="twenty-seven__card_video_bg lazyload" src="assets/img/section-27/video-slide.png" alt="images">
+                          </picture>
+                          <div class="twenty-seven__card_video_icon">
+                            <img class="twenty-seven__card_video_play lazyload" src="assets/img/icons/play.svg" alt="images">
+                          </div>
+                        </a>
+                        <div class="twenty-seven__card_content">
+                          <div class="twenty-seven__card_title">Краткие тезисы из видео:</div>
+                          <div class="twenty-seven__card_list">
                             <div class="checked-item">
-                              <img class="checked-item_img-sm" src="/assets/img/icons/positive.svg" alt="">
-                              <div class="checked-item_text-sm">текст</div>
+                              <img class="checked-item_img-sm lazyload" src="/assets/img/icons/positive.svg" alt="images">
+                              <div class="checked-item_text-sm">Быстро реагирует на дорожную обстановку</div>
                             </div>
                             <div class="checked-item">
-                              <img class="checked-item_img-sm" src="/assets/img/icons/positive.svg" alt="">
-                              <div class="checked-item_text-sm">текст</div>
+                              <img class="checked-item_img-sm lazyload" src="/assets/img/icons/positive.svg" alt="images">
+                              <div class="checked-item_text-sm">Заранее сообщает о камерах</div>
                             </div>
                             <div class="checked-item">
-                              <img class="checked-item_img-sm" src="/assets/img/icons/positive.svg" alt="">
-                              <div class="checked-item_text-sm">текст</div>
+                              <img class="checked-item_img-sm lazyload" src="/assets/img/icons/positive.svg" alt="images">
+                              <div class="checked-item_text-sm">Все видно спереди и сзади машины</div>
                             </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="slider-card">
-                        <div class="slider-card__content">
-                          <div class="slider-card__title"><b>Заголовок</b></div>
-                        </div>
-                        <img src="/assets/img/section-27/video-slide.png" alt="" class="slider-card__img_item">
-                        <div class="slider-card__content">
-                            <div class="slider-card__title"><b>Заголовок</b></div>
-                            <div class="checked-item">
-                              <img class="checked-item_img-sm" src="/assets/img/icons/positive.svg" alt="">
-                              <div class="checked-item_text-sm">текст</div>
-                            </div>
-                            <div class="checked-item">
-                              <img class="checked-item_img-sm" src="/assets/img/icons/positive.svg" alt="">
-                              <div class="checked-item_text-sm">текст</div>
-                            </div>
-                            <div class="checked-item">
-                              <img class="checked-item_img-sm" src="/assets/img/icons/positive.svg" alt="">
-                              <div class="checked-item_text-sm">текст</div>
-                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                     <div class="swiper-slide">
-                      <div class="slider-card">
-                        <div class="slider-card__content">
-                          <div class="slider-card__title"><b>Заголовок</b></div>
+                      <div class="twenty-seven__card">
+                        <div class="twenty-seven__card_title">Видео-отзыв о покупке устройства Onlooker M84 Pro</div>
+                        <a href="#" class="twenty-seven__card_video">
+                          <picture>
+                            <source srcset="assets/img/section-27/video-slide.webp" type="image/webp">
+                            <img class="twenty-seven__card_video_bg lazyload" src="assets/img/section-27/video-slide.png" alt="images">
+                          </picture>
+                          <div class="twenty-seven__card_video_icon">
+                            <img class="twenty-seven__card_video_play lazyload" src="assets/img/icons/play.svg" alt="images">
+                          </div>
+                        </a>
+                        <div class="twenty-seven__card_content">
+                          <div class="twenty-seven__card_title">Краткие тезисы из видео:</div>
+                          <div class="twenty-seven__card_list">
+                            <div class="checked-item">
+                              <img class="checked-item_img-sm lazyload" src="/assets/img/icons/positive.svg" alt="images">
+                              <div class="checked-item_text-sm">Быстро реагирует на дорожную обстановку</div>
+                            </div>
+                            <div class="checked-item">
+                              <img class="checked-item_img-sm lazyload" src="/assets/img/icons/positive.svg" alt="images">
+                              <div class="checked-item_text-sm">Заранее сообщает о камерах</div>
+                            </div>
+                            <div class="checked-item">
+                              <img class="checked-item_img-sm lazyload" src="/assets/img/icons/positive.svg" alt="images">
+                              <div class="checked-item_text-sm">Все видно спереди и сзади машины</div>
+                            </div>
+                          </div>
                         </div>
-                        <img src="/assets/img/section-27/video-slide.png" alt="" class="slider-card__img_item">
-                        <div class="slider-card__content">
-                            <div class="slider-card__title"><b>Заголовок</b></div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="twenty-seven__card">
+                        <div class="twenty-seven__card_title">Видео-отзыв о покупке устройства Onlooker M84 Pro</div>
+                        <a href="#" class="twenty-seven__card_video">
+                          <picture>
+                            <source srcset="assets/img/section-27/video-slide.webp" type="image/webp">
+                            <img class="twenty-seven__card_video_bg lazyload" src="assets/img/section-27/video-slide.png" alt="images">
+                          </picture>
+                          <div class="twenty-seven__card_video_icon">
+                            <img class="twenty-seven__card_video_play lazyload" src="assets/img/icons/play.svg" alt="images">
+                          </div>
+                        </a>
+                        <div class="twenty-seven__card_content">
+                          <div class="twenty-seven__card_title">Краткие тезисы из видео:</div>
+                          <div class="twenty-seven__card_list">
                             <div class="checked-item">
-                              <img class="checked-item_img-sm" src="/assets/img/icons/positive.svg" alt="">
-                              <div class="checked-item_text-sm">текст</div>
+                              <img class="checked-item_img-sm lazyload" src="/assets/img/icons/positive.svg" alt="images">
+                              <div class="checked-item_text-sm">Быстро реагирует на дорожную обстановку</div>
                             </div>
                             <div class="checked-item">
-                              <img class="checked-item_img-sm" src="/assets/img/icons/positive.svg" alt="">
-                              <div class="checked-item_text-sm">текст</div>
+                              <img class="checked-item_img-sm lazyload" src="/assets/img/icons/positive.svg" alt="images">
+                              <div class="checked-item_text-sm">Заранее сообщает о камерах</div>
                             </div>
                             <div class="checked-item">
-                              <img class="checked-item_img-sm" src="/assets/img/icons/positive.svg" alt="">
-                              <div class="checked-item_text-sm">текст</div>
+                              <img class="checked-item_img-sm lazyload" src="/assets/img/icons/positive.svg" alt="images">
+                              <div class="checked-item_text-sm">Все видно спереди и сзади машины</div>
                             </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1795,25 +2073,26 @@
                 <div class="swiper-pagination"></div>
               </div>
             </div>
-
             <!-- TAB-CONTEN-2 ---------------------------------------------------->
             <div class="twenty-seven__body">
+
               <div class="twenty-seven__slider-two">
-                <div class="twenty-seven__slider_block-two swiper">
+                <div class="swiper twenty-seven__slider-two_block">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div class="slider-card">
-                      <img src="/assets/img/section-27/testimon.png" class="" alt="">
+                        <picture>
+                          <source srcset="assets/img/section-27/testimon.webp" type="image/webp">
+                          <img loading="lazy" class="lazyload" src="assets/img/section-27/testimon.png" alt="images">
+                        </picture>
                       </div>
                     </div>
                     <div class="swiper-slide">
                       <div class="slider-card">
-                      <img src="/assets/img/section-27/testimon.png" class="" alt="">
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="slider-card">
-                      <img src="/assets/img/section-27/testimon.png" class="" alt="">
+                        <picture>
+                          <source srcset="assets/img/section-27/testimon.webp" type="image/webp">
+                          <img loading="lazy" class="lazyload" src="assets/img/section-27/testimon.png" alt="images">
+                        </picture>
                       </div>
                     </div>
                   </div>
@@ -1822,26 +2101,99 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
               </div>
+
             </div>
             <!-- TAB-CONTEN-3 ---------------------------------------------------->
             <div class="twenty-seven__body">
-              
+              <div class="twenty-seven__slider-three">
+                <div class="twenty-seven__slider-three_block swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="twenty-seven__card">
+                        <div class="twenty-seven__card_video">
+                          <picture>
+                            <source srcset="assets/img/section-27/video-slide.webp" type="image/webp">
+                            <img loading="lazy" class="twenty-seven__card_video_bg lazyload" src="assets/img/section-27/video-slide.png" alt="images">
+                          </picture>
+                        </div>
+                        <div class="twenty-seven__card_content">
+                          <div class="twenty-seven__card_title twenty-seven__card_title_2">
+                            <span class="twenty-seven__card_title_text">Краткие тезисы из видео:</span>
+                            <a href="#" class="twenty-seven__card_title_block">
+                              <img class="twenty-seven__card_title_icon lazyload" src="assets/img/section-27/right.svg" alt="images">
+                            </a>
+                          </div>
+                          <div class="twenty-seven__card_text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="twenty-seven__card">
+                        <div class="twenty-seven__card_video">
+                          <picture>
+                            <source srcset="assets/img/section-27/video-slide.webp" type="image/webp">
+                            <img loading="lazy" class="twenty-seven__card_video_bg lazyload" src="assets/img/section-27/video-slide.png" alt="images">
+                          </picture>
+                        </div>
+                        <div class="twenty-seven__card_content">
+                          <div class="twenty-seven__card_title twenty-seven__card_title_2">
+                            <span class="twenty-seven__card_title_text">Краткие тезисы из видео:</span>
+                            <a href="#" class="twenty-seven__card_title_block">
+                              <img class="twenty-seven__card_title_icon lazyload" src="assets/img/section-27/right.svg" alt="images">
+                            </a>
+                          </div>
+                          <div class="twenty-seven__card_text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="twenty-seven__card">
+                        <div class="twenty-seven__card_video">
+                          <picture>
+                            <source srcset="assets/img/section-27/video-slide.webp" type="image/webp">
+                            <img loading="lazy" class="twenty-seven__card_video_bg lazyload" src="assets/img/section-27/video-slide.png" alt="images">
+                          </picture>
+                        </div>
+                        <div class="twenty-seven__card_content">
+                          <div class="twenty-seven__card_title twenty-seven__card_title_2">
+                            <span class="twenty-seven__card_title_text">Краткие тезисы из видео:</span>
+                            <a href="#" class="twenty-seven__card_title_block">
+                              <img class="twenty-seven__card_title_icon lazyload" src="assets/img/section-27/right.svg" alt="images">
+                            </a>
+                          </div>
+                          <div class="twenty-seven__card_text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem non laudantium ipsum cum voluptate minima.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
           </div>
-      </div>
+        </div>
     </section>
 
-    <!-- twentyeight 28 -->
+    <!-- twentyeight -->
     <section class="twentyeight">
       <div class="container">
-        <div data-tabs class="twentyeight__tabs"> 
+        <div data-tabs class="twentyeight__tabs">
           <nav data-tabs-titles class="twentyeight__nav">
             <button type="button" class="twentyeight__nav-title _tab-active card-item__block">
-              <img class="twentyeight__nav-icon card-item__block-img" src="/assets/img/icons/deliveri.svg" alt="">
+              <img class="twentyeight__nav-icon card-item__block-img lazyload" src="/assets/img/icons/deliveri.svg" alt="images">
               <div class="twentyeight__nav-text card-item__block-text text-opacity-gray">Доставка, оплата</div>
             </button>
             <button type="button" class="twentyeight__nav-title  card-item__block">
-              <img class="twentyeight__nav-icon card-item__block-img" src="/assets/img/icons/faq.svg" alt="">
+              <img class="twentyeight__nav-icon card-item__block-img lazyload" src="/assets/img/icons/faq.svg" alt="images">
               <div class="twentyeight__nav-text card-item__block-text text-opacity-gray">Ответы на популярные вопросы</div>
             </button>
           </nav>
@@ -1855,24 +2207,30 @@
                   </div>
                   <div class="twentyeight__deliv-method">
                     <div class="twentyeight__deliv-block main-title__card">
-                      <img class="twentyeight__icon-cdek main-title__card-radius__icon" src="/assets/img/section-28/cdek.png" alt="">
+                      <picture>
+                        <source srcset="assets/img/section-28/cdek.webp" type="image/webp">
+                        <img loading="lazy" class="twentyeight__icon-cdek main-title__card-radius__icon lazyload" src="assets/img/section-28/cdek.png" alt="images">
+                      </picture>
                       <div class="main-title__card-radius__text icon-card__text">курьером до адреса или до точки самовывоза</div>
                     </div>
                     <div class="twentyeight__deliv-block_two">
                       <div class="twentyeight__deliv-top main-title__card">
-                        <img class="twentyeight__icon-yandex main-title__card-radius__icon" src="/assets/img/section-28/yandex.svg" alt="">
+                        <img class="twentyeight__icon-yandex main-title__card-radius__icon lazyload" src="/assets/img/section-28/yandex.svg" alt="images">
                       </div>
                       <div class="twentyeight__deliv-bottom main-title__card">
-                        <img class="twentyeight__icon-dpd main-title__card-radius__icon" src="/assets/img/section-28/dpd.svg" alt="">
+                        <img class="twentyeight__icon-dpd main-title__card-radius__icon lazyload" src="/assets/img/section-28/dpd.svg" alt="images">
                       </div>
                     </div>
                     <div class="twentyeight__deliv-block main-title__card">
-                      <img class="twentyeight__icon-post main-title__card-radius__icon" src="/assets/img/section-28/post.png" alt="">
+                      <picture>
+                        <source srcset="assets/img/section-28/post.webp" type="image/webp">
+                        <img loading="lazy" class="twentyeight__icon-post main-title__card-radius__icon lazyload" src="assets/img/section-28/post.png" alt="images">
+                      </picture>
                       <div class="main-title__card-radius__text icon-card__text">с наложенным платежом и с описью содержимого</div>
                     </div>
                   </div>
                   <div class="twentyeight__deliv-text main-title__card">
-                    <img class="twentyeight__icon-delivery main-title__card-radius__icon" src="/assets/img/icons/deliveri.svg" alt="">
+                    <img class="twentyeight__icon-delivery main-title__card-radius__icon lazyload" src="/assets/img/icons/deliveri.svg" alt="images">
                     <div class="twentyeight__deliv-text_gray">При курьерской доставке вы сможете <b><span class="twentyeight__deliv-text_white">проверить устройство прямо в автомобиле</span></b> и только потом оплатить заказ
                     </div>
                   </div>
@@ -1881,27 +2239,42 @@
                       <div class="twentyeight__pay-title">Оплата</div>
                       <div class="twentyeight__pay-block">
                         <div class="twentyeight__pay-cash main-title__card">
-                          <img class="twentyeight__icon-rub main-title__card-radius__icon" src="/assets/img/section-28/rub.png" alt="">
+                          <picture>
+                            <source srcset="assets/img/section-28/rub.webp" type="image/webp">
+                            <img loading="lazy" class="twentyeight__icon-rub main-title__card-radius__icon lazyload" src="assets/img/section-28/rub.png" alt="images">
+                          </picture>
                           <div class="main-title__card-radius__text icon-card__text">Наличными<br> при получении</div>
                         </div>
                         <div class="twentyeight__pay-card main-title__card">
-                          <img class="twentyeight__icon-card main-title__card-radius__icon" src="/assets/img/section-28/card.png" alt="">
+                          <picture>
+                            <source srcset="assets/img/section-28/card.webp" type="image/webp">
+                            <img loading="lazy" class="twentyeight__icon-card main-title__card-radius__icon lazyload" src="assets/img/section-28/card.png" alt="images">
+                          </picture>
                           <div class="main-title__card-radius__text icon-card__text">Картой<br> при получении</div>
                         </div>
                       </div>
-                      <img class="twentyeight__pay-img" src="/assets/img/section-28/paymethod.png">
+                      <picture>
+                        <source srcset="assets/img/section-28/paymethod.webp" type="image/webp">
+                        <img loading="lazy" class="twentyeight__pay-img lazyload" src="assets/img/section-28/paymethod.png" alt="images">
+                      </picture>
                     </div>
                     <div class="twentyeight__credit">
                       <div class="twentyeight__pay-title">Кредит и рассрочка</div>
                       <div class="twentyeight__credit-bank main-title__card">
-                        <img class="twentyeight__icon-bank main-title__card-radius__icon" src="/assets/img/section-28/bank.png" alt="">
+                        <picture>
+                          <source srcset="assets/img/section-28/bank.webp" type="image/webp">
+                          <img loading="lazy" class="twentyeight__icon-bank main-title__card-radius__icon lazyload" src="assets/img/section-28/bank.png" alt="images">
+                        </picture>
                       </div>
                       <div class="twentyeight__credit-text icon-card__text">Обязательно! Выдаем бумажный или электронный чек</div>
                     </div>
                   </div>
                 </div>
                 <div class="twentyeight__terms-img">
-                  <img src="/assets/img/section-28/onlooker.png" alt="" class="twentyeight__device-img">
+                  <picture>
+                    <source srcset="assets/img/section-28/onlooker.webp" type="image/webp">
+                    <img loading="lazy" class="twentyeight__device-img lazyload" src="assets/img/section-28/onlooker.png" alt="images">
+                  </picture>
                 </div>
               </div>
             </div>
@@ -1954,35 +2327,40 @@
           <div class="twentynine__title main-title main-title__notcase">Устройство прошло все испытания и получила сертификаты о безопасности для здоровья</div>
           <div class="twentynine__certificate-block">
             <div class="twentynine__block-one">
-              <img src="/assets/img/icons/eac.svg" alt="" class="twentynine__icon-eac">
+              <img src="/assets/img/icons/eac.svg" alt="images" class="twentynine__icon-eac lazyload">
               <div class="twentynine__text main-title__card-radius__text">Декларация соответствия ЕАС</div>
             </div>
             <div class="twentynine__block-two">
-              <img src="/assets/img/icons/ce.svg" alt="" class="twentynine__icon-ce">
-              <img src="/assets/img/icons/rohs.svg" alt="" class="twentynine__icon-rohs">
+              <img src="/assets/img/icons/ce.svg" alt="images" class="twentynine__icon-ce lazyload">
+              <img src="/assets/img/icons/rohs.svg" alt="images" class="twentynine__icon-rohs lazyload">
               <div class="twentynine__text main-title__card-radius__text">Сертификация СЕ, FCC, Rohs, CCC</div>
             </div>
             <div class="twentynine__block-three">
-              <img src="/assets/img/icons/logo.svg" alt="" class="twentynine__icon-logo">
+              <img src="/assets/img/icons/logo.svg" alt="images" class="twentynine__icon-logo lazyload">
               <div class="twentynine__text main-title__card-radius__text">официально зарегистрированный бренд на территории РФ</div>
             </div>
           </div>
           <div class="twentynine__downoload">
             <a href="#" class="twentynine__downld-btn">
-              <img src="/assets/img/icons/download.svg" alt="" class="twentynine__downld-icon">
+              <img src="/assets/img/icons/download.svg" alt="images" class="twentynine__downld-icon lazyload">
               Декларация соответствия 1 (рус.)
             </a>
             <a href="#" class="twentynine__downld-btn">
-              <img src="/assets/img/icons/download.svg" alt="" class="twentynine__downld-icon">
+              <img src="/assets/img/icons/download.svg" alt="images" class="twentynine__downld-icon lazyload">
               Декларация соответствия 2 (рус.)
             </a>
             <a href="#" class="twentynine__downld-btn">
-              <img src="/assets/img/icons/download.svg" alt="" class="twentynine__downld-icon">
+              <img src="/assets/img/icons/download.svg" alt="images" class="twentynine__downld-icon lazyload">
               Декларация соответствия (англ.)
             </a>
           </div>
-          <img src="/assets/img/section-29/img-pc.png" alt="" class="twentynine__img-pc">
-          <img src="/assets/img/section-29/img-mob.png" alt="" class="twentynine__img-mob">
+          <picture>
+            <source srcset="assets/img/section-29/img-pc.webp" type="image/webp">
+            <img loading="lazy" class="twentynine__img-pc lazyload" src="assets/img/section-29/img-pc.png" alt="images">
+          </picture><picture>
+            <source srcset="assets/img/section-29/img-mob.webp" type="image/webp">
+            <img loading="lazy" class="twentynine__img-mob lazyload" src="assets/img/section-29/img-mob.png" alt="images">
+          </picture>
         </div>
       </div>
     </section>
@@ -1998,12 +2376,12 @@
           </div>
           <div class="thirty__guarantee">
             <div class="main-title__card">
-              <img class="main-title__card-radius__icon" src="/assets/img/icons/guaranty.svg" alt="">
+              <img class="main-title__card-radius__icon lazyload" src="/assets/img/icons/guaranty.svg" alt="images">
               <div class="main-title__card-radius__text">Гарантия товара</div>
             </div>
             <div class="icon-card ">
               <div class="icon-card__icon">
-                <img class="icon-card__icon_img" src="assets/img/icons/return.svg" alt="">
+                <img class="icon-card__icon_img lazyload" src="assets/img/icons/return.svg" alt="images">
               </div>
               <div class="icon-card__content">
                 <div class="icon-card__title">
@@ -2016,7 +2394,7 @@
             </div>
             <div class="icon-card ">
               <div class="icon-card__icon">
-                <img class="icon-card__icon_img" src="assets/img/icons/calendar.svg" alt="">
+                <img class="icon-card__icon_img lazyload" src="assets/img/icons/calendar.svg" alt="images">
               </div>
               <div class="icon-card__content">
                 <div class="icon-card__title">
@@ -2029,7 +2407,7 @@
             </div>
             <div class="icon-card ">
               <div class="icon-card__icon">
-                <img class="icon-card__icon_img" src="assets/img/icons/rewiev.svg" alt="">
+                <img class="icon-card__icon_img lazyload" src="assets/img/icons/rewiev.svg" alt="images">
               </div>
               <div class="icon-card__content">
                 <div class="icon-card__title">
@@ -2042,7 +2420,7 @@
             </div>
             <div class="icon-card ">
               <div class="icon-card__icon">
-                <img class="icon-card__icon_img" src="assets/img/icons/guaranty-2.svg" alt="">
+                <img class="icon-card__icon_img lazyload" src="assets/img/icons/guaranty-2.svg" alt="images">
               </div>
               <div class="icon-card__content">
                 <div class="icon-card__title">
@@ -2056,12 +2434,12 @@
           </div>
           <div class="thirty__guarantee">
             <div class="main-title__card">
-              <img class="main-title__card-radius__icon" src="/assets/img/icons/support.svg" alt="">
+              <img class="main-title__card-radius__icon lazyload" src="/assets/img/icons/support.svg" alt="images">
               <div class="main-title__card-radius__text">Гарантия поддержки</div>
             </div>
             <div class="icon-card ">
               <div class="icon-card__icon">
-                <img class="icon-card__icon_img" src="assets/img/icons/maintenance.svg" alt="">
+                <img class="icon-card__icon_img lazyload" src="assets/img/icons/maintenance.svg" alt="images">
               </div>
               <div class="icon-card__content">
                 <div class="icon-card__title">
@@ -2074,7 +2452,7 @@
             </div>
             <div class="icon-card ">
               <div class="icon-card__icon">
-                <img class="icon-card__icon_img" src="assets/img/icons/updates.svg" alt="">
+                <img class="icon-card__icon_img lazyload" src="assets/img/icons/updates.svg" alt="images">
               </div>
               <div class="icon-card__content">
                 <div class="icon-card__title">
@@ -2087,7 +2465,7 @@
             </div>
             <div class="icon-card ">
               <div class="icon-card__icon">
-                <img class="icon-card__icon_img" src="assets/img/icons/repear-free.svg" alt="">
+                <img class="icon-card__icon_img lazyload" src="assets/img/icons/repear-free.svg" alt="images">
               </div>
               <div class="icon-card__content">
                 <div class="icon-card__title">
@@ -2116,23 +2494,23 @@
           <div class="twelfth__content">
             <div class="thirtyone__tags twelfth__tags">
               <div class="custom-tag">
-                <img class="custom-tag__icon" src="assets/img/section-12/1.svg" alt="">
+                <img class="custom-tag__icon lazyload" src="assets/img/section-12/1.svg" alt="images">
                 <span class="custom-tag__text">Видеорегистратор</span>
               </div>
               <div class="custom-tag">
-                <img class="custom-tag__icon" src="assets/img/section-12/2.svg" alt="">
+                <img class="custom-tag__icon lazyload" src="assets/img/section-12/2.svg" alt="images">
                 <span class="custom-tag__text">Навигатор</span>
               </div>
               <div class="custom-tag">
-                <img class="custom-tag__icon" src="assets/img/section-12/3.svg" alt="">
+                <img class="custom-tag__icon lazyload" src="assets/img/section-12/3.svg" alt="images">
                 <span class="custom-tag__text">GPS радар-детектор</span>
               </div>
               <div class="custom-tag">
-                <img class="custom-tag__icon" src="assets/img/section-12/4.svg" alt="">
+                <img class="custom-tag__icon lazyload" src="assets/img/section-12/4.svg" alt="images">
                 <span class="custom-tag__text">Автопланшет</span>
               </div>
               <div class="custom-tag">
-                <img class="custom-tag__icon" src="assets/img/section-12/5.svg" alt="">
+                <img class="custom-tag__icon lazyload" src="assets/img/section-12/5.svg" alt="images">
                 <span class="custom-tag__text">Ассистент парковки</span>
               </div>
             </div>
@@ -2146,7 +2524,10 @@
             </div>
           </div>
           <div class="twelfth__img">
-            <img class="twelfth__img_img" src="assets/img/section-12/main.png" alt="">
+            <picture>
+              <source srcset="assets/img/section-12/main.webp" type="image/webp">
+              <img loading="lazy" class="twelfth__img_img lazyload" src="assets/img/section-12/main.png" alt="images">
+            </picture>
           </div>
         </div>
       </div>
@@ -2154,47 +2535,47 @@
 
     <!-- thirtytwo -->
     <section class="thirtytwo">
-     <div class="container">
-       <div class="thirtytwo__heading">
-         <div class="thirtytwo__title main-title main-title__notcase">Техподдержка на связи 24/7</div>
-         <div class="main-title__card">
-           <img class="main-title__card-radius__icon" src="/assets/img/icons/guidelines.svg" alt="">
-           <div class="main-title__card-radius__text">В комплекте будет приложена бумажная<br> инструкция по работе и настройке</div>
-         </div>
-       </div>
-       <div class="thirtytwo__content">
-        <div class="thirtytwo__descrp">
-          <div class="thirtytwo__text main-subtitle">
-            <span class="main-color">Проконсультируем по всем вопросам</span> 
-            <span class="thirtytwo__text-size">работы и настройки</span>
-          </div>
-          <div class="thirtytwo__subtext icon-card__text">
-            Пишите обращение через 
-            <a href="#" class="thirtytwo__form-link color-white"><b>форму</b></a>
-            на сайте
+      <div class="container">
+        <div class="thirtytwo__heading">
+          <div class="thirtytwo__title main-title main-title__notcase">Техподдержка на связи 24/7</div>
+          <div class="main-title__card">
+            <img class="main-title__card-radius__icon lazyload" src="/assets/img/icons/guidelines.svg" alt="images">
+            <div class="main-title__card-radius__text">В комплекте будет приложена бумажная<br> инструкция по работе и настройке</div>
           </div>
         </div>
-        <div class="thirtytwo__links">
-          <div class="thirtytwo__links-title checked-item_text">Актуальные ссылки</div>
-          <div class="thirtytwo__links-body">
-            <a href="#" class="thirtytwo__link">
-              <img src="/assets/img/icons/arrow-square.svg" alt="" class="thirtytwo__link-icon">
-              <div class="thirtytwo__link-text icon-card__text">Страница поддержки</div>
-            </a>
-            <a href="#" class="thirtytwo__link">
-              <img src="/assets/img/icons/arrow-square.svg" alt="" class="thirtytwo__link-icon">
-              <div class="thirtytwo__link-text icon-card__text">Руководство пользователя</div>
-            </a>
-            <a href="#" class="thirtytwo__link">
-              <img src="/assets/img/icons/arrow-square.svg" alt="" class="thirtytwo__link-icon">
-              <div class="thirtytwo__link-text icon-card__text">Видео инструкции по настройке устройства</div>
-            </a>
+        <div class="thirtytwo__content">
+          <div class="thirtytwo__descrp">
+            <div class="thirtytwo__text main-subtitle">
+              <span class="main-color">Проконсультируем по всем вопросам</span>
+              <span class="thirtytwo__text-size">работы и настройки</span>
+            </div>
+            <div class="thirtytwo__subtext icon-card__text">
+              Пишите обращение через
+              <a href="#" class="thirtytwo__form-link color-white"><b>форму</b></a>
+              на сайте
+            </div>
+          </div>
+          <div class="thirtytwo__links">
+            <div class="thirtytwo__links-title checked-item_text">Актуальные ссылки</div>
+            <div class="thirtytwo__links-body">
+              <a href="#" class="thirtytwo__link">
+                <img src="/assets/img/icons/arrow-square.svg" alt="images" class="thirtytwo__link-icon lazyload">
+                <div class="thirtytwo__link-text icon-card__text">Страница поддержки</div>
+              </a>
+              <a href="#" class="thirtytwo__link">
+                <img src="/assets/img/icons/arrow-square.svg" alt="images" class="thirtytwo__link-icon lazyload">
+                <div class="thirtytwo__link-text icon-card__text">Руководство пользователя</div>
+              </a>
+              <a href="#" class="thirtytwo__link">
+                <img src="/assets/img/icons/arrow-square.svg" alt="images" class="thirtytwo__link-icon lazyload">
+                <div class="thirtytwo__link-text icon-card__text">Видео инструкции по настройке устройства</div>
+              </a>
+            </div>
           </div>
         </div>
-       </div>
-     </div>
+      </div>
     </section>
-    
+
     <!-- thirtythree -->
     <section class="thirtythree">
       <div class="container">
@@ -2203,7 +2584,10 @@
           <div class="thirtythree__cards">
             <div class="thirtythree__card">
               <div class="thirtythree__card_num">01</div>
-              <img src="/assets/img/section-33/laptop.png" alt="" class="thirtythree__card_img-1">
+              <picture>
+                <source srcset="assets/img/section-33/laptop.webp" type="image/webp">
+                <img loading="lazy" class="thirtythree__card_img-1 lazyload" src="assets/img/section-33/laptop.png" alt="images">
+              </picture>
               <div class="thirtythree__card_btm">
                 <div class="thirtythree__card_title main-subtitle"><b>Делаете заказ на сайте</b></div>
                 <div class="thirtythree__card_text icon-card__text">со скидкой и бонусами до 22 сентября</div>
@@ -2212,7 +2596,10 @@
             </div>
             <div class="thirtythree__card">
               <div class="thirtythree__card_num">02</div>
-              <img src="/assets/img/section-33/maneger.png" alt="" class="thirtythree__card_img-2">
+              <picture>
+                <source srcset="assets/img/section-33/maneger.webp" type="image/webp">
+                <img loading="lazy" class="thirtythree__card_img-2 lazyload" src="assets/img/section-33/maneger.png" alt="images">
+              </picture>
               <div class="thirtythree__card_btm">
                 <div class="thirtythree__card_title main-subtitle"><b>Менеджер <br>подтвержает заказ</b></div>
                 <div class="thirtythree__card_text icon-card__text">Перед отправкой проверяем товар по 20 пунктам качества</div>
@@ -2221,7 +2608,10 @@
             </div>
             <div class="thirtythree__card">
               <div class="thirtythree__card_num">03</div>
-              <img src="/assets/img/section-33/onlooker.png" alt="" class="thirtythree__card_img-3">
+              <picture>
+                <source srcset="assets/img/section-33/onlooker.webp" type="image/webp">
+                <img loading="lazy" class="thirtythree__card_img-3 lazyload" src="assets/img/section-33/onlooker.png" alt="images">
+              </picture>
               <div class="thirtythree__card_btm">
                 <div class="thirtythree__card_title main-subtitle"><b>Получаете посылку, проверяете устройство</b></div>
                 <div class="thirtythree__card_text icon-card__text">и только потом оплачиваете заказ</div>
@@ -2230,9 +2620,9 @@
             </div>
           </div>
         </div>
-    </div>
+      </div>
     </section>
-    
+
     <!-- thirtyfour -->
     <section class="thirtyfour">
       <div class="container">
@@ -2241,15 +2631,15 @@
             <div class="thirtyfour__title main-title main-title__notcase">Остались вопросы перед покупкой?</div>
             <div class="thirtyfour__checked">
               <div class="checked-item">
-                <img class="checked-item_img" src="/assets/img/icons/positive.svg" alt="">
+                <img class="checked-item_img lazyload" src="/assets/img/icons/positive.svg" alt="images">
                 <div class="thirteen__description_about-text checked-item_text"><span>Узнайте, подойдет ли устройство </span> к вашему авто</div>
               </div>
               <div class="checked-item">
-                <img class="checked-item_img" src="/assets/img/icons/positive.svg" alt="">
+                <img class="checked-item_img lazyload" src="/assets/img/icons/positive.svg" alt="images">
                 <div class="thirteen__description_about-text checked-item_text"><span>Подберите нужную комплетацию </span> и получите скидку</div>
               </div>
               <div class="checked-item">
-                <img class="checked-item_img" src="/assets/img/icons/positive.svg" alt="">
+                <img class="checked-item_img lazyload" src="/assets/img/icons/positive.svg" alt="images">
                 <div class="thirteen__description_about-text checked-item_text"><span>Получите ответ </span> на любой вопрос</div>
               </div>
             </div>
@@ -2267,7 +2657,10 @@
               <div class="thirtyfour__name"><b>Петров Михаил</b></div>
               <div class="thirtyfour__expert icon-card__text-fs14">Эксперт по подбору авто устройств</div>
             </div>
-            <img src="/assets/img/section-34/expert.png" alt="" class="thirtyfour__img">
+            <picture>
+              <source srcset="assets/img/section-34/expert.webp" type="image/webp">
+              <img loading="lazy" class="thirtyfour__img lazyload" src="assets/img/section-34/expert.png" alt="images">
+            </picture>
           </div>
         </div>
       </div>
@@ -2281,7 +2674,7 @@
         <div class="footer__row_top">
           <div class="footer__block">
             <a href="#" class="footer__logo">
-              <img class="footer__logo_img header__logo_img" src="assets/img/logo.svg" alt="">
+              <img class="footer__logo_img header__logo_img lazyload" src="assets/img/logo.svg" alt="images">
             </a>
             <div class="footer__logo_text icon-card__text">Официальный интернет-магазин<br> видеорегистраторов Onlooker</div>
           </div>
@@ -2339,15 +2732,21 @@
   <div class="watch-video">
     <button class="watch-video__close"><span>+</span></button>
     <div class="watch-video__title">Смотрите <span class="main-color">видео-обзор</span></div>
-    <button class="watch-video__img"><img src="assets/img/video/1.png" alt=""></button>
+    <button class="watch-video__img">
+      <picture>
+        <source srcset="assets/img/video/1.webp" type="image/webp">
+        <img loading="lazy" class="lazyload" src="assets/img/video/1.png" alt="images">
+      </picture>
+    </button>
     <button class="watch-video__btn">Спасибо, уже видел</button>
   </div>
   <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="assets/js/slider.js"></script>
   <script src="assets/js/libs.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/slider.js"></script>
+  <script src="lazysizes.min.js" async=""></script>
 </body>
 
 </html>
