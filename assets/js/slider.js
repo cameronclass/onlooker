@@ -1,6 +1,4 @@
 function initSliders() {
-  // Перечень слайдеров
-  // Проверяем, есть ли слайдер на стронице
   if (document.querySelector(".fifteen__sensor_slider_block")) {
     // Указываем скласс нужного слайдера
     // Создаем слайдер
@@ -39,10 +37,27 @@ function initSliders() {
         el: ".twenty-five .swiper-pagination",
         clickable: true,
       },
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        576: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+        992: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },
+      },
     });
   }
 
-  // === SECTION 28 =====================
   if (document.querySelector(".twenty-seven__slider-one_block")) {
     new Swiper(".twenty-seven__slider-one_block", {
       slidesPerView: 3,
@@ -59,6 +74,21 @@ function initSliders() {
       pagination: {
         el: ".twenty-seven__slider-one .swiper-pagination",
         clickable: true,
+      },
+
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        576: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
       },
     });
   }
@@ -100,22 +130,21 @@ function initSliders() {
         el: ".twenty-seven__slider-three .swiper-pagination",
         clickable: true,
       },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        576: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
     });
   }
 }
 initSliders();
-
-// let newSlider = new Swiper(".twenty-five__slider_block", {
-//   slidesPerView: 5,
-//   spaceBetween: 30,
-//   speed: 600,
-//   loop: true,
-//   navigation: {
-//     nextEl: ".twenty-five .swiper-button-next",
-//     prevEl: ".twenty-five .swiper-button-prev",
-//   },
-//   pagination: {
-//     el: ".twenty-five .swiper-pagination",
-//     clickable: true,
-//   },
-// });
