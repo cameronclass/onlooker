@@ -1,16 +1,18 @@
-
 .eleventh {
+
     // .eleventh__more
     &__more {
         display: flex;
         flex-direction: column;
         margin-top: 96px;
     }
+
     // .eleventh__tabl
     &__tabl {
         flex-direction: column;
-        
+
     }
+
     // .eleventh__tabl-title
     &__tabl-title {
         background: #171717;
@@ -20,6 +22,7 @@
         padding: 18px 19px;
         margin: 0;
     }
+
     // .eleventh__tabl-body
     &__tabl-body {
         display: flex;
@@ -27,6 +30,7 @@
         padding: 30px 19px 40px;
         row-gap: 25px;
     }
+
     // .eleventh__tabl-rows
     &__body-rows {
         display: flex;
@@ -34,8 +38,9 @@
         justify-content: space-between;
         align-items: center;
         column-gap: 50px;
-        
+
     }
+
     // .eleventh__tabl-block
     &__tabl-block {
         // display: flex;
@@ -47,6 +52,7 @@
         display: grid;
         grid-template-columns: auto 1fr auto;
     }
+
     // .eleventh__descrip
     &__descrip {
         display: grid;
@@ -57,12 +63,14 @@
         line-height: 1.4;
         padding-right: 20px;
     }
+
     // .eleventh__line
     &__line {
         width: 100%;
         position: relative;
+
         &::before {
-            content:"";
+            content: "";
             position: absolute;
             top: 50%;
             left: 0;
@@ -73,6 +81,7 @@
         }
 
     }
+
     // .eleventh__charact
     &__charact {
         display: grid;
@@ -87,264 +96,7 @@
 }
 
 
-.twentyeight {
-    margin-top: 155px;
 
-    // .twentyeight__tabs
-    &__tabs {}
-
-    // .twentyeight__nav
-    &__nav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 27px;
-        margin-bottom: 58px;
-        position: relative;
-
-        &::before,
-        &::after {
-            content: '';
-            position: absolute;
-            width: 271px;
-            height: 243px;
-            background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
-            filter: blur(250px);
-            z-index: 1;
-        }
-
-        &::before {
-            right: 300px;
-            top: 350px;
-        }
-
-        &::after {
-            left: -180px;
-            top: 700px;
-        }
-    }
-
-    // .twentyeight__nav-title
-    &__nav-title {
-        padding: 19px 29px;
-    }
-
-    // .twentyeight__nav-icon
-    &__nav-icon {
-        height: 40px;
-        width: auto;
-    }
-
-    // .twentyeight__nav-text
-    &__nav-text {}
-
-    // .twentyeight__content
-    &__content {}
-
-    // .twentyeight__tabs-one
-    &__tabs-one {}
-
-    // .twentyeight__title
-    &__title {
-        font-size: 56px;
-        max-width: 1015px;
-        position: relative;
-        z-index: 2;
-    }
-
-    // .twentyeight__terms
-    &__terms {
-        display: flex;
-    }
-
-    // .twentyeight__terms-content
-    &__terms-content {
-        display: flex;
-        flex-direction: column;
-        flex: 60%;
-    }
-
-    // .twentyeight__deliv-title
-    &__deliv-title {
-        padding: 0px 146px 0 0;
-        font-size: 26px;
-        line-height: 1.6;
-        margin: 27px 0 46px;
-        color: rgba(255, 255, 255, 0.6);
-
-        &_white {
-            color: rgba(255, 255, 255, 1);
-        }
-    }
-
-    // .twentyeight__deliv-method
-    &__deliv-method {
-        display: flex;
-        column-gap: 16px;
-        margin-bottom: 24px;
-    }
-
-    // .twentyeight__deliv-block
-    &__deliv-block {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        position: relative;
-        z-index: 2;
-
-        // .twentyeight__deliv-block_two
-        &_two {
-            display: flex;
-            flex-direction: column;
-            align-items: stretch;
-            row-gap: 12px;
-            position: relative;
-            z-index: 2;
-        }
-    }
-
-    // .twentyeight__deliv-top
-    &__deliv-top {
-        justify-content: center;
-    }
-
-    // .twentyeight__deliv-bottom
-    &__deliv-bottom {
-        justify-content: center;
-    }
-
-    // .twentyeight__deliv-text
-    &__deliv-text {
-        padding: 14px 50px;
-        margin-bottom: 71px;
-        position: relative;
-        z-index: 2;
-
-        &_gray {
-            color: rgba(255, 255, 255, 0.3);
-            font-weight: 400;
-            font-size: 16px;
-        }
-
-        &_white {
-            color: rgba(255, 255, 255, 1);
-        }
-    }
-
-    // .twentyeight__icon-cdek
-    &__icon-cdek {
-        height: 49px;
-        margin-bottom: 19px;
-    }
-
-    // .twentyeight__icon-yandex
-    &__icon-yandex {
-        height: 30px;
-    }
-
-    // .twentyeight__icon-dpd
-    &__icon-dpd {
-        height: 47px;
-    }
-
-    // .twentyeight__icon-post
-    &__icon-post {
-        height: 73px;
-        margin-bottom: 15px;
-    }
-
-    // .twentyeight__icon-delivery
-    &__icon-delivery {
-        height: 36px;
-    }
-
-    // .twentyeight__icon-rub
-    &__icon-rub {
-        height: 47px;
-        margin-right: 18px;
-    }
-
-    // .twentyeight__icon-card
-    &__icon-card {
-        height: 60px;
-    }
-
-    // .twentyeight__icon-bank
-    &__icon-bank {
-        height: 52px;
-    }
-
-    // .twentyeight__pay
-    &__pay {
-        display: flex;
-        column-gap: 35px;
-        position: relative;
-        z-index: 2;
-    }
-
-    // .twentyeight__pay-method
-    &__pay-method {
-        display: flex;
-        flex-direction: column;
-    }
-
-    // .twentyeight__pay-title
-    &__pay-title {
-        font-size: 26px;
-        font-weight: 700;
-        margin-bottom: 24px;
-    }
-
-    // .twentyeight__pay-block
-    &__pay-block {
-        display: flex;
-        gap: 12px;
-        margin-bottom: 37px;
-
-        .main-title__card {
-            padding: 22px 17px;
-        }
-    }
-
-    // .twentyeight__pay-cash
-    &__pay-cash {}
-
-    // .twentyeight__pay-card
-    &__pay-card {}
-
-    // .twentyeight__pay-img
-    &__pay-img {}
-
-    // .twentyeight__credit
-    &__credit {}
-
-    // .twentyeight__credit-bank
-    &__credit-bank {
-        padding: 23px 55px;
-        background: linear-gradient(275.98deg, #121212 3.53%, #181818 97.46%), linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%);
-        box-shadow: 16.0966px 1.89372px 64.8599px rgba(16, 120, 116, 0.06);
-        margin-bottom: 40px;
-    }
-
-    // .twentyeight__credit-text
-    &__credit-text {}
-
-    // .twentyeight__terms-img
-    &__terms-img {
-        flex: 40%;
-    }
-
-    // .twentyeight__device-img
-    &__device-img {
-        object-fit: contain;
-        position: relative;
-        z-index: 2;
-    }
-
-    // .twentyeight__tabs-two
-    &__tabs-two {}
-}
 
 // Блок со спойлерами
 .spollers {
@@ -1194,7 +946,7 @@
 
 
 // =======
-    
+
 //     @include mobile {
 //         font-size: 14px;
 //     }

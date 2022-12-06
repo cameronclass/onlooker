@@ -229,11 +229,21 @@
         display: flex;
         justify-content: space-between;
 
+        @include tablet {
+            padding: 25px 15px;
+            flex-direction: column;
+        }
+
         &__text {
             width: 100%;
             max-width: 580px;
             display: flex;
             align-items: center;
+
+            @include tablet {
+                flex-direction: column;
+                row-gap: 10px;
+            }
 
             &_title {}
 
@@ -242,8 +252,8 @@
                 color: rgba(255, 255, 255, 0.6);
                 font-size: 22px;
 
-                .color-white {
-                    font-size: 22px;
+                @include tablet {
+                    font-size: 16px;
                 }
             }
         }
@@ -256,15 +266,31 @@
             align-items: center;
             justify-content: flex-end;
 
+            @include tablet {
+                flex-direction: column;
+                margin-top: 20px;
+                row-gap: 15px;
+            }
+
             &_price {
                 line-height: 1.1;
                 margin-right: 26px;
+
+                @include tablet {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 20px;
+                }
             }
 
             &_button {
 
                 .main-btn {
                     padding: 15px 40px;
+
+                    @include tablet {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -488,10 +514,15 @@
 .slider-card {
     background: linear-gradient(276.53deg, #121212 3.6%, #1D1D1D 104.04%);
     border-radius: 12px;
+    overflow: hidden;
 
     &__title {
         font-weight: 700;
         font-size: 18px;
+
+        @include tablet {
+            font-size: 12px;
+        }
     }
 
     &__content {
@@ -506,10 +537,18 @@
         padding: 25px 15px;
         height: 240px;
 
+        @include tablet {
+            height: 160px;
+        }
+
         &_item {
             width: 90%;
             height: 207px;
             object-fit: contain;
+
+            @include tablet {
+                height: 150px;
+            }
         }
     }
 
@@ -525,11 +564,19 @@
             text-decoration-line: line-through;
             opacity: 0.3;
             margin-left: 15px;
+
+            @include tablet {
+                font-size: 9px;
+            }
         }
 
         &_new {
             font-weight: 700;
             font-size: 18px;
+
+            @include tablet {
+                font-size: 13px;
+            }
         }
     }
 
