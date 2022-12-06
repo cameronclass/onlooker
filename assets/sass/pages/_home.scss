@@ -919,7 +919,7 @@
         @include tablet {
             margin-top: 100px;
         }
-        
+
         &_title {
             font-weight: 800;
             font-size: 40px;
@@ -956,7 +956,7 @@
             font-size: 24px;
             opacity: 0.6;
         }
-        
+
     }
 
     &__bg {
@@ -1611,7 +1611,7 @@
 .eighth {
     margin-top: 200px;
     margin-bottom: 200px;
-	
+
 	// .eighth__bg
 	&__bg {
         top: -62px;
@@ -2427,10 +2427,10 @@
         display: flex;
         justify-content: center;
         margin-top: 70px;
-        
+
         position: relative;
         z-index: 2;
-        
+
         &_img {
             position: relative;
             max-width: 1110px;
@@ -2444,7 +2444,7 @@
 
         position: relative;
         z-index: 2;
-        
+
         @include tablet {
             margin-top: 100px;
         }
@@ -3879,7 +3879,7 @@
     &__card {
         max-width: 350px;
         width: 30%;
-        background: linear-gradient(276.53deg, #121212 3.6%, #1D1D1D 104.04%), url(image.png);
+        background: linear-gradient(276.53deg, #121212 3.6%, #1D1D1D 104.04%);
         border-radius: 16px;
         padding: 20px 30px;
         height: 400px;
