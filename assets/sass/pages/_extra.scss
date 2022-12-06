@@ -4,6 +4,7 @@
     &__more {
         display: flex;
         flex-direction: column;
+        margin-top: 96px;
     }
     // .eleventh__tabl
     &__tabl {
@@ -37,18 +38,20 @@
     }
     // .eleventh__tabl-block
     &__tabl-block {
-        display: flex;
+        // display: flex;
         width: 50%;
         // justify-content: space-between;
         // column-gap: 20px;
-        row-gap: 25px;
-        align-items: center;
+        // row-gap: 25px;
+        // align-items: center;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
     }
     // .eleventh__descrip
     &__descrip {
-        width: 100%;
-        max-width: fit-content;
-        align-items: center;
+        display: grid;
+        align-content: center;
+        max-width: 411px;
         font-weight: 500;
         font-size: 18px;
         line-height: 1.4;
@@ -72,12 +75,14 @@
     }
     // .eleventh__charact
     &__charact {
-        display: flex;
-        justify-content: flex-end;
+        display: grid;
+        // justify-content: flex-end;
         // min-width: fit-content;
         max-width: 420px;
         align-items: center;
         padding-left: 20px;
+        justify-items: flex-end;
+        text-align: right;
     }
 }
 
