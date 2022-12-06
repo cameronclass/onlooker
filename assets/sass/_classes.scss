@@ -752,3 +752,61 @@ input:checked+.slider:before {
         line-height: 1.2;
     }
 }
+
+//== neon-glow ==================
+.neon-glow {
+    // .neon-glow__bg-body
+    &__bg-body {
+        position: relative;
+    }
+    // .neon-glow__blur-200
+    &__blur-200 {
+        position: absolute;
+        background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%), linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
+        filter: blur(200px);
+    }
+    // .neon-glow__blur-300
+    &__blur-300 {
+        position: absolute;
+        background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
+        filter: blur(300px);
+    }
+    // .neon-glow__blur-300-width
+    &__blur-300-width {
+        position: absolute;
+        width: 289px;
+        height: 289px;
+        background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
+        filter: blur(300px);
+    }
+    // .neon-glow__blur-250 
+    &__blur-250 {
+        position: absolute;
+        background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
+        filter: blur(250px);
+    }
+    // .neon-glow__blur-250-width-194 
+    &__blur-250-width-139 {
+        position: absolute;
+        width: 139px;
+        height: 174px;
+        background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
+        filter: blur(250px);
+    }
+    // .neon-glow__blur-250-width-194 
+    &__blur-250-width-194 {
+        position: absolute;
+        width: 194px;
+        height: 174px;
+        background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
+        filter: blur(250px);
+    }
+    // .neon-glow__blur-250-width-270
+    &__blur-250-width-270 {
+        position: absolute;
+        width: 270px;
+        height: 173px;
+        background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
+        filter: blur(250px);
+    }
+}
