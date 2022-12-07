@@ -176,7 +176,9 @@
   .modal-window {
   position: relative;
   z-index: 110;
-  overflow: auto;
+    @include mobile {
+      overflow: auto;
+    }
   }
   .content {
     box-shadow: 0px 0px 249px rgba(12, 148, 125, 0.27);
