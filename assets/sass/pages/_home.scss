@@ -2741,7 +2741,7 @@
             font-size: 18px;
             font-weight: 600;
 
-            @include tablet{
+            @include tablet {
                 font-size: 14px;
             }
         }
@@ -4481,25 +4481,25 @@
         margin-bottom: 100px;
     }
 
-    // .twenty-eight__bg
+
     &__bg {
         top: -80px;
         left: -417px;
     }
 
-    // .twenty-eight__bg-2
+
     &__bg-2 {
         top: 805px;
         left: -130px;
     }
 
-    // .twenty-eight__bg-3
+
     &__bg-3 {
         top: 501px;
         right: 24px;
     }
 
-    // .twenty-eight__bg-4
+
     &__bg-4 {
         top: 357px;
         right: 271px;
@@ -4507,7 +4507,7 @@
         height: 243px;
     }
 
-    // .twenty-eight__bg-5
+
     &__bg-5 {
         top: 845px;
         right: -532px;
@@ -4553,202 +4553,219 @@
         color: rgba(255, 255, 255, 0.3);
     }
 
-    &__nav-title {
-        padding: 19px 29px;
-    }
-
-    &__content {}
 
 
-    &__terms {
-        display: flex;
+    &__one {
+        position: relative;
+        z-index: 2;
+        &_title {
+            max-width: 1030px;
+            margin-bottom: 20px;
+        }
 
-        &-content {
+        &_subtitle {}
+
+        &_block {
             display: flex;
-            flex-direction: column;
-            flex: 60%;
 
-            @include tablet {
+            @include tablet{
+                flex-direction: column;
+                row-gap: 40px;
+            }
+        }
+
+        &_box {
+            width: 60%;
+            max-width: 828px;
+
+            @include tablet{
                 width: 100%;
             }
         }
 
-        &-img {
-            flex: 40%;
+        &_img {
+            width: 40%;
+            max-width: 570px;
 
-            @include tablet {
-                display: none;
-            }
-        }
-    }
-
-
-    &__deliv {
-        &-title {
-            padding: 0px 146px 0 0;
-            font-size: 26px;
-            line-height: 1.6;
-            margin: 27px 0 46px;
-            color: rgba(255, 255, 255, 0.6);
-
-            &_white {
-                color: rgba(255, 255, 255, 1);
-            }
-
-            @include tablet {
-                font-size: 18px;
-                padding: 0;
+            @include tablet{
+                width: 100%;
             }
         }
 
-        &-method {
-            display: flex;
-            column-gap: 16px;
-            margin-bottom: 24px;
-
-            @include tablet {
-                flex-direction: column;
-            }
-        }
-
-        &-block {
+        &_card {
+            padding: 20px;
+            background: linear-gradient(275.98deg, #121212 3.53%, #181818 97.46%), linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%);
+            border-radius: 8px;
             display: flex;
             flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            position: relative;
-            z-index: 2;
+            align-items: center;
+            justify-content: space-around;
+            row-gap: 10px;
 
+            &_text {
+                opacity: 0.6;
+                text-align: center;
 
-            &_two {
+                @include tablet{
+                    font-size: 14px;
+                }
+            }
+
+            picture{
+                display: flex;
+            }
+        }
+
+        &_delivery {
+            display: flex;
+            column-gap: 15px;
+            margin-top: 40px;
+
+            @include tablet{
+                flex-direction: column;
+                row-gap: 15px;
+            }
+
+            &_cdek {
+                max-width: 288px;
+
+                @include tablet{
+                    max-width: 100%;
+                }
+
+                .twenty-eight__one_card_img {
+                    height: 43px;
+                    object-fit: contain;
+                }
+            }
+
+            &_block {
                 display: flex;
                 flex-direction: column;
-                align-items: stretch;
-                row-gap: 12px;
-                position: relative;
-                z-index: 2;
+                justify-content: space-between;
+
+                @include tablet{
+                    flex-direction: row;
+                    column-gap: 15px;
+                }
+
+                .twenty-eight__one_card {
+                    max-width: 221px;
+
+                    &_img {
+                        height: 38px;
+                        object-fit: contain;
+                    }
+                }
+            }
+
+            &_russia {
+                max-width: 288px;
+
+                @include tablet{
+                    max-width: 100%;
+                }
+
+                .twenty-eight__one_card_img {
+                    height: 73px;
+                    object-fit: contain;
+                }
             }
         }
 
-        &-top {
-            justify-content: center;
+        &_info {
+            background: linear-gradient(275.98deg, #121212 3.53%, #181818 97.46%), #121212;
+            box-shadow: 34px 4px 137px rgba(16, 120, 116, 0.06);
+            border-radius: 11px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+
+            &_icon {
+                width: auto;
+                height: 36px;
+                margin-right: 10px;
+            }
+
+            &_text {
+                color: rgba(255, 255, 255, 0.6);
+
+                @include tablet{
+                    font-size: 14px;
+                }
+            }
         }
 
-        &-bottom {
-            justify-content: center;
+        &_payment {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+
+            @include tablet{
+                flex-direction: column;
+                row-gap: 20px;
+            }
         }
 
-        &-text {
-            padding: 14px 50px;
-            margin-bottom: 71px;
-            position: relative;
-            z-index: 2;
+        &_pay {
+            max-width: 480px;
 
-            &_gray {
-                color: rgba(255, 255, 255, 0.3);
-                font-weight: 400;
+            &_title {
+                font-weight: 700;
+                font-size: 26px;
+                margin-bottom: 20px;
+
+                @include tablet {
+                    font-size: 16px;
+                }
+            }
+
+            &_block {
+                display: flex;
+                justify-content: space-between;
+                column-gap: 15px;
+            }
+
+            &_img {
+                margin-top: 30px;
+            }
+
+            .twenty-eight__one_card {
+                flex-direction: row;
+
+                &_text {
+                    text-align: left;
+                    margin-left: 20px;
+
+                    @include tablet{
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        &_credit {
+            max-width: 290px;
+
+            @include tablet{
+                max-width: 100%;
+            }
+
+            &_text {
+                margin-top: 30px;
                 font-size: 16px;
+                opacity: 0.4;
             }
 
-            &_white {
-                color: rgba(255, 255, 255, 1);
+            .twenty-eight__one_card {
+                &_img {
+                    height: 52px;
+                    object-fit: contain;
+                }
             }
         }
     }
 
 
-
-    &__icon-cdek {
-        height: 49px;
-        margin-bottom: 19px;
-    }
-
-
-    &__icon-yandex {
-        height: 30px;
-    }
-
-
-    &__icon-dpd {
-        height: 47px;
-    }
-
-
-    &__icon-post {
-        height: 73px;
-        margin-bottom: 15px;
-    }
-
-
-    &__icon-delivery {
-        height: 36px;
-    }
-
-
-    &__icon-rub {
-        height: 47px;
-        margin-right: 18px;
-    }
-
-
-    &__icon-card {
-        height: 60px;
-    }
-
-
-    &__icon-bank {
-        height: 52px;
-    }
-
-
-    &__pay {
-        display: flex;
-        column-gap: 35px;
-        position: relative;
-        z-index: 2;
-    }
-
-
-    &__pay-method {
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    &__pay-title {
-        font-size: 26px;
-        font-weight: 700;
-        margin-bottom: 24px;
-    }
-
-
-    &__pay-block {
-        display: flex;
-        gap: 12px;
-        margin-bottom: 37px;
-
-        .main-title__card {
-            padding: 22px 17px;
-        }
-    }
-
-    &__credit-bank {
-        padding: 23px 55px;
-        background: linear-gradient(275.98deg, #121212 3.53%, #181818 97.46%), linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%);
-        box-shadow: 16.0966px 1.89372px 64.8599px rgba(16, 120, 116, 0.06);
-        margin-bottom: 40px;
-    }
-
-
-    &__credit-text {}
-
-
-    &__device-img {
-        object-fit: contain;
-        position: relative;
-        z-index: 2;
-    }
-
-
-    &__tabs-two {}
 }
