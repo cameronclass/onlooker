@@ -719,7 +719,6 @@ input:checked+.slider:before {
     display: flex;
     margin: 10px 0;
     align-items: center;
-    height: 24px;
 
     &_img {
         display: flex;
@@ -742,6 +741,10 @@ input:checked+.slider:before {
         span {
             font-weight: 400;
             opacity: 0.6;
+        }
+
+        @include tablet{
+            font-size: 16px;
         }
     }
 
@@ -779,13 +782,13 @@ input:checked+.slider:before {
         background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
         filter: blur(300px);
     }
-    // .neon-glow__blur-250 
+    // .neon-glow__blur-250
     &__blur-250 {
         position: absolute;
         background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
         filter: blur(250px);
     }
-    // .neon-glow__blur-250-width-194 
+    // .neon-glow__blur-250-width-194
     &__blur-250-width-139 {
         position: absolute;
         width: 139px;
@@ -793,7 +796,7 @@ input:checked+.slider:before {
         background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
         filter: blur(250px);
     }
-    // .neon-glow__blur-250-width-194 
+    // .neon-glow__blur-250-width-194
     &__blur-250-width-194 {
         position: absolute;
         width: 194px;
