@@ -184,7 +184,7 @@
             z-index: 1;
         }
 
-        @include tablet {
+        @include netbook {
             display: none;
         }
     }
@@ -342,7 +342,7 @@
     &__title {
         margin-bottom: 42px;
 
-        @include tablet {
+        @include netbook {
             font-size: 30px;
             margin-bottom: 35px;
         }
@@ -358,7 +358,7 @@
         font-size: 20px;
         margin-bottom: 11px;
 
-        @include tablet {
+        @include netbook {
             font-size: 18px;
         }
     }
@@ -368,7 +368,7 @@
         margin-bottom: 42px;
         line-height: 1.5;
 
-        @include tablet {
+        @include netbook {
             margin-bottom: 31px;
         }
 
@@ -382,7 +382,7 @@
         font-size: 20px;
         margin-bottom: 16px;
 
-        @include tablet {
+        @include netbook {
             font-size: 18px;
         }
     }
@@ -391,7 +391,7 @@
     &__checked {
         margin-bottom: 46px;
 
-        @include tablet {
+        @include netbook {
             margin-bottom: 30px;
         }
 

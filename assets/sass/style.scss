@@ -6,7 +6,7 @@
 /* Template */
 @import "common/fonts";
 @import "template";
-@import "classes";
+
 @import "common/modal";
 @import "common/buttons";
 
@@ -23,3 +23,6 @@
 /* Sliders */
 @import "common/sliders";
 @import "libs/accordion";
+
+
+@import "classes";
