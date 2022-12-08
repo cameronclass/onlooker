@@ -18,7 +18,7 @@
 
     &__row {
 
-        @include tablet{
+        @include netbook {
             text-align: center;
         }
 
@@ -29,7 +29,7 @@
             padding: 50px;
             column-gap: 30px;
 
-            @include tablet {
+            @include netbook {
                 flex-direction: column;
                 padding: 20px;
                 align-items: center;
@@ -42,8 +42,9 @@
             justify-content: space-between;
             padding: 11px 50px;
 
-            @include tablet {
-                flex-direction: column;
+            @include netbook {
+                flex-direction: column-reverse;
+                padding: 20px 0;
             }
         }
     }
@@ -59,6 +60,10 @@
             max-width: 375px;
 
             &::after {}
+
+            @include netbook {
+                justify-content: center;
+            }
         }
 
         // .footer__block_b
@@ -67,6 +72,13 @@
             max-width: 446px;
             justify-content: space-between;
             gap: 36px;
+
+            @include netbook {
+                flex-wrap: wrap;
+                text-align: center;
+                justify-content: center;
+                width: 100%;
+            }
         }
     }
 
@@ -84,6 +96,10 @@
         // .footer__logo_text
         &_text {
             font-size: 12px;
+
+            @include netbook {
+                text-align: center;
+            }
         }
     }
 
@@ -93,6 +109,19 @@
 
         &:not(:last-child) {
             margin-right: 43px;
+
+            @include netbook {
+                margin: 0;
+            }
+        }
+
+        @include netbook {
+            margin: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 10px;
         }
 
         // .footer__contact_span
@@ -109,15 +138,30 @@
             &:nth-child(2) {
                 &:not(:last-child) {
                     padding-left: 35px;
+
+                    @include netbook {
+                        padding: 0;
+                    }
                 }
+            }
+
+            @include netbook {
+                flex-direction: row;
+                max-width: 100%;
             }
         }
     }
 
     // .footer__contact-btn ---------------------------
     &__contact-btn {
-        height: 34px;
+        padding: 10px 30px;
         place-self: center;
+
+        @include netbook {
+            width: 100%;
+            margin-top: 20px;
+            order: 3;
+        }
     }
 
     // .footer__legal ---------------------------
@@ -127,6 +171,10 @@
             max-width: 200px;
             line-height: 1.6;
             font-size: 14px;
+
+            @include netbook {
+                max-width: 100%;
+            }
         }
     }
 
@@ -140,12 +188,23 @@
     // .footer__bottom-left
     &__bottom-left {
         font-size: 12px;
+
+        @include netbook{
+            text-align: center;
+        }
     }
 
     // .footer__bottom-right
     &__bottom-right {
         display: flex;
         column-gap: 33px;
+
+        @include netbook{
+            flex-direction: column;
+            align-items: center;
+            row-gap: 15px;
+            margin-bottom: 20px;
+        }
     }
 
     // .footer__policy
