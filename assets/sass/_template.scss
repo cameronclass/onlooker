@@ -65,6 +65,8 @@ button {
     font-weight: 800;
     font-size: 52px;
     text-transform: uppercase;
+    position: relative;
+    z-index: 2;
 
     @include mobile {
         flex-direction: column;
