@@ -813,3 +813,15 @@ input:checked+.slider:before {
         filter: blur(250px);
     }
 }
+
+.main-btn-gradient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 2px solid $main;  
+    // border-image-source: linear-gradient(263.17deg, #009B8D 8.45%, #009DB9 104.28%);
+    // border-image-slice: 2;
+    color: $main;
+    border-radius: 73px;
+}
