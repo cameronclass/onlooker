@@ -36,15 +36,15 @@
 
 <body>
   <main class="main">
-    <section class="offer">
-        <div class="container">
-            <div class="offer__wrapper">
+    <div class="wrapper-checkout">
+        <section class="offer">
+            <div class="container">
                 <div class="offer__heading">
                     <div class="offer__heading-top">
                         <div class="offer__title main-title main-title__notcase">Ограниченное предложение на </div>
-                        <a href="#" class="offer__back-link">
-                            <img class="offer__back-icon lazyload" src="assets/img/icons/arrow-back.svg" alt="images">
-                            <div class="offer__back-text title-info-radius__text">Вернуться к товару</div>
+                        <a href="#" class="offer__back-link back-arrow">
+                            <img class="offer__back-icon back-arrow__icon lazyload" src="assets/img/icons/arrow-back.svg" alt="images">
+                            <div class="offer__back-text back-arrow__text title-info-radius__text">Вернуться к товару</div>
                         </a>
                     </div>
                     <div class="offer__heading-bottom">
@@ -119,8 +119,308 @@
                 </div>
                 <button type="button" class="offer__about-btn-two main-btn">Заказать со скидкой и подарками</button>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- checkout-one -->
+        <section class="checkout-one">
+            <div class="container">
+                <div class="checkout-one__wrapper">
+                    
+                    <div class="checkout-one__step checkout-step">
+                        <div class="checkout-step__choice">
+                            <div class="checkout-step__choice-num">1</div>
+                            <div class="checkout-step__choice-text">Выбор товара</div>
+                        </div>
+                        <a href="#" class="back-arrow">
+                            <img class="back-arrow__icon lazyload" src="assets/img/icons/arrow-back.svg" alt="images">
+                            <div class="back-arrow__text title-info-radius__text">Вернуться к товару</div>
+                        </a>
+                    </div>
+
+                    <div class="checkout__body">
+                        <div class="checkout-one__product product-card">
+                            <div class="product-card__picture">
+                                <picture>
+                                    <source srcset="assets/img/offer-page/onlooker-check.webp" type="image/webp">
+                                    <img loading="lazy" class="product-card__picture-img lazyload" src="assets/img/offer-page/onlooker-check.png" alt="images">
+                                </picture>
+                                <div class="product-card__label main-btn">Высокий спрос</div>
+                            </div>
+                            <div class="product-card__body">
+                                <div class="product-card__body-top">
+                                    <div class="product-card__title">Onlooker M84 Pro 4G  <span class="icon-card__text">с базовой задней камерой</span></div>
+                                    <a href="#" class="product-card__more">
+                                        <div class="product-card__more-text">Подробнее о товаре</div>
+                                        <img class="product-card__more-arrow lazyload" src="assets/img/icons/arrow-more.svg" alt="images">
+                                    </a>
+                                </div>
+                                <div class="product-card__body-bottom">
+                                    <div class="product-card__count-wrapper">
+                                        <div class="product-card__price">
+                                            <div class="product-card__price-new">19 990 <span class="price__small">₽</span></div>
+                                            <div class="product-card__price-old">24 890<span class="price__small">₽</span></div>
+                                        </div>
+                                        <div class="product-card__count">
+                                            <div class="product-card__plus">+</div>
+                                            <div class="product-card__amount">2 шт</div>
+                                            <div class="product-card__minus">-</div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="product-card__btn main-btn-gradient"><span class="main-btn-gradient__bg"></span><span class="main-btn-gradient__text">Добавить к заказу</span></button>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="checkout-one__summary summary__body">
+                        <div class="summary__total">
+                            <div class="summary__total-text"><span class="icon-card__text">Выбрано</span> 1 товар <span  class="icon-card__text">на сумму</span> 17990₽</div>
+                            <div class="summary__discount"><span class="icon-card__text">Скидка: 0₽</span></div>
+                        </div>
+                        <div class="summary__check">
+                            <div class="summary__check-product">
+                                <div class="summary__check-count">1 товара на сумму</div>
+                                <div class="summary__check-price">17 990 ₽</div>
+                            </div>
+                            <button type="button" class="summary__btn main-btn">
+                                <div class="summary__btn-text">Выбрать Доп. Аксессуары</div>
+                                <img class="summary__btn-arrow lazyload" src="assets/img/icons/arrow-more-2.svg" alt="images">
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- checkout-two -->
+        <section class="checkout-two">
+            <div class="container">
+                <div class="checkout-two__wrapper">
+                    
+                    <div class="checkout-two__step checkout-step">
+                        <div class="checkout-step__choice">
+                            <div class="checkout-step__choice-num">2</div>
+                            <div class="checkout-step__choice-text">Выберите товары для заказа:</div>
+                        </div>
+                        <a href="#" class="back-arrow">
+                            <img class="back-arrow__icon lazyload" src="assets/img/icons/arrow-back.svg" alt="images">
+                            <div class="back-arrow__text title-info-radius__text">Вернуться к товару</div>
+                        </a>
+                    </div>
+
+                    <div class="checkout__body">
+                        <div class="checkout-two__product product-card">
+                            <div class="product-card__picture">
+                                <picture>
+                                    <source srcset="assets/img/offer-page/checkout-two/1.webp" type="image/webp">
+                                    <img loading="lazy" class="product-card__picture-img lazyload" src="assets/img/offer-page/checkout-two/1.png" alt="images">
+                                </picture>
+                                <div class="product-card__label main-btn">Высокий спрос</div>
+                            </div>
+                            <div class="product-card__body">
+                                <div class="product-card__body-top">
+                                    <div class="product-card__title">Стандартная задняя камера</div>
+                                    <a href="#" class="product-card__more">
+                                        <div class="product-card__more-text">Подробнее о товаре</div>
+                                        <img class="product-card__more-arrow lazyload" src="assets/img/icons/arrow-more.svg" alt="images">
+                                    </a>
+                                </div>
+                                <div class="product-card__body-bottom">
+                                    <div class="product-card__count-wrapper">
+                                        <div class="product-card__price">
+                                            <div class="product-card__price-new">19 990 <span class="price__small">₽</span></div>
+                                            <div class="product-card__price-old">24 890<span class="price__small">₽</span></div>
+                                        </div>
+                                        <div class="product-card__count">
+                                            <div class="product-card__plus">+</div>
+                                            <div class="product-card__amount">2 шт</div>
+                                            <div class="product-card__minus">-</div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="product-card__btn main-btn-gradient"><span class="main-btn-gradient__bg"></span><span class="main-btn-gradient__text">Добавить к заказу</span></button>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="checkout-two__product product-card">
+                            <div class="product-card__picture">
+                                <picture>
+                                    <source srcset="assets/img/offer-page/checkout-two/2.webp" type="image/webp">
+                                    <img loading="lazy" class="product-card__picture-img lazyload" src="assets/img/offer-page/checkout-two/2.png" alt="images">
+                                </picture>
+                            </div>
+                            <div class="product-card__body">
+                                <div class="product-card__body-top">
+                                    <div class="product-card__title">Удлинитель для задней камеры (+3 метра)</div>
+                                    <a href="#" class="product-card__more">
+                                        <div class="product-card__more-text">Подробнее о товаре</div>
+                                        <img class="product-card__more-arrow lazyload" src="assets/img/icons/arrow-more.svg" alt="images">
+                                    </a>
+                                </div>
+                                <div class="product-card__body-bottom">
+                                    <div class="product-card__count-wrapper">
+                                        <div class="product-card__price">
+                                            <div class="product-card__price-new">19 990 <span class="price__small">₽</span></div>
+                                            <div class="product-card__price-old">24 890<span class="price__small">₽</span></div>
+                                        </div>
+                                        <div class="product-card__count">
+                                            <div class="product-card__plus">+</div>
+                                            <div class="product-card__amount">2 шт</div>
+                                            <div class="product-card__minus">-</div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="product-card__btn main-btn-gradient"><span class="main-btn-gradient__bg"></span><span class="main-btn-gradient__text">Добавить к заказу</span></button>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="checkout-two__product product-card">
+                            <div class="product-card__picture">
+                                <picture>
+                                    <source srcset="assets/img/offer-page/checkout-two/3.webp" type="image/webp">
+                                    <img loading="lazy" class="product-card__picture-img lazyload" src="assets/img/offer-page/checkout-two/3.png" alt="images">
+                                </picture>
+                            </div>
+                            <div class="product-card__body">
+                                <div class="product-card__body-top">
+                                    <div class="product-card__title">Подставка для крепления на панели</div>
+                                    <a href="#" class="product-card__more">
+                                        <div class="product-card__more-text">Подробнее о товаре</div>
+                                        <img class="product-card__more-arrow lazyload" src="assets/img/icons/arrow-more.svg" alt="images">
+                                    </a>
+                                </div>
+                                <div class="product-card__body-bottom">
+                                    <div class="product-card__count-wrapper">
+                                        <div class="product-card__price">
+                                            <div class="product-card__price-new">19 990 <span class="price__small">₽</span></div>
+                                            <div class="product-card__price-old">24 890<span class="price__small">₽</span></div>
+                                        </div>
+                                        <div class="product-card__count">
+                                            <div class="product-card__plus">+</div>
+                                            <div class="product-card__amount">2 шт</div>
+                                            <div class="product-card__minus">-</div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="product-card__btn main-btn-gradient"><span class="main-btn-gradient__bg"></span><span class="main-btn-gradient__text">Добавить к заказу</span></button>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="checkout-two__product product-card">
+                            <div class="product-card__picture">
+                                <picture>
+                                    <source srcset="assets/img/offer-page/checkout-two/4.webp" type="image/webp">
+                                    <img loading="lazy" class="product-card__picture-img lazyload" src="assets/img/offer-page/checkout-two/4.png" alt="images">
+                                </picture>
+                                <div class="product-card__label main-btn">Высокий спрос</div>
+                            </div>
+                            <div class="product-card__body">
+                                <div class="product-card__body-top">
+                                    <div class="product-card__title">Задняя камера ver 2.0 с ИК подсветкой</div>
+                                    <a href="#" class="product-card__more">
+                                        <div class="product-card__more-text">Подробнее о товаре</div>
+                                        <img class="product-card__more-arrow lazyload" src="assets/img/icons/arrow-more.svg" alt="images">
+                                    </a>
+                                </div>
+                                <div class="product-card__body-bottom">
+                                    <div class="product-card__count-wrapper">
+                                        <div class="product-card__price">
+                                            <div class="product-card__price-new">19 990 <span class="price__small">₽</span></div>
+                                            <div class="product-card__price-old">24 890<span class="price__small">₽</span></div>
+                                        </div>
+                                        <div class="product-card__count">
+                                            <div class="product-card__plus">+</div>
+                                            <div class="product-card__amount">2 шт</div>
+                                            <div class="product-card__minus">-</div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="product-card__btn main-btn-gradient"><span class="main-btn-gradient__bg"></span><span class="main-btn-gradient__text">Добавить к заказу</span></button>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="checkout-two__product product-card">
+                            <div class="product-card__picture">
+                                <picture>
+                                    <source srcset="assets/img/offer-page/checkout-two/5.webp" type="image/webp">
+                                    <img loading="lazy" class="product-card__picture-img lazyload" src="assets/img/offer-page/checkout-two/5.png" alt="images">
+                                </picture>
+                                <div class="product-card__label main-btn">Высокий спрос</div>
+                            </div>
+                            <div class="product-card__body">
+                                <div class="product-card__body-top">
+                                    <div class="product-card__title">Адаптер для скрытого подключения</div>
+                                    <a href="#" class="product-card__more">
+                                        <div class="product-card__more-text">Подробнее о товаре</div>
+                                        <img class="product-card__more-arrow lazyload" src="assets/img/icons/arrow-more.svg" alt="images">
+                                    </a>
+                                </div>
+                                <div class="product-card__body-bottom">
+                                    <div class="product-card__count-wrapper">
+                                        <div class="product-card__price">
+                                            <div class="product-card__price-new">19 990 <span class="price__small">₽</span></div>
+                                            <div class="product-card__price-old">24 890<span class="price__small">₽</span></div>
+                                        </div>
+                                        <div class="product-card__count">
+                                            <div class="product-card__plus">+</div>
+                                            <div class="product-card__amount">2 шт</div>
+                                            <div class="product-card__minus">-</div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="product-card__btn main-btn-gradient"><span class="main-btn-gradient__bg"></span><span class="main-btn-gradient__text">Добавить к заказу</span></button>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="checkout-two__product product-card">
+                            <div class="product-card__picture">
+                                <picture>
+                                    <source srcset="assets/img/offer-page/checkout-two/6.webp" type="image/webp">
+                                    <img loading="lazy" class="product-card__picture-img lazyload" src="assets/img/offer-page/checkout-two/6.png" alt="images">
+                                </picture>
+                            </div>
+                            <div class="product-card__body">
+                                <div class="product-card__body-top">
+                                    <div class="product-card__title">Карты памяти</div>
+                                    <a href="#" class="product-card__more">
+                                        <div class="product-card__more-text">Подробнее о товаре</div>
+                                        <img class="product-card__more-arrow lazyload" src="assets/img/icons/arrow-more.svg" alt="images">
+                                    </a>
+                                </div>
+                                <div class="product-card__body-bottom">
+                                    <div class="product-card__count-wrapper">
+                                        <div class="product-card__price">
+                                            <div class="product-card__price-new">19 990 <span class="price__small">₽</span></div>
+                                            <div class="product-card__price-old">24 890<span class="price__small">₽</span></div>
+                                        </div>
+                                        <div class="product-card__count">
+                                            <div class="product-card__plus">+</div>
+                                            <div class="product-card__amount">2 шт</div>
+                                            <div class="product-card__minus">-</div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="product-card__btn main-btn-gradient"><span class="main-btn-gradient__bg"></span><span class="main-btn-gradient__text">Добавить к заказу</span></button>
+                                </div>
+                            </div>
+                        </div>          
+                    </div>
+
+                    <div class="checkout-two__summary summary__body">
+                        <div class="summary__total">
+                            <div class="summary__total-text"><span class="icon-card__text">Выбрано</span> 1 товар <span  class="icon-card__text">на сумму</span> 17990₽</div>
+                            <div class="summary__discount"><span class="icon-card__text">Скидка: 0₽</span></div>
+                        </div>
+                        <div class="summary__check">
+                            <div class="summary__check-product">
+                                <div class="summary__check-count">1 товара на сумму</div>
+                                <div class="summary__check-price">17 990 ₽</div>
+                            </div>
+                            <button type="button" class="summary__btn main-btn">
+                                <div class="summary__btn-text">Выбрать Доп. Аксессуары</div>
+                                <img class="summary__btn-arrow lazyload" src="assets/img/icons/arrow-more-2.svg" alt="images">
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
   </main>
   <!-- Scripts -->
   <script src="assets/js/libs.min.js"></script>
