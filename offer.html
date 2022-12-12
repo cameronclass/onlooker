@@ -411,7 +411,7 @@
                                 <div class="summary__check-price">17 990 ₽</div>
                             </div>
                             <button type="button" class="summary__btn main-btn">
-                                <div class="summary__btn-text">Выбрать Доп. Аксессуары</div>
+                                <div class="summary__btn-text">Выбор доставки</div>
                                 <img class="summary__btn-arrow lazyload" src="assets/img/icons/arrow-more-2.svg" alt="images">
                             </button>
                         </div>
@@ -420,11 +420,196 @@
                 </div>
             </div>
         </section>
+
+        <!-- checkout-three -->
+        <section class="checkout-three">
+            <div class="container">
+                <div class="checkout-three__step checkout-step">
+                    <div class="checkout-step__choice">
+                        <div class="checkout-step__choice-num">3</div>
+                        <div class="checkout-step__choice-text">Доставка и оплата</div>
+                    </div>
+                    <a href="#" class="back-arrow">
+                        <img class="back-arrow__icon lazyload" src="assets/img/icons/arrow-back.svg" alt="images">
+                        <div class="back-arrow__text title-info-radius__text">Вернуться назад</div>
+                    </a>
+                </div>
+
+                <form action="#" class="checkout-three__form-address">
+                    <div class="checkout-three__form-body">
+                        <select name="country" class="form__select">
+                            <option value="Russia" selected >Россия</option>
+					        <option value="Kazakhstan">Казахстан</option>
+					        <option value="Belarus">Беларусь</option>
+                        </select>
+                    </div>
+                    <div class="checkout-three__form-body search-form">
+                        <button type="button" class="search-form__btn">
+                            <img class="search-form__btn-icon lazyload" src="assets/img/icons/search.svg" alt="images">
+                        </button>
+                        <input type="text" placeholder="Укажите Ваш населенный пункт и адрес" class="search-form__input">
+                    </div>
+                </form>
+
+                <div class="checkout-three__delivery">
+                    <div class="checkout-three__delivery-title">Выберите службу доставки:</div>
+                    <div class="checkout-three__delivery-cards">
+                        <div class="checkout-three__card">
+                            <picture>
+                                <source srcset="assets/img/offer-page/checkout-three/cdek-gray.webp" type="image/webp">
+                                <img loading="lazy" class="checkout-three__img-gray lazyload" src="assets/img/offer-page/checkout-three/cdek-gray.png" alt="images">
+                            </picture>
+                            <picture>
+                                <source srcset="assets/img/offer-page/checkout-three/cdek-color.webp" type="image/webp">
+                                <img loading="lazy" class="checkout-three__img-color lazyload" src="assets/img/offer-page/checkout-three/cdek-color.png" alt="images">
+                            </picture>
+                            <div class="checkout-three__card-body">
+                                <div type="button" class="checkout-three__method active">
+                                    <img loading="lazy" class="checkout-three__method-icon lazyload" src="assets/img/icons/positive-white.svg" alt="images">
+                                    <div class="checkout-three__method-title icon-card__text">Самовывоз:</div>
+                                    <div class="checkout-three__method-price icon-card__title">439 ₽, <span class="checkout-three__method-terms title-info__text">6 дней</span></div>
+                                    <div class="checkout-three__method-text icon-card__text-fs14">Сроки доставки указаны в рабочих днях</div>
+                                </div>
+                                <div type="button" class="checkout-three__method">
+                                    <img loading="lazy" class="checkout-three__method-icon lazyload" src="assets/img/icons/positive-white.svg" alt="images">
+                                    <div class="checkout-three__method-title icon-card__text">Курьер до адреса</div>
+                                    <div class="checkout-three__method-price icon-card__title">607 ₽, <span class="checkout-three__method-terms title-info__text">6 дней</span></div>
+                                    <div class="checkout-three__method-text icon-card__text-fs14">Сроки доставки указаны в рабочих днях</div>
+                                </div>
+                            </div>
+                            <a href="#" class="checkout-three__change">
+                                <div class="checkout-three__change-body">
+                                    <img class="checkout-three__change-icon lazyload" src="assets/img/icons/pencil.svg" alt="images">
+                                    <div class="checkout-three__change-text title-info__text">Изменить пункт самовывоза</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="checkout-three__card">
+                            <picture>
+                                <source srcset="assets/img/offer-page/checkout-three/dpd-gray.webp" type="image/webp">
+                                <img loading="lazy" class="checkout-three__img-gray lazyload" src="assets/img/offer-page/checkout-three/dpd-gray.png" alt="images">
+                            </picture>
+                            <picture>
+                                <source srcset="assets/img/offer-page/checkout-three/dpd-color.webp" type="image/webp">
+                                <img loading="lazy" class="checkout-three__img-color lazyload" src="assets/img/offer-page/checkout-three/dpd-color.png" alt="images">
+                            </picture>
+                            <div class="checkout-three__card-body">
+                                <div type="button" class="checkout-three__method">
+                                    <img loading="lazy" class="checkout-three__method-icon lazyload" src="assets/img/icons/positive-white.svg" alt="images">
+                                    <div class="checkout-three__method-title icon-card__text">Самовывоз:</div>
+                                    <div class="checkout-three__method-price icon-card__title">439 ₽, <span class="checkout-three__method-terms title-info__text">6 дней</span></div>
+                                    <div class="checkout-three__method-text icon-card__text-fs14">Сроки доставки указаны в рабочих днях</div>
+                                </div>
+                                <div type="button" class="checkout-three__method">
+                                    <img loading="lazy" class="checkout-three__method-icon lazyload" src="assets/img/icons/positive-white.svg" alt="images">
+                                    <div class="checkout-three__method-title icon-card__text">Курьер до адреса</div>
+                                    <div class="checkout-three__method-price icon-card__title">607 ₽, <span class="checkout-three__method-terms title-info__text">6 дней</span></div>
+                                    <div class="checkout-three__method-text icon-card__text-fs14">Сроки доставки указаны в рабочих днях</div>
+                                </div>
+                            </div>
+                            <a href="#" class="checkout-three__change">
+                                <div class="checkout-three__change-body">
+                                    <img class="checkout-three__change-icon lazyload" src="assets/img/icons/pencil.svg" alt="images">
+                                    <div class="checkout-three__change-text title-info__text">Изменить пункт самовывоза</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="checkout-three__card">
+                            <picture>
+                                <source srcset="assets/img/offer-page/checkout-three/post-gray.webp" type="image/webp">
+                                <img loading="lazy" class="checkout-three__img-gray lazyload" src="assets/img/offer-page/checkout-three/post-gray.png" alt="images">
+                            </picture>
+                            <picture>
+                                <source srcset="assets/img/offer-page/checkout-three/post-color.webp" type="image/webp">
+                                <img loading="lazy" class="checkout-three__img-color lazyload" src="assets/img/offer-page/checkout-three/post-color.png" alt="images">
+                            </picture>
+                            <div class="checkout-three__card-body">
+                                <div type="button" class="checkout-three__method">
+                                    <img loading="lazy" class="checkout-three__method-icon lazyload" src="assets/img/icons/positive-white.svg" alt="images">
+                                    <div class="checkout-three__method-title icon-card__text">Курьер</div>
+                                    <div class="checkout-three__method-price icon-card__title">607 ₽, <span class="checkout-three__method-terms title-info__text">6 дней</span></div>
+                                    <div class="checkout-three__method-text icon-card__text-fs14">Сроки доставки указаны в рабочих днях</div>
+                                </div>
+                            </div>
+                            <a href="#" class="checkout-three__change">
+                                <div class="checkout-three__change-body">
+                                    <img class="checkout-three__change-icon lazyload" src="assets/img/icons/pencil.svg" alt="images">
+                                    <div class="checkout-three__change-text title-info__text">Изменить пункт самовывоза</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkout-three__map">
+                    <div class="checkout-three__map-title">Выберите пункт самовывоза на карте:</div>
+                    <div class="checkout-three__map-body">
+                        <div style="position:relative;overflow:hidden;">
+                            <a href="https://yandex.ru/maps/54/yekaterinburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Екатеринбург</a>
+                            <a href="https://yandex.ru/maps/geo/yekaterinburg/53166537/?ll=60.475066%2C56.788751&utm_medium=mapframe&utm_source=maps&z=10.66" style="color:#eee;font-size:12px;position:absolute;top:14px;">Екатеринбург — Яндекс Карты</a>
+                            <iframe src="https://yandex.ru/map-widget/v1/-/CCUn4EFGPC" width="100%" max-height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkout-three__summary-address summary-address">
+                     <div class="summary-address__total">
+                        <div class="summary-address__city">Город: Екатеринбург</div>
+                        <div class="summary-address__delivery-service">Служба доставки: СДЭК</div>
+                        <div class="summary-address__delivery-method">Тип доставки: Самовывоз</div>
+                        <div class="summary-address__pickup">Адрес пункта самовывоза СДЭК: 620027 Свердловская область, Екатеринбург, ул. Челюскинцев, 25</div>
+                        <div class="summary-address__payment">Тип оплаты: Оплата наличными при получении</div>
+                        <div class="summary-address__price">
+                            <div class="summary-address__price-total">Итоговая стоимость заказа: 1897 р</div>
+                            <div class="summary-address__price-delivery">В т.ч. стоимость доставки: 607 р.</div>
+                        </div>
+                     </div>
+                     <div class="summary-address__checked">
+                        <form action="#" class="checked-payment">
+                            <div class="checked-payment__item">
+								<input id="cashOnDelivery" checked type="radio" value="cash" name="payment" class="checked-payment__input">
+								<label for="cashOnDelivery" class="checked-payment__label"><span>Наложенный платёж (оплата при получении)</span></label>
+                                <div class="checked-payment__text">Оплатить заказ можно при получении, на пункте выдачи заказов или курьеру (наличные или карта). Вы можете оплатить заказ после осмотра товара.</div>
+							</div>
+							<div class="checked-payment__item">
+								<input id="quickPayment" type="radio" value="quick" name="payment" class="checked-payment__input">
+								<label for="quickPayment" class="checked-payment__label"><span>Предоплата по системе быстрых платежей (скидка 3%)</span></label>
+                                <div class="checked-payment__text">Оплата заказа по системе быстрых платежей вашего банка. При этом способе оплаты доступна скидка 3% на товары. После оплаты заказ передаётся в службу доставки.</div>
+							</div>
+                            <div class="checked-payment__item">
+								<input id="onlineCardPayment" type="radio" value="card" name="payment" class="checked-payment__input">
+								<label for="onlineCardPayment" class="checked-payment__label"><span>Онлайн предоплата по карте</span></label>
+                                <div class="checked-payment__text">Оплата заказа на сайте банковской картой. После оплаты заказ передаётся в службу доставки.</div>
+							</div>
+                        </form>
+                     </div>
+                </div>
+
+                <div class="checkout-three__summary summary__body">
+                    <div class="summary__total">
+                        <div class="summary__total-text"><span class="icon-card__text">Нажмите на кнопку <b>Далее</b>, для заполнения контактных данных для доставки товара</span></div>
+                    </div>
+                    <div class="summary__check">
+                        <div class="summary__check-product">
+                            <div class="summary__check-count">2 товара на сумму</div>
+                            <div class="summary__check-price">17 990 ₽</div>
+                        </div>
+                        <button type="button" class="summary__btn main-btn">
+                            <div class="summary__btn-text">Далее</div>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
     </div>
   </main>
   <!-- Scripts -->
   <script src="assets/js/libs.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/slider.js"></script>
+  <script src="assets/js/select.js"></script>
 </body>
 </html>

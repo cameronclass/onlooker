@@ -145,12 +145,12 @@
 
         &_img {}
     }
-
+    // .icon-card__title
     &__title {
         font-weight: 700;
         font-size: 16px;
     }
-
+    // .icon-card__title-white
     &__title-white {
         font-weight: 700;
         font-size: 16px;
@@ -197,7 +197,7 @@
         align-items: center;
         justify-content: center;
     }
-
+    // .title-info__text
     &__text {
         font-weight: 500;
         font-size: 18px;
@@ -673,7 +673,7 @@
     flex-direction: column;
     justify-content: center;
 
-    // background: rgb(94, 94, 94);
+    background: rgb(94, 94, 94);
 }
 
 // == OFFER PAGE - CHECKOUTS GRID-BODY ========================
@@ -736,10 +736,15 @@
         position: absolute;
         top: 16px;
         right: 16px;
-        width: 81px;
-        height: 22px;
-        font-size: 8px;
+        width: 107px;
+        height: 24px;
+        font-size: 10px;
         padding: 0;
+        @include tablet {
+            width: 75px;
+            height: 18px;
+            font-size: 8px;
+        }
         @include mobile {
             top: 12px;
             left: 13px;
