@@ -36,7 +36,7 @@
 
 <body>
   <!-- Header -->
-  <header class="header">
+  <header class="header" data-aos="fade-in">
     <div class="container-fluid">
       <div class="header__block">
         <a href="#" class="header__logo">
@@ -61,16 +61,16 @@
     <!-- first -->
     <section class="first">
       <div class="container">
-        <div class="first__title">Onlooker M84 Pro</div>
-        <div class="first__subtitle">
+        <div class="first__title" data-aos="fade-down" data-aos-delay="100">Onlooker M84 Pro</div>
+        <div class="first__subtitle" data-aos="fade-in" data-aos-delay="300">
           <span class="first__subtitle_start">Комбо</span>
           <span class="first__shield">
             <img class="first__shield_img" src="assets/img/icons/shield.svg" alt="images">
             <span>Теперь вы в полной безопасности на дороге</span>
           </span>
         </div>
-        <div class="first__subtitle first__subtitle_end">устройство 5в1</div>
-        <div class="first__block">
+        <div class="first__subtitle first__subtitle_end" data-aos="fade-in" data-aos-delay="400">устройство 5в1</div>
+        <div class="first__block" data-aos="fade-in" data-aos-delay="500">
           <div class="first__img">
             <picture>
               <source srcset="assets/img/section-1/1.webp" type="image/webp">
@@ -90,14 +90,14 @@
               </div>
             </div>
             <div class="first__controls">
-              <button class="first__play"><img class="lazyload" src="assets/img/icons/play.svg" alt="images"></button>
-              <button class="first__buy main-btn">Заказать видеорегистратор</button>
+              <button data-fancybox data-src="https://youtu.be/r6Ocw-Su3Qc" class="first__play"><img class="lazyload" src="assets/img/icons/play.svg" alt="images"></button>
+              <button class="first__buy main-btn js-modal-open" data-modal-btn="checkout">Заказать видеорегистратор</button>
             </div>
           </div>
         </div>
         <div class="first__bg neon-glow__blur-300"></div>
         <div class="first__bg-2 neon-glow__blur-300"></div>
-        <div class="first__about">
+        <div class="first__about" data-aos="fade-in" data-aos-delay="100">
           <div class="first__about_card">
             <div class="first__about_title">1 200</div>
             <div class="first__about_text">положительных отзывов</div>
@@ -116,7 +116,7 @@
           </div>
         </div>
 
-        <div class="first__video">
+        <div class="first__video" data-aos="fade-in" data-aos-delay="100">
           <div class="first__video_content">
             <div class="first__video_subtitle mb-3">Смотрите полный видео-обзор устройства</div>
             <div class="first__video_title mb-5">Onlooker M84 PRO 4g</div>
@@ -127,12 +127,12 @@
                 <div class="price__subtitle">До 22 августа 2022 года</div>
               </div>
               <div class="first__video_button">
-                <button class="main-btn mt-4">Заказать видеорегистратор</button>
+                <button class="main-btn mt-4 js-modal-open" data-modal-btn="checkout">Заказать видеорегистратор</button>
               </div>
             </div>
           </div>
           <div class="first__video_preview">
-            <a class="first__video_preview_link" href="#">
+            <button data-fancybox data-src="https://youtu.be/r6Ocw-Su3Qc" class="first__video_preview_link">
               <span class="first__video_preview_subtitle">Видео-обзор</span>
               <span class="first__video_preview_title">Onlooker M84 Pro</span>
               <span class="first__video_preview_img">
@@ -144,7 +144,7 @@
                   <img class="first__video_preview_icon lazyload" src="assets/img/icons/play-white.svg" alt="images">
                 </span>
               </span>
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -156,15 +156,15 @@
       <div class="container">
         <div class="second__heading">
           <div class="second__heading_left">
-            <div class="main-title">
+            <div class="main-title" data-aos="fade-in" data-aos-delay="100">
               <img class="main-title__icon lazyload" src="assets/img/icons/camera.svg" alt="images">
               <span>Видеорегистратор</span>
             </div>
-            <div class="main-subtitle">
+            <div class="main-subtitle" data-aos="fade-in" data-aos-delay="300">
               записывает видео с высоким разрешением <span class="main-color">1920*1080</span>
             </div>
           </div>
-          <div class="second__heading_right">
+          <div class="second__heading_right" data-aos="fade-in" data-aos-delay="300">
             <div class="main-title__card second__heading_block">
               <div class="main-title__card_icon"><img class="lazyload" src="assets/img/icons/security-camera.svg" alt="images"></div>
               <div class="main-title__card_text">В случае ДТП <span class="main-color">вы будете
@@ -178,7 +178,7 @@
           <div class="second__bg-5 neon-glow__blur-200"></div>
           <div class="second__bg-6 neon-glow__blur-200"></div>
         </div>
-        <div class="second__about">
+        <div class="second__about" data-aos="fade-in" data-aos-delay="200">
           <div class="second__about_title">Позволяет видеть:</div>
           <div class="second__about_card">
             <div class="second__about_icon"><img class="second__about_img lazyload" src="assets/img/icons/directions_car.svg" alt="images"></div>
@@ -194,7 +194,7 @@
           </div>
         </div>
 
-        <div class="main-screen">
+        <div class="main-screen" data-aos="fade-in" data-aos-delay="200">
           <div class="main-screen__block">
             <picture>
               <source srcset="assets/img/screen.webp" type="image/webp">
@@ -242,7 +242,7 @@
               <source srcset="assets/img/section-2/camera.webp" type="image/webp">
               <img loading="lazy" class="second__camera_img_item lazyload" src="assets/img/section-2/camera.png" alt="images">
             </picture>
-            <div class="second__camera_text">
+            <div class="second__camera_text" data-aos="fade-right" data-aos-delay="500">
               <img class="second__camera_text_icon lazyload" src="assets/img/section-2/camera-lens.svg" alt="images">
               <span class="second__camera_text_text">Камера поворачивается под нужным углом</span>
             </div>
@@ -3244,6 +3244,7 @@
     </div>
   </footer>
 
+  <!-- Badge -->
   <div class="watch-video">
     <button class="watch-video__close"><span>+</span></button>
     <div class="watch-video__title">Смотрите <span class="main-color">видео-обзор</span></div>
@@ -3255,7 +3256,193 @@
     </button>
     <button class="watch-video__btn">Спасибо, уже видел</button>
   </div>
+
+  <!-- POPUP ----------------------------------->
+  <!-- modal-connection -->
+  <div data-modal-content="modal-connection" class="js-modal-content wrapper-modal">
+    <div class="modal-connection__overlay"></div>
+    <div class="modal-connection modal-window">
+      <button type="button" class="btn-close">
+        <div class="btn-close__btn"></div>
+      </button>
+      <div class="modal-connection__content content">
+        <div class="modal-connection__bg">
+          <picture>
+            <source srcset="assets/img/modals/connection/1.webp" type="image/webp">
+            <img loading="lazy" class="modal-connection__bg-img lazyload" src="assets/img/modals/connection/1.png" alt="images">
+          </picture>
+        </div>
+        <div class="modal-connection__body">
+          <div class="modal-connection__title price__new">Получите видео инструкцию по подключению задней камеры</div>
+          <div class="modal-connection__text main-title__card-radius__text">Выберите куда прислать ссылку на видео:</div>
+          <div class="modal-connection__btn-body">
+            <button type="button" class="modal-connection__btns card-item__block">
+              <img class="modal-connection__btns-img card-item__block-img lazyload" src="assets/img/icons/whatsapp.svg" alt="images">
+              <span class="icon-card__text-fs14">WhatsApp</span>
+            </button>
+            <button type="button" class="modal-connection__btns card-item__block">
+              <img class="modal-connection__btns-img card-item__block-img lazyload" src="assets/img/icons/telegram.svg" alt="images">
+              <span class="icon-card__text-fs14">Telegram</span>
+            </button>
+            <button type="button" class="modal-connection__btns card-item__block">
+              <img class="modal-connection__btns-img card-item__block-img lazyload" src="assets/img/icons/sms.svg" alt="images">
+              <span class="icon-card__text-fs14">SMS</span>
+            </button>
+            <button type="button" class="modal-connection__btns card-item__block">
+              <img class="modal-connection__btns-img card-item__block-img lazyload" src="assets/img/icons/viber.svg" alt="images">
+              <span class="icon-card__text-fs14">Viber</span>
+            </button>
+          </div>
+          <form action="#" class="modal-connection__form ">
+            <input class="modal-connection__input " type="text" placeholder="Ваш телефон">
+            <div class="modal-connection__form-body">
+              <div class="modal-connection__form-text icon-card__text">Нажимая на кнопку, вы даете согласие на обработку персональных данных</div>
+              <button type="submit" class="thirtyfour__btn main-btn">Получить консультацию</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal-detailed -->
+  <div data-modal-content="modal-detail" class="js-modal-content wrapper-modal">
+    <div class="modal-detailed__overlay"></div>
+    <div class="modal-detailed modal-window">
+      <button type="button" class="btn-close">
+        <div class="btn-close__btn"></div>
+      </button>
+      <div class="modal-detailed__content content">
+        <div class="modal-detailed__title main-subtitle__big"><b>Подробнее о комплекте Onlooker M84 Pro 4G с базовой задней камерой</b></div>
+        <div class="modal-detailed__subtitle icon-card__title">Комплект поставки:</div>
+        <div class="modal-detailed__text-about icon-card__text">Onlooker M84 Pro с 32GB встроенной памяти, базовая задняя камера, кабель 6 метров для задней камеры, крепление на лобовое стекло, зарядное устройство в прикуриватель, GPS модуль, инструкция, гарантийный талон.</div>
+        <div class="modal-detailed__subtitle-two icon-card__title">Гарантированные фирменные подарки:</div>
+        <div class="modal-detailed__checked">
+          <div class="checked-item">
+            <img class="checked-item_img lazyload" src="assets/img/icons/positive.svg" alt="images">
+            <div class="icon-card__text">Промокод для приложения радар-детектора (бессрочная лицензия на 5 устройств).</div>
+          </div>
+          <div class="checked-item">
+            <img class="checked-item_img lazyload" src="assets/img/icons/positive.svg" alt="images">
+            <div class="icon-card__text">Буклет с полезными приложениями.</div>
+          </div>
+          <div class="checked-item">
+            <img class="checked-item_img lazyload" src="assets/img/icons/positive.svg" alt="images">
+            <div class="icon-card__text">Специальный аксессуар для безопасной установки/извлечения СИМ-карты/карты памяти и для RESET перезагрузки устройства.</div>
+          </div>
+        </div>
+        <div class="modal-detailed__btns">
+          <button type="button" class="modal-detailed__btn-one main-btn-gradient">Закрыть</button>
+          <button type="submit" class="modal-detailed__btn-two main-btn">Добавить к заказу</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal-confirm -->
+  <div data-modal-content="modal-confirm" class="js-modal-content wrapper-modal">
+    <div class="modal-confirm__overlay"></div>
+    <div class="modal-confirm modal-window">
+      <button type="button" class="btn-close">
+        <div class="btn-close__btn"></div>
+      </button>
+      <div class="modal-confirm__content content">
+        <div class="modal-confirm__title">Подтверждаете этот пункт выдачи?</div>
+        <div class="modal-confirm__btns">
+          <button type="button" class="modal-confirm__btn-one main-btn-gradient">Нет</button>
+          <button type="submit" class="modal-confirm__btn-two main-btn">Да</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Checkout -->
+  <section data-modal-content="checkout" class="offer js-modal-content">
+    <div class="container">
+      <div class="offer__heading">
+        <div class="offer__heading-top">
+          <div class="offer__title main-title main-title__notcase">Ограниченное предложение на </div>
+          <button class="offer__back-link back-arrow btn-close">
+            <img class="offer__back-icon back-arrow__icon lazyload" src="assets/img/icons/arrow-back.svg" alt="images">
+            <div class="offer__back-text back-arrow__text title-info-radius__text">Вернуться к товару</div>
+          </button>
+        </div>
+        <div class="offer__heading-bottom">
+          <div class="offer__title main-title main-title__notcase">Onlooker M84 Pro 4G</div>
+          <div class="main-title__card">
+            <img class="main-title__card-radius__icon lazyload" src="assets/img/icons/discout.svg" alt="images">
+            <div class="main-title__card-radius__text">Все акции <span class="icon-card__text">с бонусами и скидками</span> действуют до 31/10/2022.</div>
+          </div>
+        </div>
+      </div>
+      <div class="offer__content-body">
+        <div class="offer__subtitle"><span class="main-color">Успейте заказать</span> обновлённый Onlooker M84 Pro 4G 2022 года <span class="main-color">по старой цене 24 890₽</span> <span class="price__old">17 990₽</span> до 31.10.2022
+        </div>
+        <div class="offer__content">
+          <div class="offer__about">
+            <div class="main-title__card">
+              <img class="offer__about-icon main-title__card-radius__icon lazyload" src="assets/img/icons/discout-green.svg" alt="images">
+              <div class="checked-item_text"><span>Итоговая</span> скидка сегодня <span>составляет</span> 6900 ₽</div>
+            </div>
+            <div class="main-title__card">
+              <img class="offer__about-icon main-title__card-radius__icon lazyload" src="assets/img/icons/memory.svg" alt="images">
+              <div class="checked-item_text"><span>Версия</span> с 32 GB встроенной памяти вместо 16Gb <span>(не карта памяти).</span></div>
+            </div>
+            <div class="main-title__card">
+              <img class="offer__about-icon main-title__card-radius__icon lazyload" src="assets/img/icons/update-2.svg" alt="images">
+              <div class="checked-item_text">Обновлённый <span>дисплей и прошивка</span> 2022 года</div>
+            </div>
+            <button type="button" class="offer__about-btn main-btn">Заказать со скидкой и подарками</button>
+            <div class="offer__about-text"><span class="offer__about-text-op">Получите ещё </span>4 бонуса:</div>
+          </div>
+          <div class="offer__picture">
+            <picture>
+              <source srcset="assets/img/offer-page/limit-offer.webp" type="image/webp">
+              <img loading="lazy" class="offer__picture-img lazyload" src="assets/img/offer-page/limit-offer.png" alt="images">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="offer__cards">
+        <div class="offer__card">
+          <img class="offer__card-icon lazyload" src="assets/img/icons/discout-green.svg" alt="images">
+          <div class="offer__card-content">
+            <div class="offer__card-title icon-card__title">Скидка 3%</div>
+            <div class="offer__card-text">Скидка 3% <span class="icon-card__text-fs14">при заказе версии M84 Pro 4G с задней камерой +</span> 3 аксессуара</div>
+            <a href="#" class="offer__card-link">Подробнее об акции</a>
+          </div>
+        </div>
+        <div class="offer__card">
+          <img class="offer__card-icon lazyload" src="assets/img/icons/guaranty-3.svg" alt="images">
+          <div class="offer__card-content">
+            <div class="offer__card-title icon-card__title">Гарантия 18 месяцев</div>
+            <div class="offer__card-text"><span class="icon-card__text-fs14">Расширенная гарантия на товар -</span> 18 месяцев <span class="icon-card__text-fs14">при заказе версии M84 Pro 4G с задней камерой + 3 аксессуара.</span></div>
+            <a href="#" class="offer__card-link">Подробнее об акции</a>
+          </div>
+        </div>
+        <div class="offer__card">
+          <img class="offer__card-icon lazyload" src="assets/img/icons/cardreader.svg" alt="images">
+          <div class="offer__card-content">
+            <div class="offer__card-title icon-card__title">Картридер в подарок</div>
+            <div class="offer__card-text">Дарим картридер для карты памяти <span class="icon-card__text-fs14">в подарок, при покупке карты памяти!</span></div>
+            <a href="#" class="offer__card-link">Подробнее об акции</a>
+          </div>
+        </div>
+        <div class="offer__card">
+          <img class="offer__card-icon lazyload" src="assets/img/icons/promo.svg" alt="images">
+          <div class="offer__card-content">
+            <div class="offer__card-title icon-card__title">Промокод в подарок</div>
+            <div class="offer__card-text"><span class="icon-card__text-fs14">Промокод для приложения радар-детектора</span> (бессрочная лицензия на 5 устройств).</div>
+            <a href="#" class="offer__card-link">Подробнее об акции</a>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="offer__about-btn-two main-btn">Заказать со скидкой и подарками</button>
+    </div>
+  </section>
   <!-- Scripts -->
+
   <script src="assets/js/libs.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/slider.js"></script>
