@@ -469,6 +469,10 @@
         position: absolute;
         background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%), linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
         filter: blur(200px);
+
+        @include netbook {
+            display: none;
+        }
     }
 
     // .neon-glow__blur-300
@@ -476,6 +480,10 @@
         position: absolute;
         background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
         filter: blur(300px);
+
+        @include netbook {
+            display: none;
+        }
     }
 
     // .neon-glow__blur-300-width
@@ -485,6 +493,10 @@
         height: 289px;
         background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
         filter: blur(300px);
+
+        @include netbook {
+            display: none;
+        }
     }
 
     // .neon-glow__blur-250
@@ -492,6 +504,10 @@
         position: absolute;
         background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
         filter: blur(250px);
+
+        @include netbook {
+            display: none;
+        }
     }
 
     // .neon-glow__blur-250-width-194
@@ -501,6 +517,10 @@
         height: 174px;
         background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
         filter: blur(250px);
+
+        @include netbook {
+            display: none;
+        }
     }
 
     // .neon-glow__blur-250-width-194
@@ -510,6 +530,10 @@
         height: 174px;
         background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
         filter: blur(250px);
+
+        @include netbook {
+            display: none;
+        }
     }
 
     // .neon-glow__blur-250-width-270
@@ -519,6 +543,10 @@
         height: 173px;
         background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
         filter: blur(250px);
+
+        @include netbook {
+            display: none;
+        }
     }
 }
 
