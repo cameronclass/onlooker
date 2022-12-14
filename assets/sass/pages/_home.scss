@@ -3379,7 +3379,7 @@
 
     &__question {
         width: 100%;
-        max-width: 760px;
+        max-width: 800px;
     }
 
     &__answer {
@@ -4987,7 +4987,7 @@
         position: absolute;
         bottom: -40px;
         right: -2px;
-        width: auto;
+        width: fit-content;
         height: 320px;
 
         @include netbook {
@@ -4995,14 +4995,9 @@
             top: 25%;
             height: 200px;
             right: -22px;
-
         }
     }
 
-
-    &__img-mob {
-        display: none;
-    }
 }
 
 .thirty {
