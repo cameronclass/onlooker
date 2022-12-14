@@ -217,6 +217,41 @@ window.addEventListener("DOMContentLoaded", (event) => {
       }
     });
   }
+
+  /* Compare */
+  const element = document.getElementById("image-compare");
+  const options = {
+    // UI Theme Defaults
+
+    controlColor: "#06b0a1",
+    controlShadow: false,
+    addCircle: true,
+    addCircleBlur: true,
+
+    // Label Defaults
+
+    showLabels: false,
+    labelOptions: {
+      before: "Before",
+      after: "After",
+      onHover: false,
+    },
+
+    // Smoothing
+
+    smoothing: true,
+    smoothingAmount: 100,
+
+    // Other options
+
+    hoverStart: false,
+    verticalMode: false,
+    startingPoint: 50,
+    fluidMode: false,
+  };
+
+  // Add your options object as the second argument
+  const viewer = new ImageCompare(element, options).mount();
 });
 
 /* Animation */

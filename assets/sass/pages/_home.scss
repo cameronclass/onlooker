@@ -30,7 +30,7 @@
         z-index: 2;
 
         @include netbook {
-            font-size: 36px;
+            font-size: 34px;
         }
 
         &_end {
@@ -265,6 +265,7 @@
         border-radius: 12px;
         padding: 40px;
         position: relative;
+        z-index: 3;
 
         @include netbook {
             background: none;
@@ -546,6 +547,8 @@
         justify-content: space-between;
         align-items: center;
         margin: 40px auto;
+        position: relative;
+        z-index: 3;
 
         @include netbook {
             display: none;
@@ -736,6 +739,8 @@
         display: flex;
         margin-top: 50px;
         justify-content: space-between;
+        position: relative;
+        z-index: 2;
 
         @include netbook {
             flex-direction: column;
@@ -800,6 +805,8 @@
     &__video {
         display: flex;
         justify-content: space-between;
+        position: relative;
+        z-index: 2;
 
         @include netbook {
             flex-direction: column-reverse;
@@ -4234,6 +4241,7 @@
             top: 0;
             font-weight: 700;
             font-size: 18px;
+            z-index: 3;
 
             @include netbook {
                 padding: 5px 15px;
@@ -4241,31 +4249,10 @@
             }
         }
 
-        &::after {
-            content: "";
-            display: inline-block;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 3px;
-            height: 100%;
-            background-color: $main;
-
-            @include netbook {
-                display: none;
-            }
-        }
     }
 
     &__left {
-        width: 50%;
-        display: flex;
-        align-items: center;
-        position: relative;
 
-        @include netbook {
-            width: 100%;
-        }
 
         &_title {
             left: 0;
@@ -4274,16 +4261,7 @@
     }
 
     &__right {
-        width: 50%;
-        display: flex;
-        align-items: center;
 
-        @include netbook {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            position: relative;
-        }
 
         &_title {
             right: 0;
@@ -4293,11 +4271,20 @@
 
     &__img {
         height: 660px;
+        width: 800px;
         object-fit: cover;
 
         @include netbook {
+            width: 400px;
             height: 300px;
         }
+    }
+
+    &__compare {
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
     }
 }
 
@@ -5337,6 +5324,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 100%;
         max-width: 359px;
         height: 400px;
         background: linear-gradient(276.53deg, #121212 3.6%, #1D1D1D 104.04%);
@@ -5344,6 +5332,7 @@
         padding: 13px 23px 31px 23px;
 
         @include netbook {
+            max-width: 100%;
             height: auto;
             padding: 20px;
         }

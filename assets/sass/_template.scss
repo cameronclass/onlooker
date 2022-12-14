@@ -97,6 +97,8 @@ button {
         border-radius: 11px;
         display: flex;
         align-items: center;
+        position: relative;
+        z-index: 2;
 
         &_icon {
             min-width: 38px;
@@ -136,6 +138,8 @@ button {
             box-shadow: 34px 4px 137px rgba(16, 120, 116, 0.06);
             border-radius: 50px;
             padding: 10px 25px;
+            position: relative;
+            z-index: 2;
 
             &__icon {
                 width: auto;
@@ -169,6 +173,8 @@ button {
     margin-top: 20px;
     font-weight: 600;
     font-size: 24px;
+    position: relative;
+    z-index: 2;
 
     @include mobile {
         font-size: 18px;
@@ -198,12 +204,12 @@ button {
 
     &__top {
         position: absolute;
-        height: 87%;
+        height: 89%;
         object-fit: cover;
         bottom: 0;
         left: 0;
         top: 0;
-        padding: 4.5%;
+        padding: 4.6%;
 
         @include mobile {
             object-fit: cover;
