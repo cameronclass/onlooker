@@ -2009,8 +2009,9 @@
     &__footer {
         font-weight: 800;
         text-align: center;
-        opacity: 0.02;
         font-size: 91px;
+
+        color: rgb(255 255 255 / 5%);
 
         @include netbook {
             display: none;
@@ -2175,7 +2176,7 @@
     &__more {
         display: flex;
         flex-direction: column;
-        margin-top: 96px;
+        margin-top: 40px;
 
         position: relative;
         z-index: 2;
@@ -2194,6 +2195,10 @@
         font-size: 18px;
         padding: 18px 19px;
         margin: 0;
+
+        @include netbook {
+            font-size: 14px;
+        }
     }
 
     // .eleventh__tabl-body
@@ -2202,6 +2207,11 @@
         flex-direction: column;
         padding: 30px 19px 40px;
         row-gap: 25px;
+
+        @include netbook {
+            padding: 20px 3px;
+            row-gap: 0;
+        }
     }
 
     // .eleventh__tabl-rows
@@ -2211,6 +2221,10 @@
         justify-content: space-between;
         align-items: center;
         column-gap: 50px;
+
+        @include netbook {
+            flex-wrap: wrap;
+        }
     }
 
     // .eleventh__tabl-block
@@ -2218,6 +2232,11 @@
         width: 50%;
         display: grid;
         grid-template-columns: auto 1fr auto;
+
+        @include netbook {
+            width: 100%;
+            margin-bottom: 10px;
+        }
     }
 
     // .eleventh__descrip
@@ -2229,6 +2248,10 @@
         font-size: 18px;
         line-height: 1.4;
         padding-right: 20px;
+
+        @include netbook {
+            font-size: 14px;
+        }
     }
 
     // .eleventh__line
@@ -2256,6 +2279,13 @@
         padding-left: 20px;
         justify-items: flex-end;
         text-align: right;
+        font-size: 18px;
+        opacity: 0.6;
+        font-weight: 400;
+
+        @include netbook {
+            font-size: 12px;
+        }
     }
 }
 
