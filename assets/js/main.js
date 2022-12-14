@@ -190,6 +190,40 @@ window.addEventListener("DOMContentLoaded", (event) => {
     });
   }
 
-  /* Aos */
-  AOS.init();
+  const jsTableBtn = document.querySelector(".js-table-btn");
+  const eleventhAbout = document.querySelector(".eleventh__about");
+  const eleventhMore = document.querySelector(".eleventh__more");
+  const eleventh__heading_info_text_1 = document.querySelector(
+    ".eleventh__heading_info_text_1"
+  );
+  const eleventh__heading_info_text_2 = document.querySelector(
+    ".eleventh__heading_info_text_2"
+  );
+
+  if (jsTableBtn) {
+    jsTableBtn.addEventListener("change", (e) => {
+      if (e.target.checked === true) {
+        eleventhMore.classList.remove("d-none");
+        eleventhAbout.classList.add("d-none");
+
+        eleventh__heading_info_text_1.classList.remove("_active");
+        eleventh__heading_info_text_2.classList.add("_active");
+      } else {
+        eleventhMore.classList.add("d-none");
+        eleventhAbout.classList.remove("d-none");
+
+        eleventh__heading_info_text_1.classList.add("_active");
+        eleventh__heading_info_text_2.classList.remove("_active");
+      }
+    });
+  }
+});
+
+/* Animation */
+AOS.init();
+
+hljs.initHighlightingOnLoad();
+
+window.addEventListener("scroll", () => {
+  AOS.refresh();
 });
