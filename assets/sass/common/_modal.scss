@@ -71,7 +71,7 @@
     flex: 1 1 auto;
     justify-content: center;
     z-index: 100;
-    // display: none;
+    display: none;
     // display: block;
 
     @include tablet {
@@ -87,7 +87,7 @@
 }
 
 .modal-connection {
-    // display: none;
+    display: none;
 }
 .modal-detailed {
     display: none;
