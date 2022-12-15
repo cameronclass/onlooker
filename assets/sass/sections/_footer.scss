@@ -26,12 +26,14 @@
         &_top {
             display: flex;
             justify-content: space-between;
-            padding: 50px;
+            padding-top: 40px;
+            padding-bottom: 40px;
             column-gap: 30px;
 
             @include netbook {
                 flex-direction: column;
-                padding: 20px;
+                padding-top: 30px;
+                padding-bottom: 30px;
                 align-items: center;
                 row-gap: 15px;
             }
@@ -40,7 +42,8 @@
         &_bottom {
             display: flex;
             justify-content: space-between;
-            padding: 11px 50px;
+            padding: 10px 0;
+            column-gap: 15px;
 
             @include netbook {
                 flex-direction: column-reverse;
@@ -188,8 +191,9 @@
     // .footer__bottom-left
     &__bottom-left {
         font-size: 12px;
+        opacity: 0.6;
 
-        @include netbook{
+        @include netbook {
             text-align: center;
         }
     }
@@ -199,7 +203,7 @@
         display: flex;
         column-gap: 33px;
 
-        @include netbook{
+        @include netbook {
             flex-direction: column;
             align-items: center;
             row-gap: 15px;
@@ -211,5 +215,7 @@
     &__policy {
         text-decoration: none;
         font-size: 12px;
+        opacity: 0.6;
+        color: white;
     }
 }

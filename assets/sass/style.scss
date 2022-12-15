@@ -12,7 +12,7 @@
 
 /* Sections for all pages */
 @import "sections/header";
-@import "sections/footer";
+
 
 /* Pages */
 @import "pages/home";
@@ -26,3 +26,5 @@
 
 
 @import "classes";
+
+@import "sections/footer";
