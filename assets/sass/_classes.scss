@@ -471,10 +471,10 @@
         // filter: blur(200px);
 
         background: -webkit-gradient(linear, left top, right top, color-stop(-0.7%, #009B8D), color-stop(211.34%, #009DB9)), -webkit-gradient(linear, left top, right top, color-stop(-0.7%, #009B8D), color-stop(211.34%, #009DB9));
-  background: -o-linear-gradient(left, #009B8D -0.7%, #009DB9 211.34%), -o-linear-gradient(left, #009B8D -0.7%, #009DB9 211.34%);
-  background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%), linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
-  -webkit-filter: blur(200px);
-          filter: blur(200px);
+        background: -o-linear-gradient(left, #009B8D -0.7%, #009DB9 211.34%), -o-linear-gradient(left, #009B8D -0.7%, #009DB9 211.34%);
+        background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%), linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
+        -webkit-filter: blur(200px);
+        filter: blur(200px);
 
         @include netbook {
             display: none;
@@ -488,10 +488,10 @@
         // filter: blur(300px);
 
         background: -webkit-gradient(linear, left top, right top, color-stop(-0.7%, #009B8D), color-stop(211.34%, #009DB9));
-  background: -o-linear-gradient(left, #009B8D -0.7%, #009DB9 211.34%);
-  background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
-  -webkit-filter: blur(300px);
-          filter: blur(300px);
+        background: -o-linear-gradient(left, #009B8D -0.7%, #009DB9 211.34%);
+        background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
+        -webkit-filter: blur(300px);
+        filter: blur(300px);
 
         @include netbook {
             display: none;
@@ -507,9 +507,9 @@
         // filter: blur(300px);
 
         background: -webkit-gradient(linear, left top, right top, color-stop(-0.7%, #009B8D), color-stop(211.34%, #009DB9));
-  background: -o-linear-gradient(left, #009B8D -0.7%, #009DB9 211.34%);
-  background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
-  -webkit-filter: blur(300px);
+        background: -o-linear-gradient(left, #009B8D -0.7%, #009DB9 211.34%);
+        background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
+        -webkit-filter: blur(300px);
           filter: blur(300px);
 
         @include netbook {
@@ -590,6 +590,21 @@
             display: none;
         }
     }
+
+    // .neon-glow__mobile
+    &__mobile {
+        @include tablet {
+            position: absolute;
+            width: 242px;
+            height: 242px;
+            background: -webkit-gradient(linear, left top, right top, color-stop(-0.7%, #009B8D), color-stop(211.34%, #009DB9));
+            background: -o-linear-gradient(left, #009B8D -0.7%, #009DB9 211.34%);
+            background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
+            -webkit-filter: blur(167.281px);
+                    filter: blur(167.281px);
+        }
+    }
+
 }
 
 .main-btn-gradient {

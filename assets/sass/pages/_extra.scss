@@ -10,10 +10,17 @@
     pointer-events: none;
     user-select: none;
     z-index: 999;
+    @include tablet {
+        opacity: 0;
+    }
+   
     &._over {
         transform: translate(-50%, -50%) scale(2.6);
         border: 1px solid rgba(255,255,255,.2);
         background: transparent;
+        @include tablet {
+            display: none;
+        }
     }
     .click {
         opacity: 0;

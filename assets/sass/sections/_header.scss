@@ -1,7 +1,8 @@
 .header {
     padding-top: 40px;
     padding-bottom: 40px;
-
+    z-index: 5;
+    position: relative;
     @include mobile {
         padding-top: 20px;
         padding-bottom: 20px;
