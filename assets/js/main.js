@@ -145,9 +145,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   /* Hamburger */
   const hamburger = document.querySelector(".js-hamburger");
+  const sidebar = document.querySelector(".header__sidebar");
   if (hamburger) {
     hamburger.addEventListener("click", () => {
       hamburger.classList.toggle("is-active");
+      sidebar.classList.toggle("_active");
     });
   }
 

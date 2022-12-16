@@ -58,7 +58,13 @@
     &__sidebar {
         display: flex;
         align-items: center;
-
+        position: relative;
+        &._active {
+            .header__lists {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
         &_menu {
             margin-left: 40px;
 
@@ -91,6 +97,231 @@
         .hamburger-inner:before {
             height: 3px;
             width: 36px;
+        }
+    }
+
+	// .header__lists
+	&__lists {
+        opacity: 0;
+        position: absolute;
+        top: 180px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        row-gap: 64px;
+        transition: all .3s linear 0s, opacity .3s linear 0s;
+        transform: scale(0);
+        .item-1 {
+            &:hover {
+                .line-1 {
+                    &::before {
+                        transform: rotate(7deg) translateX(-20px);
+                    }
+                    &::after {
+                        transform: rotate(-7deg) translateX(-17px);
+                    }
+                }
+              ~.header__item  .line-2 {
+                    &::before {
+                        transition: opacity 0s linear 0s;
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+        .item-2 {
+            &:hover {
+               ~.header__item .line-1 {
+                    &::after {
+                        transition: opacity 0s linear 0s;
+                        opacity: 0;
+                    }
+                }
+                .line-2 {
+                    &::before {
+                        transform: rotate(7deg) translateX(-17px);
+                    }
+                    &::after {
+                        transform: rotate(-7deg) translateX(-17px);
+                    }
+                }
+              ~.header__item .line-3 {
+                    &::before {
+                        transition: opacity 0s linear 0s;
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+        .item-3 {
+            &:hover {
+                ~.header__item  .line-2 {
+                    &::after {
+                        transition: opacity 0s linear 0s;
+                        opacity: 0;
+                    }
+                }
+                .line-3 {
+                    &::before {
+                        transform: rotate(7deg) translateX(-17px);
+                    }
+                    &::after {
+                        transform: rotate(-7deg) translateX(-17px);
+                    }
+                }
+                ~.header__item  .line-4 {
+                    &::before {
+                        transition: opacity 0s linear 0s;
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+        .item-4 {
+            &:hover {
+                ~.header__item .line-3 {
+                    &::after {
+                        transition: opacity 0s linear 0s;
+                        opacity: 0;
+                    }
+                }
+                .line-4 {
+                    &::before {
+                        transform: rotate(7deg) translateX(-17px);
+                    }
+                    &::after {
+                        transform: rotate(-7deg) translateX(-17px);
+                    }
+                }
+                ~.header__item .line-5 {
+                    &::before {
+                        transition: opacity 0s linear 0s;
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+        .item-5 {
+            &:hover {
+                ~.header__item  .line-4 {
+                    &::after {
+                        transition: opacity 0s linear 0s;
+                        opacity: 0;
+                    }
+                }
+                .line-5 {
+                    &::before {
+                        transform: rotate(7deg) translateX(-17px);
+                    }
+                    &::after {
+                        transform: rotate(-7deg) translateX(-20px);
+                    }
+                }
+            }
+        }
+	}
+	// .header__item
+	&__item {
+        padding: 12px 0;
+        display: flex;
+        column-gap: 12px;
+        align-items: center;
+        text-decoration: none;
+        position: relative;
+        transition: all .2s linear 0s;
+        
+        &::after {
+            content: "";
+            transition: all .2s ease 0s;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: -webkit-gradient(linear, left top, right top, color-stop(-0.7%, #009B8D), color-stop(211.34%, #009DB9));
+            background: -o-linear-gradient(left, #009B8D -0.7%, #009DB9 211.34%);
+            background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
+            -webkit-filter: blur(80px);
+                    filter: blur(80px);
+                    z-index: 2;
+        }
+
+        &:hover {
+            transform: translate(-15px, 0);
+            &::after {
+                opacity: 1;
+            }
+            .header__link {
+                color: $main;
+            }
+            .header__bullet {
+                border: 1px solid $main;
+            }
+            .header__bullet::before {
+                background: linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%)
+            }
+        }
+        .line-1 {
+            &::before {
+                height: 60px;
+            }
+        }
+        .line-5 {
+            &::after {
+                height: 60px;
+            }
+        }
+	}
+	// .header__link
+	&__link {
+        font-size: 18px;
+        font-weight: 500px;
+        line-height: 1.4;
+        color: white;
+        z-index: 5;
+	}
+	// .header__bullet
+	&__bullet {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 1px solid white;
+        position: relative;
+        z-index: 5;
+        &::before {
+            content:"";
+            position: absolute;
+            top: 3.5px;
+            left: 3.5px;
+            width: 14px;
+            height: 14px;
+            background: white;
+            border-radius: 50%;
+        }
+
+	}
+    // .header__line
+	&__line {
+        position: relative;
+        z-index: 1;
+        &::before,
+        &::after {
+            content:"";
+            transition: all .2s linear 0s, opacity 0s linear .2s;
+            position: absolute;
+            transform: translateX(-25px);
+            width: 1px;
+            height: 105px;
+            background: rgba(255, 255, 255, 0.3);
+            z-index: 1;
+        }
+        &::before {
+            bottom: 0;
+        }
+        &::after {
+            top: 0;
         }
     }
 
