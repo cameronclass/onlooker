@@ -34,6 +34,7 @@
             .header__lists {
                 opacity: 1;
                 transform: translateY(0);
+                pointer-events: all;
             }
         }
 
@@ -145,6 +146,7 @@
                 display: none;
             }
             @include laptop {
+                transition: all .3s linear 0s;
                 opacity: 0;
                 transform: translateX(100%);
                 position: absolute;
@@ -190,9 +192,27 @@
         align-items: flex-end;
         row-gap: 64px;
         transform: translateY(-100px);
+        pointer-events: none;
+            .item-1 {
+                &._active  {
+                    .line-1::after {
+                        transform: rotate(7deg) translateX(-32px);
+                    }
+                }
+            }
+
+            .item-3 {
+                &._active  {
+                    .line-3::after {
+                        transform: rotate(7deg) translateX(-32px);
+                    }
+                }
+            }
+
             .item-1 {
                 @media (any-hover: hover) {
                     &:hover {
+                        
                         .line-1 {
                             &::before {
                                 transform: rotate(7deg) translateX(-20px);

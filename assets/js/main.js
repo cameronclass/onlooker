@@ -153,6 +153,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     });
   }
 
+
   /* Accordion */
   new Accordion(".accordion-container");
 
@@ -299,27 +300,40 @@ document.addEventListener("mousedown", function (e) {
 }); 
 
 
-// == CLONE FOOTER TO HEADER (on mobile) ==========
+// == Header menu bullet-line moving ==========
+const itemOne = document.querySelector('.item-1');
+const itemTwo = document.querySelector('.item-2');
+const itemThree = document.querySelector('.item-3');
+const itemFour = document.querySelector('.item-4');
+
+itemTwo.addEventListener("mouseover", function(e) {
+  if (itemTwo) {
+      itemOne.classList.add('_active'); 
+  }
+}); 
+
+itemTwo.addEventListener("mouseout", function(e) {
+  if (itemTwo) {
+      itemOne.classList.remove('_active'); 
+  }
+}); 
+
+itemFour.addEventListener("mouseover", function(e) {
+  if (itemFour) {
+      itemThree.classList.add('_active'); 
+  }
+}); 
+
+itemFour.addEventListener("mouseout", function(e) {
+  if (itemFour) {
+      itemThree.classList.remove('_active'); 
+  }
+}); 
+
+
+// == CLONE FOOTER TO HEADER (on mobile menu) ==========
 const footer = document.querySelector(".footer");
 const footerClone = footer.cloneNode(true);
 
 const header = document.querySelector(".header");
-
-
-//При загрузке страницы
-window.addEventListener('load', () => {
-  const screenWidth = getComputedStyle(document.querySelector('.header')).width;
-  cloneIfwidth(screenWidth);
-});
-
-//При изменении ширины экрана
-window.addEventListener('resize', () => {
-  const screenWidth = getComputedStyle(document.querySelector('.header')).width;
-  cloneIfwidth(screenWidth);
-});
-
-function cloneIfwidth(size) {
-   if (size <= '1500px') {
-    header.append(footerClone);
-  }
-}
+header.append(footerClone);
