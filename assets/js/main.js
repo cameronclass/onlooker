@@ -145,11 +145,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   /* Hamburger */
   const hamburger = document.querySelector(".js-hamburger");
-  const sidebar = document.querySelector(".header__sidebar");
+  const header = document.querySelector(".header");
   if (hamburger) {
     hamburger.addEventListener("click", () => {
       hamburger.classList.toggle("is-active");
-      sidebar.classList.toggle("_active");
+      header.classList.toggle("_active");
     });
   }
 
@@ -298,3 +298,28 @@ document.addEventListener("mousedown", function (e) {
   }
 }); 
 
+
+// == CLONE FOOTER TO HEADER (on mobile) ==========
+const footer = document.querySelector(".footer");
+const footerClone = footer.cloneNode(true);
+
+const header = document.querySelector(".header");
+
+
+//При загрузке страницы
+window.addEventListener('load', () => {
+  const screenWidth = getComputedStyle(document.querySelector('.header')).width;
+  cloneIfwidth(screenWidth);
+});
+
+//При изменении ширины экрана
+window.addEventListener('resize', () => {
+  const screenWidth = getComputedStyle(document.querySelector('.header')).width;
+  cloneIfwidth(screenWidth);
+});
+
+function cloneIfwidth(size) {
+   if (size <= '1500px') {
+    header.append(footerClone);
+  }
+}
