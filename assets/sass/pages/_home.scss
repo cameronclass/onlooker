@@ -2781,7 +2781,7 @@
             // animation-play-state: paused;
             opacity: 0;
         }
-        
+
         @keyframes carstaing {
             0% {
                 opacity: 0;
@@ -3058,6 +3058,47 @@
             position: relative;
             z-index: 2;
         }
+
+        
+    }
+
+    &__block-wrap {
+        display: flex;
+    }
+
+    &__block-one {
+        flex: 1 1 28%;
+        padding-top: 88px;
+        position: relative;
+    }
+
+    &__block-two {
+        flex: 1 1 72%;
+        padding-top: 50px;
+    }
+
+    &__img-anim-1 {
+        position: absolute;
+        max-width: 62%;
+        z-index: 5;
+    }
+    &__img-anim-2 {
+        position: absolute;
+        max-width: 62%;
+        z-index: 5;
+    }
+    &__img-anim-3 {
+        position: absolute;
+        max-width: 68%;
+        z-index: 3;
+    }
+    &__img-anim-4 {
+        position: absolute;
+    }
+    &__img-anim-5 {
+        position: absolute;
+        max-width: 19%;
+        z-index: 5;
     }
 
     .main-subtitle {

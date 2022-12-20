@@ -36,14 +36,14 @@
 
 <body>
   <!-- Header -->
-  <header class="header">
+  <header class="header" data-aos="fade-in">
     <div class="container-fluid">
       <div class="header__block">
         <a href="#" class="header__logo">
           <img class="header__logo_img lazyload" src="assets/img/logo.svg" alt="images">
           <span class="header__logo_text">Видеорегистратор- <br> автопланшет</span>
         </a>
-        <div class="header__sidebar">
+        <nav class="header__sidebar">
           <button class="header__sidebar_btn main-btn-white">Заказать звонок</button>
           <button class="header__sidebar_menu">
             <div class="hamburger hamburger--elastic js-hamburger">
@@ -52,25 +52,57 @@
               </div>
             </div>
           </button>
-        </div>
+        </nav>
       </div>
     </div>
   </header>
+  <section class="header__menu">
+    <div class="header__lists">
+      <a href="#" class="header__item">
+        <div class="header__link">Видеорегистратор</div>
+        <div class="header__bullet"></div>
+        <div class="header__line"></div>
+      </a>
+      <a href="#" class="header__item">
+        <div class="header__link">GPS радар-детектор</div>
+        <div class="header__bullet"></div>
+        <div class="header__line"></div>
+      </a>
+      <a href="#" class="header__item">
+        <div class="header__link">Навигатор</div>
+        <div class="header__bullet"></div>
+        <div class="header__line"></div>
+      </a>
+      <a href="#" class="header__item">
+        <div class="header__link">Автопланшет</div>
+        <div class="header__bullet"></div>
+        <div class="header__line"></div>
+      </a>
+      <a href="#" class="header__item">
+        <div class="header__link">Ассистент парковки</div>
+        <div class="header__bullet"></div>
+        <div class="header__line"></div>
+      </a>
+      <button class="header__sidebar_btn-2 main-btn">Заказать видеорегистратор</button>
+    </div>
+
+  </section>
+
   <!-- Main -->
   <main class="main">
     <!-- first -->
     <section class="first">
       <div class="container">
-        <div class="first__title">Onlooker M84 Pro</div>
-        <div class="first__subtitle">
+        <div class="first__title" data-aos="fade-down" data-aos-delay="100">Onlooker M84 Pro</div>
+        <div class="first__subtitle" data-aos="fade-in" data-aos-delay="300">
           <span class="first__subtitle_start">Комбо</span>
           <span class="first__shield">
             <img class="first__shield_img" src="assets/img/icons/shield.svg" alt="images">
             <span>Теперь вы в полной безопасности на дороге</span>
           </span>
         </div>
-        <div class="first__subtitle first__subtitle_end">устройство 5в1</div>
-        <div class="first__block">
+        <div class="first__subtitle first__subtitle_end" data-aos="fade-in" data-aos-delay="400">устройство 5в1</div>
+        <div class="first__block" data-aos="fade-in" data-aos-delay="500">
           <div class="first__img">
             <picture>
               <source srcset="assets/img/section-1/1.webp" type="image/webp">
@@ -90,14 +122,18 @@
               </div>
             </div>
             <div class="first__controls">
-              <button class="first__play"><img class="lazyload" src="assets/img/icons/play.svg" alt="images"></button>
-              <button class="first__buy main-btn">Заказать видеорегистратор</button>
+              <button data-fancybox data-src="https://youtu.be/r6Ocw-Su3Qc" class="first__play"><img class="lazyload" src="assets/img/icons/play.svg" alt="images"></button>
+              <button class="first__buy main-btn js-modal-open" data-modal-btn="checkout">Заказать видеорегистратор</button>
             </div>
           </div>
         </div>
-        <div class="first__bg neon-glow__blur-300"></div>
-        <div class="first__bg-2 neon-glow__blur-300"></div>
-        <div class="first__about">
+        <div class="first__bg  neon-glow__blur-300" data-aos="fade-in" data-aos-delay="100"></div>
+        <div class="first__bg-2 neon-glow__mobile neon-glow__blur-300" data-aos="fade-in" data-aos-delay="100"></div>
+        <div class="first__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+        <div class="first__bg-mob-2 neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+        <div class="first__bg-mob-3 neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+        <div class="first__bg-mob-4 neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+        <div class="first__about" data-aos="fade-in" data-aos-delay="100">
           <div class="first__about_card">
             <div class="first__about_title">1 200</div>
             <div class="first__about_text">положительных отзывов</div>
@@ -116,7 +152,7 @@
           </div>
         </div>
 
-        <div class="first__video">
+        <div class="first__video" data-aos="fade-in" data-aos-delay="100">
           <div class="first__video_content">
             <div class="first__video_subtitle mb-3">Смотрите полный видео-обзор устройства</div>
             <div class="first__video_title mb-5">Onlooker M84 PRO 4g</div>
@@ -127,12 +163,12 @@
                 <div class="price__subtitle">До 22 августа 2022 года</div>
               </div>
               <div class="first__video_button">
-                <button class="main-btn mt-4">Заказать видеорегистратор</button>
+                <button class="main-btn mt-4 js-modal-open" data-modal-btn="checkout">Заказать видеорегистратор</button>
               </div>
             </div>
           </div>
           <div class="first__video_preview">
-            <a class="first__video_preview_link" href="#">
+            <button data-fancybox data-src="https://youtu.be/r6Ocw-Su3Qc" class="first__video_preview_link">
               <span class="first__video_preview_subtitle">Видео-обзор</span>
               <span class="first__video_preview_title">Onlooker M84 Pro</span>
               <span class="first__video_preview_img">
@@ -144,7 +180,7 @@
                   <img class="first__video_preview_icon lazyload" src="assets/img/icons/play-white.svg" alt="images">
                 </span>
               </span>
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -156,29 +192,30 @@
       <div class="container">
         <div class="second__heading">
           <div class="second__heading_left">
-            <div class="main-title">
+            <div class="main-title" data-aos="fade-in" data-aos-delay="100">
               <img class="main-title__icon lazyload" src="assets/img/icons/camera.svg" alt="images">
               <span>Видеорегистратор</span>
             </div>
-            <div class="main-subtitle">
+            <div class="main-subtitle" data-aos="fade-in" data-aos-delay="300">
               записывает видео с высоким разрешением <span class="main-color">1920*1080</span>
             </div>
           </div>
-          <div class="second__heading_right">
+          <div class="second__heading_right" data-aos="fade-in" data-aos-delay="300">
             <div class="main-title__card second__heading_block">
               <div class="main-title__card_icon"><img class="lazyload" src="assets/img/icons/security-camera.svg" alt="images"></div>
               <div class="main-title__card_text">В случае ДТП <span class="main-color">вы будете
                   защищены</span> и сможете доказать свою невиновность</div>
             </div>
           </div>
-          <div class="second__bg neon-glow__blur-200"></div>
-          <div class="second__bg-2 neon-glow__blur-200"></div>
-          <div class="second__bg-3 neon-glow__blur-200"></div>
-          <div class="second__bg-4 neon-glow__blur-200"></div>
-          <div class="second__bg-5 neon-glow__blur-200"></div>
-          <div class="second__bg-6 neon-glow__blur-200"></div>
+          <div class="second__bg neon-glow__blur-200" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="second__bg-2 neon-glow__blur-200" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="second__bg-3 neon-glow__blur-200" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="second__bg-4 neon-glow__blur-200" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="second__bg-5 neon-glow__blur-200" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="second__bg-6 neon-glow__blur-200" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="second__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
         </div>
-        <div class="second__about">
+        <div class="second__about" data-aos="fade-in" data-aos-delay="200">
           <div class="second__about_title">Позволяет видеть:</div>
           <div class="second__about_card">
             <div class="second__about_icon"><img class="second__about_img lazyload" src="assets/img/icons/directions_car.svg" alt="images"></div>
@@ -194,7 +231,7 @@
           </div>
         </div>
 
-        <div class="main-screen">
+        <div class="main-screen" data-aos="fade-in" data-aos-delay="200">
           <div class="main-screen__block">
             <picture>
               <source srcset="assets/img/screen.webp" type="image/webp">
@@ -207,42 +244,42 @@
           </div>
         </div>
 
-        <div class="mt-5 pt-5 main-title">Одновременно снимает</div>
-        <div class="main-subtitle__big">на <span class="main-color">переднюю</span> и <span class="main-color">заднюю</span> камеру</div>
+        <div class="mt-5 pt-5 main-title" data-aos="fade-in" data-aos-delay="100">Одновременно снимает</div>
+        <div class="main-subtitle__big" data-aos="fade-in" data-aos-delay="200">на <span class="main-color">переднюю</span> и <span class="main-color">заднюю</span> камеру</div>
 
         <div class="second__camera">
           <div class="second__camera_cards">
-            <div class="custom-card-c">
+            <div class="custom-card-c" data-aos="fade-left" data-aos-delay="100">
               <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/icons/1080p.svg" alt="images"></div>
               <div class="custom-card-c__title">Высокое качество съемки</div>
               <div class="custom-card-c__text">Разрешение Full HD 1080p, 12MP, F=1.8</div>
               <img class="custom-card-c__line custom-card-c__line_1 lazyload" src="assets/img/section-2/line1.svg" alt="images">
             </div>
-            <div class="custom-card-c _item-1">
+            <div class="custom-card-c _item-1" data-aos="fade-left" data-aos-delay="200">
               <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/icons/6g-glass.svg" alt="images"></div>
               <div class="custom-card-c__title">Оптика 6G+</div>
-              <div class="custom-card-c__text">Разрешение Full HD 1080p, 12MP, F=1.8</div>
+              <div class="custom-card-c__text">В объективе установлены оптические линзы 6G+ из сверхпрозрачного стекла</div>
               <img class="custom-card-c__line custom-card-c__line_2 lazyload" src="assets/img/section-2/line2.svg" alt="images">
             </div>
-            <div class="custom-card-c _item-2">
+            <div class="custom-card-c _item-2" data-aos="fade-left" data-aos-delay="300">
               <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/icons/camera-lens.svg" alt="images"></div>
-              <div class="custom-card-c__title">Высокое качество съемки</div>
-              <div class="custom-card-c__text">Разрешение Full HD 1080p, 12MP, F=1.8</div>
+              <div class="custom-card-c__title">Galaxy Core 2395</div>
+              <div class="custom-card-c__text">Применяется матрица последнего поколения Galaxy Core 2395</div>
               <img class="custom-card-c__line custom-card-c__line_3 lazyload" src="assets/img/section-2/line3.svg" alt="images">
             </div>
-            <div class="custom-card-c">
+            <div class="custom-card-c" data-aos="fade-left" data-aos-delay="400">
               <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/icons/capacitor.svg" alt="images"></div>
-              <div class="custom-card-c__title">Высокое качество съемки</div>
-              <div class="custom-card-c__text">Разрешение Full HD 1080p, 12MP, F=1.8</div>
+              <div class="custom-card-c__title">Корейские комплектующие</div>
+              <div class="custom-card-c__text">Проверенная корейская материнская плата и Японская оптика</div>
               <img class="custom-card-c__line custom-card-c__line_4 lazyload" src="assets/img/section-2/line4.svg" alt="images">
             </div>
           </div>
-          <div class="second__camera_img">
+          <div class="second__camera_img" data-aos="fade-in" data-aos-delay="200">
             <picture>
               <source srcset="assets/img/section-2/camera.webp" type="image/webp">
               <img loading="lazy" class="second__camera_img_item lazyload" src="assets/img/section-2/camera.png" alt="images">
             </picture>
-            <div class="second__camera_text">
+            <div class="second__camera_text" data-aos="fade-right" data-aos-delay="500">
               <img class="second__camera_text_icon lazyload" src="assets/img/section-2/camera-lens.svg" alt="images">
               <span class="second__camera_text_text">Камера поворачивается под нужным углом</span>
             </div>
@@ -254,35 +291,43 @@
     <!-- third -->
     <section class="third">
       <div class="container">
-        <div class="main-title">
+        <div class="neon-glow__bg-body">
+          <div class="third__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="third__bg-mob-2 neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="third__bg-mob-3 neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="third__bg-mob-4 neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="third__bg-mob-5 neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="third__bg-mob-6 neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+        </div>
+        <div class="main-title" data-aos="fade-in" data-aos-delay="100">
           <span>Детализированная <span class="main-color">дневная</span> <br> и <span class="main-color">ночная</span> съемка</span>
         </div>
         <div class="third__cards">
-          <div class="custom-card-c">
+          <div class="custom-card-c" data-aos="fade-in" data-aos-delay="100">
             <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/icons/electronics.svg" alt="images"></div>
             <div class="custom-card-c__text">Видны номера, лица, знаки <span class="custom-card-c__text_white">при съемке до 10 метров</span></div>
           </div>
-          <div class="custom-card-c">
+          <div class="custom-card-c" data-aos="fade-in" data-aos-delay="200">
             <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/icons/optical.svg" alt="images"></div>
             <div class="custom-card-c__text">Оптическая стабилизация <span class="custom-card-c__text_white"> не дает размытия и ряби</span></div>
           </div>
-          <div class="custom-card-c">
+          <div class="custom-card-c" data-aos="fade-in" data-aos-delay="300">
             <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/icons/6g-glass.svg" alt="images"></div>
             <div class="custom-card-c__text">Изображение <span class="custom-card-c__text_white">не бликует от фонарей</span></div>
           </div>
-          <div class="custom-card-c">
+          <div class="custom-card-c" data-aos="fade-in" data-aos-delay="400">
             <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/icons/idea.svg" alt="images"></div>
             <div class="custom-card-c__text">Технология WDR <span class="custom-card-c__text_white">дает четкую картинку при перепаде уровня освещенности, </span> например при выезде из тоннеля</div>
           </div>
         </div>
 
-        <div class="third__subtitle">
+        <div class="third__subtitle" data-aos="fade-up" data-aos-delay="100">
           <span>Посмотрите примеры видео</span>
         </div>
 
         <div class="third__video">
           <div class="third__video_cards">
-            <a href="" class="third__video_card">
+            <button data-fancybox data-src="https://youtu.be/V5u4wzCpdiw" class="third__video_card" data-aos="fade-right" data-aos-delay="100">
               <picture>
                 <source srcset="assets/img/section-3/1.webp" type="image/webp">
                 <img loading="lazy" class="third__video_card_img lazyload" src="assets/img/section-3/1.png" alt="images">
@@ -291,18 +336,18 @@
                 <span class="third__video_card_content_text">Передняя камера днем</span>
                 <img class="third__video_card_content_icon lazyload" src="assets/img/section-3/play.svg" alt="images">
               </div>
-            </a>
-            <a href="" class="third__video_card">
+            </button>
+            <button data-fancybox data-src="https://youtu.be/YfYgnHy06Ls" class="third__video_card" data-aos="fade-right" data-aos-delay="200">
               <picture>
                 <source srcset="assets/img/section-3/2.webp" type="image/webp">
                 <img loading="lazy" class="third__video_card_img lazyload" src="assets/img/section-3/2.png" alt="images">
               </picture>
               <div class="third__video_card_content">
-                <span class="third__video_card_content_text">Передняя камера днем</span>
+                <span class="third__video_card_content_text">Передняя камера ночью</span>
                 <img class="third__video_card_content_icon lazyload" src="assets/img/section-3/play.svg" alt="images">
               </div>
-            </a>
-            <a href="" class="third__video_card">
+            </button>
+            <button data-fancybox data-src="https://youtu.be/VkI6l3Ecp-4" class="third__video_card" data-aos="fade-right" data-aos-delay="300">
               <picture>
                 <source srcset="assets/img/section-3/3.webp" type="image/webp">
                 <img loading="lazy" class="third__video_card_img lazyload" src="assets/img/section-3/3.png" alt="images">
@@ -311,8 +356,8 @@
                 <span class="third__video_card_content_text">Задняя камера днем</span>
                 <img class="third__video_card_content_icon lazyload" src="assets/img/section-3/play.svg" alt="images">
               </div>
-            </a>
-            <a href="" class="third__video_card">
+            </button>
+            <button data-fancybox data-src="https://youtu.be/76GOM_Zhxnw" class="third__video_card" data-aos="fade-right" data-aos-delay="400">
               <picture>
                 <source srcset="assets/img/section-3/4.webp" type="image/webp">
                 <img loading="lazy" class="third__video_card_img lazyload" src="assets/img/section-3/4.png" alt="images">
@@ -321,10 +366,10 @@
                 <span class="third__video_card_content_text">Задняя камера ночью</span>
                 <img class="third__video_card_content_icon lazyload" src="assets/img/section-3/play.svg" alt="images">
               </div>
-            </a>
+            </button>
           </div>
-          <div class="third__video_content">
-            <div class="main-screen">
+          <div class="third__video_content" data-aos="fade-up" data-aos-delay="500">
+            <button data-fancybox data-src="https://youtu.be/V5u4wzCpdiw" class="main-screen">
               <div class="main-screen__block">
                 <picture>
                   <source srcset="assets/img/screen.webp" type="image/webp">
@@ -338,19 +383,19 @@
                   <img class="main-screen__icon lazyload" src="assets/img/icons/play.svg" alt="images">
                 </div>
               </div>
-            </div>
+            </button>
           </div>
         </div>
 
         <div class="third__image">
-          <div class="third__image_title">
+          <div class="third__image_title" data-aos="fade-in" data-aos-delay="100">
             <span>Широкий угол обзора 320°</span>
             <span class="third__image_title_small">(с учетом задней камеры)</span>
           </div>
-          <div class="third__image_subtitle">
+          <div class="third__image_subtitle" data-aos="fade-in" data-aos-delay="200">
             позволит заснять <span class="main-color">все происходящее на дороге</span>
           </div>
-          <div class="main-screen mt-4">
+          <div class="main-screen mt-4" data-aos="fade-in" data-aos-delay="300">
             <div class="main-screen__block">
               <picture>
                 <source srcset="assets/img/screen.webp" type="image/webp">
@@ -362,16 +407,16 @@
               </picture>
             </div>
           </div>
-          <div class="third__bg neon-glow__blur-300"></div>
-          <div class="third__bg-2 neon-glow__blur-300-width"></div>
-          <div class="third__bg-3 neon-glow__blur-300-width"></div>
-          <div class="third__bg-4 neon-glow__blur-300-width"></div>
+          <div class="third__bg neon-glow__blur-300" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="third__bg-2 neon-glow__blur-300-width" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="third__bg-3 neon-glow__blur-300-width" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="third__bg-4 neon-glow__blur-300-width" data-aos="fade-in" data-aos-delay="100"></div>
         </div>
 
         <div class="third__sd">
           <div class="third__sd_left">
-            <div class="third__sd_title">Сохраняет все данные о поездке в реальном времени через GPS</div>
-            <div class="third__sd_img">
+            <div class="third__sd_title" data-aos="fade-in" data-aos-delay="100">Сохраняет все данные о поездке в реальном времени через GPS</div>
+            <div class="third__sd_img" data-aos="fade-in" data-aos-delay="200">
               <picture>
                 <source srcset="assets/img/section-3/sd-img.webp" type="image/webp">
                 <img loading="lazy" class="lazyload" src="assets/img/section-3/sd-img.png" alt="images">
@@ -380,15 +425,15 @@
           </div>
           <div class="third__sd_right">
             <div class="third__sd_card">
-              <div class="third__sd_card_title">
+              <div class="third__sd_card_title" data-aos="fade-in" data-aos-delay="100">
                 Поддерживает карты формата <b>MicroSD</b> до <b>64 Gb</b> UHS-1
               </div>
-              <div class="third__sd_card_subtitle">
+              <div class="third__sd_card_subtitle" data-aos="fade-in" data-aos-delay="200">
                 <span class="third__sd_card_value">до <span class="main-color">720 минут</span></span>
                 <br>
                 <span class="third__sd_card_small">непрерывной записи видео</span>
               </div>
-              <div class="third__sd_card_block">
+              <div class="third__sd_card_block" data-aos="fade-in" data-aos-delay="300">
                 <div class="third__sd_card_8">
                   <img class="third__sd_card_8_img lazyload" src="assets/img/section-3/8gb.svg" alt="images">
                   <span class="third__sd_card_text">25 минут</span>
@@ -411,25 +456,27 @@
     <!-- fourth -->
     <section class="fourth">
       <div class="container">
-        <div class="main-title">
+        <div class="main-title" data-aos="fade-in" data-aos-delay="100">
           <img class="main-title__icon lazyload" src="assets/img/icons/radar.svg" alt="images">
           <span>GPS радар-детектор-информатор</span>
         </div>
         <div class="fourth__heading">
-          <div class="main-subtitle fourth__heading_left">
+          <div class="main-subtitle fourth__heading_left" data-aos="fade-in" data-aos-delay="200">
             предупредит о стационарных <span class="main-color">камерах и опасностях</span> на дороге
             <span class="main-color">за 500-1000 метров</span>
           </div>
-          <div class="main-title__card-radius">
+          <div class="main-title__card-radius" data-aos="fade-in" data-aos-delay="300">
             <img class="main-title__card-radius__icon lazyload" src="assets/img/icons/no-wifi.svg" alt="images">
             <div class="main-title__card-radius__text">Даже в зоне, <b>где нет интернета и связи</b></div>
           </div>
-          <div class="fourth__bg neon-glow__blur-300-width"></div>
+          <div class="fourth__bg neon-glow__blur-300-width" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="fourth__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="fourth__bg-mob-2 neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
         </div>
-        <div class="fourth__title_2">Работает на базе проверенного приложения <span class="color-red">еСтрелка</span></div>
+        <div class="fourth__title_2" data-aos="fade-in" data-aos-delay="100">Работает на базе проверенного приложения <span class="color-red">еСтрелка</span></div>
         <div class="fourth__mobile">
           <div class="fourth__about">
-            <div class="icon-card fourth__about_card">
+            <div data-aos="fade-up" data-aos-delay="100" class="icon-card fourth__about_card">
               <div class="icon-card__icon">
                 <img class="icon-card__icon_img lazyload" src="assets/img/icons/license.svg" alt="images">
               </div>
@@ -437,7 +484,7 @@
                 <div class="icon-card__title">Включена пожизненная лицензия</div>
               </div>
             </div>
-            <div class="icon-card fourth__about_card">
+            <div data-aos="fade-up" data-aos-delay="200" class="icon-card fourth__about_card">
               <div class="icon-card__icon">
                 <img class="icon-card__icon_img lazyload" src="assets/img/icons/update.svg" alt="images">
               </div>
@@ -446,7 +493,7 @@
                   подключения к ПК и смартфону</div>
               </div>
             </div>
-            <div class="icon-card fourth__about_card">
+            <div data-aos="fade-up" data-aos-delay="300" class="icon-card fourth__about_card">
               <div class="icon-card__icon">
                 <img class="icon-card__icon_img lazyload" src="assets/img/icons/google-play.svg" alt="images">
               </div>
@@ -454,7 +501,7 @@
                 <div class="icon-card__title">Больше 100 тыс скачиваний в GooglePlay и 9к отзывов</div>
               </div>
             </div>
-            <div class="icon-card fourth__about_card">
+            <div data-aos="fade-up" data-aos-delay="400" class="icon-card fourth__about_card">
               <div class="icon-card__icon">
                 <img class="icon-card__icon_img lazyload" src="assets/img/icons/vision.svg" alt="images">
               </div>
@@ -463,7 +510,7 @@
               </div>
             </div>
           </div>
-          <div class="main-screen mt-5">
+          <div class="main-screen mt-5" data-aos="fade-up" data-aos-delay="400">
             <div class="main-screen__block">
               <picture>
                 <source srcset="assets/img/screen.webp" type="image/webp">
@@ -483,18 +530,21 @@
     <section class="fifth">
       <div class="container">
         <div class="fifth__heading">
-          <div class="fifth__heading_left">
+          <div class="fifth__heading_left" data-aos="fade-in" data-aos-delay="100">
             <div class="main-title main-title__notcase">Определяет все известные камеры и засады</div>
           </div>
-          <div class="fifth__heading_right main-title__card">
+          <div class="fifth__heading_right main-title__card" data-aos="fade-in" data-aos-delay="200">
             <div class="main-title__card_icon"><img class="lazyload" src="assets/img/icons/base_camera.svg" alt="images"></div>
             <div class="main-title__card_text">В базе <span class="main-color">более 60 000 камер</span> и других
               объектов России, СНГ, Европы</div>
           </div>
-          <div class="fifth__bg neon-glow__blur-300-width"></div>
-          <div class="fifth__bg-2 neon-glow__blur-250"></div>
+          <div class="fifth__bg neon-glow__blur-300-width" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="fifth__bg-2 neon-glow__blur-250" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="fifth__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="fifth__bg-mob-2 neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="fifth__bg-mob-3 neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
         </div>
-        <div class="fifth__cards">
+        <div class="fifth__cards" data-aos="fade-in" data-aos-delay="300">
           <div class="custom-card-b-c">
             <div class="custom-card-b-c__icon"><img class="custom-card-b-c__img lazyload" src="assets/img/icons/policeman.svg" alt="images"></div>
             <div class="custom-card-b-c__text">Посты ДПС</div>
@@ -545,11 +595,11 @@
           </div>
         </div>
         <div class="fifth__footer">
-          <div class="fifth__footer_title">
+          <div class="fifth__footer_title" data-aos="fade-in" data-aos-delay="100">
             Информирует об камерах, знаках, опасностях
             <span class="main-color">голосом</span> и <span class="main-color">отображением</span> на экране
           </div>
-          <div class="d-flex justify-content-center">
+          <div class="d-flex justify-content-center" data-aos="fade-in" data-aos-delay="200">
             <div class="main-btn-white fifth__footer_text">
               <img class="fifth__footer_icon lazyload" src="assets/img/icons/shield.svg" alt="images">
               Вы успеваете заранее среагировать и затормозить
@@ -565,25 +615,27 @@
     <section class="sixth">
       <div class="container">
 
-        <div class="main-title">
+        <div class="main-title" data-aos="fade-in" data-aos-delay="100">
           <img class="main-title__icon lazyload" src="assets/img/icons/satellite-dish.svg" alt="images">
           <span>Мульти-платформенный GPS навигатор</span>
         </div>
 
         <div class="sixth__heading">
-          <div class="main-subtitle__big">
+          <div class="main-subtitle__big" data-aos="fade-in" data-aos-delay="200">
             работает даже <span class="main-color">без доступа к интернет</span>
           </div>
-          <div class="main-title__card-radius">
+          <div class="main-title__card-radius" data-aos="fade-in" data-aos-delay="300">
             <img class="main-title__card-radius__icon lazyload" src="assets/img/icons/directions.svg" alt="images">
             <div class="main-title__card-radius__text">Дает уверенность при поездках в любом городе</div>
           </div>
-          <div class="sixth__bg neon-glow__blur-250-width-270"></div>
-          <div class="sixth__bg-2 neon-glow__blur-250-width-270"></div>
-          <div class="sixth__bg-3 neon-glow__blur-250"></div>
+          <div class="sixth__bg neon-glow__blur-250-width-270" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="sixth__bg-2 neon-glow__blur-250-width-270" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="sixth__bg-3 neon-glow__blur-250" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="sixth__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="sixth__bg-mob-2 neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
         </div>
 
-        <div class="sixth__about">
+        <div class="sixth__about" data-aos="fade-in" data-aos-delay="400">
           <div class="icon-card sixth__about_card">
             <div class="icon-card__icon">
               <img class="icon-card__icon_img lazyload" src="assets/img/icons/google-play.svg" alt="images">
@@ -669,18 +721,18 @@
         </div>
 
         <div class="sixth__footer">
-          <div class="sixth__footer_text">
+          <div class="sixth__footer_text" data-aos="fade-in" data-aos-delay="400">
             Смотрите, как быстро работает навигация и насколько качественный экран
           </div>
-          <div class="main-screen mt-4">
+          <div class="main-screen mt-4" data-aos="fade-in" data-aos-delay="400">
             <div class="main-screen__block">
               <picture>
                 <source srcset="assets/img/screen.webp" type="image/webp">
                 <img loading="lazy" class="main-screen__bottom lazyload" src="assets/img/screen.png" alt="images">
               </picture>
               <picture>
-                <source srcset="assets/img/section-6/1.webp" type="image/webp">
-                <img loading="lazy" class="main-screen__top lazyload" src="assets/img/section-6/1.png" alt="images">
+                <source srcset="assets/img/section-6/2.webp" type="image/webp">
+                <img loading="lazy" class="main-screen__top lazyload" src="assets/img/section-6/2.png" alt="images">
               </picture>
             </div>
           </div>
@@ -693,36 +745,37 @@
     <!-- seventh -->
     <section class="seventh">
       <div class="container">
-        <div class="main-title main-title__notcase">
+        <div class="main-title main-title__notcase" data-aos="fade-in" data-aos-delay="100">
           <span>Размер сенсорного IPS экрана 7 дюймов</span>
         </div>
 
         <div class="seventh__heading">
-          <div class="main-subtitle__big me-5">
+          <div class="main-subtitle__big me-5" data-aos="fade-in" data-aos-delay="200">
             Даже в солнечную погоду <span class="main-color">нет бликов </span>
           </div>
-          <div class="main-title__card-radius">
+          <div class="main-title__card-radius" data-aos="fade-in" data-aos-delay="300">
             <img class="main-title__card-radius__icon lazyload" src="assets/img/icons/vision-002.svg" alt="images">
             <div class="main-title__card-radius__text">Информация считывается легко</div>
           </div>
-          <div class="seventh__bg neon-glow__blur-250-width-270"></div>
-          <div class="seventh__bg-2 neon-glow__blur-250-width-270"></div>
+          <div class="seventh__bg neon-glow__blur-250-width-270" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="seventh__bg-2 neon-glow__blur-250-width-270" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="seventh__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
         </div>
 
         <div class="seventh__block">
           <div class="seventh__about">
-            <div class="custom-card-c">
+            <div class="custom-card-c" data-aos="fade-in" data-aos-delay="100">
               <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/icons/fighting.svg" alt="images"></div>
               <div class="custom-card-c__title">Экран защищен от ударов</div>
               <div class="custom-card-c__text">прочным стеклом, дополнительно наклеена пленка</span></div>
             </div>
-            <div class="custom-card-c">
+            <div class="custom-card-c" data-aos="fade-in" data-aos-delay="200">
               <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/icons/apple.svg" alt="images"></div>
               <div class="custom-card-c__title">IPS матрица</div>
               <div class="custom-card-c__text">производится на том же заводе, где изготавливают дисплей для устройств Apple</span></div>
             </div>
 
-            <div class="seventh__about_block">
+            <div class="seventh__about_block" data-aos="fade-in" data-aos-delay="300">
               <img class="seventh__about_block_icon lazyload" src="assets/img/icons/360-degree.svg" alt="images">
               <div class="seventh__about_block_content">
                 <div class="seventh__about_block_title">Углы обзора:</div>
@@ -735,7 +788,7 @@
             </div>
 
           </div>
-          <div class="seventh__img">
+          <div class="seventh__img" data-aos="fade-right" data-aos-delay="400">
 
             <div class="main-screen">
               <div class="main-screen__block">
@@ -761,16 +814,17 @@
     <section class="eighth">
       <div class="container">
         <div class="neon-glow__bg-body">
-          <div class="eighth__bg neon-glow__blur-250-width-270"></div>
-          <div class="eighth__bg-2 neon-glow__blur-250-width-270"></div>
-          <div class="eighth__bg-3 neon-glow__blur-250-width-270"></div>
+          <div class="eighth__bg neon-glow__blur-250-width-270" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="eighth__bg-2 neon-glow__blur-250-width-270" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="eighth__bg-3 neon-glow__blur-250-width-270" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="eighth__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
         </div>
-        <div class="main-title main-title__notcase">
+        <div class="main-title main-title__notcase" data-aos="fade-in" data-aos-delay="100">
           <span>Всем покупателям дарим лицензию навигации <span class="main-color">Навител</span> на <span class="main-color">1 год</span></span>
         </div>
 
         <div class="eighth__block">
-          <div class="eighth__content">
+          <div class="eighth__content" data-aos="fade-in" data-aos-delay="200">
             <div class="main-subtitle mb-3">
               Они будут предустановлены и работать <span class="main-color">"из коробки"</span>
             </div>
@@ -789,7 +843,7 @@
               Так же можно сразу получить 2 года лицензии Навител - <a class="eighth__content_link" href="#">Узнать как</a>
             </div>
           </div>
-          <div class="eighth__img">
+          <div class="eighth__img" data-aos="fade-in" data-aos-delay="300">
             <picture>
               <source srcset="assets/img/section-8/1.webp" type="image/webp">
               <img loading="lazy" class="eighth__img_item lazyload" src="assets/img/section-8/1.png" alt="images">
@@ -804,25 +858,27 @@
     <section class="ninth">
       <div class="container">
         <div class="neon-glow__bg-body">
-          <div class="ninth__bg neon-glow__blur-250"></div>
+          <div class="ninth__bg neon-glow__blur-250" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="ninth__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="ninth__bg-mob-2 neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
         </div>
-        <div class="main-title main-title__notcase">
+        <div class="main-title main-title__notcase" data-aos="fade-in" data-aos-delay="100">
           <img class="main-title__icon lazyload" src="assets/img/icons/car-on-tablet.svg" alt="images">
           <span>Автомобильный планшет на Android 8.1</span>
         </div>
 
-        <div class="seventh__heading">
+        <div class="seventh__heading" data-aos="fade-in" data-aos-delay="200">
           <div class="main-subtitle">
             Полный аналог Android магнитолы, <span class="main-color">только лучше</span>
           </div>
-          <div class="main-title__card">
+          <div class="main-title__card" data-aos="fade-in" data-aos-delay="300">
             <img class="main-title__card-radius__icon lazyload" src="assets/img/icons/019-google-play.svg" alt="images">
             <div class="main-title__card-radius__text">с возможностью скачивания приложений <b>с Google Play</b></div>
           </div>
         </div>
 
         <div class="ninth__about">
-          <div class="icon-card">
+          <div class="icon-card" data-aos="fade-in" data-aos-delay="100">
             <div class="icon-card__icon">
               <img class="icon-card__icon_img lazyload" src="assets/img/icons/chip.svg" alt="images">
             </div>
@@ -833,29 +889,28 @@
               </div>
             </div>
           </div>
-          <div class="icon-card">
+          <div class="icon-card" data-aos="fade-in" data-aos-delay="200">
             <div class="icon-card__icon">
               <img class="icon-card__icon_img lazyload" src="assets/img/icons/processor.svg" alt="images">
             </div>
             <div class="icon-card__content">
               <div class="icon-card__text">
-                Мощный четырехъядерный процессор CORTEX-A7 1.5*4 Гц позволяет <a class="icon-card__link" href="#">делать это без торможений</a>
+                Мощный четырехъядерный процессор CORTEX-A7 1.5*4 Гц позволяет <span class="icon-card__link">делать это без торможений</span>
               </div>
             </div>
           </div>
         </div>
         <div class="ninth__footer">
-          <div class="ninth__footer_title">Смотрите демонстрацию</div>
-
-          <div class="main-screen">
+          <div class="ninth__footer_title" data-aos="fade-up" data-aos-delay="100">Смотрите демонстрацию</div>
+          <div class="main-screen" data-aos="fade-in" data-aos-delay="200">
             <div class="main-screen__block">
               <picture>
                 <source srcset="assets/img/screen.webp" type="image/webp">
                 <img loading="lazy" class="main-screen__bottom lazyload" src="assets/img/screen.png" alt="images">
               </picture>
               <picture>
-                <source srcset="assets/img/section-3/1.webp" type="image/webp">
-                <img loading="lazy" class="main-screen__top lazyload" src="assets/img/section-3/1.png" alt="images">
+                <source srcset="assets/img/section-9/1.webp" type="image/webp">
+                <img loading="lazy" class="main-screen__top lazyload" src="assets/img/section-9/1.png" alt="images">
               </picture>
             </div>
           </div>
@@ -868,22 +923,25 @@
     <section class="tenth">
       <div class="container">
         <div class="neon-glow__bg-body">
-          <div class="tenth__bg neon-glow__blur-250-width-270"></div>
-          <div class="tenth__bg-2 neon-glow__blur-250-width-270"></div>
+          <div class="tenth__bg neon-glow__blur-250-width-270" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="tenth__bg-2 neon-glow__blur-250-width-270" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="tenth__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="tenth__bg-mob-2 neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="tenth__bg-mob-3 neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
         </div>
-        <div class="main-title main-title__notcase">
+        <div class="main-title main-title__notcase" data-aos="fade-in" data-aos-delay="100">
           Onlooker M84 PRO - так же
           и <span class="main-color">замена магнитоле</span> на Android
         </div>
-        <div class="main-subtitle">
+        <div class="main-subtitle" data-aos="fade-in" data-aos-delay="200">
           Если вы задумывались об установке
           <b>отдельной Android магнитолы</b>
         </div>
 
-        <div class="tenth__subtitle">Посмотрите минусы такого варианта</div>
+        <div class="tenth__subtitle" data-aos="fade-in" data-aos-delay="300">Посмотрите минусы такого варианта</div>
 
         <div class="tenth__cards">
-          <div class="tenth__card">
+          <div class="tenth__card" data-aos="fade-in" data-aos-delay="300">
             <picture>
               <source srcset="assets/img/section-10/1.webp" type="image/webp">
               <img loading="lazy" class="tenth__card_img lazyload" src="assets/img/section-10/1.png" alt="images">
@@ -918,7 +976,7 @@
 
             </div>
           </div>
-          <div class="tenth__card">
+          <div class="tenth__card" data-aos="fade-in" data-aos-delay="300">
             <picture>
               <source srcset="assets/img/section-10/2.webp" type="image/webp">
               <img loading="lazy" class="tenth__card_img lazyload" src="assets/img/section-10/2.png" alt="images">
@@ -955,7 +1013,7 @@
           </div>
         </div>
 
-        <div class="tenth__footer">
+        <div class="tenth__footer" data-aos="fade-in" data-aos-delay="300">
           Onlooker M84 PRO
         </div>
       </div>
@@ -965,25 +1023,26 @@
     <section class="eleventh">
       <div class="container">
         <div class="neon-glow__bg-body">
-          <div class="eleventh__bg neon-glow__blur-250-width-270"></div>
-          <div class="eleventh__bg-2 neon-glow__blur-250-width-270"></div>
-          <div class="eleventh__bg-3 neon-glow__blur-250-width-270"></div>
+          <div class="eleventh__bg neon-glow__blur-250-width-270" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="eleventh__bg-2 neon-glow__blur-250-width-270" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="eleventh__bg-3 neon-glow__blur-250-width-270" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="eleventh__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
         </div>
         <div class="eleventh__heading">
-          <div class="main-title main-title__notcase">
+          <div class="main-title main-title__notcase" data-aos="fade-in" data-aos-delay="100">
             Технические характеристики Onlooker M84 PRO
           </div>
-          <div class="eleventh__heading_info">
-            <span class="eleventh__heading_info_text _active">Кратко</span>
+          <div class="eleventh__heading_info" data-aos="fade-in" data-aos-delay="200">
+            <span class="eleventh__heading_info_text eleventh__heading_info_text_1 _active">Кратко</span>
             <!-- Rounded switch -->
             <label class="switch">
-              <input type="checkbox">
+              <input class="js-table-btn" type="checkbox">
               <span class="slider round"></span>
             </label>
-            <span class="eleventh__heading_info_text">Подробно</span>
+            <span class="eleventh__heading_info_text eleventh__heading_info_text_2">Подробно</span>
           </div>
         </div>
-        <div class="eleventh__about">
+        <div class="eleventh__about" data-aos="fade-in" data-aos-delay="300">
           <div class="icon-card eleventh__about_card">
             <img class="icon-card__icon _borderless lazyload" src="assets/img/icons/processor.svg" alt="images">
             <div class="icon-card__title">Мощный процессор</div>
@@ -1032,7 +1091,7 @@
             <div class="icon-card__text">32 Gb встроенной памяти</div>
           </div>
         </div>
-        <div class="eleventh__more">
+        <div class="eleventh__more d-none" data-aos="fade-in" data-aos-delay="300">
           <!-- TABL-1 -------------------------->
           <div class="eleventh__tabl">
             <h3 class="eleventh__tabl-title">Компоненты изделия</h3>
@@ -1041,12 +1100,12 @@
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Дисплей:</div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">7" IPS с разрешением 1024х600</div>
+                  <div class="eleventh__charact">7" IPS с разрешением 1024х600</div>
                 </div>
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Видео сенсор:</div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">CMOS Galaxy Core 2395 (12MP/2MP)</div>
+                  <div class="eleventh__charact">CMOS Galaxy Core 2395 (12MP/2MP)</div>
                 </div>
               </div>
             </div>
@@ -1059,36 +1118,36 @@
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Поддержка технологии WDR:</div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">Есть</div>
+                  <div class="eleventh__charact">Есть</div>
                 </div>
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Оптическая стабилизация: </div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">Есть</div>
+                  <div class="eleventh__charact">Есть</div>
                 </div>
               </div>
               <div class="eleventh__body-rows">
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Влагозащита задней камеры:</div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">IP65</div>
+                  <div class="eleventh__charact">IP65</div>
                 </div>
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Реверс задней камеры: </div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">Да</div>
+                  <div class="eleventh__charact">Да</div>
                 </div>
               </div>
               <div class="eleventh__body-rows">
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Циклическая запись:</div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">Есть. 1 мин, 3 мин, 5 мин</div>
+                  <div class="eleventh__charact">Есть. 1 мин, 3 мин, 5 мин</div>
                 </div>
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Автостарт записи: </div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">При подаче питания, при ударе (датчик удара)</div>
+                  <div class="eleventh__charact">При подаче питания, при ударе (датчик удара)</div>
                 </div>
               </div>
             </div>
@@ -1101,72 +1160,72 @@
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Интеграция с аудиосистемой авто:</div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text"> Есть (вывод звука на аудиосистему авто)</div>
+                  <div class="eleventh__charact"> Есть (вывод звука на аудиосистему авто)</div>
                 </div>
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Тип оповещения о камерах и радарах:</div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text"> Краткие и понятные звуковые оповещения на русском языке</div>
+                  <div class="eleventh__charact"> Краткие и понятные звуковые оповещения на русском языке</div>
                 </div>
               </div>
               <div class="eleventh__body-rows">
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Оповещение и определение камер:</div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">Самая полная и точная база камер России, СНГ, Европы</div>
+                  <div class="eleventh__charact">Самая полная и точная база камер России, СНГ, Европы</div>
                 </div>
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Регулировка яркости:</div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">Есть</div>
+                  <div class="eleventh__charact">Есть</div>
                 </div>
               </div>
               <div class="eleventh__body-rows">
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Поддержка ассистента парковки (парковочная трапеция):</div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">Да</div>
+                  <div class="eleventh__charact">Да</div>
                 </div>
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Регулировка громкости:</div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">Есть</div>
+                  <div class="eleventh__charact">Есть</div>
                 </div>
               </div>
               <div class="eleventh__body-rows">
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Интеграция с аудиосистемой авто: </div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">Есть (вывод звука на аудиосистему)</div>
+                  <div class="eleventh__charact">Есть (вывод звука на аудиосистему)</div>
                 </div>
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Обновление базы:</div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">Автоматически</div>
+                  <div class="eleventh__charact">Автоматически</div>
                 </div>
               </div>
               <div class="eleventh__body-rows">
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">ADAS:</div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text"> FCWS, LDWS, FVMA</div>
+                  <div class="eleventh__charact"> FCWS, LDWS, FVMA</div>
                 </div>
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Режим фотосъёмки:</div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">Есть</div>
+                  <div class="eleventh__charact">Есть</div>
                 </div>
               </div>
               <div class="eleventh__body-rows">
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Типы обнаруживаемых радаров:</div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">Возможные засады, Полицейские радары, посты ДПС, камеры видеофиксации, камеры контроля перекрестков, камеры контроля автобусной полосы, малошумные камеры, парные камеры, камеры безрадарного блока в т.ч. «Стрелка», «Кречет», «Robot», «Автоураган», «Поток», «Автодория», «Крис», «Арена», «Лира», «Кордон»</div>
+                  <div class="eleventh__charact">Возможные засады, Полицейские радары, посты ДПС, камеры видеофиксации, камеры контроля перекрестков, камеры контроля автобусной полосы, малошумные камеры, парные камеры, камеры безрадарного блока в т.ч. «Стрелка», «Кречет», «Robot», «Автоураган», «Поток», «Автодория», «Крис», «Арена», «Лира», «Кордон»</div>
                 </div>
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Режим мониторинга парковки: </div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">Да, через приложение Carkeeper (рекомендуется подключать устройство через АСС адаптер для лучшей зарядки батареи)</div>
+                  <div class="eleventh__charact">Да, через приложение Carkeeper (рекомендуется подключать устройство через АСС адаптер для лучшей зарядки батареи)</div>
                 </div>
               </div>
             </div>
@@ -1179,12 +1238,12 @@
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Вес планшета:</div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text"> 320 г. Вес с полной комплектацией в упаковке: 1530 г.</div>
+                  <div class="eleventh__charact"> 320 г. Вес с полной комплектацией в упаковке: 1530 г.</div>
                 </div>
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Размеры планшета: </div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">183 мм * 105 мм</div>
+                  <div class="eleventh__charact">183 мм * 105 мм</div>
                 </div>
               </div>
             </div>
@@ -1197,24 +1256,24 @@
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Ёмкость батареи: </div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">1200mAH Li-ion (Батарея предназначена для работы в режиме ожидания/парковки с выключенным дисплеем, и для корректного завершения работы).</div>
+                  <div class="eleventh__charact">1200mAH Li-ion (Батарея предназначена для работы в режиме ожидания/парковки с выключенным дисплеем, и для корректного завершения работы).</div>
                 </div>
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Питание</div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text"> от автомобильной сети DC 5V~3A</div>
+                  <div class="eleventh__charact"> от автомобильной сети DC 5V~3A</div>
                 </div>
               </div>
               <div class="eleventh__body-rows">
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Рекомендуемая температура окружающей среды: </div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">-20/+70 °С</div>
+                  <div class="eleventh__charact">-20/+70 °С</div>
                 </div>
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Другое: </div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">Датчик удара, Bluetooth, WI-FI точка доступа, Мультиязычность</div>
+                  <div class="eleventh__charact">Датчик удара, Bluetooth, WI-FI точка доступа, Мультиязычность</div>
                 </div>
               </div>
             </div>
@@ -1227,37 +1286,37 @@
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Формат видео:</div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">mp4, кодек .h264</div>
+                  <div class="eleventh__charact">mp4, кодек .h264</div>
                 </div>
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Иформация на записи:</div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">Время, дата, скорость, GPS данные</div>
+                  <div class="eleventh__charact">Время, дата, скорость, GPS данные</div>
                 </div>
               </div>
               <div class="eleventh__body-rows">
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Мультимедиа:</div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">поддержка приложений Google Play, FM трансмиттер, Облако</div>
+                  <div class="eleventh__charact">поддержка приложений Google Play, FM трансмиттер, Облако</div>
                 </div>
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Звук: </div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">Встроенный микрофон 40дб, встроенный динамик 8 Ом/2,0 Вт</div>
+                  <div class="eleventh__charact">Встроенный микрофон 40дб, встроенный динамик 8 Ом/2,0 Вт</div>
                 </div>
               </div>
               <div class="eleventh__body-rows">
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip">Интернет соединения: </div>
                   <div class="eleventh__line"></div>
-                  <div class="eleventh__charact title-info-radius__text">WCDMA: B1/B8; LTE FDD: B1/B3/B7 (все операторы РФ); LTE TDD: B38/B40/B41; Wi-Fi (2.4г, 802.11 b/g/n).
+                  <div class="eleventh__charact">WCDMA: B1/B8; LTE FDD: B1/B3/B7 (все операторы РФ); LTE TDD: B38/B40/B41; Wi-Fi (2.4г, 802.11 b/g/n).
                   </div>
                 </div>
                 <div class="eleventh__tabl-block">
                   <div class="eleventh__descrip"></div>
                   <!-- <div class="eleventh__line"></div> -->
-                  <div class="eleventh__charact title-info-radius__text"></div>
+                  <div class="eleventh__charact"></div>
                 </div>
               </div>
             </div>
@@ -1270,11 +1329,12 @@
     <section class="twelfth">
       <div class="container">
         <div class="neon-glow__bg-body">
-          <div class="twelfth__bg neon-glow__blur-250-width-270"></div>
+          <div class="twelfth__bg neon-glow__blur-250-width-270" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="twelfth__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
         </div>
-        <div class="main-title main-title__notcase twelfth__title">Закажите комбо-устройство Onlooker M84 Pro</div>
+        <div class="main-title main-title__notcase twelfth__title" data-aos="fade-in" data-aos-delay="100">Закажите комбо-устройство Onlooker M84 Pro</div>
         <div class="twelfth__block">
-          <div class="twelfth__content">
+          <div class="twelfth__content" data-aos="fade-in" data-aos-delay="200">
             <div class="twelfth__tags">
               <div class="custom-tag">
                 <img class="custom-tag__icon lazyload" src="assets/img/section-12/1.svg" alt="images">
@@ -1309,7 +1369,7 @@
               </div>
             </div>
           </div>
-          <div class="twelfth__img">
+          <div class="twelfth__img" data-aos="fade-right" data-aos-delay="300">
             <picture>
               <source srcset="assets/img/section-12/main.webp" type="image/webp">
               <img loading="lazy" class="twelfth__img_img lazyload" src="assets/img/section-12/main.png" alt="images">
@@ -1324,28 +1384,30 @@
       <div class="container">
 
         <div class="neon-glow__bg-body">
-          <div class="thirteen__bg neon-glow__blur-250"></div>
-          <div class="thirteen__bg-2 neon-glow__blur-250-width-270"></div>
-          <div class="thirteen__bg-3 neon-glow__blur-250-width-194"></div>
-          <div class="thirteen__bg-4 neon-glow__blur-250-width-194"></div>
-          <div class="thirteen__bg-5 neon-glow__blur-250-width-194"></div>
+          <div class="thirteen__bg neon-glow__blur-250" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="thirteen__bg-2 neon-glow__blur-250-width-270" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="thirteen__bg-3 neon-glow__blur-250-width-194" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="thirteen__bg-4 neon-glow__blur-250-width-194" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="thirteen__bg-5 neon-glow__blur-250-width-194" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="thirteen__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="thirteen__bg-mob-2 neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
         </div>
 
         <div class="thirteen__heading">
-          <div class="main-title">
+          <div class="main-title" data-aos="fade-in" data-aos-delay="100">
             <picture>
               <img class="main-title__icon lazyload" src="assets/img/icons/parked-car.svg" alt="parked-car">
             </picture>
             <span>АССИСТЕНТ ПАРКОВКИ</span>
           </div>
-          <div class="main-title__card-radius">
+          <div class="main-title__card-radius" data-aos="fade-in" data-aos-delay="200">
             <img class="main-title__card-radius__icon lazyload" src="assets/img/icons/parking-lot-white.svg" alt="images">
             <div class="main-title__card-radius__text">Теперь парковка будет <span>легкой</span></div>
           </div>
         </div>
 
         <div class="thirteen__about">
-          <div class="icon-card">
+          <div class="icon-card" data-aos="fade-in" data-aos-delay="100">
             <div class="icon-card__icon">
               <img class="lazyload" src="assets/img/icons/camera-1.svg" alt="camera">
             </div>
@@ -1356,7 +1418,7 @@
             </div>
           </div>
           <div class="icon-card">
-            <div class="icon-card__icon">
+            <div class="icon-card__icon" data-aos="fade-in" data-aos-delay="200">
               <img class="lazyload" src="assets/img/icons/parking-lot.svg" alt="parking-lot">
             </div>
             <div class="icon-card__content">
@@ -1371,20 +1433,32 @@
 
         </div>
 
-        <div class="thirteen__picture">
+        <div class="thirteen__picture" data-aos="fade-in" data-aos-delay="300">
           <picture>
-            <source srcset="assets/img/section-13/1.webp" type="image/webp">
-            <img loading="lazy" class="thirteen__picture_img lazyload" src="assets/img/section-13/1.png" alt="images">
+            <source srcset="assets/img/section-13/device-road.webp" type="image/webp">
+            <img loading="lazy" class="thirteen__picture_img lazyload" src="assets/img/section-13/device-road.png" alt="images">
+          </picture>
+          <picture>
+            <source srcset="assets/img/section-13/car-gray.webp" type="image/webp">
+            <img  loading="lazy" class="thirteen__picture_img-2 lazyload" src="assets/img/section-13/car-gray.png" alt="images">
+          </picture>
+          <picture>
+            <source srcset="assets/img/section-13/car-blue.webp" type="image/webp">
+            <img  loading="lazy" class="thirteen__picture_img-3 lazyload" src="assets/img/section-13/car-blue.png" alt="images">
+          </picture>
+          <picture>
+            <source srcset="assets/img/section-13/lines.webp" type="image/webp">
+            <img  loading="lazy" class="thirteen__picture_img-4 lazyload" src="assets/img/section-13/lines.png" alt="images">
           </picture>
         </div>
 
         <div class="thirteen__type-camera">
-          <div class="thirteen__type-camera_heading">
+          <div class="thirteen__type-camera_heading" data-aos="fade-in" data-aos-delay="300">
             <div class="main-title main-title__notcase">2 вида задних камер</div>
             <div class="thirteen__type-camera_lable">(Выбирается при оформлении и заказа)</div>
           </div>
           <div class="thirteen__choice-type-camera">
-            <div class="thirteen__choice-type-camera_block">
+            <div class="thirteen__choice-type-camera_block" data-aos="fade-in" data-aos-delay="100">
               <picture>
                 <source srcset="assets/img/section-13/2.webp" type="image/webp">
                 <img loading="lazy" class="thirteen__choice-type-camera_img lazyload" src="assets/img/section-13/2.png" alt="images">
@@ -1394,7 +1468,7 @@
                 <a href="#" class="thirteen__choice-type-camera_link">Смотреть характеристики</a>
               </div>
             </div>
-            <div class="thirteen__choice-type-camera_block">
+            <div class="thirteen__choice-type-camera_block" data-aos="fade-in" data-aos-delay="200">
               <picture>
                 <source srcset="assets/img/section-13/3.webp" type="image/webp">
                 <img loading="lazy" class="thirteen__choice-type-camera_img lazyload" src="assets/img/section-13/3.png" alt="images">
@@ -1404,7 +1478,7 @@
                 <a href="#" class="thirteen__choice-type-camera_link">Смотреть характеристики</a>
               </div>
             </div>
-            <div class="thirteen__description">
+            <div class="thirteen__description" data-aos="fade-in" data-aos-delay="300">
               <div class="thirteen__description_title">Задняя камера</div>
               <div class="thirteen__description_about">
                 <div class="checked-item">
@@ -1437,59 +1511,149 @@
       <div class="container">
 
         <div class="neon-glow__bg-body">
-          <div class="fourteen__bg neon-glow__blur-250-width-194"></div>
+          <div class="fourteen__bg neon-glow__blur-250-width-194" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="fourteen__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
         </div>
 
         <div class="fourteen__heading">
-          <div class="main-title">
+          <div class="main-title" data-aos="fade-in" data-aos-delay="100">
             <img class="main-title__icon lazyload" src="assets/img/icons/camera-360.svg" alt="images">
             <span>Усовершенстованая система <span class="fourteen__heading_mobile">помощи водителю - ADAS</span></span>
           </div>
           <div class="fourteen__heading_block">
-            <div class="main-title">
+            <div class="main-title" data-aos="fade-in" data-aos-delay="200">
               помощи водителю - ADAS
             </div>
-            <div class="main-title__card">
+            <div class="main-title__card" data-aos="fade-in" data-aos-delay="300">
               <img class="main-title__card-radius__icon lazyload" src="assets/img/icons/car.svg" alt="images">
               <div class="main-title__card-radius__text">Сканирует ваше окружение и <br> <b>предупреждает звуками об опасности</b> </div>
             </div>
           </div>
-          <div class="main-subtitle">Находясь в плотном городском потоке <span class="main-color">вы избежите ДТП</span></div>
+          <div class="main-subtitle" data-aos="fade-in" data-aos-delay="300">Находясь в плотном городском потоке <span class="main-color">вы избежите ДТП</span></div>
         </div>
 
         <div data-tabs class="fourteen__tabs">
           <nav data-tabs-titles class="fourteen__tabs_navigation">
-            <button type="button" class="fourteen__tabs_title _tab-active card-item__block">
+            <button type="button" class="fourteen__tabs_title _tab-active card-item__block" data-aos="fade-in" data-aos-delay="100">
               <img class="fourteen__tabs_title-img card-item__block-img lazyload" src="assets/img/icons/warning-car.svg" alt="warning">
               <div class="fourteen__tabs_title-text card-item__block-text text-opacity-gray">При потери полосы движения</div>
             </button>
-            <button type="button" class="fourteen__tabs_title card-item__block">
+            <button type="button" class="fourteen__tabs_title card-item__block" data-aos="fade-in" data-aos-delay="200">
               <img class="fourteen__tabs_title-img card-item__block-img lazyload" src="assets/img/icons/car-two.svg" alt="car-two">
               <div class="fourteen__tabs_title-text card-item__block-text text-opacity-gray">При приближении впереди едущего транспорта</div>
             </button>
-            <button type="button" class="fourteen__tabs_title card-item__block">
+            <button type="button" class="fourteen__tabs_title card-item__block" data-aos="fade-in" data-aos-delay="300">
               <img class="fourteen__tabs_title-img card-item__block-img lazyload" src="assets/img/icons/street.svg" alt="street">
               <div class="fourteen__tabs_title-text card-item__block-text text-opacity-gray">При трогании автомобиля стоящего впереди на светофоре</div>
             </button>
           </nav>
-          <div data-tabs-body class="fourteen__tabs_content">
+          <div data-tabs-body class="fourteen__tabs_content" data-aos="fade-in" data-aos-delay="400">
             <div class="fourteen__tabs_body">
-              <picture>
-                <source srcset="assets/img/section-14/img-1.webp" type="image/webp">
-                <img loading="lazy" class="lazyload" src="assets/img/section-14/img-1.png" alt="images">
-              </picture>
+              <div class="fourteen__block-wrap">
+                <div class="fourteen__block-one">
+                  <picture>
+                    <source srcset="assets/img/section-14/car-green.webp" type="image/webp">
+                    <img loading="lazy" class="fourteen__cargreen-one lazyload" src="assets/img/section-14/car-green.png" alt="images">
+                  </picture>
+                  <picture>
+                    <source srcset="assets/img/section-14/car-white.webp" type="image/webp">
+                    <img loading="lazy" class="fourteen__carwhite-one lazyload" src="assets/img/section-14/car-white.png" alt="images">
+                  </picture>
+                  <picture>
+                    <source srcset="assets/img/section-14/road-1.webp" type="image/webp">
+                    <img loading="lazy" class="fourteen__road-one lazyload" src="assets/img/section-14/road-1.png" alt="images">
+                  </picture>
+                  <picture>
+                    <source srcset="assets/img/section-14/line-green.webp" type="image/webp">
+                    <img loading="lazy" class="fourteen__line-one lazyload" src="assets/img/section-14/line-green.png" alt="images">
+                  </picture>
+                  <picture>
+                    <source srcset="assets/img/section-14/sign.webp" type="image/webp">
+                    <img loading="lazy" class="fourteen__sign-one lazyload" src="assets/img/section-14/sign.png" alt="images">
+                  </picture>
+                </div>
+                <div class="fourteen__block-two">
+                  <picture>
+                    <source srcset="assets/img/section-14/1-device.webp" type="image/webp">
+                    <img loading="lazy" class="lazyload" src="assets/img/section-14/1-device.png" alt="images">
+                  </picture>
+                </div>
+              </div>
             </div>
             <div class="fourteen__tabs_body">
-              <picture>
-                <source srcset="assets/img/section-14/img-2.webp" type="image/webp">
-                <img loading="lazy" class="lazyload" src="assets/img/section-14/img-2.png" alt="images">
-              </picture>
+              <div class="fourteen__block-wrap">
+                <div class="fourteen__block-one">
+                  <picture>
+                    <source srcset="assets/img/section-14/road-2.webp" type="image/webp">
+                    <img loading="lazy" class="fourteen__road-two lazyload" src="assets/img/section-14/road-2.png" alt="images">
+                  </picture>
+                  <picture>
+                    <source srcset="assets/img/section-14/car-darkgray.webp" type="image/webp">
+                    <img loading="lazy" class="fourteen__cardark-two lazyload" src="assets/img/section-14/car-darkgray.png" alt="images">
+                  </picture>
+                  <picture>
+                    <source srcset="assets/img/section-14/car-blue.webp" type="image/webp">
+                    <img loading="lazy" class="fourteen__carblue-two lazyload" src="assets/img/section-14/car-blue.png" alt="images">
+                  </picture>
+                  <picture>
+                    <source srcset="assets/img/section-14/lines.webp" type="image/webp">
+                    <img loading="lazy" class="fourteen__lines-two lazyload" src="assets/img/section-14/lines.png" alt="images">
+                  </picture>
+                  <picture>
+                    <source srcset="assets/img/section-14/sign.webp" type="image/webp">
+                    <img loading="lazy" class="fourteen__sign-two lazyload" src="assets/img/section-14/sign.png" alt="images">
+                  </picture>
+                </div>
+                <div class="fourteen__block-two">
+                  <source srcset="assets/img/section-14/2-device.webp" type="image/webp">
+                    <img loading="lazy" class="lazyload" src="assets/img/section-14/2-device.png" alt="images">
+                  </picture>
+                </div>
+              </div>
             </div>
             <div class="fourteen__tabs_body">
-              <picture>
-                <source srcset="assets/img/section-14/img-3.webp" type="image/webp">
-                <img loading="lazy" class="lazyload" src="assets/img/section-14/img-3.png" alt="images">
-              </picture>
+              <div class="fourteen__block-wrap">
+                <div class="fourteen__block-one">
+                  <picture>
+                    <source srcset="assets/img/section-14/road-3.webp" type="image/webp">
+                    <img loading="lazy" class="fourteen__road-three lazyload" src="assets/img/section-14/road-3.png" alt="images">
+                  </picture>
+                  <picture>
+                    <source srcset="assets/img/section-14/light-green.webp" type="image/webp">
+                    <img loading="lazy" class="fourteen__light-green-three lazyload" src="assets/img/section-14/light-green.png" alt="images">
+                  </picture>
+                  <picture>
+                    <source srcset="assets/img/section-14/light-red.webp" type="image/webp">
+                    <img loading="lazy" class="fourteen__light-red-three lazyload" src="assets/img/section-14/light-red.png" alt="images">
+                  </picture>
+                  <picture>
+                    <source srcset="assets/img/section-14/car-white.webp" type="image/webp">
+                    <img loading="lazy" class="fourteen__carwhite-three lazyload" src="assets/img/section-14/car-white.png" alt="images">
+                  </picture>
+                  <picture>
+                    <source srcset="assets/img/section-14/car-green.webp" type="image/webp">
+                    <img loading="lazy" class="fourteen__cargreen-three lazyload" src="assets/img/section-14/car-green.png" alt="images">
+                  </picture>
+                  <picture>
+                    <source srcset="assets/img/section-14/car-gray.webp" type="image/webp">
+                    <img loading="lazy" class="fourteen__cargray-three lazyload" src="assets/img/section-14/car-gray.png" alt="images">
+                  </picture>
+                  <picture>
+                    <source srcset="assets/img/section-14/lines.webp" type="image/webp">
+                    <img loading="lazy" class="fourteen__lines-three lazyload" src="assets/img/section-14/lines.png" alt="images">
+                  </picture>
+                  <picture>
+                    <source srcset="assets/img/section-14/sign.webp" type="image/webp">
+                    <img loading="lazy" class="fourteen__sign-three lazyload" src="assets/img/section-14/sign.png" alt="images">
+                  </picture>
+                </div>
+                <div class="fourteen__block-two">
+                  <picture>
+                    <source srcset="assets/img/section-14/3-device.webp" type="image/webp">
+                    <img loading="lazy" class="lazyload" src="assets/img/section-14/3-device.png" alt="images">
+                  </picture>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1500,9 +1664,12 @@
     <section class="fifteen">
       <div class="container">
         <div class="neon-glow__bg-body">
-          <div class="fifteen__bg neon-glow__blur-250"></div>
+          <div class="fifteen__bg neon-glow__blur-250" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="fifteen__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="fifteen__bg-mob-2 neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="fifteen__bg-mob-3 neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
         </div>
-        <div class="fifteen__heading">
+        <div class="fifteen__heading" data-aos="fade-in" data-aos-delay="100">
           <div class="main-title">
             <img class="main-title__icon lazyload" src="assets/img/icons/base_camera-2.svg" alt="images">
             <span>24-часовое наблюдение и охрана <span class="fourteen__heading_mobile">авто на парковке</span> </span>
@@ -1520,9 +1687,9 @@
 
         <div class="fifteen__sensor_content">
           <div class="fifteen__sensor_descrpt">
-            <div class="fifteen__sensor_title main-subtitle">В случае удара срабатывает <span class="main-color">G-датчик</span></div>
+            <div class="fifteen__sensor_title main-subtitle" data-aos="fade-in" data-aos-delay="200">В случае удара срабатывает <span class="main-color">G-датчик</span></div>
             <div class="fifteen__sensor-point">
-              <div class="fifteen__sensor-point_item">
+              <div class="fifteen__sensor-point_item" data-aos="fade-in" data-aos-delay="100">
                 <div class="fifteen__sensor-point_picture">
                   <div class="fifteen__sensor-point_picture-num">1</div>
                   <img class="fifteen__sensor-point_picture-img lazyload" src="assets/img/icons/gps.svg" alt="images">
@@ -1530,14 +1697,14 @@
                 <div class="fifteen__sensor-point_text icon-card__text">На смартфон <b><span class="color-white">приходит уведомление</span></b> с отрезком видео с передней и задней камеры <b><span class="color-white">с координатами GPS</span></b>
                 </div>
               </div>
-              <div class="fifteen__sensor-point_item">
+              <div class="fifteen__sensor-point_item" data-aos="fade-in" data-aos-delay="200">
                 <div class="fifteen__sensor-point_picture">
                   <div class="fifteen__sensor-point_picture-num">2</div>
                   <img class="fifteen__sensor-point_picture-img lazyload" src="assets/img/icons/vision-003.svg" alt="images">
                 </div>
                 <div class="fifteen__sensor-point_text icon-card__text">Заходите<b><span class="color-white"> в приложение Carkeeper,</span></b> и смотрите что происходит <b><span class="color-white">рядом с авто</span></b></div>
               </div>
-              <div class="fifteen__sensor-point_item">
+              <div class="fifteen__sensor-point_item" data-aos="fade-in" data-aos-delay="300">
                 <div class="fifteen__sensor-point_picture">
                   <div class="fifteen__sensor-point_picture-num">3</div>
                   <img class="fifteen__sensor-point_picture-img lazyload" src="assets/img/icons/lira-2.svg" alt="images">
@@ -1545,7 +1712,7 @@
                 <div class="fifteen__sensor-point_text icon-card__text"><b><span class="color-white">Отличное дополнение</span></b> к штатной сигнализации авто! Удобно, когда на вашей парковке нет камер</div>
               </div>
             </div>
-            <div class="fifteen__sensor-picture">
+            <div class="fifteen__sensor-picture" data-aos="fade-in" data-aos-delay="400">
               <picture>
                 <source srcset="assets/img/section-15/sensor.webp" type="image/webp">
                 <img loading="lazy" class="fifteen__sensor-picture_img lazyload" src="assets/img/section-15/sensor.png" alt="images">
@@ -1553,7 +1720,7 @@
             </div>
           </div>
 
-          <div class="fifteen__sensor_slider">
+          <div class="fifteen__sensor_slider" data-aos="fade-in" data-aos-delay="300">
             <div class="swiper fifteen__sensor_slider_block">
               <div class="fifteen__sensor_wrapper swiper-wrapper">
                 <div class="fifteen__sensor_slide swiper-slide">
@@ -1569,6 +1736,22 @@
                     <picture>
                       <source srcset="assets/img/section-15/slide-02.webp" type="image/webp">
                       <img loading="lazy" class="fifteen__sensor_slide-picture_img lazyload" src="assets/img/section-15/slide-02.png" alt="images">
+                    </picture>
+                  </div>
+                </div>
+                <div class="fifteen__sensor_slide swiper-slide">
+                  <div class="fifteen__sensor_slide-picture">
+                    <picture>
+                      <source srcset="assets/img/section-15/slide-03.webp" type="image/webp">
+                      <img loading="lazy" class="fifteen__sensor_slide-picture_img lazyload" src="assets/img/section-15/slide-03.png" alt="images">
+                    </picture>
+                  </div>
+                </div>
+                <div class="fifteen__sensor_slide swiper-slide">
+                  <div class="fifteen__sensor_slide-picture">
+                    <picture>
+                      <source srcset="assets/img/section-15/slide-04.webp" type="image/webp">
+                      <img loading="lazy" class="fifteen__sensor_slide-picture_img lazyload" src="assets/img/section-15/slide-04.png" alt="images">
                     </picture>
                   </div>
                 </div>
@@ -1589,19 +1772,19 @@
       <div class="container">
         <div class="sixteen__card">
           <div class="sixteen__block">
-            <div class="sixteen__title main-title main-title__notcase">Хотите получить <span class="main-color">полностью готовое</span> к работе устройство?</div>
-            <div class="sixteen__subtitle main-subtitle">Настроим устройство , скачаем карты, активируем все опции перед отправкой. Вам останется <span class="main-color">только подключить к авто!</span></div>
+            <div class="sixteen__title main-title main-title__notcase" data-aos="fade-in" data-aos-delay="100">Хотите получить <span class="main-color">полностью готовое</span> к работе устройство?</div>
+            <div class="sixteen__subtitle main-subtitle" data-aos="fade-in" data-aos-delay="200">Настроим устройство , скачаем карты, активируем все опции перед отправкой. Вам останется <span class="main-color">только подключить к авто!</span></div>
 
             <div class="sixteen__img">
-              <div class="sixteen__price_title">Скидка до 22 августа 2022 года</div>
-              <picture class="sixteen__img_item">
+              <div class="sixteen__price_title" data-aos="fade-in" data-aos-delay="300">Скидка до 22 августа 2022 года</div>
+              <picture class="sixteen__img_item" data-aos="fade-in" data-aos-delay="300">
                 <source srcset="assets/img/section-16/img-1.webp" type="image/webp">
                 <img loading="lazy" class="sixteen__block-right_picture-img lazyload" src="assets/img/section-16/img-1.png" alt="images">
               </picture>
-              <div class="sixteen__img_title">Заказывайте <br> <b>сегодня!</b></div>
+              <div class="sixteen__img_title" data-aos="fade-in" data-aos-delay="300">Заказывайте <br> <b>сегодня!</b></div>
             </div>
 
-            <div class="sixteen__price">
+            <div class="sixteen__price" data-aos="fade-in" data-aos-delay="400">
               <div class="sixteen__price_new price__new">17 990 ₽</div>
               <div class="sixteen__price_old price__old">24 890₽</div>
               <div class="sixteen__price_button">
@@ -1618,11 +1801,15 @@
     <!-- seventeen -->
     <section class="seventeen">
       <div class="container">
-        <div class="seventeen__title main-title main-title__notcase">Дополнительные возможности Onlooker M84 Pro</div>
+        <div class="neon-glow__bg-body">
+          <div class="seventeen__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="seventeen__bg-mob-2 neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+        </div>
+        <div class="seventeen__title main-title main-title__notcase" data-aos="fade-in" data-aos-delay="100">Дополнительные возможности Onlooker M84 Pro</div>
 
         <div class="seventeen__block">
 
-          <div class="icon-card">
+          <div class="icon-card" data-aos="fade-in" data-aos-delay="100">
             <div class="icon-card__icon">
               <img class="icon-card__icon_img lazyload" src="assets/img/icons/base_camera-3.svg" alt="images">
             </div>
@@ -1636,7 +1823,7 @@
             </div>
           </div>
 
-          <div class="icon-card">
+          <div class="icon-card" data-aos="fade-in" data-aos-delay="200">
             <div class="icon-card__icon">
               <img class="icon-card__icon_img lazyload" src="assets/img/icons/wifi.svg" alt="images">
             </div>
@@ -1650,7 +1837,7 @@
             </div>
           </div>
 
-          <div class="icon-card">
+          <div class="icon-card" data-aos="fade-in" data-aos-delay="300">
             <div class="icon-card__icon">
               <img class="icon-card__icon_img lazyload" src="assets/img/icons/bluetooth.svg" alt="images">
             </div>
@@ -1664,7 +1851,7 @@
             </div>
           </div>
 
-          <div class="icon-card">
+          <div class="icon-card" data-aos="fade-in" data-aos-delay="400">
             <div class="icon-card__icon">
               <img class="icon-card__icon_img lazyload" src="assets/img/icons/fm.svg" alt="images">
             </div>
@@ -1686,10 +1873,10 @@
     <!-- eighteenth -->
     <section class="eighteenth">
       <div class="container">
-        <div class="main-title main-title__notcase eighteenth__title">99% комбо-устройств на рынке</div>
-        <div class="main-subtitle__big eighteenth__subtitle">в этом бюджете <span class="main-color">не имеют таких же функций</span></div>
+        <div class="main-title main-title__notcase eighteenth__title" data-aos="fade-in" data-aos-delay="100">99% комбо-устройств на рынке</div>
+        <div class="main-subtitle__big eighteenth__subtitle" data-aos="fade-in" data-aos-delay="200">в этом бюджете <span class="main-color">не имеют таких же функций</span></div>
         <div class="eighteenth__block">
-          <div class="eighteenth__content">
+          <div class="eighteenth__content" data-aos="fade-in" data-aos-delay="100">
             <div class="eighteenth__content_block">
               <div class="eighteenth__content_title">Большой экран для фильмов и интернета</div>
               <div class="eighteenth__content_title">Навигатор</div>
@@ -1700,7 +1887,7 @@
               <div class="eighteenth__content_title">Удаленное наблюдение за авто по камерам</div>
             </div>
           </div>
-          <div class="eighteenth__card">
+          <div class="eighteenth__card" data-aos="fade-in" data-aos-delay="200">
             <picture>
               <source srcset="assets/img/section-18/1.webp" type="image/webp">
               <img loading="lazy" class="eighteenth__card_img lazyload" src="assets/img/section-18/1.png" alt="images">
@@ -1728,7 +1915,7 @@
               <img class="eighteenth__card_item lazyload" src="assets/img/section-18/close.svg" alt="images">
             </div>
           </div>
-          <div class="eighteenth__card">
+          <div class="eighteenth__card" data-aos="fade-in" data-aos-delay="300">
             <picture>
               <source srcset="assets/img/section-18/2.webp" type="image/webp">
               <img loading="lazy" class="eighteenth__card_img lazyload" src="assets/img/section-18/2.png" alt="images">
@@ -1764,12 +1951,13 @@
     <section class="nineteenth">
       <div class="container">
         <div class="neon-glow__bg-body">
-          <div class="nineteenth__bg neon-glow__blur-250-width-194"></div>
+          <div class="nineteenth__bg neon-glow__blur-250-width-194" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="nineteenth__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
         </div>
-        <div class="nineteenth__title main-title main-title__notcase">Все функции работают при прямых солнечных лучах и сильном морозе,</div>
-        <div class="nineteenth__subtitle main-subtitle">благодаря <span class="main-color">уникальной системе питания,</span> разработанной корейскими инженерами</div>
+        <div class="nineteenth__title main-title main-title__notcase" data-aos="fade-in" data-aos-delay="100">Все функции работают при прямых солнечных лучах и сильном морозе,</div>
+        <div class="nineteenth__subtitle main-subtitle" data-aos="fade-in" data-aos-delay="200">благодаря <span class="main-color">уникальной системе питания,</span> разработанной корейскими инженерами</div>
       </div>
-      <picture>
+      <picture data-aos="fade-in" data-aos-delay="300">
         <source srcset="assets/img/section-19/1.webp" type="image/webp">
         <img loading="lazy" class="nineteenth__img lazyload" src="assets/img/section-19/1.png" alt="images">
       </picture>
@@ -1779,18 +1967,20 @@
     <section class="twentieth">
       <div class="container">
         <div class="neon-glow__bg-body">
-          <div class="twentieth__bg neon-glow__blur-250-width-194"></div>
+          <div class="twentieth__bg neon-glow__blur-250-width-194" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="twentieth__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="twentieth__bg-mob-2 neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
         </div>
         <div class="twentieth__block">
           <div class="twentieth__question">
-            <div class="twentieth__subtitle main-subtitle">Ответьте на <span class="main-color">5 вопросов</span></div>
-            <div class="twentieth__title main-title main-title__notcase">Узнайте, сможет ли Onlooker M84 Pro помочь вам за рулем</div>
-            <div class="twentieth__button">
+            <div class="twentieth__subtitle main-subtitle" data-aos="fade-in" data-aos-delay="100">Ответьте на <span class="main-color">5 вопросов</span></div>
+            <div class="twentieth__title main-title main-title__notcase" data-aos="fade-in" data-aos-delay="200">Узнайте, сможет ли Onlooker M84 Pro помочь вам за рулем</div>
+            <div class="twentieth__button" data-aos="fade-in" data-aos-delay="300">
               <button class="main-btn">Ответить</button>
               <div class="twentieth__button_text">Приблизительное время ответов: 3 минуты</div>
             </div>
           </div>
-          <div class="twentieth__answer">
+          <div class="twentieth__answer" data-aos="fade-in" data-aos-delay="400">
             <div class="twentieth__answer_title">После ответов <b>Вы получите:</b></div>
             <div class="twentieth__answer_block">
 
@@ -1823,15 +2013,17 @@
     <section class="twenty-one">
       <div class="container">
         <div class="neon-glow__bg-body">
-          <div class="twenty-one__bg neon-glow__blur-250-width-194"></div>
-          <div class="twenty-one__bg-2 neon-glow__blur-250-width-194"></div>
+          <div class="twenty-one__bg neon-glow__blur-250-width-194" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="twenty-one__bg-2 neon-glow__blur-250-width-194" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="twenty-one__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="twenty-one__bg-mob-2 neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
         </div>
         <div class="twenty-one__block">
           <div class="twenty-one__content">
-            <div class="twenty-one__title main-title main-title__notcase">Вы можете возразить -</div>
-            <div class="twenty-one__subtitle main-subtitle__big">"Я могу использовать <span class="main-color">обычный смартфон</span> "</div>
-            <div class="twenty-one__text">Смартфоны <span class="color-white">не предназначены</span> для таких жестких условий эксплуатации!</div>
-            <div class="twenty-one__cards">
+            <div class="twenty-one__title main-title main-title__notcase" data-aos="fade-in" data-aos-delay="100">Вы можете возразить -</div>
+            <div class="twenty-one__subtitle main-subtitle__big" data-aos="fade-in" data-aos-delay="200">"Я могу использовать <span class="main-color">обычный смартфон</span> "</div>
+            <div class="twenty-one__text" data-aos="fade-in" data-aos-delay="300">Смартфоны <span class="color-white">не предназначены</span> для таких жестких условий эксплуатации!</div>
+            <div class="twenty-one__cards" data-aos="fade-in" data-aos-delay="300">
               <div class="custom-card-c">
                 <div class="custom-card-c__icon"><img class="custom-card-c__icon_img lazyload" src="assets/img/section-21/1.svg" alt="images"></div>
                 <div class="custom-card-c__title">Изнашивается аккумулятор смартфона</div>
@@ -1863,7 +2055,7 @@
                 <div class="custom-card-c__text">Не будет уведомления о пересечении полосы разметки и приближении встречного авто</div>
               </div>
             </div>
-            <div class="twenty-one__footer">
+            <div class="twenty-one__footer" data-aos="fade-in" data-aos-delay="300">
               <div class="twenty-one__footer_text">
                 Узнать еще <span class="main-color"><b>неочевидные причины вреда</b></span> при использования телефона в качестве навигатора
               </div>
@@ -1873,7 +2065,7 @@
             </div>
 
           </div>
-          <div class="twenty-one__img">
+          <div class="twenty-one__img" data-aos="fade-in" data-aos-delay="300">
             <picture>
               <source srcset="assets/img/section-21/1.webp" type="image/webp">
               <img loading="lazy" class="twenty-one__img_item lazyload" src="assets/img/section-21/1.png" alt="images">
@@ -1888,18 +2080,18 @@
       <div class="container">
 
         <div class="neon-glow__bg-body">
-          <div class="twenty-two__bg neon-glow__blur-250"></div>
-          <div class="twenty-two__bg-2 neon-glow__blur-250-width-194"></div>
-          <div class="twenty-two__bg-3 neon-glow__blur-250"></div>
-          <div class="twenty-two__bg-4 neon-glow__blur-250"></div>
-          <div class="twenty-two__bg-5 neon-glow__blur-250"></div>
-          <div class="twenty-two__bg-6 neon-glow__blur-250-width-194"></div>
+          <div class="twenty-two__bg neon-glow__blur-250" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="twenty-two__bg-2 neon-glow__blur-250-width-194" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="twenty-two__bg-3 neon-glow__blur-250" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="twenty-two__bg-4 neon-glow__blur-250" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="twenty-two__bg-5 neon-glow__blur-250" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="twenty-two__bg-6 neon-glow__blur-250-width-194" data-aos="fade-in" data-aos-delay="100"></div>
         </div>
 
-        <div class="twenty-two__title main-title main-title__notcase">Прочный и легкий корпус с разъемами для быстрого доступа</div>
-        <div class="twenty-two__subtitle">Размеры устройства 183*105*40 мм</div>
+        <div class="twenty-two__title main-title main-title__notcase" data-aos="fade-in" data-aos-delay="100">Прочный и легкий корпус с разъемами для быстрого доступа</div>
+        <div class="twenty-two__subtitle" data-aos="fade-in" data-aos-delay="200">Размеры устройства 183*105*40 мм</div>
         <div class="twenty-two__block">
-          <div class="twenty-two__main">
+          <div class="twenty-two__main" data-aos="fade-in" data-aos-delay="100">
             <picture>
               <source srcset="assets/img/section-22/main.webp" type="image/webp">
               <img loading="lazy" class="twenty-two__main_img lazyload" src="assets/img/section-22/main.png" alt="images">
@@ -1955,10 +2147,10 @@
               </div>
             </div>
           </div>
-          <div class="twenty-two__second">
+          <div class="twenty-two__second" data-aos="fade-in" data-aos-delay="200">
             <picture>
-              <source srcset="assets/img/section-22/second.webp" type="image/webp">
-              <img loading="lazy" class="lazyload" src="assets/img/section-22/second.png" alt="images">
+              <!-- <source srcset="assets/img/section-22/second.webp" type="image/webp"> -->
+              <img loading="lazy" class="lazyload" src="assets/img/section-22/2.png" alt="images">
             </picture>
             <div class="twenty-two__main_block">
               <div class="twenty-two__main_item _item-21">
@@ -2000,7 +2192,7 @@
             </div>
           </div>
         </div>
-        <div class="twenty-two__block_mobile">
+        <div class="twenty-two__block_mobile" data-aos="fade-in" data-aos-delay="300">
           <picture>
             <source srcset="assets/img/section-22/main-mobile.webp" type="image/webp">
             <img loading="lazy" class="twenty-two__main_img lazyload" src="assets/img/section-22/main-mobile.png" alt="images">
@@ -2018,15 +2210,16 @@
       <div class="container">
 
         <div class="neon-glow__bg-body">
-          <div class="twenty-three__bg neon-glow__blur-250-width-139"></div>
-          <div class="twenty-three__bg-2 neon-glow__blur-250-width-139"></div>
-          <div class="twenty-three__bg-3 neon-glow__blur-250-width"></div>
-          <div class="twenty-three__bg-4 neon-glow__blur-250-width-194"></div>
+          <div class="twenty-three__bg neon-glow__blur-250-width-139" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="twenty-three__bg-2 neon-glow__blur-250-width-139" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="twenty-three__bg-3 neon-glow__blur-250-width" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="twenty-three__bg-4 neon-glow__blur-250-width-194" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="twenty-three__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
         </div>
 
-        <div class="twenty-three__title main-title main-title__notcase">Смотрите, как просто подключить Onlooker M84 Pro</div>
+        <div class="twenty-three__title main-title main-title__notcase" data-aos="fade-in" data-aos-delay="100">Смотрите, как просто подключить Onlooker M84 Pro</div>
         <div class="twenty-three__cards">
-          <div class="twenty-three__card">
+          <div class="twenty-three__card" data-aos="fade-in" data-aos-delay="100">
             <div class="twenty-three__card_number">01</div>
             <div class="twenty-three__card_img">
               <picture>
@@ -2035,7 +2228,7 @@
               </picture>
             </div>
           </div>
-          <div class="twenty-three__card">
+          <div class="twenty-three__card" data-aos="fade-in" data-aos-delay="200">
             <div class="twenty-three__card_number">02</div>
             <div class="twenty-three__card_img">
               <picture>
@@ -2044,7 +2237,7 @@
               </picture>
             </div>
           </div>
-          <div class="twenty-three__card">
+          <div class="twenty-three__card" data-aos="fade-in" data-aos-delay="300">
             <div class="twenty-three__card_number">03</div>
             <div class="twenty-three__card_img">
               <picture>
@@ -2054,7 +2247,7 @@
             </div>
           </div>
         </div>
-        <div class="twenty-three__button">
+        <div class="twenty-three__button" data-aos="fade-in" data-aos-delay="400">
           <button class="main-btn">Посмотреть видео установки</button>
         </div>
       </div>
@@ -2065,12 +2258,13 @@
       <div class="container">
 
         <div class="neon-glow__bg-body">
-          <div class="twenty-four__bg neon-glow__blur-250-width-139"></div>
-          <div class="twenty-four__bg-2 neon-glow__blur-250"></div>
+          <div class="twenty-four__bg neon-glow__blur-250-width-139" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="twenty-four__bg-2 neon-glow__blur-250" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="twenty-four__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
         </div>
 
         <div class="twenty-four__block">
-          <div class="twenty-four__content">
+          <div class="twenty-four__content" data-aos="fade-in" data-aos-delay="100">
             <div class="twenty-four__title main-title main-title__notcase">
               Комплектация
               <span class="twenty-four__title_small">с задней камерой</span>
@@ -2102,14 +2296,14 @@
               </div>
             </div>
           </div>
-          <div class="twenty-four__img">
+          <div class="twenty-four__img" data-aos="fade-in" data-aos-delay="200">
             <picture>
               <source srcset="assets/img/section-24/1.webp" type="image/webp">
               <img loading="lazy" class="twenty-four__img_item lazyload" src="assets/img/section-24/1.png" alt="images">
             </picture>
           </div>
         </div>
-        <div class="twenty-four__footer price-card">
+        <div class="twenty-four__footer price-card" data-aos="fade-in" data-aos-delay="300">
           <div class="price-card__text">
             <div class="price-card__text_title main-title main-title__notcase">Акция</div>
             <div class="price-card__text_info">Специальная цена <span class="color-white">до 22 августа</span> и приятными <span class="color-white">бонусами в подарок</span></div>
@@ -2130,8 +2324,13 @@
     <!-- twenty-five -->
     <section class="twenty-five">
       <div class="container">
-        <div class="twenty-five__title main-title main-title__notcase">Дополнительные аксессуары</div>
-        <div class="twenty-five__slider">
+        <div class="neon-glow__bg-body">
+          <div class="twenty-five__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="twenty-five__bg-mob-2 neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+        </div>
+
+        <div class="twenty-five__title main-title main-title__notcase" data-aos="fade-in" data-aos-delay="100">Дополнительные аксессуары</div>
+        <div class="twenty-five__slider" data-aos="fade-in" data-aos-delay="200">
 
           <div class="twenty-five__slider_block swiper">
             <div class="swiper-wrapper">
@@ -2240,6 +2439,27 @@
                 </div>
               </div>
 
+              <div class="swiper-slide">
+                <div class="slider-card">
+                  <div class="slider-card__img">
+                    <picture>
+                      <source srcset="assets/img/section-25/6.webp" type="image/webp">
+                      <img loading="lazy" class="slider-card__img_item lazyload" src="assets/img/section-25/6.png" alt="images">
+                    </picture>
+                  </div>
+                  <div class="slider-card__content">
+                    <div class="slider-card__title">Удлинитель для задней камеры</div>
+                    <div class="slider-card__price">
+                      <div class="slider-card__price_new">990₽</div>
+                      <div class="slider-card__price_old">1490₽</div>
+                    </div>
+                    <div class="slider-card__button">
+                      <button class="main-btn-bordered">Подробнее</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
 
@@ -2247,7 +2467,7 @@
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
         </div>
-        <div class="twenty-five__button">
+        <div class="twenty-five__button" data-aos="fade-in" data-aos-delay="300">
           <button class="main-btn">Заказать со скидкой и подарками</button>
         </div>
       </div>
@@ -2256,39 +2476,41 @@
     <!-- twenty-six -->
     <section class="twenty-six">
       <div class="container">
-        <div class="twenty-six__title main-title main-title__notcase">
+        <div class="neon-glow__bg-body">
+          <div class="twenty-six__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+        </div>
+
+        <div class="twenty-six__title main-title main-title__notcase" data-aos="fade-in" data-aos-delay="100">
           Легко устанавливается на лобовое или на панель не мешая обзору
           <div class="main-title__card">
             <img class="main-title__card-radius__icon lazyload" src="assets/img/icons/019-google-play.svg" alt="images">
             <div class="main-title__card-radius__text">с возможностью скачивания приложений <b>с Google Play</b></div>
           </div>
         </div>
+
         <div class="twenty-six__block">
-          <div class="twenty-six__left">
-            <div class="twenty-six__left_title twenty-six__block_text">На присоске</div>
-            <picture>
-              <source srcset="assets/img/section-26/1.webp" type="image/webp">
-              <img loading="lazy" class="twenty-six__img lazyload" src="assets/img/section-26/1.png" alt="images">
-            </picture>
+          <div id="image-compare" class="twenty-six__compare">
+            <img loading="lazy" class="lazyload twenty-six__img" src="assets/img/section-26/1.png" alt="" />
+            <img loading="lazy" class="lazyload twenty-six__img" src="assets/img/section-26/2.png" alt="" />
           </div>
-          <div class="twenty-six__right">
-            <div class="twenty-six__right_title twenty-six__block_text">На панели</div>
-            <picture>
-              <source srcset="assets/img/section-26/2.webp" type="image/webp">
-              <img loading="lazy" class="twenty-six__img lazyload" src="assets/img/section-26/2.png" alt="images">
-            </picture>
-          </div>
+          <div class="twenty-six__left_title twenty-six__block_text">На присоске</div>
+          <div class="twenty-six__right_title twenty-six__block_text">На панели</div>
         </div>
+
       </div>
     </section>
 
     <!-- twenty-seven -->
     <section class="twenty-seven">
       <div class="container">
-        <div class="twenty-seven__title main-title">Onlooker M84 Pro - проверен тысячами автомобилистов и продается с 2021 года</div>
-        <div class="twenty-seven__subtitle main-subtitle__big">Гаджет постоянно улучшается <span class="main-color">на протяжении всего времени</span></div>
+        <div class="neon-glow__bg-body">
+          <div class="twenty-seven__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+        </div>
+
+        <div class="twenty-seven__title main-title" data-aos="fade-in" data-aos-delay="100">Onlooker M84 Pro - проверен тысячами автомобилистов и продается с 2021 года</div>
+        <div class="twenty-seven__subtitle main-subtitle__big" data-aos="fade-in" data-aos-delay="200">Гаджет постоянно улучшается <span class="main-color">на протяжении всего времени</span></div>
         <div data-tabs class="twenty-seven__block">
-          <div class="twenty-seven__tabs_head">
+          <div class="twenty-seven__tabs_head" data-aos="fade-in" data-aos-delay="300">
             <div class="twenty-seven__text">Рекомендуют <span class="color-white"><b>97% пользователей!</b></span></div>
             <nav data-tabs-titles class="twenty-seven__navigation">
               <button type="button" class="card-item__block _tab-active">
@@ -2305,7 +2527,7 @@
               </button>
             </nav>
           </div>
-          <div data-tabs-body class="twenty-seven__content">
+          <div data-tabs-body class="twenty-seven__content" data-aos="fade-in" data-aos-delay="400">
             <!-- TAB-CONTENT-1 ---------------------------------------------------->
             <div class="twenty-seven__body">
               <div class="twenty-seven__slider-one">
@@ -2526,16 +2748,18 @@
       <div class="container">
 
         <div class="neon-glow__bg-body">
-          <div class="twenty-eight__bg neon-glow__blur-250-width-194"></div>
-          <div class="twenty-eight__bg-2 neon-glow__blur-250-width-194"></div>
-          <div class="twenty-eight__bg-3 neon-glow__blur-250-width-194"></div>
-          <div class="twenty-eight__bg-4 neon-glow__blur-250"></div>
-          <div class="twenty-eight__bg-5 neon-glow__blur-250"></div>
+          <div class="twenty-eight__bg neon-glow__blur-250-width-194" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="twenty-eight__bg-2 neon-glow__blur-250-width-194" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="twenty-eight__bg-3 neon-glow__blur-250-width-194" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="twenty-eight__bg-4 neon-glow__blur-250" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="twenty-eight__bg-5 neon-glow__blur-250" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="twenty-eight__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="twenty-eight__bg-mob-2 neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
         </div>
 
         <div data-tabs class="twenty-eight__tabs">
 
-          <nav data-tabs-titles class="twenty-seven__navigation">
+          <nav data-tabs-titles class="twenty-seven__navigation" data-aos="fade-in" data-aos-delay="100">
             <button type="button" class="card-item__block _tab-active">
               <img class="card-item__block-img lazyload" src="assets/img/icons/deliveri.svg" alt="images">
               <span class="card-item__block-text">Доставка, оплата</span>
@@ -2546,7 +2770,7 @@
             </button>
           </nav>
 
-          <div data-tabs-body class="twenty-eight__content">
+          <div data-tabs-body class="twenty-eight__content" data-aos="fade-in" data-aos-delay="200">
 
             <div class="twenty-eight__tabs-one  twenty-eight__one">
               <div class="twenty-eight__one_title main-title main-title__notcase">Оплату товара производите только после получения и осмотра</div>
@@ -2716,40 +2940,113 @@
 
             <div class="twenty-eight__tabs-two">
               <div class="twenty-eight__title main-title main-title__notcase">Ответы на популярные вопросы</div>
-              <div data-spollers data-one-spoller class="spollers">
-                <div class="spollers__item">
-                  <button type="button" data-spoller class="spollers__title _spoller-active icon-card__title-white">Товар точно соответствует характеристикам?<span class="_spoller-plus"></span></button>
-                  <div class="spollers__body">Мы - компания, уважающая пользователей и свою репутацию. Поэтому мы не продаем товар, который может нас запятнать. Мошенники часто продают совсем дешевые товары, ставя максимальную скидку. Наше устройство - совсем другой сегмент. К тому же, у вас есть возможность проверить устройство еще до момента оплаты (если вы выбрали постоплату).</div>
+
+              <div class="accordion-container">
+
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger">Как можно оплатить заказ?</button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p class="ac-text">Мы предлагаем клиентам несколько способов оплаты, в том числе оплату после получения товара. «Подробнее о способах оплаты»</p>
+                  </div>
                 </div>
-                <div class="spollers__item">
-                  <button type="button" data-spoller class="spollers__title icon-card__title-white">Как я могу проверить, что товар качественный?<span class="_spoller-plus"></span></button>
-                  <div class="spollers__body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptatibus nam culpa atque veniam ratione dolorem nostrum ab delectus minus repellendus corrupti perferendis corporis, ipsum placeat impedit odio tempore nemo. Necessitatibus aspernatur autem aliquam?</div>
+
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger">Какие Вы предоставляете гарантии?</button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p class="ac-text">Гарантия на устройство 12 месяцев, это без учета 14 дневной проверки устройства. «Подробнее о гарантии»</p>
+                  </div>
                 </div>
-                <div class="spollers__item">
-                  <button type="button" data-spoller class="spollers__title icon-card__title-white">GPS-модуль хорошо ловит связь?<span class="_spoller-plus"></span></button>
-                  <div class="spollers__body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptatibus nam culpa atque veniam ratione dolorem nostrum ab delectus minus repellendus corrupti perferendis corporis, ipsum placeat impedit odio tempore nemo. Necessitatibus aspernatur autem aliquam?</div>
+
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger">«Боюсь, что вы пришлёте мне не тот товар, он не будет соответствовать характеристикам. Как вам доверять?»</button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p class="ac-text">Ваши опасения НЕ оправданы минимум по 4 причинам: <br><br>
+
+                      1. Репутация. ONLOOKER – молодой бренд и репутация для нас очень важна на ранних стадиях развития. Для нас важен каждый отзыв в сети, поэтому обманывать своих покупателей нет смысла. Читайте О Нас. <br><br>
+                      2. Цена товара. Устройство не из разряда «дешёвых», и Вы должны понимать, что на таких суммах мошенники, как правило, не работают. Почитайте отзывы о мошеннических схемах с видеорегистраторами, фигурантами там являются товары дешевле 4000 рублей, а так же однодневные «простые» сайты с подозрительными доменными именами и названиями товаров. <br><br>
+                      3. Способы доставки товара. Мы предлагаем 2 варианта доставки, при которых Вы можете осмотреть товар до оплаты: 1) Курьер; 2) Посылка наложенным платежом Почтой России с описью содержимого (при этом Вы вправе вскрыть посылку на почте до оплаты). <br><br>
+                      4. После оплаты и покупки начинает действовать гарантийный срок. Первые 15 дней Вы вправе сдать товар или обменять, в случае если он не будет соответствовать заявленным характеристикам, подробнее в Публичной оферте.</p><br>
+                  </div>
                 </div>
-                <div class="spollers__item">
-                  <button type="button" data-spoller class="spollers__title icon-card__title-white">Есть ли проблемы с картами памяти у Onlooker M84 Pro<span class="_spoller-plus"></span></button>
-                  <div class="spollers__body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptatibus nam culpa atque veniam ratione dolorem nostrum ab delectus minus repellendus corrupti perferendis corporis, ipsum placeat impedit odio tempore nemo. Necessitatibus aspernatur autem aliquam?</div>
+
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger">«Радарный комплекс у М84 Pro определит все радары и камеры? Я точно не получу штрафов?»</button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p class="ac-text">Радарный комплекс М84 Pro работает на базе специального приложения SpeedCam. ONLOOKER М84 PRO 4G - это максимум защиты от штрафов. Прибор точно и вовремя определяет камеры и радары через двухполосный GPS модуль. Обновления приходят автоматически. Стоит отметить, нельзя 100% надеяться даже на самый продвинутый детектор радаров. Но соблюдая ПДД, а так же используя М84 Pro, шансы получить штраф стремятся к нулю.</p>
+                  </div>
                 </div>
-                <div class="spollers__item">
-                  <button type="button" data-spoller class="spollers__title icon-card__title-white">Радарный комплекс у Onlooker M84 Pro определит все радары и камеры? Я точно не получу штрафов?<span class="_spoller-plus"></span></button>
-                  <div class="spollers__body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptatibus nam culpa atque veniam ratione dolorem nostrum ab delectus minus repellendus corrupti perferendis corporis, ipsum placeat impedit odio tempore nemo. Necessitatibus aspernatur autem aliquam?</div>
+
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger">Как часто нужно обновлять видеорегистратор?</button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p class="ac-text">Планшет поддерживает 3G/4G сеть. Установите сим-карту для обновления карт, GPS баз камер ГИБДД и заходите в интернет прямо в машине. Не нужно нести девайс домой и подключать к компьютеру. Так же можно обновляться по Wi-Fi сети. Отметим, что видеорегистратор работает на базе ОС Android, соответственно обновления можно настроить, как «автоматические» и Вам не потребуется следить за ними. Именно это отличает M84 PRO от других аналогов.</p>
+                  </div>
                 </div>
-                <div class="spollers__item">
-                  <button type="button" data-spoller class="spollers__title icon-card__title-white">Как часто нужно обновлять видеорегистратор<span class="_spoller-plus"></span></button>
-                  <div class="spollers__body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptatibus nam culpa atque veniam ratione dolorem nostrum ab delectus minus repellendus corrupti perferendis corporis, ipsum placeat impedit odio tempore nemo. Necessitatibus aspernatur autem aliquam?</div>
+
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger">Как ведёт себя устройство в мороз и жару?</button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p class="ac-text">Разработчиками микросхем заложена рабочая температура +70/-20 градусов. Эти цифры подтверждены реальными испытаниями на температурных стендах, проверяется каждый экземпляр. Но тут стоит следовать двум важным правилам: 1) Не оставлять прибор под прямыми лучами солнца на длительное время. 2) При резком перепаде температуры (например, когда вы занесли прибор домой с мороза), не включать устройство порядка 4-6 часов. Других ограничений не заявлено.</p>
+                  </div>
                 </div>
-                <div class="spollers__item">
-                  <button type="button" data-spoller class="spollers__title icon-card__title-white">Как ведёт себя устройство в мороз и жару?<span class="_spoller-plus"></span></button>
-                  <div class="spollers__body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptatibus nam culpa atque veniam ratione dolorem nostrum ab delectus minus repellendus corrupti perferendis corporis, ipsum placeat impedit odio tempore nemo. Necessitatibus aspernatur autem aliquam?</div>
+
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger">Какая нужна карта памяти для видеорегистратора?</button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p class="ac-text">Пожалуйста, проверьте, является ли ваша MicroSD карта памяти высокоскоростной, с меткой Class 10. Максимальный поддерживаемый объём – 128 Gb. <br><br>
+
+                      Class 4 или Class 6 - не совместимы с файловой системой прибора.</p>
+                  </div>
                 </div>
-                <div class="spollers__item">
-                  <button type="button" data-spoller class="spollers__title icon-card__title-white">Какая нужна карта памяти для видеорегистратора?<span class="_spoller-plus"></span></button>
-                  <div class="spollers__body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptatibus nam culpa atque veniam ratione dolorem nostrum ab delectus minus repellendus corrupti perferendis corporis, ipsum placeat impedit odio tempore nemo. Necessitatibus aspernatur autem aliquam?</div>
+
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger">Какая нужна SIM карта для видеорегистратора?</button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p class="ac-text">В M84 Pro необходимо устанавливать сим-карту формата Micro-SIM, желательно без переходников (приобретая новую СИМ-карту, сделать сразу Micro-SIM). <br><br>
+
+                      Мы так же рекомендуем своим покупателям не тратиться на отдельные СИМ-карты, а настроить на своём смартфоне точку доступа Wi-Fi с автоподключением. Как только ваш смартфон окажется в машине, М84 будет получать Интернет-соединение прямо с него.</p>
+                  </div>
                 </div>
+
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger">Какие размеры М84 и не закроет ли он обзор?</button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p class="ac-text">Размеры видеорегистратора 183 мм * 105 мм. Чтобы минимизировать закрытие обзора рекомендуется установить устройство на подставку, а не на лобовое стекло. <br><br>
+
+                      Размеры дисплея сопоставимы с мультимедиа системами, которые установлены на панель (торпеду) в некоторых известных моделях авто: Ауди, Тойота, BMW, Мазда. Если у Вас большой автомобиль и лобовое стекло просторное, без проблем можно установить устройство и на лобовое, а именно - ближе к панели. При этом закрытие обзора вы не почувствуете.</p>
+                  </div>
+                </div>
+
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger">Почему я не нашёл вашего товара в Я.Маркет и других известных интернет-площадках?</button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p class="ac-text">Наш товар представлен в известном интернет-магазине ЯндексМаркет. Вот <a href="https://market.yandex.ru/product--avtoplanshet-videoregistrator-s-radar-detektorom-onlooker-m84-pro-15-v-1-2-kamery-gps/905114584">ссылка.</a> </p>
+                  </div>
+                </div>
+
+
               </div>
+
             </div>
 
           </div>
@@ -2757,47 +3054,48 @@
       </div>
     </section>
 
-    <!-- twentynine -->
-    <section class="twentynine">
+    <!-- twenty-nine -->
+    <section class="twenty-nine">
       <div class="container">
-        <div class="twentynine__wrapper">
-          <div class="twentynine__title main-title main-title__notcase">Устройство прошло все испытания и получила сертификаты о безопасности для здоровья</div>
-          <div class="twentynine__certificate-block">
-            <div class="twentynine__block-one">
-              <img src="assets/img/icons/eac.svg" alt="images" class="twentynine__icon-eac lazyload">
-              <div class="twentynine__text main-title__card-radius__text">Декларация соответствия ЕАС</div>
+        <div class="neon-glow__bg-body">
+          <div class="twenty-nine__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+        </div>
+
+
+        <div class="twenty-nine__wrapper">
+          <div class="twenty-nine__title main-title main-title__notcase" data-aos="fade-in" data-aos-delay="100">Устройство прошло все испытания и получила сертификаты о безопасности для здоровья</div>
+          <div class="twenty-nine__certificate-block" data-aos="fade-in" data-aos-delay="200">
+            <div class="twenty-nine__block-one">
+              <img src="assets/img/icons/eac.svg" alt="images" class="twenty-nine__icon-eac lazyload">
+              <div class="twenty-nine__text main-title__card-radius__text">Декларация соответствия ЕАС</div>
             </div>
-            <div class="twentynine__block-two">
-              <img src="assets/img/icons/ce.svg" alt="images" class="twentynine__icon-ce lazyload">
-              <img src="assets/img/icons/rohs.svg" alt="images" class="twentynine__icon-rohs lazyload">
-              <div class="twentynine__text main-title__card-radius__text">Сертификация СЕ, FCC, Rohs, CCC</div>
+            <div class="twenty-nine__block-two">
+              <img src="assets/img/icons/ce.svg" alt="images" class="twenty-nine__icon-ce lazyload">
+              <img src="assets/img/icons/rohs.svg" alt="images" class="twenty-nine__icon-rohs lazyload">
+              <div class="twenty-nine__text main-title__card-radius__text">Сертификация СЕ, FCC, Rohs, CCC</div>
             </div>
-            <div class="twentynine__block-three">
-              <img src="assets/img/icons/logo.svg" alt="images" class="twentynine__icon-logo lazyload">
-              <div class="twentynine__text main-title__card-radius__text">официально зарегистрированный бренд на территории РФ</div>
+            <div class="twenty-nine__block-three">
+              <img src="assets/img/icons/logo.svg" alt="images" class="twenty-nine__icon-logo lazyload">
+              <div class="twenty-nine__text main-title__card-radius__text">официально зарегистрированный бренд на территории РФ</div>
             </div>
           </div>
-          <div class="twentynine__downoload">
-            <a href="#" class="twentynine__downld-btn">
-              <img src="assets/img/icons/download.svg" alt="images" class="twentynine__downld-icon lazyload">
+          <div class="twenty-nine__downoload" data-aos="fade-in" data-aos-delay="300">
+            <a href="#" class="twenty-nine__downld-btn">
+              <img src="assets/img/icons/download.svg" alt="images" class="twenty-nine__downld-icon lazyload">
               Декларация соответствия 1 (рус.)
             </a>
-            <a href="#" class="twentynine__downld-btn">
-              <img src="assets/img/icons/download.svg" alt="images" class="twentynine__downld-icon lazyload">
+            <a href="#" class="twenty-nine__downld-btn">
+              <img src="assets/img/icons/download.svg" alt="images" class="twenty-nine__downld-icon lazyload">
               Декларация соответствия 2 (рус.)
             </a>
-            <a href="#" class="twentynine__downld-btn">
-              <img src="assets/img/icons/download.svg" alt="images" class="twentynine__downld-icon lazyload">
+            <a href="#" class="twenty-nine__downld-btn">
+              <img src="assets/img/icons/download.svg" alt="images" class="twenty-nine__downld-icon lazyload">
               Декларация соответствия (англ.)
             </a>
           </div>
           <picture>
             <source srcset="assets/img/section-29/img-pc.webp" type="image/webp">
-            <img loading="lazy" class="twentynine__img-pc lazyload" src="assets/img/section-29/img-pc.png" alt="images">
-          </picture>
-          <picture>
-            <source srcset="assets/img/section-29/img-mob.webp" type="image/webp">
-            <img loading="lazy" class="twentynine__img-mob lazyload" src="assets/img/section-29/img-mob.png" alt="images">
+            <img loading="lazy" class="twenty-nine__img-pc lazyload" src="assets/img/section-29/img-pc.png" alt="images">
           </picture>
         </div>
       </div>
@@ -2807,12 +3105,12 @@
     <section class="thirty">
       <div class="container">
         <div class="thirty__wrapper">
-          <div class="thirty__heading">
+          <div class="thirty__heading" data-aos="fade-in" data-aos-delay="100">
             <div class="thirty__title main-title main-title__notcase">Гарантия на устройство</div>
             <div class="thirty__subtitle main-title  main-title__notcase main-color">1,5 года</div>
             <div class="thirty__text icon-card__text">В течение этого срока оказываем бесплатно обслуживание и сервис</div>
           </div>
-          <div class="thirty__guarantee">
+          <div class="thirty__guarantee" data-aos="fade-in" data-aos-delay="200">
             <div class="main-title__card">
               <img class="main-title__card-radius__icon lazyload" src="assets/img/icons/guaranty.svg" alt="images">
               <div class="main-title__card-radius__text">Гарантия товара</div>
@@ -2870,7 +3168,7 @@
               </div>
             </div>
           </div>
-          <div class="thirty__guarantee">
+          <div class="thirty__guarantee" data-aos="fade-in" data-aos-delay="300">
             <div class="main-title__card">
               <img class="main-title__card-radius__icon lazyload" src="assets/img/icons/support.svg" alt="images">
               <div class="main-title__card-radius__text">Гарантия поддержки</div>
@@ -2919,18 +3217,22 @@
       </div>
     </section>
 
-    <!-- thirtyone (copy twelfth with few changes) -->
-    <section class="thirtyone">
+    <!-- thirty-one -->
+    <section class="thirty-one">
       <div class="container">
-        <div class="thirtyone__heading">
-          <div class="main-title main-title__notcase thirtyone__title">Закажите комбо-устройство Onlooker M84 Pro</div>
-          <div class="thirtyone__card main-title__card">
+        <div class="neon-glow__bg-body">
+          <div class="thirty-one__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+        </div>
+
+        <div class="thirty-one__heading" data-aos="fade-in" data-aos-delay="100">
+          <div class="main-title main-title__notcase thirty-one__title">Закажите комбо-устройство Onlooker M84 Pro</div>
+          <div class="thirty-one__card main-title__card">
             <div class="main-title__card-radius__text">и сэкономьте <b>6900₽</b></div>
           </div>
         </div>
         <div class="twelfth__block">
-          <div class="twelfth__content">
-            <div class="thirtyone__tags twelfth__tags">
+          <div class="twelfth__content" data-aos="fade-in" data-aos-delay="200">
+            <div class="thirty-one__tags twelfth__tags">
               <div class="custom-tag">
                 <img class="custom-tag__icon lazyload" src="assets/img/section-12/1.svg" alt="images">
                 <span class="custom-tag__text">Видеорегистратор</span>
@@ -2961,7 +3263,7 @@
               </div>
             </div>
           </div>
-          <div class="twelfth__img">
+          <div class="twelfth__img" data-aos="fade-in" data-aos-delay="300">
             <picture>
               <source srcset="assets/img/section-12/main.webp" type="image/webp">
               <img loading="lazy" class="twelfth__img_img lazyload" src="assets/img/section-12/main.png" alt="images">
@@ -2971,42 +3273,47 @@
       </div>
     </section>
 
-    <!-- thirtytwo -->
-    <section class="thirtytwo">
+    <!-- thirty-two -->
+    <section class="thirty-two">
       <div class="container">
-        <div class="thirtytwo__heading">
-          <div class="thirtytwo__title main-title main-title__notcase">Техподдержка на связи 24/7</div>
+
+        <div class="neon-glow__bg-body">
+          <div class="thirty-two__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+        </div>
+
+        <div class="thirty-two__heading" data-aos="fade-in" data-aos-delay="100">
+          <div class="thirty-two__title main-title main-title__notcase">Техподдержка на связи 24/7</div>
           <div class="main-title__card">
             <img class="main-title__card-radius__icon lazyload" src="assets/img/icons/guidelines.svg" alt="images">
             <div class="main-title__card-radius__text">В комплекте будет приложена бумажная<br> инструкция по работе и настройке</div>
           </div>
         </div>
-        <div class="thirtytwo__content">
-          <div class="thirtytwo__descrp">
-            <div class="thirtytwo__text main-subtitle">
+        <div class="thirty-two__content">
+          <div class="thirty-two__descrp" data-aos="fade-in" data-aos-delay="200">
+            <div class="thirty-two__text main-subtitle">
               <span class="main-color">Проконсультируем по всем вопросам</span>
-              <span class="thirtytwo__text-size">работы и настройки</span>
+              <span class="thirty-two__text-size">работы и настройки</span>
             </div>
-            <div class="thirtytwo__subtext icon-card__text">
+            <div class="thirty-two__subtext icon-card__text">
               Пишите обращение через
-              <a href="#" class="thirtytwo__form-link color-white"><b>форму</b></a>
+              <a href="#" class="thirty-two__form-link color-white"><b>форму</b></a>
               на сайте
             </div>
           </div>
-          <div class="thirtytwo__links">
-            <div class="thirtytwo__links-title checked-item_text">Актуальные ссылки</div>
-            <div class="thirtytwo__links-body">
-              <a href="#" class="thirtytwo__link">
-                <img src="assets/img/icons/arrow-square.svg" alt="images" class="thirtytwo__link-icon lazyload">
-                <div class="thirtytwo__link-text icon-card__text">Страница поддержки</div>
+          <div class="thirty-two__links" data-aos="fade-in" data-aos-delay="300">
+            <div class="thirty-two__links-title checked-item_text">Актуальные ссылки</div>
+            <div class="thirty-two__links-body">
+              <a href="#" class="thirty-two__link">
+                <img src="assets/img/icons/arrow-square.svg" alt="images" class="thirty-two__link-icon lazyload">
+                <div class="thirty-two__link-text icon-card__text">Страница поддержки</div>
               </a>
-              <a href="#" class="thirtytwo__link">
-                <img src="assets/img/icons/arrow-square.svg" alt="images" class="thirtytwo__link-icon lazyload">
-                <div class="thirtytwo__link-text icon-card__text">Руководство пользователя</div>
+              <a href="#" class="thirty-two__link">
+                <img src="assets/img/icons/arrow-square.svg" alt="images" class="thirty-two__link-icon lazyload">
+                <div class="thirty-two__link-text icon-card__text">Руководство пользователя</div>
               </a>
-              <a href="#" class="thirtytwo__link">
-                <img src="assets/img/icons/arrow-square.svg" alt="images" class="thirtytwo__link-icon lazyload">
-                <div class="thirtytwo__link-text icon-card__text">Видео инструкции по настройке устройства</div>
+              <a href="#" class="thirty-two__link">
+                <img src="assets/img/icons/arrow-square.svg" alt="images" class="thirty-two__link-icon lazyload">
+                <div class="thirty-two__link-text icon-card__text">Видео инструкции по настройке устройства</div>
               </a>
             </div>
           </div>
@@ -3014,50 +3321,51 @@
       </div>
     </section>
 
-    <!-- thirtythree -->
-    <section class="thirtythree">
+    <!-- thirty-three -->
+    <section class="thirty-three">
       <div class="container">
-        <div class="thirtythree__wrapper">
+        <div class="thirty-three__wrapper">
 
-          <div class="thirtythree__bg neon-glow__blur-250"></div>
-          <div class="thirtythree__bg-2 neon-glow__blur-250"></div>
+          <div class="thirty-three__bg neon-glow__blur-250" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="thirty-three__bg-2 neon-glow__blur-250" data-aos="fade-in" data-aos-delay="100"></div>
+          <div class="thirty-three__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
 
-          <div class="thirtythree__title thirtyfour__title main-title main-title__notcase">Шаги для покупки</div>
-          <div class="thirtythree__cards">
-            <div class="thirtythree__card">
-              <div class="thirtythree__card_num">01</div>
+          <div class="thirty-three__title main-title main-title__notcase" data-aos="fade-in" data-aos-delay="100">Шаги для покупки</div>
+          <div class="thirty-three__cards">
+            <div class="thirty-three__card" data-aos="fade-in" data-aos-delay="200">
+              <div class="thirty-three__card_num">01</div>
               <picture>
                 <source srcset="assets/img/section-33/laptop.webp" type="image/webp">
-                <img loading="lazy" class="thirtythree__card_img-1 lazyload" src="assets/img/section-33/laptop.png" alt="images">
+                <img loading="lazy" class="thirty-three__card_img-1 lazyload" src="assets/img/section-33/laptop.png" alt="images">
               </picture>
-              <div class="thirtythree__card_btm">
-                <div class="thirtythree__card_title main-subtitle"><b>Делаете заказ на сайте</b></div>
-                <div class="thirtythree__card_text icon-card__text">со скидкой и бонусами до 22 сентября</div>
-                <button class="thirtythree__card_btn main-btn">Сделать заказ</button>
+              <div class="thirty-three__card_btm">
+                <div class="thirty-three__card_title main-subtitle"><b>Делаете заказ на сайте</b></div>
+                <div class="thirty-three__card_text icon-card__text">со скидкой и бонусами до 22 сентября</div>
+                <button class="thirty-three__card_btn main-btn">Сделать заказ</button>
               </div>
             </div>
-            <div class="thirtythree__card">
-              <div class="thirtythree__card_num">02</div>
+            <div class="thirty-three__card" data-aos="fade-in" data-aos-delay="300">
+              <div class="thirty-three__card_num">02</div>
               <picture>
                 <source srcset="assets/img/section-33/maneger.webp" type="image/webp">
-                <img loading="lazy" class="thirtythree__card_img-2 lazyload" src="assets/img/section-33/maneger.png" alt="images">
+                <img loading="lazy" class="thirty-three__card_img-2 lazyload" src="assets/img/section-33/maneger.png" alt="images">
               </picture>
-              <div class="thirtythree__card_btm">
-                <div class="thirtythree__card_title main-subtitle"><b>Менеджер <br>подтвержает заказ</b></div>
-                <div class="thirtythree__card_text icon-card__text">Перед отправкой проверяем товар по 20 пунктам качества</div>
-                <div class="thirtythree__card_text icon-card__text">Упаковываем в надежную посылку Отправляем трек-номер отслеживания</div>
+              <div class="thirty-three__card_btm">
+                <div class="thirty-three__card_title main-subtitle"><b>Менеджер <br>подтвержает заказ</b></div>
+                <div class="thirty-three__card_text icon-card__text">Перед отправкой проверяем товар по 20 пунктам качества</div>
+                <div class="thirty-three__card_text icon-card__text">Упаковываем в надежную посылку Отправляем трек-номер отслеживания</div>
               </div>
             </div>
-            <div class="thirtythree__card">
-              <div class="thirtythree__card_num">03</div>
+            <div class="thirty-three__card" data-aos="fade-in" data-aos-delay="400">
+              <div class="thirty-three__card_num">03</div>
               <picture>
                 <source srcset="assets/img/section-33/onlooker.webp" type="image/webp">
-                <img loading="lazy" class="thirtythree__card_img-3 lazyload" src="assets/img/section-33/onlooker.png" alt="images">
+                <img loading="lazy" class="thirty-three__card_img-3 lazyload" src="assets/img/section-33/onlooker.png" alt="images">
               </picture>
-              <div class="thirtythree__card_btm">
-                <div class="thirtythree__card_title main-subtitle"><b>Получаете посылку, проверяете устройство</b></div>
-                <div class="thirtythree__card_text icon-card__text">и только потом оплачиваете заказ</div>
-                <div class="thirtythree__card_text icon-card__text">Если заказывали курьером сможете проверить прямо в автомобиле</div>
+              <div class="thirty-three__card_btm">
+                <div class="thirty-three__card_title main-subtitle"><b>Получаете посылку, проверяете устройство</b></div>
+                <div class="thirty-three__card_text icon-card__text">и только потом оплачиваете заказ</div>
+                <div class="thirty-three__card_text icon-card__text">Если заказывали курьером сможете проверить прямо в автомобиле</div>
               </div>
             </div>
           </div>
@@ -3065,13 +3373,16 @@
       </div>
     </section>
 
-    <!-- thirtyfour -->
-    <section class="thirtyfour">
+    <!-- thirty-four -->
+    <section class="thirty-four">
       <div class="container">
-        <div class="thirtyfour__wrapper">
-          <div class="thirtyfour__content">
-            <div class="thirtyfour__title main-title main-title__notcase">Остались вопросы перед покупкой?</div>
-            <div class="thirtyfour__checked">
+        <div class="thirty-four__wrapper">
+
+          <div class="thirty-four__bg-mob neon-glow__mobile" data-aos="fade-in" data-aos-delay="100"></div>
+
+          <div class="thirty-four__content">
+            <div class="thirty-four__title main-title main-title__notcase" data-aos="fade-in" data-aos-delay="100">Остались вопросы перед покупкой?</div>
+            <div class="thirty-four__checked" data-aos="fade-in" data-aos-delay="200">
               <div class="checked-item">
                 <img class="checked-item_img lazyload" src="assets/img/icons/positive.svg" alt="images">
                 <div class="thirteen__description_about-text checked-item_text"><span>Узнайте, подойдет ли устройство </span> к вашему авто</div>
@@ -3085,23 +3396,23 @@
                 <div class="thirteen__description_about-text checked-item_text"><span>Получите ответ </span> на любой вопрос</div>
               </div>
             </div>
-            <form action="#" class="thirtyfour__form">
-              <input class="thirtyfour__input" type="text" placeholder="Ваш телефон">
-              <button type="submit" class="thirtyfour__btn main-btn">Получить консультацию</button>
+            <form action="#" class="thirty-four__form" data-aos="fade-in" data-aos-delay="300">
+              <input class="thirty-four__input" type="text" placeholder="Ваш телефон">
+              <button type="submit" class="thirty-four__btn main-btn">Получить консультацию</button>
             </form>
-            <div class="thirtyfour__text">
-              <div class="thirtyfour__type">Или напишите нам&nbsp;</div>
-              <a href="#" class="thirtyfour__text-link color-white">в онлайн чат</a>
+            <div class="thirty-four__text" data-aos="fade-in" data-aos-delay="300">
+              <div class="thirty-four__type">Или напишите нам&nbsp;</div>
+              <a href="#" class="thirty-four__text-link color-white">в онлайн чат</a>
             </div>
           </div>
-          <div class="thirtyfour__img">
-            <div class="thirtyfour__position">
-              <div class="thirtyfour__name"><b>Петров Михаил</b></div>
-              <div class="thirtyfour__expert icon-card__text-fs14">Эксперт по подбору авто устройств</div>
+          <div class="thirty-four__img" data-aos="fade-in" data-aos-delay="400">
+            <div class="thirty-four__position">
+              <div class="thirty-four__name"><b>Петров Михаил</b></div>
+              <div class="thirty-four__expert icon-card__text-fs14">Эксперт по подбору авто устройств</div>
             </div>
             <picture>
               <source srcset="assets/img/section-34/expert.webp" type="image/webp">
-              <img loading="lazy" class="thirtyfour__img lazyload" src="assets/img/section-34/expert.png" alt="images">
+              <img loading="lazy" class="thirty-four__img lazyload" src="assets/img/section-34/expert.png" alt="images">
             </picture>
           </div>
         </div>
@@ -3158,25 +3469,40 @@
     <div class="footer__bg_bottom">
       <div class="container-fluid">
         <div class="footer__row_bottom">
-          <div class="footer__bottom-left icon-card__text">
+          <div class="footer__bottom-left">
             © 2022 «Onlooker» является зарегистрированным торговым знаком. Все права защищены. Копирование сайта или его элементов запрещено.
           </div>
           <div class="footer__bottom-right">
-            <a href="#" class="footer__policy icon-card__text">Политика конфиденциальности</a>
-            <a href="#" class="footer__policy icon-card__text">Публичная</a>
-            <a href="#" class="footer__policy icon-card__text">Согласие на обработку персональных данных</a>
+            <a href="#" class="footer__policy">Политика конфиденциальности</a>
+            <a href="#" class="footer__policy">Публичная оферта</a>
+            <a href="#" class="footer__policy">Согласие на обработку персональных данных</a>
           </div>
         </div>
       </div>
     </div>
   </footer>
 
+  <!-- Badge -->
+  <div class="watch-video">
+    <button class="watch-video__close"><span>+</span></button>
+    <div class="watch-video__title">Смотрите <span class="main-color">видео-обзор</span></div>
+    <button class="watch-video__img">
+      <picture>
+        <source srcset="assets/img/video/1.webp" type="image/webp">
+        <img loading="lazy" class="lazyload" src="assets/img/video/1.png" alt="images">
+      </picture>
+    </button>
+    <button class="watch-video__btn">Спасибо, уже видел</button>
+  </div>
+
   <!-- POPUP ----------------------------------->
   <!-- modal-connection -->
   <div data-modal-content="modal" class="modal-connection js-modal-content wrapper-modal">
     <div class="modal-connection__overlay"></div>
     <div class="modal-connection__content content">
-      <button type="button" class="btn-close"><div class="btn-close__btn"></div></button>
+      <button type="button" class="btn-close">
+        <div class="btn-close__btn"></div>
+      </button>
       <div class="modal-connection__bg">
         <picture>
           <source srcset="assets/img/modals/connection/1.webp" type="image/webp">
@@ -3219,7 +3545,9 @@
   <div data-modal-content="modal" class="modal-detailed js-modal-content wrapper-modal">
     <div class="modal-detailed__overlay"></div>
     <div class="modal-detailed__content content">
-      <button type="button" class="btn-close"><div class="btn-close__btn"></div></button>
+      <button type="button" class="btn-close">
+        <div class="btn-close__btn"></div>
+      </button>
       <div class="modal-detailed__title main-subtitle__big"><b>Подробнее о комплекте Onlooker M84 Pro 4G с базовой задней камерой</b></div>
       <div class="modal-detailed__subtitle icon-card__title">Комплект поставки:</div>
       <div class="modal-detailed__text-about icon-card__text">Onlooker M84 Pro с 32GB встроенной памяти, базовая задняя камера, кабель 6 метров для задней камеры, крепление на лобовое стекло, зарядное устройство в прикуриватель, GPS модуль, инструкция, гарантийный талон.</div>
@@ -3249,7 +3577,9 @@
   <div data-modal-content="modal" class="modal-confirm js-modal-content wrapper-modal">
     <div class="modal-confirm__overlay"></div>
     <div class="modal-confirm__content content">
-      <button type="button" class="btn-close"><div class="btn-close__btn"></div></button>
+      <button type="button" class="btn-close">
+        <div class="btn-close__btn"></div>
+      </button>
       <div class="modal-confirm__title">Подтверждаете этот пункт выдачи?</div>
       <div class="modal-confirm__btns">
         <button type="button" class="modal-confirm__btn-one main-btn-gradient">Нет</button>
@@ -3262,7 +3592,9 @@
   <div data-modal-content="modal" class="modal-product js-modal-content wrapper-modal">
     <div class="modal-product__overlay"></div>
     <div class="modal-product__content content">
-      <button type="button" class="btn-close"><div class="btn-close__btn"></div></button>
+      <button type="button" class="btn-close">
+        <div class="btn-close__btn"></div>
+      </button>
       <div class="modal-product__title main-subtitle__big"><b>Адаптер для скрытого подключения</b></div>
       <div class="modal-product__body">
         <div class="modal-product__picture">
@@ -3318,17 +3650,6 @@
     </div>
   </div>
 
-  <div class="watch-video">
-    <button class="watch-video__close"><span>+</span></button>
-    <div class="watch-video__title">Смотрите <span class="main-color">видео-обзор</span></div>
-    <button class="watch-video__img">
-      <picture>
-        <source srcset="assets/img/video/1.webp" type="image/webp">
-        <img loading="lazy" class="lazyload" src="assets/img/video/1.png" alt="images">
-      </picture>
-    </button>
-    <button class="watch-video__btn">Спасибо, уже видел</button>
-  </div>
 
   <div class="cursor"></div>
 
