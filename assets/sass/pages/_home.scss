@@ -2711,6 +2711,84 @@
             position: relative;
             max-width: 1110px;
             z-index: 2;
+            @media (max-width: 1200px) {
+                padding: 0 8%;
+            }
+            @include mobile {
+                padding: none;
+            }
+        }
+        &_img-2 {
+            position: absolute;
+            top: 38%;
+            left: 5%;
+            max-width: 42%;
+            z-index: 2;
+            animation: carstaing .5s linear 2s 1 normal forwards;
+            opacity: 0;
+            
+            @include mobile {
+                max-width: 48%;
+                left: 0%;
+                top: 36%;
+            }
+            
+        }
+        &_img-3 {
+            position: absolute;
+            top: -4%;
+            right: 3%;
+            max-width: 55%;
+            z-index: 2;
+            animation-name: carmoving;
+            animation-timing-function: linear;
+            animation-delay: 2.5s;
+            animation-duration: 0.7s;
+            animation-fill-mode: forwards;
+            animation-direction: normal;
+            opacity: 0;
+            // animation-play-state: paused;
+
+            @keyframes carmoving {
+                0% {
+                    transform: translate(30%, -10%) rotate(7deg);
+                    opacity: 0;
+                }
+                
+                100% {
+                    transform: translate(0%, 0%) rotate(0deg);
+                    opacity: 1;
+                }
+            }
+
+            @media (max-width: 1400px) {
+                top: -3%;
+            }
+            @media (max-width: 1300px) {
+                top: -1%;
+            }
+            @media (max-width: 1200px) {
+                top: -4%;
+            }
+        }
+        &_img-4 {
+            position: absolute;
+            top: 25%;
+            right: 39%;
+            max-width: 33%;
+            z-index: 2;
+            animation: carstaing 200ms linear 3.1s 1 normal forwards;
+            // animation-play-state: paused;
+            opacity: 0;
+        }
+        
+        @keyframes carstaing {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
         }
     }
 
