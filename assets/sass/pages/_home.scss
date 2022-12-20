@@ -528,6 +528,7 @@
         height: 330px;
         top: 328px;
         right: 92px;
+
         @include tablet {
             &.neon-glow__blur-200 {
                 display: block;
@@ -562,6 +563,7 @@
         left: -770px;
         -webkit-filter: blur(222.121px);
         filter: blur(222.121px);
+
         &.neon-glow__blur-200 {
             display: block;
             width: 180px;
@@ -711,6 +713,8 @@
             min-width: 330px;
             max-width: 330px;
             margin-right: 70px;
+            position: relative;
+            z-index: 2;
 
             @include netbook {
                 min-width: initial;
@@ -1022,6 +1026,7 @@
     &__bg-mob {
         top: -90px;
         left: -194px;
+
         &.neon-glow__mobile {
             width: 194px;
             height: 194px;
@@ -1031,6 +1036,7 @@
     &__bg-mob-2 {
         top: 600px;
         right: -100px;
+
         &.neon-glow__mobile {
             width: 191px;
             height: 191px;
@@ -1040,6 +1046,7 @@
     &__bg-mob-3 {
         top: 1100px;
         left: -220px;
+
         &.neon-glow__mobile {
             width: 202px;
             height: 202px;
@@ -1049,6 +1056,7 @@
     &__bg-mob-4 {
         top: 1800px;
         right: -85px;
+
         &.neon-glow__mobile {
             width: 173px;
             height: 173px;
@@ -1058,6 +1066,7 @@
     &__bg-mob-5 {
         top: 2350px;
         left: -120px;
+
         &.neon-glow__mobile {
             width: 180px;
             height: 180px;
@@ -1067,6 +1076,7 @@
     &__bg-mob-6 {
         top: 2750px;
         right: -60px;
+
         &.neon-glow__mobile {
             width: 161px;
             height: 161px;
@@ -1322,6 +1332,7 @@
     &__bg-mob {
         top: -250px;
         left: -190px;
+
         &.neon-glow__mobile {
             width: 188px;
             height: 188px;
@@ -1548,6 +1559,7 @@
     &__bg-mob {
         top: -120px;
         left: -219px;
+
         &.neon-glow__mobile {
             width: 219px;
             height: 219px;
@@ -2028,7 +2040,7 @@
         }
     }
 
-    .main-screen__top{
+    .main-screen__top {
         height: 85%;
         top: 3.5%;
     }
@@ -3217,6 +3229,7 @@
         padding: 50px 60px;
         position: relative;
         z-index: 3;
+
         @include netbook {
             padding: 20px;
         }
@@ -4009,7 +4022,6 @@
             align-items: center;
             font-size: 22px;
             font-weight: 600;
-            cursor: pointer;
             line-height: 1;
             position: absolute;
             z-index: 2;
@@ -4121,7 +4133,8 @@
             top: -115px;
             left: 60px;
             border-bottom: 1px solid;
-            background: #00000095;
+            /* .twenty-two__main_text */
+            /* background: #00000095; */
             padding: 10px;
             font-weight: 700;
             font-size: 16px;
@@ -4258,6 +4271,8 @@
             bottom: 0;
             left: 0;
             display: flex;
+            height: 101%;
+
 
             &_item {
                 height: 100%;
@@ -4397,7 +4412,6 @@
             &:hover {
 
                 opacity: 1;
-                cursor: pointer;
                 font-weight: 700;
 
                 .twenty-four__list_text {
@@ -4553,11 +4567,9 @@
 
     &__img {
         height: 660px;
-        width: 800px;
         object-fit: cover;
 
         @include netbook {
-            width: 400px;
             height: 300px;
         }
     }
@@ -4567,6 +4579,11 @@
         overflow: hidden;
         position: relative;
         width: 100%;
+    }
+
+    #image-compare {
+        width: 100%;
+        height: 660px;
     }
 }
 

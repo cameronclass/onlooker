@@ -461,7 +461,7 @@
 
     // .neon-glow__bg-body
     &__bg-body {
-        position: relative;
+        position: absolute;
     }
 
     // .neon-glow__blur-200
@@ -510,7 +510,7 @@
         background: -o-linear-gradient(left, #009B8D -0.7%, #009DB9 211.34%);
         background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
         -webkit-filter: blur(300px);
-          filter: blur(300px);
+        filter: blur(300px);
 
         @include netbook {
             display: none;
@@ -527,7 +527,7 @@
         background: -o-linear-gradient(left, #009B8D -0.7%, #009DB9 211.34%);
         background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
         -webkit-filter: blur(250px);
-          filter: blur(250px);
+        filter: blur(250px);
 
         @include netbook {
             display: none;
@@ -546,7 +546,7 @@
         background: -o-linear-gradient(left, #009B8D -0.7%, #009DB9 211.34%);
         background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
         -webkit-filter: blur(250px);
-                filter: blur(250px);
+        filter: blur(250px);
 
         @include netbook {
             display: none;
@@ -565,7 +565,7 @@
         background: -o-linear-gradient(left, #009B8D -0.7%, #009DB9 211.34%);
         background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
         -webkit-filter: blur(250px);
-                filter: blur(250px);
+        filter: blur(250px);
 
         @include netbook {
             display: none;
@@ -584,7 +584,7 @@
         background: -o-linear-gradient(left, #009B8D -0.7%, #009DB9 211.34%);
         background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
         -webkit-filter: blur(250px);
-                filter: blur(250px);
+        filter: blur(250px);
 
         @include netbook {
             display: none;
@@ -601,7 +601,7 @@
             background: -o-linear-gradient(left, #009B8D -0.7%, #009DB9 211.34%);
             background: linear-gradient(90deg, #009B8D -0.7%, #009DB9 211.34%);
             -webkit-filter: blur(167.281px);
-                    filter: blur(167.281px);
+            filter: blur(167.281px);
         }
     }
 
@@ -1928,4 +1928,9 @@
     &::after {
         transform: scale(1);
     }
+}
+
+
+.no-scroll{
+    overflow: hidden;
 }

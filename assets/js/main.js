@@ -146,13 +146,14 @@ window.addEventListener("DOMContentLoaded", (event) => {
   /* Hamburger */
   const hamburger = document.querySelector(".js-hamburger");
   const header = document.querySelector(".header");
+  const body = document.querySelector("html");
   if (hamburger) {
     hamburger.addEventListener("click", () => {
       hamburger.classList.toggle("is-active");
       header.classList.toggle("_active");
+      body.classList.toggle("no-scroll");
     });
   }
-
 
   /* Accordion */
   new Accordion(".accordion-container");
@@ -250,12 +251,35 @@ window.addEventListener("DOMContentLoaded", (event) => {
     hoverStart: false,
     verticalMode: false,
     startingPoint: 50,
-    fluidMode: false,
+    fluidMode: true,
   };
 
   // Add your options object as the second argument
   const viewer = new ImageCompare(element, options).mount();
 
+  // == CLONE FOOTER TO HEADER (on mobile menu) ==========
+  const footer = document.querySelector(".footer");
+  const footerClone = footer.cloneNode(true);
+  const header__menu = document.querySelector(".header__menu");
+  header__menu.append(footerClone);
+
+
+
+  // OnScroll event handler
+  const onScroll = () => {
+    // Get scroll value
+    const scroll = document.documentElement.scrollTop;
+
+    // If scroll value is more than 0 - add class
+    if (scroll > 5) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  };
+
+  // Use the function
+  window.addEventListener("scroll", onScroll);
 });
 
 /* Animation */
@@ -267,73 +291,32 @@ window.addEventListener("scroll", () => {
   AOS.refresh();
 });
 
-
-
 // == Custom cursor ==========
 const cursor = document.querySelector(".cursor");
 
-document.addEventListener("mousemove", function(e) {
+document.addEventListener("mousemove", function (e) {
   cursor.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
 });
 
-document.addEventListener("mouseover", function(e) {
+document.addEventListener("mouseover", function (e) {
   if (e.target.closest("button, a")) {
-      cursor.classList.add('_over'); 
+    cursor.classList.add("_over");
   }
-}); 
+});
 
 document.addEventListener("mouseout", function (e) {
   if (e.target.closest("button, a")) {
-      cursor.classList.remove('_over'); 
+    cursor.classList.remove("_over");
   }
-}); 
+});
 
 document.addEventListener("mousedown", function (e) {
   if (e.target.closest("button, a")) {
-      cursor.classList.add('click');
-      cursor.classList.remove('_over'); 
-      setTimeout(function() {
-        cursor.classList.remove('click');
-        cursor.classList.add('_over'); 
-      }, 500);
+    cursor.classList.add("click");
+    cursor.classList.remove("_over");
+    setTimeout(function () {
+      cursor.classList.remove("click");
+      cursor.classList.add("_over");
+    }, 500);
   }
-}); 
-
-
-// == Header menu bullet-line moving ==========
-const itemOne = document.querySelector('.item-1');
-const itemTwo = document.querySelector('.item-2');
-const itemThree = document.querySelector('.item-3');
-const itemFour = document.querySelector('.item-4');
-
-itemTwo.addEventListener("mouseover", function(e) {
-  if (itemTwo) {
-      itemOne.classList.add('_active'); 
-  }
-}); 
-
-itemTwo.addEventListener("mouseout", function(e) {
-  if (itemTwo) {
-      itemOne.classList.remove('_active'); 
-  }
-}); 
-
-itemFour.addEventListener("mouseover", function(e) {
-  if (itemFour) {
-      itemThree.classList.add('_active'); 
-  }
-}); 
-
-itemFour.addEventListener("mouseout", function(e) {
-  if (itemFour) {
-      itemThree.classList.remove('_active'); 
-  }
-}); 
-
-
-// == CLONE FOOTER TO HEADER (on mobile menu) ==========
-const footer = document.querySelector(".footer");
-const footerClone = footer.cloneNode(true);
-
-const header = document.querySelector(".header");
-header.append(footerClone);
+});

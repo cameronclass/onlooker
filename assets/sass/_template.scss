@@ -1,7 +1,16 @@
 * {
     font-family: $font;
     box-sizing: border-box;
-    // cursor: none;
+
+    cursor: none !important;
+
+    &:hover {
+        cursor: none !important;
+    }
+
+    &:focus {
+        cursor: none !important;
+    }
 }
 
 html,
@@ -27,7 +36,6 @@ picture {
 a,
 button {
     transition: 300ms ease;
-    cursor:pointer;
 }
 
 .container {
@@ -55,6 +63,14 @@ button {
     @include mobile {
         padding-left: 15px;
         padding-right: 15px;
+    }
+}
+
+.main{
+    margin-top: 200px;
+
+    @include tablet{
+        margin-top: 100px;
     }
 }
 
