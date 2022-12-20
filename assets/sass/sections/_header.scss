@@ -4,14 +4,18 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: $black;
 
     @include tablet {
         background-color: transparent;
     }
 
+
+
     &.scrolled {
-        background-color: $black;
+        .header__sidebar_btn {
+            visibility: hidden;
+            opacity: 0;
+        }
     }
 
     &._active {
@@ -125,8 +129,11 @@
             position: relative;
             z-index: 3;
 
+            display: none;
+
             @include laptop {
                 order: 1;
+                display: block;
             }
 
             @include mobile {
@@ -138,6 +145,7 @@
         &_btn {
             position: relative;
             z-index: 3;
+            transition: 300ms;
 
             @include tablet {
                 display: none;
@@ -189,22 +197,23 @@
         position: fixed;
         top: 0;
         right: 0;
-        width: 400px;
+        width: max-content;
         height: 100vh;
         z-index: 9;
-        visibility: hidden;
+        visibility: visible;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         justify-content: center;
         row-gap: 60px;
-        transform: translateY(-100px);
-        opacity: 0;
+        opacity: 1;
 
         @include laptop {
             height: auto;
             row-gap: 30px;
             top: 80px;
+            opacity: 0;
+            visibility: hidden;
         }
 
     }
@@ -281,6 +290,7 @@
 
 
     &__item {
+        width: max-content;
         padding: 12px 0;
         display: flex;
         column-gap: 12px;
