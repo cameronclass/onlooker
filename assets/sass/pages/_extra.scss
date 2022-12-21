@@ -3743,6 +3743,25 @@
         position: relative;
         z-index: 2;
 
+        &._anim-items {
+            &._active {
+                    .thirteen__picture_img-2 {
+                        animation: carstaing .5s linear .5s 1 normal forwards;
+                    }
+                    .thirteen__picture_img-3 {
+                        animation: carmoving .7s linear 1.2s 1 normal forwards;
+                    }
+                    .thirteen__picture_img-4 {
+                        animation: staing 200ms linear 2s 1 normal forwards;
+                    }
+                    .thirteen__picture_circle,
+                    .thirteen__picture_img-5,
+                    .thirteen__picture_img-6 {
+                        animation: appearance .3s linear 2.3s 1 normal forwards;
+                    }
+            }
+        }
+
         &_img {
             position: relative;
             max-width: 1110px;
@@ -3760,7 +3779,6 @@
             left: 5%;
             max-width: 42%;
             z-index: 2;
-            animation: carstaing .5s linear 2s 1 normal forwards;
             opacity: 0;
             
             @include mobile {
@@ -3768,7 +3786,14 @@
                 left: 0%;
                 top: 36%;
             }
-            
+            @keyframes carstaing {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
         }
         &_img-3 {
             position: absolute;
@@ -3776,14 +3801,7 @@
             right: 3%;
             max-width: 55%;
             z-index: 2;
-            animation-name: carmoving;
-            animation-timing-function: linear;
-            animation-delay: 2.5s;
-            animation-duration: 0.7s;
-            animation-fill-mode: forwards;
-            animation-direction: normal;
             opacity: 0;
-            // animation-play-state: paused;
 
             @keyframes carmoving {
                 0% {
@@ -3813,8 +3831,6 @@
             right: 39%;
             max-width: 33%;
             z-index: 2;
-            animation: staing 200ms linear 3.1s 1 normal forwards;
-            // animation-play-state: paused;
             opacity: 0;
         }
 
@@ -3826,7 +3842,97 @@
                 opacity: 1;
             }
         }
+
+        // .thirteen__picture_img-5
+		&_img-5 {
+            position: absolute;
+            z-index: 9;
+            height: 27%;
+            width: auto;
+            top: 10%;
+            left: -4%;
+            opacity: 0;
+
+            @media (max-width: 1500px) {
+                left: 0;
+            }
+
+            @include netbook {
+                display: none;
+            }
+		}
+		// .thirteen__picture_img-6
+		&_img-6 {
+            position: absolute;
+            z-index: 9;
+            height: 27%;
+            width: auto;
+            top: 41%;
+            left: -4%;
+            opacity: 0;
+
+            @media (max-width: 1500px) {
+                left: 0;
+            }
+
+            @include netbook {
+                display: none;
+            }
+		}
+        // .thirteen__picture_circle
+		&_circle {
+            position: absolute;
+            z-index: 5;
+            opacity: 0;
+            
+            @include netbook {
+                display: none;
+            }
+            &::before {
+                content:"";
+                position: absolute;
+                background: white;
+                height: 1px;
+            }
+        }
+		// .thirteen__picture_img-7
+		&_img-7 {
+            width: 23px;
+            height: 23px;
+            top: 48%;
+            left: 39%;
+            &::before {
+                width: 485px;
+                top: -80px;
+                left: 0%;
+                transform: translate(-94%, 0%) rotate(22deg);
+                @media (max-width: 1500px) {
+                    width: 400px;
+                    top: -64px;
+                }
+            }
+		}
+		// .thirteen__picture_img-8
+		&_img-8 {
+            width: 17px;
+            height: 17px;
+            top: 64%;
+            left: 31%;
+            z-index: 8;
+            &::before {
+                width: 350px;
+                top: -35px;
+                left: 0%;
+                transform: translate(-96%, 0) rotate(14deg);
+                @media (max-width: 1500px) {
+                    width: 300px;
+                    top: -30px;
+                }
+                
+            }
+		}
     }
+			
 
     &__type-camera {
         position: relative;
@@ -4088,11 +4194,13 @@
             }
         }
 
-        &_content {}
+        &_content {
+        }
 
         &_body {
             position: relative;
             z-index: 2;
+            
         }
 
         
@@ -4124,6 +4232,28 @@
             bottom: 0;
             height: 2%;
         }
+        
+        &._anim-items {
+            &._active {
+                .fourteen {
+                    &__road-one {
+                        animation: appearance_few_moving 5s linear .5s 1 normal forwards;
+                    }
+                    &__cargreen-one {
+                        animation: carmoving_one .8s linear .7s 1 normal forwards;
+                    }
+                    &__carwhite-one {
+                        animation: carmoving_two .8s linear 1.5s 1 normal forwards;
+                    }
+                    &__line-one {
+                        animation: appearance 0.3s linear 1.8s 1 normal forwards;
+                    }
+                    &__sign-one {
+                        animation: flashing 1s linear 2s 5 normal forwards;
+                    }
+                }
+            }
+        }
     }
 
     &__block-two {
@@ -4137,7 +4267,6 @@
         top: 2%;
         max-width: 65%;
         z-index: 3;
-        animation: appearance_few_moving 5s linear .5s 1 normal forwards;
         opacity: 0;
 
         @keyframes appearance_few_moving {
@@ -4155,7 +4284,6 @@
         position: absolute;
         max-width: 35%;
         z-index: 5;
-        animation: carmoving_one .8s linear .7s 1 normal forwards;
         opacity: 0;
 
         @keyframes  carmoving_one {
@@ -4176,7 +4304,6 @@
         z-index: 5;
         top: 56%;
         left: 29%;
-        animation: carmoving_two .8s linear 1.5s 1 normal forwards;
         opacity: 0;
 
         @keyframes carmoving_two {
@@ -4196,7 +4323,6 @@
         max-width: 65%;
         z-index: 4;
         opacity: 0;
-        animation: appearance 0.3s linear 1.8s 1 normal forwards;
 
         @keyframes appearance {
             0% {
@@ -4214,7 +4340,6 @@
         top: 43%;
         left: 29%;
         opacity: 0;
-        animation: flashing 1s linear 2s 5 normal forwards;
 
         @keyframes flashing {
             0% {
@@ -4395,6 +4520,8 @@
     }
 }
 
+
+    
 
 .fifteen {
     margin-top: 200px;
