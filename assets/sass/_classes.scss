@@ -593,7 +593,7 @@
 
     // .neon-glow__mobile
     &__mobile {
-        @include tablet {
+        @include netbook {
             position: absolute;
             width: 242px;
             height: 242px;

@@ -1,4 +1,17 @@
 function initSliders() {
+  if (document.querySelector(".first__slider_block")) {
+    new Swiper(".first__slider_block", {
+      /* loop: true, */
+      slidesPerView: 1,
+      spaceBetween: 30,
+      effect: "fade",
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+  }
+
   if (document.querySelector(".fifteen__sensor_slider_block")) {
     // Указываем скласс нужного слайдера
     // Создаем слайдер
