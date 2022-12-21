@@ -9,8 +9,6 @@
         background-color: transparent;
     }
 
-
-
     &.scrolled {
         .header__sidebar_btn {
             visibility: hidden;
@@ -113,7 +111,7 @@
 
             }
 
-            @include mobile {
+            @include tablet {
                 display: none;
             }
         }
@@ -351,7 +349,5 @@
 
 
     }
-
-
 
 }
