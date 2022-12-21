@@ -2727,58 +2727,72 @@
         position: relative;
         z-index: 2;
 
+        &._anim-items {
+            &._active {
+                    .thirteen__picture_img-2 {
+                        animation: carstaing .5s linear .5s 1 normal forwards;
+                    }
+                    .thirteen__picture_img-3 {
+                        animation: carmoving .7s linear 1.2s 1 normal forwards;
+                    }
+                    .thirteen__picture_img-4 {
+                        animation: staing 200ms linear 2s 1 normal forwards;
+                    }
+                    .thirteen__picture_circle,
+                    .thirteen__picture_img-5,
+                    .thirteen__picture_img-6 {
+                        animation: appearance .3s linear 2.3s 1 normal forwards;
+                    }
+            }
+        }
+
         &_img {
             position: relative;
             max-width: 1110px;
             z-index: 2;
-
             @media (max-width: 1200px) {
                 padding: 0 8%;
             }
-
             @include mobile {
                 padding: none;
             }
         }
-
         &_img-2 {
             position: absolute;
             top: 38%;
             left: 5%;
             max-width: 42%;
             z-index: 2;
-            animation: carstaing .5s linear 2s 1 normal forwards;
             opacity: 0;
-
+            
             @include mobile {
                 max-width: 48%;
                 left: 0%;
                 top: 36%;
             }
-
+            @keyframes carstaing {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
         }
-
         &_img-3 {
             position: absolute;
             top: -4%;
             right: 3%;
             max-width: 55%;
             z-index: 2;
-            animation-name: carmoving;
-            animation-timing-function: linear;
-            animation-delay: 2.5s;
-            animation-duration: 0.7s;
-            animation-fill-mode: forwards;
-            animation-direction: normal;
             opacity: 0;
-            // animation-play-state: paused;
 
             @keyframes carmoving {
                 0% {
                     transform: translate(30%, -10%) rotate(7deg);
                     opacity: 0;
                 }
-
+                
                 100% {
                     transform: translate(0%, 0%) rotate(0deg);
                     opacity: 1;
@@ -2788,36 +2802,119 @@
             @media (max-width: 1400px) {
                 top: -3%;
             }
-
             @media (max-width: 1300px) {
                 top: -1%;
             }
-
             @media (max-width: 1200px) {
                 top: -4%;
             }
         }
-
         &_img-4 {
             position: absolute;
             top: 25%;
             right: 39%;
             max-width: 33%;
             z-index: 2;
-            animation: carstaing 200ms linear 3.1s 1 normal forwards;
-            // animation-play-state: paused;
             opacity: 0;
         }
 
-        @keyframes carstaing {
+        @keyframes staing {
             0% {
                 opacity: 0;
             }
-
             100% {
                 opacity: 1;
             }
         }
+
+        // .thirteen__picture_img-5
+		&_img-5 {
+            position: absolute;
+            z-index: 9;
+            height: 27%;
+            width: auto;
+            top: 10%;
+            left: -4%;
+            opacity: 0;
+
+            @media (max-width: 1500px) {
+                left: 0;
+            }
+
+            @include netbook {
+                display: none;
+            }
+		}
+		// .thirteen__picture_img-6
+		&_img-6 {
+            position: absolute;
+            z-index: 9;
+            height: 27%;
+            width: auto;
+            top: 41%;
+            left: -4%;
+            opacity: 0;
+
+            @media (max-width: 1500px) {
+                left: 0;
+            }
+
+            @include netbook {
+                display: none;
+            }
+		}
+        // .thirteen__picture_circle
+		&_circle {
+            position: absolute;
+            z-index: 5;
+            opacity: 0;
+            
+            @include netbook {
+                display: none;
+            }
+            &::before {
+                content:"";
+                position: absolute;
+                background: white;
+                height: 1px;
+            }
+        }
+		// .thirteen__picture_img-7
+		&_img-7 {
+            width: 23px;
+            height: 23px;
+            top: 48%;
+            left: 39%;
+            &::before {
+                width: 485px;
+                top: -80px;
+                left: 0%;
+                transform: translate(-94%, 0%) rotate(22deg);
+                @media (max-width: 1500px) {
+                    width: 400px;
+                    top: -64px;
+                }
+            }
+		}
+		// .thirteen__picture_img-8
+		&_img-8 {
+            width: 17px;
+            height: 17px;
+            top: 64%;
+            left: 31%;
+            z-index: 8;
+            &::before {
+                width: 350px;
+                top: -35px;
+                left: 0%;
+                transform: translate(-96%, 0) rotate(14deg);
+                @media (max-width: 1500px) {
+                    width: 300px;
+                    top: -30px;
+                }
+                
+            }
+		}
     }
 
     &__type-camera {
