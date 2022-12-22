@@ -106,8 +106,12 @@
         top: -150px;
 
         @include netbook {
-            top: 0;
+            top: -75px;
             position: relative;
+            max-width: 80%;
+        }
+        @include tablet {
+            top: 0;
             max-width: 100%;
         }
 
