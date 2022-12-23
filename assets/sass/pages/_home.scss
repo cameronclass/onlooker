@@ -2869,6 +2869,23 @@
 
         @include netbook {
             margin-bottom: 40px;
+            
+        }
+        .main-title__card-radius {
+            @include netbook {
+                justify-content: flex-start;
+            }
+            @include tablet {
+                justify-content: center;
+            }
+        }
+
+        @include tablet {
+            .main-title {
+                span {
+                    text-align: center;
+                }
+            }
         }
     }
 
@@ -2884,7 +2901,14 @@
         position: relative;
         z-index: 2;
 
-        @include netbook {
+        .icon-card {
+            width: 50%;
+            @include tablet {
+                width: 100%;
+            }
+        }
+
+        @include tablet {
             flex-direction: column;
         }
     }
@@ -3136,7 +3160,7 @@
         column-gap: 37px;
         row-gap: 37px;
 
-        @include netbook {
+        @include tablet {
             justify-content: space-between;
             flex-wrap: wrap;
             column-gap: 10px;
@@ -3165,7 +3189,7 @@
             height: 170px;
             object-fit: contain;
 
-            @include netbook {
+            @include tablet {
                 height: 92px;
             }
         }
@@ -3182,7 +3206,7 @@
             text-align: center;
             margin-bottom: 22px;
 
-            @include netbook {
+            @include tablet {
                 font-size: 14px;
                 margin-top: 9px;
             }
@@ -3211,6 +3235,9 @@
         display: flex;
         flex-direction: column;
         margin-left: 17px;
+        @include tablet {
+            align-items: center;
+        }
 
         &_title {
             font-size: 36px;
@@ -3224,6 +3251,19 @@
             column-gap: 28px;
             row-gap: 5px;
             margin-bottom: 22px;
+
+            @include tablet {
+                justify-content: center;
+            }
+
+            @media (max-width: 500px) {
+                .checked-item {
+                    max-width: 157px;
+                    &:nth-child(3) {
+                        max-width: max-content;
+                    }
+                }
+            }
         }
 
         &_text {
@@ -3233,8 +3273,9 @@
             color: rgba(255, 255, 255, 0.6);
             font-weight: 400;
 
-            @include netbook {
+            @include tablet {
                 font-size: 16px;
+                text-align: center;
             }
         }
 
