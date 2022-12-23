@@ -4702,6 +4702,7 @@
         @include netbook {
             flex-direction: column;
             position: relative;
+            align-items: center;
         }
     }
 
@@ -4721,6 +4722,8 @@
 
         @include netbook {
             width: 100%;
+            display: flex;
+            justify-content: center;
         }
 
         &_item {
@@ -4735,9 +4738,13 @@
             @include netbook {
                 position: relative;
                 left: 0;
-                width: 100%;
+                width: 60%;
                 min-width: initial;
                 height: auto;
+            }
+
+            @include mobile {
+                width: 90%;
             }
         }
     }
@@ -4809,6 +4816,7 @@
             flex-direction: column;
             row-gap: 20px;
             position: absolute;
+            left: 0;
             bottom: -200px;
             width: 100%;
         }
@@ -4921,12 +4929,26 @@
             @include netbook {
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                 row-gap: 40px;
                 margin-top: 40px;
 
                 position: relative;
                 z-index: 2;
             }
+
+            .twenty-two__main_img {
+                @include netbook {
+                    width: 60%;
+                }
+                @include tablet {
+                    width: 80%;
+                }
+                @include mobile {
+                    width: 100%;
+                }
+            }
+
         }
     }
 
@@ -5156,7 +5178,7 @@
     &__cards {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         margin-top: 50px;
 
         position: relative;
@@ -5174,9 +5196,12 @@
         position: relative;
 
         @include netbook {
-            height: 140px;
+            height: 300px;
             padding: 15px 10px;
-            width: 31%;
+        }
+
+        @include mobile {
+            height: 127px;
         }
 
         &_number {
@@ -5186,7 +5211,11 @@
             position: relative;
             z-index: 2;
 
-            @include netbook {
+            @include tablet {
+                font-size: 36px;
+            }
+
+            @include mobile {
                 font-size: 23px;
             }
         }
@@ -5357,6 +5386,18 @@
 
         position: relative;
         z-index: 2;
+        .price-card__text_info {
+            @include netbook {
+                margin: 0;
+                text-align: center;
+            }
+        }
+
+        .price-card__action_price {
+            @include mobile {
+                margin: 0;
+            }
+        }
 
         @include netbook {
             margin-top: 50px;
