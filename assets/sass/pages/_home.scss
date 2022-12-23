@@ -466,7 +466,7 @@
 }
 
 .second {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 300px;
 
     @include netbook {
@@ -675,7 +675,7 @@
 
             @include netbook {
                 position: absolute;
-                bottom: 0;
+                top: 0;
             }
 
 
@@ -685,8 +685,24 @@
                 width: 120%;
 
                 @include netbook {
-                    top: -500px;
+                    position: absolute;
+                    width: 95%;
+                    top: 215px;
                     right: -250px;
+                }
+
+                @include tablet {
+                    width: 120%;
+                    top: 125px;
+                }
+
+                @include mobile {
+                    top: 90px;
+                }
+
+                @media (max-width: 400px) {
+                    top: 142px;
+                    right: -220px;
                 }
             }
         }
@@ -697,7 +713,7 @@
             max-width: 480px;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-end;
             position: absolute;
             z-index: -2;
             background: linear-gradient(275.98deg, #121212 3.53%, #181818 97.46%);
@@ -706,9 +722,20 @@
             border-radius: 10px;
             top: 140px;
             right: 0;
-
+            @media (max-width: 1400px) {
+                top: 110px;
+            }
             @include netbook {
-                top: 40px;
+                top: 200px;
+            }
+            @include tablet {
+                top: 1015px;
+                left: 0;
+                justify-content: center;
+            }
+
+            @include mobile {
+                top: 720px;
             }
 
             &_icon {
@@ -726,9 +753,14 @@
                 opacity: 0.6;
                 font-weight: 400;
                 font-size: 18px;
+                max-width: 236px;
 
                 @include netbook {
                     font-size: 14px;
+                }
+
+                @include tablet {
+                    max-width: max-content;
                 }
             }
         }
@@ -740,7 +772,7 @@
             position: relative;
             z-index: 2;
 
-            @include netbook {
+            @include tablet {
                 min-width: initial;
                 max-width: 300px;
                 margin-right: 0;
@@ -750,7 +782,7 @@
                 margin-top: 60px;
                 position: relative;
 
-                @include netbook {
+                @include tablet {
                     margin-top: 40px;
 
                     &._item-1 {
@@ -759,6 +791,9 @@
 
                     &._item-2 {
                         max-width: 200px;
+                        @include tablet {
+                            max-width: max-content;
+                        }
                     }
                 }
 
@@ -801,12 +836,21 @@
 
 .third {
 
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     @include netbook {
         margin-top: 100px;
         margin-bottom: 100px;
+    }
+
+    .main-title {
+        @include tablet {
+            font-size: 48px;
+        }
+        @include mobile {
+            font-size: 22px;
+        }
     }
 
     &__cards {
@@ -834,7 +878,7 @@
             &__text {
                 font-size: 20px;
 
-                @include netbook {
+                @include tablet {
                     font-size: 16px;
                 }
 
@@ -871,7 +915,7 @@
         font-size: 22px;
         opacity: 0.3;
 
-        @include netbook {
+        @include tablet {
             font-size: 18px;
         }
     }
@@ -991,6 +1035,12 @@
                     font-weight: 700;
                     font-size: 16px;
                     color: rgba(255, 255, 255, 0.61);
+                    @include netbook {
+                        font-size: 18px;
+                    }
+                    @include tablet {
+                        font-size: 16px;
+                    }
                 }
             }
         }
@@ -1016,12 +1066,14 @@
             align-items: flex-end;
             line-height: 1;
 
-            @include netbook {
+            @media (max-width: 910px) {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-
+                line-height: 1.5;
+            }
+            @include mobile {
                 font-size: 26px;
             }
 
@@ -1030,7 +1082,7 @@
                 font-size: 24px;
                 opacity: 0.6;
 
-                @include netbook {
+                @include mobile {
                     font-size: 18px;
                     margin-top: 15px;
                 }
@@ -1136,6 +1188,10 @@
         align-items: flex-end;
         flex-wrap: wrap;
 
+        @include netbook {
+            justify-content: center;
+        }
+
         &_title {
             font-weight: 800;
             font-size: 40px;
@@ -1143,6 +1199,9 @@
 
             @include netbook {
                 text-align: center;
+            }
+
+            @include tablet {
                 font-size: 26px;
             }
         }
@@ -1291,17 +1350,11 @@
             }
         }
     }
-
-    .main-title {
-        @include netbook {
-            font-size: 22px;
-        }
-    }
 }
 
 .fourth {
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 300px;
+    margin-bottom:300px;
 
     @include netbook {
         margin-top: 100px;
@@ -1344,6 +1397,9 @@
             max-width: 663px;
             margin-right: 20px;
             margin: 0;
+            @include netbook {
+                margin: 0 auto;
+            }
         }
 
     }
@@ -1544,7 +1600,7 @@
 }
 
 .sixth {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -1653,7 +1709,7 @@
             max-width: 483px;
             font-weight: 700;
             font-size: 22px;
-            opacity: 0.3;
+            color: rgb(255 255 255 / 30%);
             margin: 0 auto;
 
             @include netbook {
@@ -1665,7 +1721,7 @@
 
 .seventh {
 
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -1704,6 +1760,12 @@
 
         @include netbook {
             margin: 0 0 30px;
+            align-self: flex-start;
+            display: flex;
+        }
+        
+        @include tablet {
+            flex-direction: column;
         }
     }
 
@@ -1716,24 +1778,26 @@
 
     &__block {
         margin-top: 80px;
-        display: flex;
-        justify-content: space-between;
-
-        @include netbook {
-            flex-direction: column;
-            margin-top: 20px;
+        display: grid;
+        grid-template-columns: 37% 1fr;
+        grid-template-rows: auto auto;
+        @media (max-width: 1400px) {
+            grid-template-columns: auto;
+            grid-template-rows: auto;
         }
     }
 
     &__about {
-        width: 40%;
-        max-width: 500px;
         display: flex;
         flex-direction: column;
+        margin-bottom: 40px;
 
         @include netbook {
             width: 100%;
-            margin-bottom: 40px;
+        }
+
+        @include mobile {
+            margin-bottom: 20px;
         }
 
         .custom-card-c {
@@ -1755,16 +1819,24 @@
             min-width: 520px;
             z-index: 2;
 
-            @include netbook {
+
+            @include mobile {
+                margin-top: 20px;
                 flex-direction: column;
                 min-width: auto;
-                margin-top: 60px;
             }
 
             &_icon {
                 width: auto;
                 height: 48px;
                 margin-right: 20px;
+
+                @include mobile {
+                    position: absolute;
+                    height: 23px;
+                    top: 25%;
+                    left: 19%;
+                }
             }
 
             &_title {
@@ -1772,7 +1844,7 @@
                 font-size: 23px;
                 margin-bottom: 6px;
 
-                @include netbook {
+                @include mobile {
                     text-align: center;
                 }
             }
@@ -1790,17 +1862,29 @@
     }
 
     &__img {
-        width: 60%;
-        max-width: 900px;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        display: grid;
+        z-index: 3;
+
+        @media (max-width: 1400px) {
+            grid-row-start: 2;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 1;
+            padding: 40px 0;
+        }
 
         @include netbook {
-            width: 100%;
+            padding: 20px 0;
         }
     }
 }
 
 .eighth {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     // .eighth__bg
@@ -1841,17 +1925,17 @@
     }
 
     &__block {
-        display: flex;
-        justify-content: space-between;
-
-        @include netbook {
-            flex-direction: column-reverse;
+        display: grid;
+        grid-template-columns: 53% 1fr;
+        grid-template-rows: auto;
+        
+        @media (max-width: 1400px) {
+            grid-template-columns: auto;
+            grid-template-rows: auto;
         }
     }
 
     &__content {
-        width: 50%;
-        max-width: 650px;
         z-index: 2;
 
         @include netbook {
@@ -1915,6 +1999,7 @@
             @include netbook {
                 flex-direction: column;
                 justify-content: center;
+                margin-top: 20px;
             }
 
             .main-btn {
@@ -1953,30 +2038,58 @@
     }
 
     &__img {
-        width: 100%;
-        max-width: 900px;
-        position: relative;
-        left: -40px;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        display: grid;
         z-index: 3;
 
-        @include netbook {
-            left: 0;
-            margin-top: 30px;
+        @media (max-width: 1400px) {
+            grid-row-start: 2;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 1;
         }
 
         &_item {
-            width: 125%;
+            position: absolute;
+            width: 120%;
+            top: -4%;
+            left: -5%;
+
+            @media (max-width: 1400px) {
+                position: relative;
+                justify-self: center;
+                width: 80%;
+                top: 0;
+                left: 0;
+            }
 
             @include netbook {
+                width: 70%;
+            }
+
+            @include mobile {
                 width: 100%;
             }
         }
     }
 
+    &__buy {
+
+        @include netbook {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+       
+    }
 }
 
 .ninth {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -2040,11 +2153,15 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        column-gap: 20px;
 
         @include netbook {
-            flex-direction: column;
             margin-top: 40px;
             margin-bottom: 20px;
+        }
+
+        @include tablet {
+            flex-direction: column;
         }
     }
 
@@ -2055,8 +2172,8 @@
         &_title {
             font-weight: 700;
             font-size: 22px;
-            opacity: 0.3;
             margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.3);
 
             @include netbook {
                 font-size: 18px;
@@ -2071,7 +2188,7 @@
 }
 
 .tenth {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -2135,7 +2252,7 @@
         font-weight: 700;
         margin-top: 60px;
         margin-bottom: 50px;
-        opacity: 0.3;
+        color: rgba(255, 255, 255, 0.3);
         text-align: center;
 
         @include netbook {
@@ -2150,6 +2267,11 @@
         justify-content: center;
 
         @include netbook {
+            column-gap: 46px;
+            align-items: self-start;
+        }
+
+        @include tablet {
             flex-direction: column;
             align-items: center;
         }
@@ -2247,7 +2369,7 @@
 }
 
 .eleventh {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -2333,6 +2455,13 @@
         @include netbook {
             grid-template-columns: repeat(2, 1fr);
             gap: 40px 20px;
+        }
+
+        .icon-card {
+            align-items: flex-start;
+            @include netbook {
+                align-items: center;
+            }
         }
 
         &_card {
@@ -2521,7 +2650,7 @@
 }
 
 .twelfth {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -2544,6 +2673,20 @@
         max-width: 1000px;
         margin-bottom: 40px;
 
+        &_mob {
+            display: none;
+            @media (max-width: 1400px) {
+                display: contents;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 1.48;
+                span {
+                    display: contents;
+                    color: rgba(255, 255, 255, 0.3);
+                }
+            }
+        }
+
         @include netbook {
             margin-bottom: 30px;
         }
@@ -2551,51 +2694,59 @@
 
     &__subtitle {
         margin-bottom: 30px;
+        margin-top: 35px;
+        @media (max-width: 1400px) {
+            display: none;
+        }
     }
 
     &__block {
-        display: flex;
-
-        @include netbook {
-            flex-direction: column-reverse;
+        display: grid;
+        grid-template-columns: 50% 1fr;
+        grid-template-rows: auto;
+        
+        @media (max-width: 1400px) {
+            grid-template-columns: auto;
+            grid-template-rows: auto;
         }
     }
 
     &__content {
-        width: 50%;
 
-        @include netbook {
-            width: 100%;
-        }
-    }
-
-    &__tags {
-        display: flex;
-        flex-wrap: wrap;
-
-        .custom-tag {
-            margin-right: 12px;
-            margin-bottom: 12px;
-        }
     }
 
     &__img {
-        width: 50%;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        display: grid;
+        z-index: 3;
+        position: relative;
 
-        @include netbook {
-            width: 100%;
+        @media (max-width: 1400px) {
+            grid-row-start: 2;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 1;
+            padding: 26px 0 10px;
         }
-
         &_img {
-            width: 115%;
-            position: relative;
-            top: -80px;
-            left: -50px;
+            position: absolute;
+            top: -25%;
+            left: -10%;
+            width: 110%;
 
-            @include netbook {
-                left: 0;
+            @media (max-width: 1400px) {
+                position: relative;
                 top: 0;
-                width: 100%;
+                left: 0;
+                width: 80%;
+                justify-self: center;
+            }
+
+            @include tablet {
+                width: 90%;
             }
         }
     }
@@ -2606,25 +2757,35 @@
         border-radius: 12px;
         padding: 30px;
         width: 130%;
+        @media (max-width: 1400px) {
+            width: 100%;
+        }
+        @include tablet {
+            text-align: center;
+        }
+
+        .price__subtitle {
+            margin-bottom: 12px;
+        }
 
         &_block {
             display: flex;
             align-items: center;
-        }
+            gap: 27px;
 
-        @include netbook {
-            width: 100%;
-
-            text-align: center;
-
-            &_block {
+            @include tablet {
                 flex-direction: column;
                 justify-content: center;
                 text-align: center;
             }
+        }
 
-            &_section {
-                width: 100%;
+        &_section {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            @include tablet {
                 display: flex;
                 align-items: center;
                 justify-content: space-evenly;
@@ -2633,10 +2794,16 @@
             }
         }
     }
+
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
 }
 
 .thirteen {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -3089,7 +3256,7 @@
 }
 
 .fourteen {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -3489,8 +3656,9 @@
         }
     }
 }
+
 .fifteen {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -3743,8 +3911,9 @@
         }
     }
 }
+
 .sixteen {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
 
@@ -3892,7 +4061,7 @@
 }
 
 .seventeen {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
 
@@ -3962,7 +4131,7 @@
 }
 
 .eighteenth {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
 
@@ -4080,7 +4249,7 @@
 }
 
 .nineteenth {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     &__bg {
@@ -4213,9 +4382,8 @@
 	}
 }
 
-
 .twentieth {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     &__bg {
@@ -4351,7 +4519,7 @@
 }
 
 .twenty-one {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     &__bg {
@@ -4518,7 +4686,7 @@
 }
 
 .twenty-two {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -4789,7 +4957,7 @@
 }
 
 .twenty-three {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -4906,7 +5074,7 @@
 }
 
 .twenty-four {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -5053,7 +5221,7 @@
 }
 
 .twenty-five {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -5096,7 +5264,7 @@
 }
 
 .twenty-six {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -5201,7 +5369,7 @@
 }
 
 .twenty-seven {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -5392,7 +5560,7 @@
 }
 
 .twenty-eight {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -5729,7 +5897,7 @@
 }
 
 .twenty-nine {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -5921,7 +6089,7 @@
 }
 
 .thirty {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -6029,7 +6197,7 @@
 }
 
 .thirty-one {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -6079,7 +6247,7 @@
 }
 
 .thirty-two {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -6214,7 +6382,7 @@
 }
 
 .thirty-three {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -6346,7 +6514,7 @@
 }
 
 .thirty-four {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 100px;
 
     @include netbook {
