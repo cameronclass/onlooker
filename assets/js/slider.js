@@ -53,7 +53,12 @@ function initSliders() {
       breakpoints: {
         0: {
           slidesPerView: 2,
-          spaceBetween: 20,
+          spaceBetween: 10,
+          loop: false,
+          grid: {
+            rows: 10,
+          },
+          
         },
         576: {
           slidesPerView: 2,
@@ -169,3 +174,11 @@ function initSliders() {
   }
 }
 initSliders();
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   const width = window.innerWidth;
+//   if (width > 576){
+//     const slider = new Swiper(".twenty-five__slider_block");
+//   }
+// });

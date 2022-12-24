@@ -5435,6 +5435,30 @@
     &__slider {
         margin-top: 50px;
         position: relative;
+        @include mobile {
+            .swiper-wrapper {
+                height: 1030px;
+                display: flex;
+                row-gap: 15px;
+            }
+            .twenty-five__slider_block {
+                height: 100%;
+            }
+            .swiper-slide {
+                margin: 10px auto;
+                height: 310px;
+                // height: %;
+            }
+            .swiper-button-next,
+            .swiper-button-prev,
+            .swiper-pagination {
+                display: none;
+            }
+        }
+    }
+
+    &__slider_block {
+        
     }
 
     &__button {
