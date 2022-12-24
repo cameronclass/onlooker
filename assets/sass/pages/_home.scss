@@ -5878,6 +5878,7 @@
             @include netbook {
                 flex-direction: column;
                 row-gap: 40px;
+                align-items: center;
             }
         }
 
@@ -5895,8 +5896,12 @@
             max-width: 570px;
 
             @include netbook {
-                width: 100%;
+                width: 50%;
                 max-width: 100%;
+            }
+
+            @include tablet {
+                width: 100%;
             }
         }
 
@@ -6041,7 +6046,7 @@
                 font-size: 26px;
                 margin-bottom: 20px;
 
-                @include netbook {
+                @include tablet {
                     font-size: 16px;
                 }
             }
@@ -6126,7 +6131,7 @@
         border-radius: 12px;
         overflow: hidden;
 
-        @include netbook {
+        @include tablet {
             padding: 15px 20px;
         }
     }
@@ -6164,7 +6169,7 @@
             padding-top: 23px;
         }
 
-        @include netbook {
+        @include netbook  {
             max-width: 190px;
         }
     }
@@ -6175,7 +6180,7 @@
         height: 67px;
         margin-right: 17px;
 
-        @include netbook {
+        @include netbook  {
             height: 49px;
             margin-right: 10px;
         }
@@ -6195,7 +6200,7 @@
         row-gap: 16px;
         align-content: flex-start;
 
-        @include netbook {
+        @include netbook  {
             flex-direction: column;
             flex: 0;
             align-items: flex-start;
@@ -6235,8 +6240,12 @@
         gap: 16px;
         max-width: 980px;
 
-        @include netbook {
+        @media (max-width: 1400px)  {
             flex-direction: column;
+            width: 60%;
+        }
+        @include tablet {
+            width: 100%;
         }
     }
 
@@ -6267,7 +6276,7 @@
             }
         }
 
-        @include netbook {
+        @include tablet {
             font-size: 15px;
             padding: 10px 25px;
         }
@@ -6283,15 +6292,32 @@
     &__img-pc {
         position: absolute;
         bottom: -40px;
-        right: -2px;
-        width: fit-content;
-        height: 320px;
+        right: -55px;
+        width: 28%;
 
         @include netbook {
-            bottom: initial;
-            top: 25%;
-            height: 200px;
-            right: -22px;
+            width: 40%;
+        }
+
+        @include tablet {
+            display: none;
+            visibility: hidden;
+        }
+    }
+
+    &__img-mob {
+        display: none;
+        visibility: hidden;
+        @include tablet {
+            visibility: visible;
+            position: absolute;
+            bottom: 201px;
+            right: -2px;
+            width: 33%;
+            display: block;
+        }
+        @media (max-width: 430px) {
+            bottom: 384px;
         }
     }
 
@@ -6414,6 +6440,13 @@
         margin-bottom: 100px;
     }
 
+    .twelfth__content {
+        margin-bottom: 70px;
+        @media (max-width: 1400px) {
+            margin-bottom: 0;
+        }
+    }
+
     &__bg-mob {
         top: -240px;
         left: -140px;
@@ -6479,6 +6512,7 @@
             width: 100%;
             max-width: 495px;
             padding: 10px 15px;
+            align-self: flex-start;
 
             .main-title__card-radius__icon {
                 height: 34px;
@@ -6488,6 +6522,7 @@
 
         @include netbook {
             flex-direction: column;
+            align-items: self-start;
 
             .main-title__card {
                 margin-top: 15px;
@@ -6505,6 +6540,7 @@
 
         @include netbook {
             flex-direction: column;
+            align-items: self-start;
         }
     }
 
@@ -6551,6 +6587,7 @@
         flex-direction: column;
         width: 100%;
         max-width: 495px;
+        align-self: flex-start;
 
         @include netbook {
             margin-top: 30px;
@@ -6568,6 +6605,10 @@
         flex-wrap: wrap;
         column-gap: 18px;
         row-gap: 11px;
+
+        @include mobile {
+            flex-direction: column;
+        }
     }
 
     // .thirtytwo__link
@@ -6636,7 +6677,7 @@
         max-width: 1240px;
         width: 100%;
 
-        @include netbook {
+        @include tablet {
             flex-wrap: wrap;
             row-gap: 30px;
         }
@@ -6666,6 +6707,11 @@
             font-weight: 800;
             font-size: 73px;
             opacity: 0.2;
+
+            @include netbook {
+                font-size: 60px;
+                z-index: 2;
+            }
         }
 
         &_img-1 {
@@ -6676,6 +6722,11 @@
             height: 212px;
 
             @include netbook {
+                width: 45%;
+                height: auto;
+            }
+
+            @include tablet {
                 display: none;
             }
         }
@@ -6688,6 +6739,11 @@
             height: 223px;
 
             @include netbook {
+                width: 45%;
+                height: auto;
+            }
+
+            @include tablet {
                 display: none;
             }
         }
@@ -6700,6 +6756,11 @@
             height: 166px;
 
             @include netbook {
+                width: 58%;
+                height: auto;
+            }
+
+            @include tablet {
                 display: none;
             }
         }
@@ -6736,7 +6797,7 @@
         display: flex;
         position: relative;
 
-        @include netbook {
+        @include tablet {
             flex-direction: column;
         }
     }
@@ -6774,7 +6835,7 @@
             margin-bottom: 26px;
         }
 
-        @include netbook {
+        @include tablet {
             flex-direction: column;
             align-items: center;
             row-gap: 20px;
@@ -6794,8 +6855,22 @@
         border: 1px solid #FFFFFF;
         border-radius: 90px;
 
-        @include netbook {
+
+        @include tablet {
             width: 100%;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        max-width: 280px;
+        padding: 18px 41px;
+
+        position: relative;
+        left: -60px;
+
+        @include tablet {
+            left: 0;
         }
     }
 
@@ -6831,34 +6906,28 @@
         }
     }
 
-    &__btn {
-        width: 100%;
-        max-width: 280px;
-        padding: 18px 41px;
-
-        position: relative;
-        left: -60px;
-
-        @include netbook {
-            left: 0;
-        }
-    }
+    
 
     &__img {
         position: relative;
         height: 609px;
-        width: auto;
+        width: 49%;
 
-        @include netbook {
+        @media (max-width: 1000px) {
             display: none;
         }
     }
 
     &__position {
         position: absolute;
-        top: 117px;
-        right: 333px;
+        top: 19%;
+        right: 50%;
         text-align: right;
+
+        @include netbook {
+            top: 53%;
+            right: 20%;
+        }
     }
 
     &__name {
