@@ -1183,7 +1183,7 @@
     display: flex;
     width: 100%;
 
-    @include tablet {
+    @include netbook {
         flex-direction: column;
     }
 
@@ -1393,8 +1393,11 @@
         border-radius: 12px;
         overflow: hidden;
 
-        @include tablet {
+        @include netbook {
             margin-top: 21px;
+        }
+
+        @include tablet {
             flex-direction: column;
             padding: 17px 17px 19px;
         }
@@ -1918,3 +1921,79 @@
 .no-scroll{
     overflow: hidden;
 }
+
+
+// ==================================================
+// --- CUSTOM CURSOR----------------------
+// ==================================================
+
+.cursor {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(217, 217, 217, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%) scale(1);
+    transition: .2s cubic-bezier(.67, .21, .27, .74) transform;
+    pointer-events: none;
+    user-select: none;
+    z-index: 999;
+
+    @include tablet {
+        opacity: 0;
+    }
+
+    &._over {
+        transform: translate(-50%, -50%) scale(2);
+        border: 1px solid rgba(255, 255, 255, .2);
+        background: transparent;
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    .click {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+.click {
+    // position: fixed;
+    width: 44px;
+    height: 44px;
+    background: rgba(217, 217, 217, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: click-circle 500ms ease forwards;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80%;
+        height: 80%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: #D9D9D9;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+
+}
+
+@keyframes click-circle {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 0;
+    }
+}
+
+
+
