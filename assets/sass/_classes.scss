@@ -1392,10 +1392,7 @@
         background: linear-gradient(276.53deg, #121212 3.6%, #1D1D1D 104.04%);
         border-radius: 12px;
         overflow: hidden;
-
-        @include netbook {
-            margin-top: 21px;
-        }
+        margin-top: 21px;
 
         @include tablet {
             flex-direction: column;

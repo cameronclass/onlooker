@@ -7482,25 +7482,14 @@
         max-width: 446px;
         width: 100%;
 
-        @media (any-hover: hover) {
-            &:hover {
-                .checkout-three__img-gray {
-                    opacity: 0;
-                    transform: scale(0);
-                }
-
-                .checkout-three__img-color {
-                    opacity: 1;
-                    transform: scale(1);
-                }
-
-                .checkout-three__method {
-                    border: 1px solid rgba(255, 255, 255, 0.4);
-
-                    &.active {
-                        border: 1px solid $main;
-                    }
-                }
+        &:hover {
+            .checkout-three__img-gray {
+                opacity: 0;
+                transform: scale(0);
+            }
+            .checkout-three__img-color {
+                opacity: 1;
+                transform: scale(1);
             }
         }
 
@@ -7563,26 +7552,9 @@
         flex-direction: column;
         row-gap: 4px;
 
-        &.active {
-            position: relative;
-            border: 1px solid $main;
-
-            &::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 23px;
-                height: 20px;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                background: linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%);
-                border-radius: 0px 10px;
-            }
-
-            .checkout-three__method-icon {
-                display: block;
+        @media (any-hover: hover) {
+            &:hover {
+                border: 1px solid rgba(255, 255, 255, 0.4);
             }
         }
 
@@ -7611,6 +7583,39 @@
             }
         }
     }
+
+    // .checkout-three__input
+    &__input {
+        display: none;
+    }
+
+    // .checkout-three__label
+    &__label {
+
+    }
+
+    .checkout-three__input:checked+.checkout-three__label {
+        position: relative;
+        border: 1px solid $main;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 23px;
+            height: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background: linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%);
+            border-radius: 0px 10px;
+        }
+
+        .checkout-three__method-icon {
+            display: block;
+        }
+}
 
     // .checkout-three__method-icon
     &__method-icon {

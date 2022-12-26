@@ -4175,7 +4175,8 @@
 
       <div class="checkout-three__delivery">
         <div class="checkout-three__title">Выберите службу доставки:</div>
-        <div class="checkout-three__delivery-cards">
+        <form action="#" class="checkout-three__delivery-cards">
+
           <div class="checkout-three__card">
             <picture>
               <source srcset="assets/img/offer-page/checkout-three/cdek-gray.webp" type="image/webp">
@@ -4185,20 +4186,28 @@
               <source srcset="assets/img/offer-page/checkout-three/cdek-color.webp" type="image/webp">
               <img loading="lazy" class="checkout-three__img-color lazyload" src="assets/img/offer-page/checkout-three/cdek-color.png" alt="images">
             </picture>
+
             <div class="checkout-three__card-body">
-              <div type="button" class="checkout-three__method active">
-                <img loading="lazy" class="checkout-three__method-icon lazyload" src="assets/img/icons/positive-white.svg" alt="images">
-                <div class=" icon-card__text">Самовывоз:</div>
-                <div class=" icon-card__title">439 ₽, <span class="checkout-three__method-terms title-info__text">6 дней</span></div>
-                <div class=" icon-card__text-fs14">Сроки доставки указаны в рабочих днях</div>
+              <div class="checkout-three__method-wrap">
+                <input id="cdekSelf" checked type="radio" value="cdekself" name="delivery" class="checkout-three__input">
+                <label for="cdekSelf" class="checkout-three__label checkout-three__method">
+                  <img loading="lazy" class="checkout-three__method-icon lazyload" src="assets/img/icons/positive-white.svg" alt="images">
+                  <div class=" icon-card__text">Самовывоз:</div>
+                  <div class=" icon-card__title">439 ₽, <span class="checkout-three__method-terms title-info__text">6 дней</span></div>
+                  <div class=" icon-card__text-fs14">Сроки доставки указаны в рабочих днях</div>
+                </label>
               </div>
-              <div type="button" class="checkout-three__method">
-                <img loading="lazy" class="checkout-three__method-icon lazyload" src="assets/img/icons/positive-white.svg" alt="images">
-                <div class=" icon-card__text">Курьер до адреса</div>
-                <div class=" icon-card__title">607 ₽, <span class="checkout-three__method-terms title-info__text">6 дней</span></div>
-                <div class=" icon-card__text-fs14">Сроки доставки указаны в рабочих днях</div>
+              <div class="checkout-three__method-wrap">
+                <input id="cdekCourier" type="radio" value="cdekcourier" name="delivery" class="checkout-three__input">
+                <label for="cdekCourier" class="checkout-three__label checkout-three__method">
+                  <img loading="lazy" class="checkout-three__method-icon lazyload" src="assets/img/icons/positive-white.svg" alt="images">
+                  <div class=" icon-card__text">Курьер до адреса</div>
+                  <div class=" icon-card__title">607 ₽, <span class="checkout-three__method-terms title-info__text">6 дней</span></div>
+                  <div class=" icon-card__text-fs14">Сроки доставки указаны в рабочих днях</div>
+                </label>
               </div>
             </div>
+
             <a href="#" class="checkout-three__change">
               <div class="checkout-three__change-body">
                 <img class="checkout-three__change-icon lazyload" src="assets/img/icons/pencil.svg" alt="images">
@@ -4206,6 +4215,7 @@
               </div>
             </a>
           </div>
+          
           <div class="checkout-three__card">
             <picture>
               <source srcset="assets/img/offer-page/checkout-three/dpd-gray.webp" type="image/webp">
@@ -4216,17 +4226,23 @@
               <img loading="lazy" class="checkout-three__img-color lazyload" src="assets/img/offer-page/checkout-three/dpd-color.png" alt="images">
             </picture>
             <div class="checkout-three__card-body">
-              <div type="button" class="checkout-three__method">
-                <img loading="lazy" class="checkout-three__method-icon lazyload" src="assets/img/icons/positive-white.svg" alt="images">
-                <div class=" icon-card__text">Самовывоз:</div>
-                <div class=" icon-card__title">439 ₽, <span class="checkout-three__method-terms title-info__text">6 дней</span></div>
-                <div class=" icon-card__text-fs14">Сроки доставки указаны в рабочих днях</div>
+              <div class="checkout-three__method-wrap">
+                <input id="dpdSelf" type="radio" value="dpdself" name="delivery" class="checkout-three__input">
+                <label for="dpdSelf" class="checkout-three__label checkout-three__method">
+                  <img loading="lazy" class="checkout-three__method-icon lazyload" src="assets/img/icons/positive-white.svg" alt="images">
+                  <div class=" icon-card__text">Самовывоз:</div>
+                  <div class=" icon-card__title">439 ₽, <span class="checkout-three__method-terms title-info__text">6 дней</span></div>
+                  <div class=" icon-card__text-fs14">Сроки доставки указаны в рабочих днях</div>
+                </label>
               </div>
-              <div type="button" class="checkout-three__method">
-                <img loading="lazy" class="checkout-three__method-icon lazyload" src="assets/img/icons/positive-white.svg" alt="images">
-                <div class=" icon-card__text">Курьер до адреса</div>
-                <div class=" icon-card__title">607 ₽, <span class="checkout-three__method-terms title-info__text">6 дней</span></div>
-                <div class=" icon-card__text-fs14">Сроки доставки указаны в рабочих днях</div>
+              <div class="checkout-three__method-wrap">
+                <input id="dpdCourier" type="radio" value="dpdcourier" name="delivery" class="checkout-three__input">
+                <label for="dpdCourier" class="checkout-three__label checkout-three__method">
+                  <img loading="lazy" class="checkout-three__method-icon lazyload" src="assets/img/icons/positive-white.svg" alt="images">
+                  <div class=" icon-card__text">Курьер до адреса</div>
+                  <div class=" icon-card__title">607 ₽, <span class="checkout-three__method-terms title-info__text">6 дней</span></div>
+                  <div class=" icon-card__text-fs14">Сроки доставки указаны в рабочих днях</div>
+                </label>
               </div>
             </div>
             <a href="#" class="checkout-three__change">
@@ -4236,6 +4252,7 @@
               </div>
             </a>
           </div>
+          
           <div class="checkout-three__card">
             <picture>
               <source srcset="assets/img/offer-page/checkout-three/post-gray.webp" type="image/webp">
@@ -4246,11 +4263,14 @@
               <img loading="lazy" class="checkout-three__img-color lazyload" src="assets/img/offer-page/checkout-three/post-color.png" alt="images">
             </picture>
             <div class="checkout-three__card-body">
-              <div type="button" class="checkout-three__method">
-                <img loading="lazy" class="checkout-three__method-icon lazyload" src="assets/img/icons/positive-white.svg" alt="images">
-                <div class=" icon-card__text">Курьер</div>
-                <div class=" icon-card__title">607 ₽, <span class="checkout-three__method-terms title-info__text">6 дней</span></div>
-                <div class=" icon-card__text-fs14">Сроки доставки указаны в рабочих днях</div>
+              <div class="checkout-three__method-wrap">
+                <input id="russiaCourier" type="radio" value="russiacourier" name="delivery" class="checkout-three__input">
+                <label for="russiaCourier" class="checkout-three__label checkout-three__method">
+                  <img loading="lazy" class="checkout-three__method-icon lazyload" src="assets/img/icons/positive-white.svg" alt="images">
+                  <div class=" icon-card__text">Курьер</div>
+                  <div class=" icon-card__title">607 ₽, <span class="checkout-three__method-terms title-info__text">6 дней</span></div>
+                  <div class=" icon-card__text-fs14">Сроки доставки указаны в рабочих днях</div>
+                </label>
               </div>
             </div>
             <a href="#" class="checkout-three__change">
@@ -4260,7 +4280,8 @@
               </div>
             </a>
           </div>
-        </div>
+        
+        </form>
       </div>
 
       <div class="checkout-three__map">
@@ -4301,7 +4322,9 @@
             <form action="#" class="checked-payment">
               <div class="checked-payment__item">
                 <input id="cashOnDelivery" checked type="radio" value="cash" name="payment" class="checked-payment__input">
+
                 <label for="cashOnDelivery" class="checked-payment__label product-card__title">Наложенный платёж (оплата при получении)</label>
+
                 <div class="checked-payment__text icon-card__text">Оплатить заказ можно при получении, на пункте выдачи заказов или курьеру (наличные или карта). Вы можете оплатить заказ после осмотра товара.</div>
               </div>
               <div class="checked-payment__item">
