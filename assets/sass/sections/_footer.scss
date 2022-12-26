@@ -6,12 +6,9 @@
     z-index: 2;
 
     &__bg {
-
-
         &_top {
-            background: linear-gradient(276.53deg, #121212 3.6%, #1D1D1D 104.04%), linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%);
+            background: #1F1F1F;
         }
-
 
         &_bottom {
             background: #272727;
@@ -24,7 +21,6 @@
             text-align: center;
         }
 
-
         &_top {
             display: flex;
             justify-content: space-between;
@@ -32,12 +28,19 @@
             padding-bottom: 40px;
             column-gap: 30px;
 
-            @include netbook {
+            @media (max-width: 1000px) {
                 flex-direction: column;
+                text-align: center;
+                align-items: center;
+                row-gap: 30px;
+            }
+
+            @include tablet {
                 padding-top: 30px;
                 padding-bottom: 30px;
                 align-items: center;
                 row-gap: 15px;
+                text-align: center;
             }
         }
 
@@ -46,8 +49,9 @@
             justify-content: space-between;
             padding: 10px 0;
             column-gap: 15px;
+            align-items: center;
 
-            @include netbook {
+            @media (max-width: 1000px) {
                 flex-direction: column-reverse;
                 padding: 20px 0;
             }
@@ -60,13 +64,66 @@
         // .footer__block_a
         &_a {
             display: flex;
+            flex-direction: column;
             flex-wrap: wrap;
             width: 100%;
             max-width: 375px;
+            row-gap: 11px;
+
+            &:nth-child(2) {
+                max-width: 157px;
+                @include tablet {
+                    display: none;
+                }
+            }
+
+            &:nth-child(3) {
+                max-width: 117px;
+                @include tablet {
+                    max-width: 400px;
+                }
+            }
+
+            &:nth-child(4) {
+                max-width: 143px;
+                @include tablet {
+                    max-width: 400px;
+                }
+            }
+
+            .icon-card__text-fs14 {
+                @media (min-width: 768px) {
+                    font-size: 13px;
+                    line-height: 1.5;
+                }
+            }
+
+            .icon-card__title-white {
+                @media (min-width: 768px) {
+                    color: rgba(255, 255, 255, 0.6);
+                    font-weight: 400;
+                    font-size: 13px;
+                }
+            }
+
+            .icon-card__title {
+                @media (min-width: 768px) {
+                    font-weight: 400px;
+                    font-size: 13px;
+                }
+            }
+
+            .main-color {
+                @include mobile {
+                    color: white;
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+            }
 
             &::after {}
 
-            @include netbook {
+            @include tablet {
                 justify-content: center;
             }
         }
@@ -74,11 +131,11 @@
         // .footer__block_b
         &_b {
             display: flex;
-            max-width: 446px;
-            justify-content: space-between;
-            gap: 36px;
+            flex-direction: column;
+            gap: 8px;
+            max-width: 242px;
 
-            @include netbook {
+            @include tablet {
                 flex-wrap: wrap;
                 text-align: center;
                 justify-content: center;
@@ -92,35 +149,104 @@
         display: inline-block;
 
         &:not(:last-child) {
-            margin-bottom: 15px;
+            margin-bottom: 14px;
         }
 
         // .footer__logo_img
-        &_img {}
+        &_img {
+            height: 42px;
+        }
 
         // .footer__logo_text
         &_text {
             font-size: 12px;
 
-            @include netbook {
+            @include tablet {
                 text-align: center;
             }
         }
+    }
+
+    // .footer__icons ---------------------------
+    &__icons {
+        display: flex;
+        gap: 13px;
+
+        @include tablet {
+            display: none;
+        }
+    }
+    // .footer__icon
+    &__icon {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #535252;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        margin-top: 50px;
+        filter: invert(26%) sepia(0%) saturate(1618%) hue-rotate(256deg) brightness(93%) contrast(69%);
+
+        @media (any-hover: hover) {
+            &:hover {
+                filter: invert(57%) sepia(29%) saturate(5589%) hue-rotate(138deg) brightness(92%) contrast(95%);
+            }
+        }
+    }
+    // .footer__icon-1
+    &__icon-1 {
+        height: 24px;
+    }
+    // .footer__icon-2
+    &__icon-2 {
+        height: 17px;
+    }
+    // .footer__icon-3
+    &__icon-3 {
+        height: 12px;
+    }
+    // .footer__icon-4
+    &__icon-4 {
+        height: 20px;
+    }
+
+    // .footer__heading ---------------------------
+    &__heading {
+        color: #EDEDED;
+        font-weight: 400;
+        font-size: 16px;
+        margin-bottom: 15px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 53px;
+            height: 1px;
+            background: $main;
+
+            @media (max-width: 1000px) {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        @include tablet {
+            display: none;
+        }
+       
     }
 
     // .footer__contact ---------------------------
     &__contact {
         line-height: 1.9;
 
-        &:not(:last-child) {
-            margin-right: 43px;
-
-            @include netbook {
-                margin: 0;
-            }
-        }
-
-        @include netbook {
+        @include tablet {
             margin: 0;
             width: 100%;
             display: flex;
@@ -140,17 +266,7 @@
             line-height: 1.9;
             flex-direction: column;
 
-            &:nth-child(2) {
-                &:not(:last-child) {
-                    padding-left: 35px;
-
-                    @include netbook {
-                        padding: 0;
-                    }
-                }
-            }
-
-            @include netbook {
+            @include tablet {
                 flex-direction: row;
                 max-width: 100%;
             }
@@ -162,7 +278,11 @@
         padding: 10px 30px;
         place-self: center;
 
-        @include netbook {
+        @media (min-width: 768px) {
+            display: none;
+        }
+
+        @include mobile {
             width: 100%;
             margin-top: 20px;
             order: 3;
@@ -173,11 +293,11 @@
     &__legal {
 
         &:nth-child(2) {
-            max-width: 200px;
+            max-width: 242px;
             line-height: 1.6;
             font-size: 14px;
 
-            @include netbook {
+            @include tablet {
                 max-width: 100%;
             }
         }
@@ -192,10 +312,12 @@
 
     // .footer__bottom-left
     &__bottom-left {
+        font-weight: 300;
         font-size: 12px;
         opacity: 0.6;
+        max-width: 441px;
 
-        @include netbook {
+        @include tablet {
             text-align: center;
         }
     }
@@ -205,7 +327,7 @@
         display: flex;
         column-gap: 33px;
 
-        @include netbook {
+        @include tablet {
             flex-direction: column;
             align-items: center;
             row-gap: 15px;
@@ -216,8 +338,11 @@
     // .footer__policy
     &__policy {
         text-decoration: none;
+        font-weight: 300;
         font-size: 12px;
         opacity: 0.6;
         color: white;
     }
 }
+
+    
