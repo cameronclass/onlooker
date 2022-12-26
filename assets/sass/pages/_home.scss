@@ -110,6 +110,7 @@
             position: relative;
             max-width: 80%;
         }
+
         @include tablet {
             top: 0;
             max-width: 100%;
@@ -722,12 +723,15 @@
             border-radius: 10px;
             top: 140px;
             right: 0;
+
             @media (max-width: 1400px) {
                 top: 110px;
             }
+
             @include netbook {
                 top: 200px;
             }
+
             @include tablet {
                 top: 1015px;
                 left: 0;
@@ -791,6 +795,7 @@
 
                     &._item-2 {
                         max-width: 200px;
+
                         @include tablet {
                             max-width: max-content;
                         }
@@ -848,6 +853,7 @@
         @include tablet {
             font-size: 48px;
         }
+
         @include mobile {
             font-size: 22px;
         }
@@ -1035,9 +1041,11 @@
                     font-weight: 700;
                     font-size: 16px;
                     color: rgba(255, 255, 255, 0.61);
+
                     @include netbook {
                         font-size: 18px;
                     }
+
                     @include tablet {
                         font-size: 16px;
                     }
@@ -1073,6 +1081,7 @@
                 text-align: center;
                 line-height: 1.5;
             }
+
             @include mobile {
                 font-size: 26px;
             }
@@ -1354,7 +1363,7 @@
 
 .fourth {
     margin-top: 300px;
-    margin-bottom:300px;
+    margin-bottom: 300px;
 
     @include netbook {
         margin-top: 100px;
@@ -1397,6 +1406,7 @@
             max-width: 663px;
             margin-right: 20px;
             margin: 0;
+
             @include netbook {
                 margin: 0 auto;
             }
@@ -1763,7 +1773,7 @@
             align-self: flex-start;
             display: flex;
         }
-        
+
         @include tablet {
             flex-direction: column;
         }
@@ -1781,6 +1791,7 @@
         display: grid;
         grid-template-columns: 37% 1fr;
         grid-template-rows: auto auto;
+
         @media (max-width: 1400px) {
             grid-template-columns: auto;
             grid-template-rows: auto;
@@ -1928,7 +1939,7 @@
         display: grid;
         grid-template-columns: 53% 1fr;
         grid-template-rows: auto;
-        
+
         @media (max-width: 1400px) {
             grid-template-columns: auto;
             grid-template-rows: auto;
@@ -2084,7 +2095,7 @@
             flex-direction: column;
             text-align: center;
         }
-       
+
     }
 }
 
@@ -2459,6 +2470,7 @@
 
         .icon-card {
             align-items: flex-start;
+
             @include netbook {
                 align-items: center;
             }
@@ -2675,11 +2687,13 @@
 
         &_mob {
             display: none;
+
             @media (max-width: 1400px) {
                 display: contents;
                 font-weight: 600;
                 font-size: 24px;
                 line-height: 1.48;
+
                 span {
                     display: contents;
                     color: rgba(255, 255, 255, 0.3);
@@ -2695,6 +2709,7 @@
     &__subtitle {
         margin-bottom: 30px;
         margin-top: 35px;
+
         @media (max-width: 1400px) {
             display: none;
         }
@@ -2704,16 +2719,14 @@
         display: grid;
         grid-template-columns: 50% 1fr;
         grid-template-rows: auto;
-        
+
         @media (max-width: 1400px) {
             grid-template-columns: auto;
             grid-template-rows: auto;
         }
     }
 
-    &__content {
-
-    }
+    &__content {}
 
     &__img {
         grid-row-start: 1;
@@ -2731,6 +2744,7 @@
             grid-column-end: 1;
             padding: 26px 0 10px;
         }
+
         &_img {
             position: absolute;
             top: -25%;
@@ -2757,9 +2771,11 @@
         border-radius: 12px;
         padding: 30px;
         width: 130%;
+
         @media (max-width: 1400px) {
             width: 100%;
         }
+
         @include tablet {
             text-align: center;
         }
@@ -2869,12 +2885,14 @@
 
         @include netbook {
             margin-bottom: 40px;
-            
+
         }
+
         .main-title__card-radius {
             @include netbook {
                 justify-content: flex-start;
             }
+
             @include tablet {
                 justify-content: center;
             }
@@ -2903,6 +2921,7 @@
 
         .icon-card {
             width: 50%;
+
             @include tablet {
                 width: 100%;
             }
@@ -2924,20 +2943,23 @@
 
         &._anim-items {
             &._active {
-                    .thirteen__picture_img-2 {
-                        animation: carstaing .5s linear .5s 1 normal forwards;
-                    }
-                    .thirteen__picture_img-3 {
-                        animation: carmoving .7s linear 1.2s 1 normal forwards;
-                    }
-                    .thirteen__picture_img-4 {
-                        animation: staing 200ms linear 2s 1 normal forwards;
-                    }
-                    .thirteen__picture_circle,
-                    .thirteen__picture_img-5,
-                    .thirteen__picture_img-6 {
-                        animation: appearance .3s linear 2.3s 1 normal forwards;
-                    }
+                .thirteen__picture_img-2 {
+                    animation: carstaing .5s linear .5s 1 normal forwards;
+                }
+
+                .thirteen__picture_img-3 {
+                    animation: carmoving .7s linear 1.2s 1 normal forwards;
+                }
+
+                .thirteen__picture_img-4 {
+                    animation: staing 200ms linear 2s 1 normal forwards;
+                }
+
+                .thirteen__picture_circle,
+                .thirteen__picture_img-5,
+                .thirteen__picture_img-6 {
+                    animation: appearance .3s linear 2.3s 1 normal forwards;
+                }
             }
         }
 
@@ -2945,13 +2967,16 @@
             position: relative;
             max-width: 1110px;
             z-index: 2;
+
             @media (max-width: 1200px) {
                 padding: 0 8%;
             }
+
             @include mobile {
                 padding: none;
             }
         }
+
         &_img-2 {
             position: absolute;
             top: 38%;
@@ -2959,21 +2984,24 @@
             max-width: 42%;
             z-index: 2;
             opacity: 0;
-            
+
             @include mobile {
                 max-width: 48%;
                 left: 0%;
                 top: 36%;
             }
+
             @keyframes carstaing {
                 0% {
                     opacity: 0;
                 }
+
                 100% {
                     opacity: 1;
                 }
             }
         }
+
         &_img-3 {
             position: absolute;
             top: -4%;
@@ -2987,7 +3015,7 @@
                     transform: translate(30%, -10%) rotate(7deg);
                     opacity: 0;
                 }
-                
+
                 100% {
                     transform: translate(0%, 0%) rotate(0deg);
                     opacity: 1;
@@ -2997,13 +3025,16 @@
             @media (max-width: 1400px) {
                 top: -3%;
             }
+
             @media (max-width: 1300px) {
                 top: -1%;
             }
+
             @media (max-width: 1200px) {
                 top: -4%;
             }
         }
+
         &_img-4 {
             position: absolute;
             top: 25%;
@@ -3017,13 +3048,14 @@
             0% {
                 opacity: 0;
             }
+
             100% {
                 opacity: 1;
             }
         }
 
         // .thirteen__picture_img-5
-		&_img-5 {
+        &_img-5 {
             position: absolute;
             z-index: 9;
             height: 27%;
@@ -3039,9 +3071,10 @@
             @include netbook {
                 display: none;
             }
-		}
-		// .thirteen__picture_img-6
-		&_img-6 {
+        }
+
+        // .thirteen__picture_img-6
+        &_img-6 {
             position: absolute;
             z-index: 9;
             height: 27%;
@@ -3057,61 +3090,69 @@
             @include netbook {
                 display: none;
             }
-		}
+        }
+
         // .thirteen__picture_circle
-		&_circle {
+        &_circle {
             position: absolute;
             z-index: 5;
             opacity: 0;
-            
+
             @include netbook {
                 display: none;
             }
+
             &::before {
-                content:"";
+                content: "";
                 position: absolute;
                 background: white;
                 height: 1px;
             }
         }
-		// .thirteen__picture_img-7
-		&_img-7 {
+
+        // .thirteen__picture_img-7
+        &_img-7 {
             width: 23px;
             height: 23px;
             top: 48%;
             left: 39%;
+
             &::before {
                 width: 485px;
                 top: -80px;
                 left: 0%;
                 transform: translate(-94%, 0%) rotate(22deg);
+
                 @media (max-width: 1500px) {
                     width: 400px;
                     top: -64px;
                 }
             }
-		}
-		// .thirteen__picture_img-8
-		&_img-8 {
+        }
+
+        // .thirteen__picture_img-8
+        &_img-8 {
             width: 17px;
             height: 17px;
             top: 64%;
             left: 31%;
             z-index: 8;
+
             &::before {
                 width: 350px;
                 top: -35px;
                 left: 0%;
                 transform: translate(-96%, 0) rotate(14deg);
+
                 @media (max-width: 1500px) {
                     width: 300px;
                     top: -30px;
                 }
-                
+
             }
-		}
+        }
     }
-			
+
 
     &__type-camera {
         position: relative;
@@ -3235,6 +3276,7 @@
         display: flex;
         flex-direction: column;
         margin-left: 17px;
+
         @include tablet {
             align-items: center;
         }
@@ -3259,6 +3301,7 @@
             @media (max-width: 500px) {
                 .checked-item {
                     max-width: 157px;
+
                     &:nth-child(3) {
                         max-width: max-content;
                     }
@@ -3329,6 +3372,7 @@
                 @include tablet {
                     font-size: 38px;
                 }
+
                 @include mobile {
                     font-size: 24px;
                     text-align: center;
@@ -3402,16 +3446,15 @@
             }
         }
 
-        &_content {
-        }
+        &_content {}
 
         &_body {
             position: relative;
             z-index: 2;
-            
+
         }
 
-        
+
     }
 
     &__block-wrap {
@@ -3423,22 +3466,26 @@
         flex: 1 1 28%;
         position: relative;
         overflow: hidden;
-       
+
         &._anim-items {
             &._active {
                 .fourteen {
                     &__road-one {
                         animation: appearance_few_moving 5s linear .5s 1 normal forwards;
                     }
+
                     &__cargreen-one {
                         animation: carmoving_one .8s linear .7s 1 normal forwards;
                     }
+
                     &__carwhite-one {
                         animation: carmoving_two .8s linear 1.5s 1 normal forwards;
                     }
+
                     &__line-one {
                         animation: appearance 0.3s linear 1.8s 1 normal forwards;
                     }
+
                     &__sign-one {
                         animation: flashing 1s linear 2s 5 normal forwards;
                     }
@@ -3465,23 +3512,26 @@
                 opacity: 0.8;
                 transform: translateY(0%);
             }
+
             100% {
                 opacity: 1;
                 transform: translateY(-30%);
             }
         }
     }
+
     &__cargreen-one {
         position: absolute;
         max-width: 35%;
         z-index: 5;
         opacity: 0;
 
-        @keyframes  carmoving_one {
+        @keyframes carmoving_one {
             0% {
                 opacity: 1;
                 transform: translateY(120%);
             }
+
             100% {
                 opacity: 1;
                 transform: translateY(0%);
@@ -3489,6 +3539,7 @@
         }
 
     }
+
     &__carwhite-one {
         position: absolute;
         max-width: 35%;
@@ -3502,14 +3553,15 @@
                 opacity: 1;
                 transform: translate(0%, 50%);
             }
+
             100% {
                 opacity: 1;
                 transform: translate(0%, 0%);
             }
         }
     }
-    
-    &__line-one{
+
+    &__line-one {
         position: absolute;
         max-width: 65%;
         z-index: 4;
@@ -3519,11 +3571,13 @@
             0% {
                 opacity: 0;
             }
+
             100% {
                 opacity: 1;
             }
         }
     }
+
     &__sign-one {
         position: absolute;
         max-width: 19%;
@@ -3536,9 +3590,11 @@
             0% {
                 opacity: 1;
             }
+
             50% {
                 opacity: 0;
             }
+
             100% {
                 opacity: 1;
             }
@@ -3555,6 +3611,7 @@
         animation: appearance_few_moving 5s linear .3s 1 normal forwards;
         opacity: 0;
     }
+
     // .fourteen__cardark-two
     &__cardark-two {
         position: absolute;
@@ -3565,6 +3622,7 @@
         animation: carmoving_one .8s linear 1s 1 normal forwards;
         opacity: 0;
     }
+
     // .fourteen__carblue-two
     &__carblue-two {
         position: absolute;
@@ -3580,6 +3638,7 @@
                 opacity: 0.5;
                 transform: translateY(50%);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0%);
@@ -3587,6 +3646,7 @@
         }
 
     }
+
     // .fourteen__lines-two
     &__lines-two {
         position: absolute;
@@ -3597,6 +3657,7 @@
         animation: appearance 0.3s linear 2.3s 1 normal forwards;
         opacity: 0;
     }
+
     // .fourteen__sign-two
     &__sign-two {
         position: absolute;
@@ -3618,6 +3679,7 @@
         animation: appearance 0.5s linear .5s 1 normal forwards;
         opacity: 0;
     }
+
     // .fourteen__light-green-three
     &__light-green-three {
         position: absolute;
@@ -3628,6 +3690,7 @@
         animation: appearance 0.5s linear .5s 1 normal forwards;
         opacity: 0;
     }
+
     // .fourteen__light-red-three
     &__light-red-three {
         position: absolute;
@@ -3638,6 +3701,7 @@
         animation: appearance 0.1s linear 1.5s 1 normal forwards;
         opacity: 0;
     }
+
     // .fourteen__carwhite-three
     &__carwhite-three {
         position: absolute;
@@ -3647,17 +3711,20 @@
         left: 3%;
         animation: carmoving_four .7s linear 1s 1 normal forwards;
         opacity: 0;
+
         @keyframes carmoving_four {
             from {
                 opacity: 0.8;
                 transform: translateY(50%) rotate(5deg);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0%) rotate(5deg);
             }
         }
     }
+
     // .fourteen__cargreen-three
     &__cargreen-three {
         position: absolute;
@@ -3668,6 +3735,7 @@
         animation: carmoving_three .8s linear 1.7s 1 normal forwards;
         opacity: 0;
     }
+
     // .fourteen__cargray-three
     &__cargray-three {
         position: absolute;
@@ -3678,6 +3746,7 @@
         animation: carmoving_three .8s linear 2.5s 1 normal forwards;
         opacity: 0;
     }
+
     // .fourteen__lines-three
     &__lines-three {
         position: absolute;
@@ -3688,6 +3757,7 @@
         animation: appearance 0.3s linear 2.8s 1 normal forwards;
         opacity: 0;
     }
+
     // .fourteen__sign-three
     &__sign-three {
         position: absolute;
@@ -3747,13 +3817,15 @@
 
         position: relative;
         z-index: 2;
-        
-        .fourteen__heading_block{
+
+        .fourteen__heading_block {
             @include mobile {
                 width: 100%;
                 justify-content: center;
+
                 .main-title__card-radius {
                     width: 100%;
+
                     .main-title__card-radius__text {
                         max-width: 180px;
                     }
@@ -3822,6 +3894,7 @@
             font-weight: 700;
             font-size: 36px;
             margin-bottom: 51px;
+
             @include mobile {
                 font-size: 18px;
             }
@@ -3933,7 +4006,7 @@
             line-height: 27px;
         }
     }
-    
+
     // .fifteen__anim
     &__anim {
         padding-right: 35px;
@@ -3952,6 +4025,7 @@
                 .fifteen__anim_carblue {
                     animation: move_down_rotate .8s linear .5s 1 normal forwards;
                 }
+
                 .fifteen__anim_bum {
                     animation: appearance .1s linear 1.3s 1 normal forwards;
                 }
@@ -3962,6 +4036,7 @@
         &_cargreen {
             max-width: 90%;
         }
+
         // .fifteen__anim_carblue
         &_carblue {
             position: absolute;
@@ -3975,12 +4050,14 @@
                     opacity: 0;
                     transform: translate(35%, -38%) rotate(180deg);
                 }
+
                 to {
                     opacity: 1;
                     transform: translate(0%, 0%) rotate(219deg);
                 }
             }
         }
+
         // .fifteen__anim_bum
         &_bum {
             position: absolute;
@@ -4020,6 +4097,7 @@
         flex-direction: column;
         width: 100%;
         max-width: 820px;
+
         @include netbook {
             max-width: 100%;
         }
@@ -4382,7 +4460,7 @@
     }
 
     // .nineteenth__anim
-	&__anim {
+    &__anim {
         margin-top: 50px;
         position: relative;
         overflow: hidden;
@@ -4392,27 +4470,32 @@
                 .nineteenth__anim_main {
                     animation: appearance .5s linear .3s 1 normal forwards;
                 }
+
                 .nineteenth__anim_movibg {
                     animation: appearance_moving 5s linear .5s 1 normal forwards;
                 }
+
                 .nineteenth__anim_snow-sand {
                     animation: appearance .5s linear .5s 1 normal forwards;
                 }
+
                 .nineteenth__anim_wheel-l,
                 .nineteenth__anim_wheel-r {
                     animation: appearance_rotate 5s linear .3s 1 normal forwards;
                 }
             }
         }
-		// .nineteenth__anim_main
-		&_main {
+
+        // .nineteenth__anim_main
+        &_main {
             position: relative;
             z-index: 2;
             opacity: 0;
-            
-		}
-		// .nineteenth__anim_movibg
-		&_movibg {
+
+        }
+
+        // .nineteenth__anim_movibg
+        &_movibg {
             position: absolute;
             z-index: 1;
             top: 0;
@@ -4424,27 +4507,31 @@
                     opacity: 0;
                     transform: translateX(-4%);
                 }
+
                 10% {
                     opacity: 1;
                 }
+
                 100% {
                     opacity: 1;
                     transform: translateX(0%);
                 }
             }
-		}
-		// .nineteenth__anim_snow-sand
-		&_snow-sand {
+        }
+
+        // .nineteenth__anim_snow-sand
+        &_snow-sand {
             position: absolute;
             z-index: 4;
             max-width: 70%;
             bottom: 10%;
             left: 15%;
             opacity: 0;
-            
-		}
-		// .nineteenth__anim_wheel-l
-		&_wheel-l {
+
+        }
+
+        // .nineteenth__anim_wheel-l
+        &_wheel-l {
             position: absolute;
             z-index: 3;
             max-width: 6%;
@@ -4457,25 +4544,28 @@
                     opacity: 0;
                     transform: rotate(0deg);
                 }
+
                 10% {
                     opacity: 1;
                 }
+
                 100% {
                     opacity: 1;
                     transform: rotate(-360deg);
                 }
             }
-		}
-		// .nineteenth__anim_wheel-r
-		&_wheel-r {
+        }
+
+        // .nineteenth__anim_wheel-r
+        &_wheel-r {
             position: absolute;
             z-index: 3;
             max-width: 6%;
             top: 52%;
             left: 58.8%;
             opacity: 0;
-		}
-	}
+        }
+    }
 }
 
 .twentieth {
@@ -4567,7 +4657,7 @@
             grid-column-end: 1;
             padding: 27px 0 27px 0;
             justify-content: center;
-        }        
+        }
 
         &::before {
             content: "";
@@ -4602,6 +4692,7 @@
 
         .icon-card {
             margin-bottom: 30px;
+
             @include netbook {
                 &:nth-child(3) {
                     margin-bottom: 0;
@@ -4618,7 +4709,7 @@
         }
     }
 
-    
+
 
     &__button {
         margin-top: 60px;
@@ -4654,6 +4745,7 @@
 
         .main-btn {
             padding: 15px 50px;
+
             @include netbook {
                 width: 100%;
             }
@@ -4941,9 +5033,11 @@
                 @include netbook {
                     width: 60%;
                 }
+
                 @include tablet {
                     width: 80%;
                 }
+
                 @include mobile {
                     width: 100%;
                 }
@@ -5386,6 +5480,7 @@
 
         position: relative;
         z-index: 2;
+
         .price-card__text_info {
             @include netbook {
                 margin: 0;
@@ -5435,20 +5530,24 @@
     &__slider {
         margin-top: 50px;
         position: relative;
+
         @include mobile {
             .swiper-wrapper {
                 height: 1030px;
                 display: flex;
                 row-gap: 15px;
             }
+
             .twenty-five__slider_block {
                 height: 100%;
             }
+
             .swiper-slide {
                 margin: 10px auto;
                 height: 310px;
                 // height: %;
             }
+
             .swiper-button-next,
             .swiper-button-prev,
             .swiper-pagination {
@@ -5457,9 +5556,7 @@
         }
     }
 
-    &__slider_block {
-        
-    }
+    &__slider_block {}
 
     &__button {
         display: flex;
@@ -6169,7 +6266,7 @@
             padding-top: 23px;
         }
 
-        @include netbook  {
+        @include netbook {
             max-width: 190px;
         }
     }
@@ -6180,7 +6277,7 @@
         height: 67px;
         margin-right: 17px;
 
-        @include netbook  {
+        @include netbook {
             height: 49px;
             margin-right: 10px;
         }
@@ -6200,7 +6297,7 @@
         row-gap: 16px;
         align-content: flex-start;
 
-        @include netbook  {
+        @include netbook {
             flex-direction: column;
             flex: 0;
             align-items: flex-start;
@@ -6240,10 +6337,11 @@
         gap: 16px;
         max-width: 980px;
 
-        @media (max-width: 1400px)  {
+        @media (max-width: 1400px) {
             flex-direction: column;
             width: 60%;
         }
+
         @include tablet {
             width: 100%;
         }
@@ -6308,6 +6406,7 @@
     &__img-mob {
         display: none;
         visibility: hidden;
+
         @include tablet {
             visibility: visible;
             position: absolute;
@@ -6316,6 +6415,7 @@
             width: 33%;
             display: block;
         }
+
         @media (max-width: 430px) {
             bottom: 384px;
         }
@@ -6442,6 +6542,7 @@
 
     .twelfth__content {
         margin-bottom: 70px;
+
         @media (max-width: 1400px) {
             margin-bottom: 0;
         }
@@ -6906,7 +7007,7 @@
         }
     }
 
-    
+
 
     &__img {
         position: relative;
@@ -7487,6 +7588,7 @@
                 opacity: 0;
                 transform: scale(0);
             }
+
             .checkout-three__img-color {
                 opacity: 1;
                 transform: scale(1);
@@ -7590,9 +7692,7 @@
     }
 
     // .checkout-three__label
-    &__label {
-
-    }
+    &__label {}
 
     .checkout-three__input:checked+.checkout-three__label {
         position: relative;
@@ -7615,7 +7715,7 @@
         .checkout-three__method-icon {
             display: block;
         }
-}
+    }
 
     // .checkout-three__method-icon
     &__method-icon {
@@ -7825,7 +7925,7 @@
         }
 
         @include tablet {
-            align-items:unset;
+            align-items: unset;
         }
     }
 }
@@ -8016,6 +8116,5 @@
     }
 
     // .checkout-end__btn-del-text
-    &__btn-del-text {
-    }
+    &__btn-del-text {}
 }

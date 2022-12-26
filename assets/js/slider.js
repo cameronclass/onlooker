@@ -58,7 +58,6 @@ function initSliders() {
           grid: {
             rows: 10,
           },
-          
         },
         576: {
           slidesPerView: 2,
@@ -174,7 +173,6 @@ function initSliders() {
   }
 }
 initSliders();
-
 
 // document.addEventListener('DOMContentLoaded', () => {
 //   const width = window.innerWidth;
