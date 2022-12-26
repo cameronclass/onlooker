@@ -949,6 +949,23 @@
                 margin-bottom: 40px;
             }
 
+            .main-screen__top {
+                &.hide {
+                    opacity: 0;
+                }
+            }
+            
+            .main-screen__top {
+                &.show {
+                    opacity: 1;
+                }
+            }
+
+            .main-screen__play {
+                z-index: 5;
+                position: absolute;
+            }
+
             .main-screen {
                 &__block {
                     z-index: 2;
@@ -996,6 +1013,8 @@
                 .continue__video_card_content_icon {
                     filter: none;
                 }
+
+                
             }
 
             &_img {
@@ -5178,7 +5197,7 @@
     &__cards {
         display: flex;
         justify-content: space-between;
-        // flex-wrap: wrap;
+        column-gap: 18px;
         margin-top: 50px;
 
         position: relative;
@@ -5186,22 +5205,24 @@
     }
 
     &__card {
+        height: 400px;
         max-width: 350px;
-        width: 30%;
+        width: 100%;
         background: linear-gradient(276.53deg, #121212 3.6%, #1D1D1D 104.04%);
         border-radius: 16px;
         padding: 20px 30px;
-        height: 400px;
+        
         overflow: hidden;
         position: relative;
 
-        @include netbook {
-            height: 300px;
+        @include tablet {
+            height: 250px;
             padding: 15px 10px;
         }
 
         @include mobile {
             height: 127px;
+            border-radius: 5px
         }
 
         &_number {
@@ -5209,7 +5230,7 @@
             font-size: 72px;
             font-weight: 800;
             position: relative;
-            z-index: 2;
+            z-index: 4;
 
             @include tablet {
                 font-size: 36px;
@@ -5221,15 +5242,14 @@
         }
 
         &_img {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            display: flex;
-            height: 101%;
-
 
             &_item {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
                 height: 100%;
+                width: 100%;
                 object-fit: cover;
             }
         }
@@ -5919,6 +5939,7 @@
                 width: 100%;
             }
 
+
             &_text {
                 opacity: 0.6;
                 text-align: center;
@@ -5938,8 +5959,42 @@
 
         &_delivery {
             display: flex;
-            column-gap: 15px;
+            column-gap: 14px;
             margin-top: 40px;
+            transition: all .3s linear 0s;
+            .twenty-eight__one_card_img {
+                &.img-color {
+                    opacity: 0;
+                    transform:scale(0);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                &.img-gray {
+                    position: relative;
+                }
+            }
+
+            .twenty-eight__one_card {
+                @media (any-hover: hover) {
+                    &:hover {
+                        .twenty-eight__one_card_img {
+                            &.img-color {
+                                opacity: 1;
+                                transform:scale(1);
+                                position: relative;
+                            }
+                            &.img-gray {
+                                opacity: 0;
+                                transform:scale(0);
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
 
             @include netbook {
                 flex-direction: column;
@@ -5948,14 +6003,26 @@
 
             &_cdek {
                 max-width: 288px;
+                
 
                 @include netbook {
                     max-width: 100%;
                 }
 
+                &.twenty-eight__one_card {
+                    padding: 36px 39px 29px;
+                    row-gap: unset;
+                    justify-content: unset;
+                }
+
                 .twenty-eight__one_card_img {
-                    height: 43px;
+                    height: 49px;
                     object-fit: contain;
+                    
+                }
+
+                .twenty-eight__one_card_text {
+                    margin-top: 19px;
                 }
             }
 
@@ -5963,6 +6030,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                max-width: 221px;
 
                 @include netbook {
                     flex-direction: row;
@@ -5970,10 +6038,27 @@
                 }
 
                 .twenty-eight__one_card {
-                    max-width: 221px;
+                    position: relative;
+                    &.yandex {
+                        padding: 24px 20px;
+                        row-gap: unset;
+                        justify-content: unset;
+                    }
+
+                    &.dpd {
+                        padding: 15px 19px;
+                        row-gap: unset;
+                        justify-content: unset;
+                    }
 
                     &_img {
-                        height: 38px;
+                        
+                        &.img-yandex {
+                            height: 30px;
+                        }
+                        &.img-dpd {
+                            height: 47px;
+                        }
                         object-fit: contain;
                     }
 
@@ -5989,6 +6074,16 @@
 
                 @include netbook {
                     max-width: 100%;
+                }
+
+                &.twenty-eight__one_card {
+                    padding: 19px 40px;
+                    row-gap: unset;
+                    justify-content: unset;
+                }
+
+                .twenty-eight__one_card_text {
+                    margin-top: 15px;
                 }
 
                 .twenty-eight__one_card_img {

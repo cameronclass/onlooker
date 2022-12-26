@@ -359,3 +359,35 @@ if (animItems.length > 0) {
 		animOnScroll();
 	}, 300);
 }
+
+  // == Third section: change img during hover =========
+  const buttons= document.querySelectorAll('.third__video_card');
+  const buttonsParent = document.querySelector('.third__video_cards');
+  const mainImg = document.querySelectorAll('.main-screen__top');
+
+  function hideImg() {
+    mainImg.forEach(picture => {
+      picture.classList.add('hide');
+      picture.classList.remove('show');
+    });
+  }
+
+  function showImg(i = 0) {
+    mainImg[i].classList.add('show');
+    mainImg[i].classList.remove('hide');
+  }
+
+  hideImg();
+  showImg();
+
+  buttonsParent.addEventListener('mouseover', (e) => {
+    const target = e.target;
+    if (target && target.classList.contains('third__video_card')) {
+      buttons.forEach((picture, i) => {
+        if (target == picture) {
+          hideImg();
+          showImg(i);
+        }
+      });
+    }
+  });
