@@ -5325,16 +5325,55 @@
 
         &_item {
             position: absolute;
-            top: 30px;
-            left: -300px;
-            width: 950px;
+
+            &.onlooker {
+                width: 70%;
+                top: 6%;
+                left: -11%;
+            }
+
+            &.charger-1 {
+                width: 33%;
+                top: 57%;
+                left: -52%;
+            }
+
+            &.camera-mount {
+                width: 26%;
+                top: 68%;
+                left: -28%;
+            }
+
+            &.gps {
+                width: 13%;
+                top: 76%;
+                left: -5%;
+            }
+
+            &.charger-2 {
+                width: 16%;
+                top: 82%;
+                left: 11%;
+            }
+
+            &.camera-back {
+                width: 42%;
+                top: 76%;
+                left: 34%;
+            }
+
+            &.instruction {
+                width: 44%;
+                top: 56%;
+                left: 68%;
+            }
 
             @include netbook {
                 position: relative;
                 left: 0;
                 top: 0;
-                width: 100%;
-                margin-top: 30px;
+                // width: 100%;
+                // margin-top: 30px;
             }
         }
     }
