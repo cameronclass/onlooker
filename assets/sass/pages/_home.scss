@@ -5326,55 +5326,81 @@
         &_item {
             position: absolute;
 
+            &.img-full {
+                display: none;
+                @include netbook {
+                    display: block;
+                    position: relative;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    margin-top: 30px;
+                }
+            }
+
             &.onlooker {
                 width: 70%;
                 top: 6%;
                 left: -11%;
+                @include netbook {
+                    display: none;
+                }
             }
 
             &.charger-1 {
                 width: 33%;
                 top: 57%;
                 left: -52%;
+                @include netbook {
+                    display: none;
+                }
             }
 
             &.camera-mount {
                 width: 26%;
                 top: 68%;
                 left: -28%;
+                @include netbook {
+                    display: none;
+                }
             }
 
             &.gps {
                 width: 13%;
                 top: 76%;
                 left: -5%;
+                @include netbook {
+                    display: none;
+                }
             }
 
             &.charger-2 {
                 width: 16%;
                 top: 82%;
                 left: 11%;
+                @include netbook {
+                    display: none;
+                }
             }
 
             &.camera-back {
                 width: 42%;
                 top: 76%;
                 left: 34%;
+                @include netbook {
+                    display: none;
+                }
             }
 
             &.instruction {
                 width: 44%;
                 top: 56%;
                 left: 68%;
+                @include netbook {
+                    display: none;
+                }
             }
 
-            @include netbook {
-                position: relative;
-                left: 0;
-                top: 0;
-                // width: 100%;
-                // margin-top: 30px;
-            }
         }
     }
 
