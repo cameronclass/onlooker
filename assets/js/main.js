@@ -363,12 +363,12 @@ if (animItems.length > 0) {
   // == Third section: change img during hover =========
   const buttons= document.querySelectorAll('.third__video_card');
   const buttonsParent = document.querySelector('.third__video_cards');
-  const mainImg = document.querySelectorAll('.main-screen__top');
+  const mainImg = document.querySelectorAll('.third-img-hover');
 
   function hideImg() {
-    mainImg.forEach(picture => {
-      picture.classList.add('hide');
-      picture.classList.remove('show');
+    mainImg.forEach(item => {
+      item.classList.add('hide');
+      item.classList.remove('show');
     });
   }
 
@@ -383,8 +383,8 @@ if (animItems.length > 0) {
   buttonsParent.addEventListener('mouseover', (e) => {
     const target = e.target;
     if (target && target.classList.contains('third__video_card')) {
-      buttons.forEach((picture, i) => {
-        if (target == picture) {
+      buttons.forEach((item, i) => {
+        if (target == item) {
           hideImg();
           showImg(i);
         }
