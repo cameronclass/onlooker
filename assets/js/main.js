@@ -360,7 +360,7 @@ if (animItems.length > 0) {
 	}, 300);
 }
 
-  // == Third section: change img during hover =========
+  // == Section 3 = Change img during hover =========
   const buttons= document.querySelectorAll('.third__video_card');
   const buttonsParent = document.querySelector('.third__video_cards');
   const mainImg = document.querySelectorAll('.third-img-hover');
@@ -391,3 +391,38 @@ if (animItems.length > 0) {
       });
     }
   });
+
+    // == Section 24 = Change opacity during hover =========
+
+  const itemsHover = document.querySelectorAll('.twenty-four__list_text');
+  const itemsParent = document.querySelector('.twenty-four__list');
+  const itemsOpacity = document.querySelectorAll('.twenty-four-hover');
+
+  function addTransparency() {
+    itemsOpacity.forEach(items => {
+      items.classList.add('img-transparency');
+      items.classList.remove('img-opacity');
+    });
+  }
+
+  function addOpacity(i = 0) {
+    itemsOpacity[i].classList.add('img-opacity');
+    itemsOpacity[i].classList.remove('img-transparency');
+  }
+
+  addTransparency();
+  addOpacity();
+
+  itemsParent.addEventListener('mouseover', (e) => {
+    const target = e.target;
+    if (target && target.classList.contains('twenty-four__list_text')) {
+      itemsHover.forEach((items, i) => {
+        if (target == items) {
+          addTransparency();
+          addOpacity(i);
+        }
+      });
+    }
+  });
+
+  

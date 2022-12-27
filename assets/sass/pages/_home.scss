@@ -5323,8 +5323,22 @@
             width: 100%;
         }
 
+        .twenty-four-hover {
+
+            &.img-opacity {
+                opacity: 1;
+            }
+            &.img-transparency {
+                opacity: 0.3;
+            }
+
+        }
+
         &_item {
             position: absolute;
+
+           
+                
 
             &.img-full {
                 display: none;
