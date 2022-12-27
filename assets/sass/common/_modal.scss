@@ -72,7 +72,6 @@
     justify-content: center;
     z-index: 100;
     display: none;
-    // display: block;
 
     @include tablet {
         justify-content: unset;
@@ -86,21 +85,8 @@
     }
 }
 
-.modal-connection {
-    display: none;
-}
-.modal-detailed {
-    display: none;
-}
-.modal-confirm {
-    display: none;
-}
-.modal-product {
-    display: none;
-} 
-    
   .wrapper-modal.active {
-    // display: block;
+    display: flex;
   }
   
   .content {
@@ -302,6 +288,11 @@
         align-items: center;
         justify-content: flex-end;
         gap: 15px;
+
+        .main-btn {
+            max-width: 276px;
+            height: 57px;
+        }
 
         @include mobile {
             display: flex;

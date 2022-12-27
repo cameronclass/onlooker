@@ -603,6 +603,12 @@
     z-index: 1;
     overflow: hidden;
 
+    &.btn-gradient-2 {
+        filter: drop-shadow(-4.59496px 4.59496px 45.9496px rgba(113, 175, 170, 0.16)) drop-shadow(0px 22.9748px 37.397px rgba(0, 0, 0, 0.21));
+        -webkit-filter: drop-shadow(-4.59496px 4.59496px 45.9496px rgba(113, 175, 170, 0.16)) drop-shadow(0px 22.9748px 37.397px rgba(0, 0, 0, 0.21));
+        background: linear-gradient(254deg, #009B8D 0%, #009DB9 100%);
+    }
+
     @media (any-hover: hover) {
         &:hover {
             background: linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%);
@@ -907,6 +913,7 @@
         max-width: 191px;
         text-decoration: none;
         color: $main;
+        padding: 0;
 
         @media (any-hover: hover) {
             &:hover {

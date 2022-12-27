@@ -1549,7 +1549,7 @@
                 </div>
               </div>
               <div class="thirteen__description_text">Просто установить самостоятельно или в любом автосервисе. <span class="color-white"><b>Всего 2 провода!</b></span></div>
-              <button type="button" class="thirteen__description_btn main-btn">
+              <button data-modal-btn="modal-1" type="button" class="thirteen__description_btn main-btn js-modal-open">
                 Получите инструкцию
                 <span class="thirteen__description_btn_text">по подключению задней камеры</span>
               </button>
@@ -3642,8 +3642,8 @@
 
   <!-- POPUP ----------------------------------->
   <!-- modal-connection -->
-  <div data-modal-content="modal" class="modal-connection js-modal-content wrapper-modal">
-    <div class="modal-connection__overlay"></div>
+  <div data-modal-content="modal-1" class="modal-connection js-modal-content wrapper-modal">
+    <div class="modal-connection__overlay overlay"></div>
     <div class="modal-connection__content content">
       <button type="button" class="btn-close">
         <div class="btn-close__btn"></div>
@@ -3679,7 +3679,7 @@
           <input class="modal-connection__input " type="text" placeholder="Ваш телефон">
           <div class="modal-connection__form-body">
             <div class="modal-connection__form-text icon-card__text">Нажимая на кнопку, вы даете согласие на обработку персональных данных</div>
-            <button type="submit" class="thirtyfour__btn main-btn">Получить консультацию</button>
+            <button type="submit" class="main-btn">Получить консультацию</button>
           </div>
         </form>
       </div>
@@ -3687,8 +3687,8 @@
   </div>
 
   <!-- modal-detailed -->
-  <div data-modal-content="modal" class="modal-detailed js-modal-content wrapper-modal">
-    <div class="modal-detailed__overlay"></div>
+  <div data-modal-content="modal-2" class="modal-detailed js-modal-content wrapper-modal">
+    <div class="modal-detailed__overlay overlay"></div>
     <div class="modal-detailed__content content">
       <button type="button" class="btn-close">
         <div class="btn-close__btn"></div>
@@ -3719,8 +3719,8 @@
   </div>
 
   <!-- modal-confirm -->
-  <div data-modal-content="modal" class="modal-confirm js-modal-content wrapper-modal">
-    <div class="modal-confirm__overlay"></div>
+  <div data-modal-content="modal-3" class="modal-confirm js-modal-content wrapper-modal">
+    <div class="modal-confirm__overlay overlay"></div>
     <div class="modal-confirm__content content">
       <button type="button" class="btn-close">
         <div class="btn-close__btn"></div>
@@ -3734,8 +3734,8 @@
   </div>
 
   <!-- Modal - More detailed about product (checkout page) -->
-  <div data-modal-content="modal" class="modal-product js-modal-content wrapper-modal">
-    <div class="modal-product__overlay"></div>
+  <div data-modal-content="modal-4" class="modal-product js-modal-content wrapper-modal">
+    <div class="modal-product__overlay overlay"></div>
     <div class="modal-product__content content">
       <button type="button" class="btn-close">
         <div class="btn-close__btn"></div>
@@ -3910,10 +3910,10 @@
             <div class="product-card__body">
               <div class="product-card__body-top">
                 <div class="product-card__title">Onlooker M84 Pro 4G <span class="icon-card__text">с базовой задней камерой</span></div>
-                <a href="#" class="product-card__more">
+                <button data-modal-btn="modal-4" type="button" class="product-card__more js-modal-open">
                   <div class="product-card__more-text">Подробнее о товаре</div>
                   <img class="product-card__more-arrow lazyload" src="assets/img/icons/arrow-more.svg" alt="images">
-                </a>
+                </button>
               </div>
               <div class="product-card__body-bottom">
                 <div class="product-card__count-wrapper">
@@ -3981,10 +3981,10 @@
             <div class="product-card__body">
               <div class="product-card__body-top">
                 <div class="product-card__title">Стандартная задняя камера</div>
-                <a href="#" class="product-card__more">
+                <button data-modal-btn="modal-4" type="button" class="product-card__more js-modal-open">
                   <div class="product-card__more-text">Подробнее о товаре</div>
                   <img class="product-card__more-arrow lazyload" src="assets/img/icons/arrow-more.svg" alt="images">
-                </a>
+                </button>
               </div>
               <div class="product-card__body-bottom">
                 <div class="product-card__count-wrapper">
@@ -3998,7 +3998,7 @@
                     <div class="product-card__minus">-</div>
                   </div>
                 </div>
-                <button type="button" class="product-card__btn main-btn-gradient"><span class="main-btn-gradient__bg"></span><span class="main-btn-gradient__text">Добавить к заказу</span></button>
+                <button type="button" class="product-card__btn main-btn-gradient btn-gradient-2"><span class="main-btn-gradient__bg"></span><span class="main-btn-gradient__text">Добавить к заказу</span></button>
               </div>
             </div>
           </div>
@@ -4012,10 +4012,10 @@
             <div class="product-card__body">
               <div class="product-card__body-top">
                 <div class="product-card__title">Удлинитель для задней камеры (+3 метра)</div>
-                <a href="#" class="product-card__more">
+                <button data-modal-btn="modal-4" type="button" class="product-card__more js-modal-open">
                   <div class="product-card__more-text">Подробнее о товаре</div>
                   <img class="product-card__more-arrow lazyload" src="assets/img/icons/arrow-more.svg" alt="images">
-                </a>
+                </button>
               </div>
               <div class="product-card__body-bottom">
                 <div class="product-card__count-wrapper">
@@ -4029,7 +4029,7 @@
                     <div class="product-card__minus">-</div>
                   </div>
                 </div>
-                <button type="button" class="product-card__btn main-btn-gradient"><span class="main-btn-gradient__bg"></span><span class="main-btn-gradient__text">Добавить к заказу</span></button>
+                <button type="button" class="product-card__btn main-btn-gradient btn-gradient-2 "><span class="main-btn-gradient__bg"></span><span class="main-btn-gradient__text">Добавить к заказу</span></button>
               </div>
             </div>
           </div>
@@ -4043,10 +4043,10 @@
             <div class="product-card__body">
               <div class="product-card__body-top">
                 <div class="product-card__title">Подставка для крепления на панели</div>
-                <a href="#" class="product-card__more">
+                <button data-modal-btn="modal-4" type="button" class="product-card__more js-modal-open">
                   <div class="product-card__more-text">Подробнее о товаре</div>
                   <img class="product-card__more-arrow lazyload" src="assets/img/icons/arrow-more.svg" alt="images">
-                </a>
+                </button>
               </div>
               <div class="product-card__body-bottom">
                 <div class="product-card__count-wrapper">
@@ -4060,7 +4060,7 @@
                     <div class="product-card__minus">-</div>
                   </div>
                 </div>
-                <button type="button" class="product-card__btn main-btn-gradient"><span class="main-btn-gradient__bg"></span><span class="main-btn-gradient__text">Добавить к заказу</span></button>
+                <button type="button" class="product-card__btn main-btn-gradient btn-gradient-2"><span class="main-btn-gradient__bg"></span><span class="main-btn-gradient__text">Добавить к заказу</span></button>
               </div>
             </div>
           </div>
@@ -4075,10 +4075,10 @@
             <div class="product-card__body">
               <div class="product-card__body-top">
                 <div class="product-card__title">Задняя камера ver 2.0 с ИК подсветкой</div>
-                <a href="#" class="product-card__more">
+                <button data-modal-btn="modal-4" type="button" class="product-card__more js-modal-open">
                   <div class="product-card__more-text">Подробнее о товаре</div>
                   <img class="product-card__more-arrow lazyload" src="assets/img/icons/arrow-more.svg" alt="images">
-                </a>
+                </button>
               </div>
               <div class="product-card__body-bottom">
                 <div class="product-card__count-wrapper">
@@ -4092,7 +4092,7 @@
                     <div class="product-card__minus">-</div>
                   </div>
                 </div>
-                <button type="button" class="product-card__btn main-btn-gradient"><span class="main-btn-gradient__bg"></span><span class="main-btn-gradient__text">Добавить к заказу</span></button>
+                <button type="button" class="product-card__btn main-btn-gradient btn-gradient-2"><span class="main-btn-gradient__bg"></span><span class="main-btn-gradient__text">Добавить к заказу</span></button>
               </div>
             </div>
           </div>
@@ -4107,10 +4107,10 @@
             <div class="product-card__body">
               <div class="product-card__body-top">
                 <div class="product-card__title">Адаптер для скрытого подключения</div>
-                <a href="#" class="product-card__more">
+                <button data-modal-btn="modal-4" type="button" class="product-card__more js-modal-open">
                   <div class="product-card__more-text">Подробнее о товаре</div>
                   <img class="product-card__more-arrow lazyload" src="assets/img/icons/arrow-more.svg" alt="images">
-                </a>
+                </button>
               </div>
               <div class="product-card__body-bottom">
                 <div class="product-card__count-wrapper">
@@ -4124,7 +4124,7 @@
                     <div class="product-card__minus">-</div>
                   </div>
                 </div>
-                <button type="button" class="product-card__btn main-btn-gradient"><span class="main-btn-gradient__bg"></span><span class="main-btn-gradient__text">Добавить к заказу</span></button>
+                <button type="button" class="product-card__btn main-btn-gradient btn-gradient-2"><span class="main-btn-gradient__bg"></span><span class="main-btn-gradient__text">Добавить к заказу</span></button>
               </div>
             </div>
           </div>
@@ -4138,10 +4138,10 @@
             <div class="product-card__body">
               <div class="product-card__body-top">
                 <div class="product-card__title">Карты памяти</div>
-                <a href="#" class="product-card__more">
+                <button data-modal-btn="modal-4" type="button" class="product-card__more js-modal-open">
                   <div class="product-card__more-text">Подробнее о товаре</div>
                   <img class="product-card__more-arrow lazyload" src="assets/img/icons/arrow-more.svg" alt="images">
-                </a>
+                </button>
               </div>
               <div class="product-card__body-bottom">
                 <div class="product-card__count-wrapper">
@@ -4155,7 +4155,7 @@
                     <div class="product-card__minus">-</div>
                   </div>
                 </div>
-                <button type="button" class="product-card__btn main-btn-gradient"><span class="main-btn-gradient__bg"></span><span class="main-btn-gradient__text">Добавить к заказу</span></button>
+                <button type="button" class="product-card__btn main-btn-gradient btn-gradient-2"><span class="main-btn-gradient__bg"></span><span class="main-btn-gradient__text">Добавить к заказу</span></button>
               </div>
             </div>
           </div>
