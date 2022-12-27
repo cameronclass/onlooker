@@ -3972,7 +3972,7 @@
                     animation: move_down_rotate .8s linear .5s 1 normal forwards;
                 }
                 .fifteen__anim_bum {
-                    animation: appearance .1s linear 1.3s 1 normal forwards;
+                    animation: appearance-opacity .1s linear 1.3s 1 normal forwards;
                 }
             }
         }
@@ -4003,10 +4003,20 @@
         // .fifteen__anim_bum
         &_bum {
             position: absolute;
-            top: -43%;
-            left: 48%;
+            top: -7%;
+            left: 53%;
             max-width: 35%;
             opacity: 0;
+            filter: contrast(1) brightness(1.5);
+
+            @keyframes appearance-opacity {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: .5;
+                }
+            }
         }
     }
 }
