@@ -1944,28 +1944,21 @@
     user-select: none;
     z-index: 999;
 
-    @include tablet {
-        opacity: 0;
+    .touch & {
+        display: none;
     }
 
     &._over {
         transform: translate(-50%, -50%) scale(2);
         border: 1px solid rgba(255, 255, 255, .2);
         background: transparent;
-
-        @include tablet {
+        .touch & {
             display: none;
         }
-    }
-
-    .click {
-        opacity: 0;
-        transform: scale(0);
     }
 }
 
 .click {
-    // position: fixed;
     width: 44px;
     height: 44px;
     background: rgba(217, 217, 217, 0.4);

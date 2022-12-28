@@ -1604,6 +1604,11 @@
             width: auto;
             padding: 8px 15px;
 
+            border: 1px solid #fff;
+            border-radius: 50px;
+            background-color: rgba(0,0,0,0);
+            color: #fff;
+
             @include netbook {
                 font-size: 16px;
                 text-align: center;
@@ -2073,9 +2078,9 @@
 
         &_item {
             position: absolute;
-            width: 120%;
-            top: -4%;
-            left: -5%;
+            width: 140%;
+            top: -24%;
+            left: -14%;
 
             @media (max-width: 1400px) {
                 position: relative;
@@ -3217,6 +3222,20 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            .main-btn-bordered {
+                max-width: 220px;
+                width: 100%;
+                height: 36px;
+                padding: 8px 0;
+                
+
+                @include mobile {
+                    height: 33px;
+                    font-size: 12px;
+                    padding: 8px 41px;
+                }
+            }
         }
 
         &_title {
@@ -3228,24 +3247,6 @@
             @include tablet {
                 font-size: 14px;
                 margin-top: 9px;
-            }
-        }
-
-        &_link {
-            display: inline-block;
-            color: white;
-            font-size: 16px;
-            font-weight: 500;
-            text-align: center;
-
-            @media (any-hover: hover) {
-                &:hover {
-                    color: $main;
-                }
-            }
-
-            @include netbook {
-                font-size: 12px;
             }
         }
     }
@@ -5567,7 +5568,11 @@
     }
 
     &__slider_block {
-        
+        .swiper-slide {
+            max-width: 265px;
+            width: 100%;
+            height: 100%;
+        }
     }
 
     &__button {
@@ -6297,6 +6302,7 @@
 .twenty-nine {
     margin-top: 300px;
     margin-bottom: 200px;
+    position: relative;
 
     @include netbook {
         margin-top: 100px;

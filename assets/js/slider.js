@@ -39,7 +39,7 @@ function initSliders() {
     new Swiper(".twenty-five__slider_block", {
       // Указываем скласс нужного слайдера
       slidesPerView: 5,
-      spaceBetween: 30,
+      spaceBetween: 15,
       speed: 600,
       loop: true,
       navigation: {
@@ -62,15 +62,15 @@ function initSliders() {
         },
         576: {
           slidesPerView: 2,
-          spaceBetween: 40,
+          spaceBetween: 15,
         },
         768: {
           slidesPerView: 3,
-          spaceBetween: 50,
+          spaceBetween: 15,
         },
         992: {
           slidesPerView: 5,
-          spaceBetween: 50,
+          spaceBetween: 15,
         },
       },
     });
