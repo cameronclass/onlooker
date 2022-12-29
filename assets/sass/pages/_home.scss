@@ -943,6 +943,7 @@
 
         &_content {
             width: 70%;
+            position: relative;
 
             @include netbook {
                 width: 100%;
@@ -952,12 +953,14 @@
             .third-img-hover {
                 &.hide {
                     opacity: 0;
+                    display: none;
                 }
             }
             
             .third-img-hover {
                 &.show {
                     opacity: 1;
+                    display: block;
                 }
             }
 
@@ -2068,6 +2071,7 @@
         grid-column-end: 2;
         display: grid;
         z-index: 3;
+        position: relative;
 
         @media (max-width: 1400px) {
             grid-row-start: 2;
