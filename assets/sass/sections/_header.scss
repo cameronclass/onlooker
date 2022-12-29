@@ -226,28 +226,19 @@
     }
 
     &__bullet {
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        border: 2px solid white;
-        position: relative;
-        z-index: 5;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        &_svg {
+            position: relative;
+        z-index: 8;
+            width: 24px;
+            height: 24px;
+            filter: invert(99%) sepia(2%) saturate(1059%) hue-rotate(204deg) brightness(123%) contrast(100%);
 
-        &::before {
-            content: "";
-            position: absolute;
-            width: 14px;
-            height: 14px;
-            background: white;
-            border-radius: 50%;
+            @include laptop {
+                display: none;
+            }
         }
 
-        @include laptop {
-            display: none;
-        }
+        
     }
 
     &__line {
@@ -306,6 +297,7 @@
         transition: all .2s linear 0s;
         margin-right: 5%;
         pointer-events: all;
+        
         @include laptop {
             margin-right: 0;
         }
@@ -340,12 +332,8 @@
                     opacity: 1;
                 }
 
-                .header__bullet {
-                    border: 1px solid $main;
-                }
-
-                .header__bullet::before {
-                    background: linear-gradient(135.14deg, #0ABD92 0%, #009DB8 102.25%)
+                .header__bullet_svg {
+                    filter: invert(72%) sepia(60%) saturate(6349%) hue-rotate(140deg) brightness(94%) contrast(95%);
                 }
 
                 .header__line::before {
