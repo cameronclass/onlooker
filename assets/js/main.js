@@ -325,8 +325,10 @@ document.addEventListener("mousedown", function (e) {
 // == Animation on vieport =========
 const animItems = document.querySelectorAll('._anim-items');
 
+
 if (animItems.length > 0) {
 	window.addEventListener('scroll', animOnScroll);
+
 	function animOnScroll() {
 		for (let index = 0; index < animItems.length; index++) {
 			const animItem = animItems[index];
@@ -434,3 +436,44 @@ function addTouchClass() {
 	if (isMobile.any()) document.documentElement.classList.add('touch');
 }
 addTouchClass();
+
+
+// == Smooth Navigation =============================================
+function pageNavigation() {
+	document.addEventListener("click", pageNavigationAction);
+	function pageNavigationAction(e) {
+		if (e.type === "click") {
+			const targetElement = e.target;
+			if (targetElement.closest('[data-goto]')) {
+				const gotoLink = targetElement.closest('[data-goto]');
+				const gotoLinkSelector = gotoLink.dataset.goto ? gotoLink.dataset.goto : '';
+				const noHeader = gotoLink.hasAttribute('data-goto-header') ? true : false;
+				const gotoSpeed = gotoLink.dataset.gotoSpeed ? gotoLink.dataset.gotoSpeed : 500;
+				const offsetTop = gotoLink.dataset.gotoTop ? parseInt(gotoLink.dataset.gotoTop) : 0;
+        const header = document.querySelector(".header");
+			
+				gotoBlock(gotoLinkSelector, noHeader, gotoSpeed, offsetTop);
+        header.classList.remove("_active")
+
+        e.preventDefault();
+			}
+		}
+	}
+}
+pageNavigation();
+
+// == Smooth Scrolling =============================================
+let gotoBlock = (targetBlock, noHeader = false, speed = 500, offsetTop = 0) => {
+	const targetBlockElement = document.querySelector(targetBlock);
+	if (targetBlockElement) {
+		let headerItemHeight = 0;
+		let targetBlockElementPosition = targetBlockElement.getBoundingClientRect().top + scrollY;
+		targetBlockElementPosition = headerItemHeight ? targetBlockElementPosition - headerItemHeight : targetBlockElementPosition;
+		targetBlockElementPosition = offsetTop ? targetBlockElementPosition - offsetTop : targetBlockElementPosition;
+		window.scrollTo({
+			top: targetBlockElementPosition,
+			behavior: "smooth"
+		});
+	} 
+};
+

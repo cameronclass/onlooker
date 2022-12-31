@@ -206,15 +206,6 @@
         z-index: 9;
         row-gap: 60px;
 
-        @media (any-hover: hover) {
-            &:hover {
-               .header__link {
-                opacity: 1;
-               } 
-            }
-        }
-        
-
         @include laptop {
             height: auto;
             row-gap: 30px;
@@ -276,7 +267,7 @@
         font-weight: 500;
         color: white;
         z-index: 5;
-        opacity: 0;
+        opacity: 1;
         transition: all .3s linear 0s;
 
 
