@@ -263,6 +263,18 @@ window.addEventListener("DOMContentLoaded", (event) => {
   const header__menu = document.querySelector(".header__menu");
   header__menu.append(footerClone);
 
+ // == REMOVE ACTIVE IF CLICK TO HEADER-BUTTON ==========
+  const headerButton = document.querySelector(".header__sidebar_btn-2");
+  
+  headerButton.addEventListener('click', (e) => {
+    if (e.target.classList.contains('header__sidebar_btn-2')) {
+      header.classList.remove("_active");
+      hamburger.classList.remove("is-active");
+    }
+  });
+
+  
+
 
 
   // OnScroll event handler
@@ -451,10 +463,12 @@ function pageNavigation() {
 				const gotoSpeed = gotoLink.dataset.gotoSpeed ? gotoLink.dataset.gotoSpeed : 500;
 				const offsetTop = gotoLink.dataset.gotoTop ? parseInt(gotoLink.dataset.gotoTop) : 0;
         const header = document.querySelector(".header");
-			
+        const hamburger = document.querySelector(".js-hamburger");
+        
 				gotoBlock(gotoLinkSelector, noHeader, gotoSpeed, offsetTop);
-        header.classList.remove("_active")
-
+        header.classList.remove("_active");
+        hamburger.classList.remove("is-active");
+        
         e.preventDefault();
 			}
 		}
@@ -476,4 +490,3 @@ let gotoBlock = (targetBlock, noHeader = false, speed = 500, offsetTop = 0) => {
 		});
 	} 
 };
-
