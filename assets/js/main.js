@@ -506,7 +506,7 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, {
-  threshold: 0.55,
+  threshold: 0.4,
 });
 
 const sections = document.querySelectorAll('.section');
