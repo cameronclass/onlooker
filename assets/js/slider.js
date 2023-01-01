@@ -41,7 +41,8 @@ function initSliders() {
       slidesPerView: 5,
       spaceBetween: 15,
       speed: 600,
-      loop: true,
+      autoHeight: true,
+      
       navigation: {
         nextEl: ".twenty-five .swiper-button-next",
         prevEl: ".twenty-five .swiper-button-prev",
@@ -54,9 +55,9 @@ function initSliders() {
         0: {
           slidesPerView: 2,
           spaceBetween: 10,
-          loop: false,
           grid: {
-            rows: 10,
+            // fill: column,  
+            rows: 3,
           },
           
         },
@@ -69,6 +70,10 @@ function initSliders() {
           spaceBetween: 15,
         },
         992: {
+          slidesPerView: 4,
+          spaceBetween: 15,
+        },
+        1200: {
           slidesPerView: 5,
           spaceBetween: 15,
         },

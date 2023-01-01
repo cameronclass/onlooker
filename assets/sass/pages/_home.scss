@@ -5551,18 +5551,46 @@
         position: relative;
         @include mobile {
             .swiper-wrapper {
-                height: 1030px;
-                display: flex;
-                row-gap: 15px;
+                height: 1070px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                row-gap: 10px;
+                
+                @media (max-width: 425px) {
+                    height: 1115px;
+                }
             }
             .twenty-five__slider_block {
-                height: 100%;
+                height: 1070px;
+                @media (max-width: 425px) {
+                    height: 1115px;
+                }
+                @media (max-width: 350px) {
+                    height: 1150px;
+                }
+                .swiper-slide {
+                    margin: 10px auto;
+                    height: 100%;
+                    @media (max-width: 425px) {
+                        
+                    }
+                    .slider-card {
+                        display: flex;
+                        flex-direction: column;
+                        min-height: 100%;
+                        .slider-card__content {
+                            display: flex;
+                            flex-direction: column;
+                            min-height: 100%;
+                            flex: 1 1 auto;
+                            .slider-card__price {
+                                flex: 1 1 auto;
+                            }
+                        }
+                    }
+                }
             }
-            .swiper-slide {
-                margin: 10px auto;
-                height: 310px;
-                // height: %;
-            }
+            
             .swiper-button-next,
             .swiper-button-prev,
             .swiper-pagination {
@@ -5576,6 +5604,21 @@
             max-width: 265px;
             width: 100%;
             height: 100%;
+            @media (min-width: 576px) {
+                .slider-card {
+                    display: grid;
+                    min-height: 100%;
+                    grid-template-rows: auto 1fr;
+                    .slider-card__content {
+                        display: flex;
+                        flex-direction: column;
+                        min-height: 100%;
+                        .slider-card__price {
+                            flex: 1 1 auto;
+                        }
+                    }
+                }
+            }
         }
     }
 
