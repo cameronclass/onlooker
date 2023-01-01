@@ -265,11 +265,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
  // == REMOVE ACTIVE IF CLICK TO HEADER-BUTTON ==========
   const headerButton = document.querySelector(".header__sidebar_btn-2");
-  
+   
   headerButton.addEventListener('click', (e) => {
     if (e.target.classList.contains('header__sidebar_btn-2')) {
       header.classList.remove("_active");
       hamburger.classList.remove("is-active");
+      body.classList.remove("no-scroll");
     }
   });
 
@@ -464,10 +465,13 @@ function pageNavigation() {
 				const offsetTop = gotoLink.dataset.gotoTop ? parseInt(gotoLink.dataset.gotoTop) : 0;
         const header = document.querySelector(".header");
         const hamburger = document.querySelector(".js-hamburger");
+        const body = document.querySelector("html");
+  
         
 				gotoBlock(gotoLinkSelector, noHeader, gotoSpeed, offsetTop);
         header.classList.remove("_active");
         hamburger.classList.remove("is-active");
+        body.classList.remove("no-scroll");
         
         e.preventDefault();
 			}
