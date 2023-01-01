@@ -336,5 +336,16 @@
                 }
             }
         }
+
+        &._active-item {
+            .header__link {
+                color: $main;
+            }
+
+            .header__bullet_svg {
+                filter: invert(72%) sepia(60%) saturate(6349%) hue-rotate(140deg) brightness(94%) contrast(95%);
+            }
+
+        }
     }
 }

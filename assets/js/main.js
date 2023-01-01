@@ -494,3 +494,22 @@ let gotoBlock = (targetBlock, noHeader = false, speed = 500, offsetTop = 0) => {
 		});
 	} 
 };
+
+// == Highlight active side-bar menu item ==========================
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const headerItem = document.querySelectorAll('.header__item');
+      headerItem.forEach((link) => {
+        link.classList.toggle('_active-item', link.getAttribute('href').replace('#', '') === entry.target.id);
+      });
+    }
+  });
+}, {
+  threshold: 0.55,
+});
+
+const sections = document.querySelectorAll('.section');
+sections.forEach((section) => {
+  observer.observe(section);
+});
