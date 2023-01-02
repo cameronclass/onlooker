@@ -274,10 +274,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  
-
-
-
   // OnScroll event handler
   const onScroll = () => {
     // Get scroll value
@@ -293,7 +289,221 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   // Use the function
   window.addEventListener("scroll", onScroll);
+
+    // == Section 3 = Change img during hover =========
+    const buttons= document.querySelectorAll('.third__video_card');
+    const buttonsParent = document.querySelector('.third__video_cards');
+    const mainImg = document.querySelectorAll('.third-img-hover');
+  
+    function hideImg() {
+      mainImg.forEach(item => {
+        item.classList.add('hide');
+        item.classList.remove('show');
+      });
+    }
+  
+    function showImg(i = 0) {
+      mainImg[i].classList.add('show');
+      mainImg[i].classList.remove('hide');
+    }
+  
+    hideImg();
+    showImg();
+  
+    buttonsParent.addEventListener('mouseover', (e) => {
+      const target = e.target;
+      if (target && target.classList.contains('third__video_card')) {
+        buttons.forEach((item, i) => {
+          if (target == item) {
+            hideImg();
+            showImg(i);
+          }
+        });
+      }
+    });
+  
+      // == Section 24 = Change opacity during hover =========
+  
+    const itemsHover = document.querySelectorAll('.twenty-four__list_text');
+    const itemsParent = document.querySelector('.twenty-four__list');
+    const itemsOpacity = document.querySelectorAll('.twenty-four-hover');
+  
+    function addTransparency() {
+      itemsOpacity.forEach(items => {
+        items.classList.add('img-transparency');
+        items.classList.remove('img-opacity');
+      });
+    }
+  
+    function addOpacity(i = 0) {
+      itemsOpacity[i].classList.add('img-opacity');
+      itemsOpacity[i].classList.remove('img-transparency');
+    }
+  
+    addTransparency();
+    addOpacity();
+  
+    itemsParent.addEventListener('mouseover', (e) => {
+      const target = e.target;
+      if (target && target.classList.contains('twenty-four__list_text')) {
+        itemsHover.forEach((items, i) => {
+          if (target == items) {
+            addTransparency();
+            addOpacity(i);
+          }
+        });
+      }
+    });
+
+
+    // == Custom cursor ==========
+  const cursor = document.querySelector(".cursor");
+
+  document.addEventListener("mousemove", function (e) {
+    cursor.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+  });
+
+  document.addEventListener("mouseover", function (e) {
+    if (e.target.closest("button, a")) {
+      cursor.classList.add("_over");
+    }
+  });
+
+  document.addEventListener("mouseout", function (e) {
+    if (e.target.closest("button, a")) {
+      cursor.classList.remove("_over");
+    }
+  });
+
+  document.addEventListener("mousedown", function (e) {
+    if (e.target.closest("button, a")) {
+      cursor.classList.add("click");
+      cursor.classList.remove("_over");
+      setTimeout(function () {
+        cursor.classList.remove("click");
+        cursor.classList.add("_over");
+      }, 500);
+    }
+  });
+
+
+  // == Animation on vieport =========
+  const animItems = document.querySelectorAll('._anim-items');
+
+
+  if (animItems.length > 0) {
+  	window.addEventListener('scroll', animOnScroll);
+
+  	function animOnScroll() {
+  		for (let index = 0; index < animItems.length; index++) {
+  			const animItem = animItems[index];
+  			const animItemHeight = animItem.offsetHeight;
+  			const animItemOffset = offset(animItem).top;
+  			const animStart = 4;
+
+  			let animItemPoint = window.innerHeight - animItemHeight / animStart;
+  			if (animItemHeight > window.innerHeight) {
+  				animItemPoint = window.innerHeight - window.innerHeight / animStart;
+  			}
+
+  			if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+  				animItem.classList.add('_active');
+  			} else {
+  				if (!animItem.classList.contains('_anim-no-hide')) {
+  					animItem.classList.remove('_active');
+  				}
+  			}
+  		}
+  	}
+  	function offset(el) {
+  		const rect = el.getBoundingClientRect(),
+  			scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+  			scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  		return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+  	}
+
+  	setTimeout(() => {
+  		animOnScroll();
+  	}, 300);
+  }
+
+
+
+  // == Add class touch if browser is mobile ==============
+
+  let isMobile = { Android: function () { return navigator.userAgent.match(/Android/i); }, BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); }, iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); }, Opera: function () { return navigator.userAgent.match(/Opera Mini/i); }, Windows: function () { return navigator.userAgent.match(/IEMobile/i); }, any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
+
+  function addTouchClass() {
+  	if (isMobile.any()) document.documentElement.classList.add('touch');
+  }
+  addTouchClass();
+
+
+  // == Smooth Navigation =============================================
+  function pageNavigation() {
+  	document.addEventListener("click", pageNavigationAction);
+  	function pageNavigationAction(e) {
+  		if (e.type === "click") {
+  			const targetElement = e.target;
+  			if (targetElement.closest('[data-goto]')) {
+  				const gotoLink = targetElement.closest('[data-goto]');
+  				const gotoLinkSelector = gotoLink.dataset.goto ? gotoLink.dataset.goto : '';
+  				const noHeader = gotoLink.hasAttribute('data-goto-header') ? true : false;
+  				const gotoSpeed = gotoLink.dataset.gotoSpeed ? gotoLink.dataset.gotoSpeed : 500;
+  				const offsetTop = gotoLink.dataset.gotoTop ? parseInt(gotoLink.dataset.gotoTop) : 0;
+          const header = document.querySelector(".header");
+          const hamburger = document.querySelector(".js-hamburger");
+          const body = document.querySelector("html");
+        
+
+  				gotoBlock(gotoLinkSelector, noHeader, gotoSpeed, offsetTop);
+          header.classList.remove("_active");
+          hamburger.classList.remove("is-active");
+          body.classList.remove("no-scroll");
+
+          e.preventDefault();
+  			}
+  		}
+  	}
+  }
+  pageNavigation();
+
+  // == Smooth Scrolling =============================================
+  let gotoBlock = (targetBlock, noHeader = false, speed = 500, offsetTop = 0) => {
+  	const targetBlockElement = document.querySelector(targetBlock);
+  	if (targetBlockElement) {
+  		let headerItemHeight = 0;
+  		let targetBlockElementPosition = targetBlockElement.getBoundingClientRect().top + scrollY;
+  		targetBlockElementPosition = headerItemHeight ? targetBlockElementPosition - headerItemHeight : targetBlockElementPosition;
+  		targetBlockElementPosition = offsetTop ? targetBlockElementPosition - offsetTop : targetBlockElementPosition;
+  		window.scrollTo({
+  			top: targetBlockElementPosition,
+  			behavior: "smooth"
+  		});
+  	} 
+  };
+
+  // == Highlight active side-bar menu item ==========================
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const headerItem = document.querySelectorAll('.header__item');
+        headerItem.forEach((link) => {
+          link.classList.toggle('_active-item', link.getAttribute('href').replace('#', '') === entry.target.id);
+        });
+      }
+    });
+  }, {
+    threshold: 0.4,
+  });
+
+  const sections = document.querySelectorAll('.section');
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+
 });
+
 
 /* Animation */
 AOS.init();
@@ -302,214 +512,4 @@ hljs.initHighlightingOnLoad();
 
 window.addEventListener("scroll", () => {
   AOS.refresh();
-});
-
-// == Custom cursor ==========
-const cursor = document.querySelector(".cursor");
-
-document.addEventListener("mousemove", function (e) {
-  cursor.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
-});
-
-document.addEventListener("mouseover", function (e) {
-  if (e.target.closest("button, a")) {
-    cursor.classList.add("_over");
-  }
-});
-
-document.addEventListener("mouseout", function (e) {
-  if (e.target.closest("button, a")) {
-    cursor.classList.remove("_over");
-  }
-});
-
-document.addEventListener("mousedown", function (e) {
-  if (e.target.closest("button, a")) {
-    cursor.classList.add("click");
-    cursor.classList.remove("_over");
-    setTimeout(function () {
-      cursor.classList.remove("click");
-      cursor.classList.add("_over");
-    }, 500);
-  }
-});
-
-
-// == Animation on vieport =========
-const animItems = document.querySelectorAll('._anim-items');
-
-
-if (animItems.length > 0) {
-	window.addEventListener('scroll', animOnScroll);
-
-	function animOnScroll() {
-		for (let index = 0; index < animItems.length; index++) {
-			const animItem = animItems[index];
-			const animItemHeight = animItem.offsetHeight;
-			const animItemOffset = offset(animItem).top;
-			const animStart = 4;
-
-			let animItemPoint = window.innerHeight - animItemHeight / animStart;
-			if (animItemHeight > window.innerHeight) {
-				animItemPoint = window.innerHeight - window.innerHeight / animStart;
-			}
-
-			if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
-				animItem.classList.add('_active');
-			} else {
-				if (!animItem.classList.contains('_anim-no-hide')) {
-					animItem.classList.remove('_active');
-				}
-			}
-		}
-	}
-	function offset(el) {
-		const rect = el.getBoundingClientRect(),
-			scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-			scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-		return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
-	}
-
-	setTimeout(() => {
-		animOnScroll();
-	}, 300);
-}
-
-  // == Section 3 = Change img during hover =========
-  const buttons= document.querySelectorAll('.third__video_card');
-  const buttonsParent = document.querySelector('.third__video_cards');
-  const mainImg = document.querySelectorAll('.third-img-hover');
-
-  function hideImg() {
-    mainImg.forEach(item => {
-      item.classList.add('hide');
-      item.classList.remove('show');
-    });
-  }
-
-  function showImg(i = 0) {
-    mainImg[i].classList.add('show');
-    mainImg[i].classList.remove('hide');
-  }
-
-  hideImg();
-  showImg();
-
-  buttonsParent.addEventListener('mouseover', (e) => {
-    const target = e.target;
-    if (target && target.classList.contains('third__video_card')) {
-      buttons.forEach((item, i) => {
-        if (target == item) {
-          hideImg();
-          showImg(i);
-        }
-      });
-    }
-  });
-
-    // == Section 24 = Change opacity during hover =========
-
-  const itemsHover = document.querySelectorAll('.twenty-four__list_text');
-  const itemsParent = document.querySelector('.twenty-four__list');
-  const itemsOpacity = document.querySelectorAll('.twenty-four-hover');
-
-  function addTransparency() {
-    itemsOpacity.forEach(items => {
-      items.classList.add('img-transparency');
-      items.classList.remove('img-opacity');
-    });
-  }
-
-  function addOpacity(i = 0) {
-    itemsOpacity[i].classList.add('img-opacity');
-    itemsOpacity[i].classList.remove('img-transparency');
-  }
-
-  addTransparency();
-  addOpacity();
-
-  itemsParent.addEventListener('mouseover', (e) => {
-    const target = e.target;
-    if (target && target.classList.contains('twenty-four__list_text')) {
-      itemsHover.forEach((items, i) => {
-        if (target == items) {
-          addTransparency();
-          addOpacity(i);
-        }
-      });
-    }
-  });
-
-
-// == Add class touch if browser is mobile ==============
-
-let isMobile = { Android: function () { return navigator.userAgent.match(/Android/i); }, BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); }, iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); }, Opera: function () { return navigator.userAgent.match(/Opera Mini/i); }, Windows: function () { return navigator.userAgent.match(/IEMobile/i); }, any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
-
-function addTouchClass() {
-	if (isMobile.any()) document.documentElement.classList.add('touch');
-}
-addTouchClass();
-
-
-// == Smooth Navigation =============================================
-function pageNavigation() {
-	document.addEventListener("click", pageNavigationAction);
-	function pageNavigationAction(e) {
-		if (e.type === "click") {
-			const targetElement = e.target;
-			if (targetElement.closest('[data-goto]')) {
-				const gotoLink = targetElement.closest('[data-goto]');
-				const gotoLinkSelector = gotoLink.dataset.goto ? gotoLink.dataset.goto : '';
-				const noHeader = gotoLink.hasAttribute('data-goto-header') ? true : false;
-				const gotoSpeed = gotoLink.dataset.gotoSpeed ? gotoLink.dataset.gotoSpeed : 500;
-				const offsetTop = gotoLink.dataset.gotoTop ? parseInt(gotoLink.dataset.gotoTop) : 0;
-        const header = document.querySelector(".header");
-        const hamburger = document.querySelector(".js-hamburger");
-        const body = document.querySelector("html");
-  
-        
-				gotoBlock(gotoLinkSelector, noHeader, gotoSpeed, offsetTop);
-        header.classList.remove("_active");
-        hamburger.classList.remove("is-active");
-        body.classList.remove("no-scroll");
-        
-        e.preventDefault();
-			}
-		}
-	}
-}
-pageNavigation();
-
-// == Smooth Scrolling =============================================
-let gotoBlock = (targetBlock, noHeader = false, speed = 500, offsetTop = 0) => {
-	const targetBlockElement = document.querySelector(targetBlock);
-	if (targetBlockElement) {
-		let headerItemHeight = 0;
-		let targetBlockElementPosition = targetBlockElement.getBoundingClientRect().top + scrollY;
-		targetBlockElementPosition = headerItemHeight ? targetBlockElementPosition - headerItemHeight : targetBlockElementPosition;
-		targetBlockElementPosition = offsetTop ? targetBlockElementPosition - offsetTop : targetBlockElementPosition;
-		window.scrollTo({
-			top: targetBlockElementPosition,
-			behavior: "smooth"
-		});
-	} 
-};
-
-// == Highlight active side-bar menu item ==========================
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      const headerItem = document.querySelectorAll('.header__item');
-      headerItem.forEach((link) => {
-        link.classList.toggle('_active-item', link.getAttribute('href').replace('#', '') === entry.target.id);
-      });
-    }
-  });
-}, {
-  threshold: 0.4,
-});
-
-const sections = document.querySelectorAll('.section');
-sections.forEach((section) => {
-  observer.observe(section);
 });
