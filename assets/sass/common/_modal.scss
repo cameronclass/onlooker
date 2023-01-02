@@ -151,6 +151,9 @@
        max-width: 1090px;
         width: 100%;
         z-index: 110;
+        @include tablet {
+            margin-bottom: 80px;
+        }
 	}
 	// .modal-connection__bg
 	&__bg {
@@ -337,6 +340,7 @@
                 padding: 19px 15px 40px;
             }
             @include tablet {
+                margin-bottom: 80px;
                 .icon-card__title {
                     font-size: 22px;
                 }
@@ -455,6 +459,7 @@
 
         @include mobile {
             padding: 19px 15px 32px;
+            margin-bottom: 80px;
         }
     }
 
@@ -511,6 +516,7 @@
             padding: 54px 58px 69px;
             @include tablet {
                 padding: 19px 15px 39px;
+                margin-bottom: 80px;
             }
 		}
 		// .modal-product__title
@@ -700,6 +706,9 @@
     }
     // .modal-declaration__content
     &__content {
+        @include tablet {
+            margin-bottom: 80px;
+        }
     }
     // .modal-declaration__body
     &__body {
