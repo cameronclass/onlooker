@@ -473,6 +473,12 @@
         margin-bottom: 180px;
     }
 
+    .main-screen {
+        .main-screen__top {
+            height: unset;
+        }
+    }
+
     &__heading {
         position: relative;
         display: flex;
@@ -5067,11 +5073,35 @@
             &._item-6 {
                 right: 9%;
                 bottom: 34%;
+                .twenty-two__main_text {
+                    left: -251px;
+                    width: 220px;
+                    line-height: 1.2;
+        
+                    &::before {
+                        right: -66px;
+                        left: initial;
+                        transform: rotate(60deg);
+                    }
+                }
+            
             }
-
+                
             &._item-7 {
                 right: 6%;
                 bottom: 22%;
+
+                .twenty-two__main_text {
+                    left: -251px;
+                    width: 220px;
+                    line-height: 1.2;
+        
+                    &::before {
+                        right: -66px;
+                        left: initial;
+                        transform: rotate(60deg);
+                    }
+                }
             }
 
             &._item-8 {
@@ -5130,7 +5160,7 @@
             font-size: 16px;
             width: max-content;
             transition: 200ms;
-            z-index: 3;
+            z-index: 5;
 
             &::before {
                 content: "";
@@ -5142,6 +5172,7 @@
                 left: -66px;
                 bottom: -39px;
                 transform: rotate(-60deg);
+                z-index: 5;
             }
         }
     }
@@ -5162,6 +5193,11 @@
                 transform: rotate(60deg);
             }
         }
+    }
+
+    &__second-img {
+        position: relative;
+        z-index: 2;
     }
 }
 
@@ -6195,7 +6231,7 @@
             }
 
             .twenty-eight__one_card {
-                @media (any-hover: hover) {
+                
                     &:hover {
                         .twenty-eight__one_card_img {
                             &.img-color {
@@ -6212,7 +6248,7 @@
                             }
                         }
                     }
-                }
+                
             }
 
             @include netbook {
@@ -6265,7 +6301,7 @@
                     }
 
                     &.dpd {
-                        padding: 15px 19px;
+                        padding: 15px 17px;
                         row-gap: unset;
                         justify-content: unset;
                     }

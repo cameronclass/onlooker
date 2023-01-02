@@ -285,21 +285,21 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  // OnScroll event handler
-  const onScroll = () => {
-    // Get scroll value
-    const scroll = document.documentElement.scrollTop;
+  // // OnScroll event handler
+  // const onScroll = () => {
+  //   // Get scroll value
+  //   const scroll = document.documentElement.scrollTop;
 
-    // If scroll value is more than 0 - add class
-    if (scroll > 5) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
-    }
-  };
+  //   // If scroll value is more than 0 - add class
+  //   if (scroll > 5) {
+  //     header.classList.add("scrolled");
+  //   } else {
+  //     header.classList.remove("scrolled");
+  //   }
+  // };
 
   // Use the function
-  window.addEventListener("scroll", onScroll);
+  // window.addEventListener("scroll", onScroll);
 
     // == Section 3 = Change img during hover =========
     const buttons= document.querySelectorAll('.third__video_card');
