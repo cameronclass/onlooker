@@ -684,3 +684,27 @@
             height: 60px;
         }
 }
+
+.modal-declaration {
+    // .modal-declaration__overlay
+    &__overlay {
+        position: fixed;
+        top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+        background: #0D0D0D;
+        opacity: 0.7;
+        width: 100%;
+        height: 100%;
+    }
+    // .modal-declaration__content
+    &__content {
+    }
+    // .modal-declaration__body
+    &__body {
+    }
+    // .modal-declaration__bg-img
+    &__bg-img {
+    }
+}

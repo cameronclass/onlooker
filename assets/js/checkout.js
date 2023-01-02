@@ -20,6 +20,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
           if (overlay)
             overlay.onclick = () => {
               element.classList.remove("active");
+              document.documentElement.style.overflowY = "auto";
             };
 
           if (modalClose)
@@ -31,8 +32,18 @@ window.addEventListener("DOMContentLoaded", (event) => {
           if (currentBtn == currentModal) {
             element.classList.add("active");
           }
+
+          document.addEventListener('keyup', (event) => {
+            modalContent.forEach((item) => {
+            if (event.code === 'Escape') {
+              item.classList.remove("active");
+              document.documentElement.style.overflowY = "auto";
+            }
+          });
+          });
         });
       });
+      
     });
   }
 
