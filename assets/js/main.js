@@ -287,60 +287,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-  // // OnScroll event handler
-  // const onScroll = () => {
-  //   // Get scroll value
-  //   const scroll = document.documentElement.scrollTop;
-
-  //   // If scroll value is more than 0 - add class
-  //   if (scroll > 5) {
-  //     header.classList.add("scrolled");
-  //   } else {
-  //     header.classList.remove("scrolled");
-  //   }
-  // };
-
-  // Use the function
-  // window.addEventListener("scroll", onScroll);
-
-    // // == Section 3 = Change img during hover =========
-    // const buttons= document.querySelectorAll('.third__video_card');
-    // const buttonsParent = document.querySelector('.third__video_cards');
-    // const mainImg = document.querySelectorAll('.third-img-hover');
-  
-    // function hideImg() {
-    //   mainImg.forEach(item => {
-    //     item.classList.add('hide');
-    //     item.classList.remove('show');
-    //   });
-    // }
-  
-    // function showImg(i = 0) {
-    //   mainImg[i].classList.add('show');
-    //   mainImg[i].classList.remove('hide');
-    // }
-  
-    // hideImg();
-    // showImg();
-  
-    // buttonsParent.addEventListener('mouseover', (e) => {
-    //   const target = e.target;
-    //   if (target && target.classList.contains('third__video_card')) {
-    //     buttons.forEach((item, i) => {
-    //       if (target == item) {
-    //         hideImg();
-    //         showImg(i);
-    //       }
-    //     });
-    //   }
-    // });
-
-
-
   
       // == Section 24 = Change opacity during hover =========
   
-    const itemsHover = document.querySelectorAll('.twenty-four__list_text');
+    const itemsHover = document.querySelectorAll('.twenty-four__list_item');
     const itemsParent = document.querySelector('.twenty-four__list');
     const itemsOpacity = document.querySelectorAll('.twenty-four-hover');
   
@@ -349,19 +299,35 @@ window.addEventListener("DOMContentLoaded", (event) => {
         items.classList.add('img-transparency');
         items.classList.remove('img-opacity');
       });
+      itemsHover.forEach(items => {
+        items.classList.remove('_active');
+      });
     }
   
     function addOpacity(i = 0) {
       itemsOpacity[i].classList.add('img-opacity');
       itemsOpacity[i].classList.remove('img-transparency');
+      itemsHover[i].classList.add('_active');
     }
-  
+
     addTransparency();
     addOpacity();
   
     itemsParent.addEventListener('mouseover', (e) => {
       const target = e.target;
-      if (target && target.classList.contains('twenty-four__list_text')) {
+      if (target && target.classList.contains('twenty-four__list_item')) {
+        itemsHover.forEach((items, i) => {
+          if (target == items) {
+            addTransparency();
+            addOpacity(i);
+          }
+        });
+      }
+    });
+
+    itemsParent.addEventListener('click', (e) => {
+      const target = e.target;
+      if (target && target.classList.contains('twenty-four__list_item')) {
         itemsHover.forEach((items, i) => {
           if (target == items) {
             addTransparency();
