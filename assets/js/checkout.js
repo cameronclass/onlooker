@@ -1,3 +1,4 @@
+
 window.addEventListener("DOMContentLoaded", (event) => {
   
   /* Modal */
@@ -91,3 +92,4 @@ window.addEventListener("DOMContentLoaded", (event) => {
   addTouchClass();
 
 });
+
