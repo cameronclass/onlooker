@@ -6318,6 +6318,13 @@
                 @include netbook {
                     flex-direction: row;
                     column-gap: 15px;
+                    height: 75px;
+                }
+                @media (max-width: 440px) {
+                    height: unset;
+                    flex-direction: column;
+                    row-gap: 15px;
+                    max-width: 100%;
                 }
 
                 .twenty-eight__one_card {
@@ -6326,12 +6333,30 @@
                         padding: 24px 20px;
                         row-gap: unset;
                         justify-content: unset;
+                        @include netbook {
+                            position: absolute;
+                            max-width: 48%;
+                            left: 0;
+                        }
+                        @media (max-width: 440px) {
+                            position: relative;
+                            max-width: 100%;
+                        }
                     }
 
                     &.dpd {
                         padding: 15px 17px;
                         row-gap: unset;
                         justify-content: unset;
+                        @include netbook {
+                            position: absolute;
+                            max-width: 48%;
+                            right: 0;
+                        }
+                        @media (max-width: 440px) {
+                            position: relative;
+                            max-width: 100%;
+                        }
                     }
 
                     &_img {
