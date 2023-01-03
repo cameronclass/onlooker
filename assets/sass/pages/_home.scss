@@ -4023,18 +4023,17 @@
         // .fifteen__anim_bum
         &_bum {
             position: absolute;
-            top: -7%;
-            left: 53%;
+            top: -45%;
+            left: 47%;
             max-width: 35%;
             opacity: 0;
-            filter: contrast(1) brightness(1.5);
 
             @keyframes appearance-opacity {
                 from {
                     opacity: 0;
                 }
                 to {
-                    opacity: .5;
+                    opacity: 1;
                 }
             }
         }
@@ -5520,23 +5519,19 @@
             color: #ffffff60;
             font-size: 22px;
 
-            span {
+            .number {
                 display: block;
-                font-size: 18px;
+                font-size: 16px;
                 position: absolute;
                 top: 2px;
-                left: 17px;
-                &::before {
-                    content:'';
-                    position: absolute;
-                    top: -1px;
-                    left: -80%;
-                    width: 23px;
-                    height: 23px;
-                    color: #ffffff60;
-                    border: 1px solid;
-                    border-radius: 50%;
-                }
+                left: 12px;
+                width: 23px;
+                height: 23px;
+                border: 1px solid;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
             &:hover {
@@ -5544,10 +5539,11 @@
                 font-weight: 700;
                 color: $main;
 
-                span {
-                    &::before {
-                        border-color: $main;
-                    }
+                .number {
+                    color: white;
+                    font-weight: 500;
+                    border-color: $main;
+                    background: $main;
                 }
             }
 
@@ -5558,10 +5554,11 @@
                     font-weight: 700;
                     color: $main;
 
-                    span {
-                        &::before {
-                            border-color: $main;
-                        }
+                    .number {
+                        color: white;
+                        font-weight: 500;
+                        border-color: $main;
+                        background: $main;
                     }
                 }
             }
