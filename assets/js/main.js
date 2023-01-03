@@ -9,7 +9,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
         tabsBlock.classList.add("_tab-init");
         tabsBlock.setAttribute("data-tabs-index", index);
         tabsBlock.addEventListener("click", setTabsAction);
+        tabsBlock.addEventListener('mouseover', setTabsAction);
         initTabs(tabsBlock);
+        
       });
     }
     // Установка позиций заголовков
@@ -137,7 +139,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
           tabTitle.classList.add("_tab-active");
           setTabsStatus(tabsBlock);
         }
-        e.preventDefault();
+        // e.preventDefault();
       }
     }
   }
@@ -301,37 +303,40 @@ window.addEventListener("DOMContentLoaded", (event) => {
   // Use the function
   // window.addEventListener("scroll", onScroll);
 
-    // == Section 3 = Change img during hover =========
-    const buttons= document.querySelectorAll('.third__video_card');
-    const buttonsParent = document.querySelector('.third__video_cards');
-    const mainImg = document.querySelectorAll('.third-img-hover');
+    // // == Section 3 = Change img during hover =========
+    // const buttons= document.querySelectorAll('.third__video_card');
+    // const buttonsParent = document.querySelector('.third__video_cards');
+    // const mainImg = document.querySelectorAll('.third-img-hover');
   
-    function hideImg() {
-      mainImg.forEach(item => {
-        item.classList.add('hide');
-        item.classList.remove('show');
-      });
-    }
+    // function hideImg() {
+    //   mainImg.forEach(item => {
+    //     item.classList.add('hide');
+    //     item.classList.remove('show');
+    //   });
+    // }
   
-    function showImg(i = 0) {
-      mainImg[i].classList.add('show');
-      mainImg[i].classList.remove('hide');
-    }
+    // function showImg(i = 0) {
+    //   mainImg[i].classList.add('show');
+    //   mainImg[i].classList.remove('hide');
+    // }
   
-    hideImg();
-    showImg();
+    // hideImg();
+    // showImg();
   
-    buttonsParent.addEventListener('mouseover', (e) => {
-      const target = e.target;
-      if (target && target.classList.contains('third__video_card')) {
-        buttons.forEach((item, i) => {
-          if (target == item) {
-            hideImg();
-            showImg(i);
-          }
-        });
-      }
-    });
+    // buttonsParent.addEventListener('mouseover', (e) => {
+    //   const target = e.target;
+    //   if (target && target.classList.contains('third__video_card')) {
+    //     buttons.forEach((item, i) => {
+    //       if (target == item) {
+    //         hideImg();
+    //         showImg(i);
+    //       }
+    //     });
+    //   }
+    // });
+
+
+
   
       // == Section 24 = Change opacity during hover =========
   

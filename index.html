@@ -336,10 +336,10 @@
           <span>Посмотрите примеры видео</span>
         </div>
 
-        <div class="third__video">
-          <div class="third__video_cards">
-
-            <button data-fancybox data-src="https://youtu.be/V5u4wzCpdiw" class="third__video_card" data-aos="fade-right" data-aos-delay="100">
+         <div data-tabs class="third__video">
+          <nav data-tabs-titles class="third__video_cards">
+            
+            <button type="button" data-fancybox data-src="https://youtu.be/V5u4wzCpdiw" class="third__video_card _tab-active" data-aos="fade-right" data-aos-delay="100">
               <picture>
                 <source srcset="assets/img/section-3/1.webp" type="image/webp">
                 <img loading="lazy" class="third__video_card_img lazyload" src="assets/img/section-3/1.png" alt="images">
@@ -350,7 +350,7 @@
               </div>
             </button>
 
-            <button data-fancybox data-src="https://youtu.be/YfYgnHy06Ls" class="third__video_card" data-aos="fade-right" data-aos-delay="200">
+            <button type="button" data-fancybox data-src="https://youtu.be/YfYgnHy06Ls" class="third__video_card" data-aos="fade-right" data-aos-delay="200">
               <picture>
                 <source srcset="assets/img/section-3/2.webp" type="image/webp">
                 <img loading="lazy" class="third__video_card_img lazyload" src="assets/img/section-3/2.png" alt="images">
@@ -361,7 +361,7 @@
               </div>
             </button>
 
-            <button data-fancybox data-src="https://youtu.be/VkI6l3Ecp-4" class="third__video_card" data-aos="fade-right" data-aos-delay="300">
+            <button type="button" data-fancybox data-src="https://youtu.be/VkI6l3Ecp-4" class="third__video_card" data-aos="fade-right" data-aos-delay="300">
               <picture>
                 <source srcset="assets/img/section-3/3.webp" type="image/webp">
                 <img loading="lazy" class="third__video_card_img lazyload" src="assets/img/section-3/3.png" alt="images">
@@ -372,7 +372,7 @@
               </div>
             </button>
 
-            <button data-fancybox data-src="https://youtu.be/76GOM_Zhxnw" class="third__video_card" data-aos="fade-right" data-aos-delay="400">
+            <button type="button" data-fancybox data-src="https://youtu.be/76GOM_Zhxnw" class="third__video_card" data-aos="fade-right" data-aos-delay="400">
               <picture>
                 <source srcset="assets/img/section-3/4.webp" type="image/webp">
                 <img loading="lazy" class="third__video_card_img lazyload" src="assets/img/section-3/4.png" alt="images">
@@ -383,76 +383,85 @@
               </div>
             </button>
 
-          </div>
+          </nav>
 
-          <div class="third__video_content" data-aos="fade-up" data-aos-delay="500">
+          <div data-tabs-body class="third__video_content" data-aos="fade-up" data-aos-delay="500">
 
-            <button data-fancybox data-src="https://youtu.be/V5u4wzCpdiw" class="main-screen third-img-hover ">
-              <div class="main-screen__block">
-                <picture>
-                  <source srcset="assets/img/section-3/1.webp" type="image/webp">
-                  <img loading="lazy" class="main-screen__top lazyload" src="assets/img/section-3/1.png" alt="images">
-                </picture>
-                <div class="main-screen__play">
-                  <img class="main-screen__icon lazyload" src="assets/img/icons/play.svg" alt="images">
+            <div class="third__tabs-body">
+              <button data-fancybox data-src="https://youtu.be/V5u4wzCpdiw" class="main-screen">
+                <div class="main-screen__block">
+                  <picture>
+                    <source srcset="assets/img/section-3/1.webp" type="image/webp">
+                    <img loading="lazy" class="main-screen__top lazyload" src="assets/img/section-3/1.png" alt="images">
+                  </picture>
+                  <div class="main-screen__play">
+                    <img class="main-screen__icon lazyload" src="assets/img/icons/play.svg" alt="images">
+                  </div>
+                  <picture>
+                    <source srcset="assets/img/screen.webp" type="image/webp">
+                    <img loading="lazy" class="main-screen__bottom lazyload" src="assets/img/screen.png" alt="images">
+                  </picture>
                 </div>
-                <picture>
-                  <source srcset="assets/img/screen.webp" type="image/webp">
-                  <img loading="lazy" class="main-screen__bottom lazyload" src="assets/img/screen.png" alt="images">
-                </picture>
-              </div>
-            </button>
+              </button>
+            </div>
 
-            <button data-fancybox data-src="https://youtu.be/YfYgnHy06Ls" class="main-screen third-img-hover ">
-              <div class="main-screen__block">
-                <picture>
-                  <source srcset="assets/img/section-3/2.webp" type="image/webp">
-                  <img loading="lazy" class="main-screen__top lazyload" src="assets/img/section-3/2.png" alt="images">
-                </picture>
-                <div class="main-screen__play">
-                  <img class="main-screen__icon lazyload" src="assets/img/icons/play.svg" alt="images">
+            <div class="third__tabs-body">
+              <button data-fancybox data-src="https://youtu.be/YfYgnHy06Ls" class="main-screen">
+                <div class="main-screen__block">
+                  <picture>
+                    <source srcset="assets/img/section-3/2.webp" type="image/webp">
+                    <img loading="lazy" class="main-screen__top lazyload" src="assets/img/section-3/2.png" alt="images">
+                  </picture>
+                  <div class="main-screen__play">
+                    <img class="main-screen__icon lazyload" src="assets/img/icons/play.svg" alt="images">
+                  </div>
+                  <picture>
+                    <source srcset="assets/img/screen.webp" type="image/webp">
+                    <img loading="lazy" class="main-screen__bottom lazyload" src="assets/img/screen.png" alt="images">
+                  </picture>
                 </div>
-                <picture>
-                  <source srcset="assets/img/screen.webp" type="image/webp">
-                  <img loading="lazy" class="main-screen__bottom lazyload" src="assets/img/screen.png" alt="images">
-                </picture>
-              </div>
-            </button>
+              </button>
+            </div>
 
-            <button data-fancybox data-src="https://youtu.be/VkI6l3Ecp-4" class="main-screen third-img-hover ">
-              <div class="main-screen__block">
-                <picture>
-                  <source srcset="assets/img/section-3/3.webp" type="image/webp">
-                  <img loading="lazy" class="main-screen__top lazyload" src="assets/img/section-3/3.png" alt="images">
-                </picture>
-                <div class="main-screen__play">
-                  <img class="main-screen__icon lazyload" src="assets/img/icons/play.svg" alt="images">
+            <div class="third__tabs-body">
+              <button data-fancybox data-src="https://youtu.be/VkI6l3Ecp-4" class="main-screen">
+                <div class="main-screen__block">
+                  <picture>
+                    <source srcset="assets/img/section-3/3.webp" type="image/webp">
+                    <img loading="lazy" class="main-screen__top lazyload" src="assets/img/section-3/3.png" alt="images">
+                  </picture>
+                  <div class="main-screen__play">
+                    <img class="main-screen__icon lazyload" src="assets/img/icons/play.svg" alt="images">
+                  </div>
+                  <picture>
+                    <source srcset="assets/img/screen.webp" type="image/webp">
+                    <img loading="lazy" class="main-screen__bottom lazyload" src="assets/img/screen.png" alt="images">
+                  </picture>
                 </div>
-                <picture>
-                  <source srcset="assets/img/screen.webp" type="image/webp">
-                  <img loading="lazy" class="main-screen__bottom lazyload" src="assets/img/screen.png" alt="images">
-                </picture>
-              </div>
-            </button>
+              </button>
+            </div>
 
-            <button data-fancybox data-src="https://youtu.be/76GOM_Zhxnw" class="main-screen third-img-hover ">
-              <div class="main-screen__block">
-                <picture>
-                  <source srcset="assets/img/section-3/4.webp" type="image/webp">
-                  <img loading="lazy" class="main-screen__top lazyload" src="assets/img/section-3/4.png" alt="images">
-                </picture>
-                <div class="main-screen__play">
-                  <img class="main-screen__icon lazyload" src="assets/img/icons/play.svg" alt="images">
+            <div class="third__tabs-body">
+              <button data-fancybox data-src="https://youtu.be/76GOM_Zhxnw" class="main-screen">
+                <div class="main-screen__block">
+                  <picture>
+                    <source srcset="assets/img/section-3/4.webp" type="image/webp">
+                    <img loading="lazy" class="main-screen__top lazyload" src="assets/img/section-3/4.png" alt="images">
+                  </picture>
+                  <div class="main-screen__play">
+                    <img class="main-screen__icon lazyload" src="assets/img/icons/play.svg" alt="images">
+                  </div>
+                  <picture>
+                    <source srcset="assets/img/screen.webp" type="image/webp">
+                    <img loading="lazy" class="main-screen__bottom lazyload" src="assets/img/screen.png" alt="images">
+                  </picture>
                 </div>
-                <picture>
-                  <source srcset="assets/img/screen.webp" type="image/webp">
-                  <img loading="lazy" class="main-screen__bottom lazyload" src="assets/img/screen.png" alt="images">
-                </picture>
-              </div>
-            </button>
-
+              </button>
+            </div>
           </div>
         </div>
+
+
 
         <div class="third__image">
           <div class="third__image_title" data-aos="fade-in" data-aos-delay="100">
