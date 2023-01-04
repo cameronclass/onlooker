@@ -40,7 +40,7 @@
 
             @include tablet {
                 padding-top: 30px;
-                padding-bottom: 30px;
+                padding-bottom: 23px;
                 align-items: center;
                 row-gap: 15px;
                 text-align: center;
@@ -263,10 +263,12 @@
         margin-top: 50px;
         filter: invert(26%) sepia(0%) saturate(1618%) hue-rotate(256deg) brightness(93%) contrast(69%);
 
-        @media (any-hover: hover) {
             &:hover {
                 filter: invert(57%) sepia(29%) saturate(5589%) hue-rotate(138deg) brightness(92%) contrast(95%);
             }
+
+        @include tablet {
+            margin-top: 0;
         }
     }
 
@@ -289,6 +291,16 @@
     &__icon-4 {
         height: 20px;
     }
+
+     // .footer__icons-mobile ---------------------------
+     &__icons-mobile {
+        display: none;
+        @include tablet {
+            display: flex;
+            column-gap: 10px;
+            padding-top: 15px;
+        }
+     }
 
     // .footer__heading ---------------------------
     &__heading {
