@@ -64,7 +64,7 @@
     height: 100vh;
 	top: 0;
 	left: 0;
-    padding: 15px 45px 15px 15px;
+    padding: 45px 45px 15px 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,16 +72,20 @@
     justify-content: center;
     z-index: 100;
     display: none;
+    overflow-x: hidden;
+    overflow-y: auto;
 
-    @include tablet {
+    @include netbook {
         justify-content: unset;
-        padding: 15px;
-        overflow-x: hidden;
-	    overflow-y: auto;
+        
 	    top: 0;
 	    bottom: 0;
 	    left: 0;
 	    right: 0;
+    }
+
+    @include tablet {
+        padding: 15px;
     }
 }
 
