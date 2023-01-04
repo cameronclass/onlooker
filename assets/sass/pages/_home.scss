@@ -5356,7 +5356,7 @@
 
     &__bg-mob {
         top: 1000px;
-        left: 502px;
+        // left: 502px;
     }
 
     &__block {
@@ -6287,6 +6287,7 @@
             @include netbook {
                 flex-direction: column;
                 row-gap: 15px;
+                position: relative;
             }
 
             &_cdek {
