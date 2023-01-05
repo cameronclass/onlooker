@@ -1,0 +1,15 @@
+{
+  "utm_replace": {
+    "avtoplanshet": {
+      "device": "R5 Combo",
+      "title_1": "Заголовок 1",
+      "title_2": "Заголовок 2"
+    }
+  },
+  "utm_section": {
+    "avtoplanshet": "1,10,13,3,5"
+  },
+  "utm_delete": {
+    "avtoplanshet": "10,4,6,7,8,9"
+  }
+}
