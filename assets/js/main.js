@@ -267,9 +267,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
     fluidMode: true,
   };
 
-  // Add your options object as the second argument
-  const viewer = new ImageCompare(element, options).mount();
-
   // == CLONE FOOTER TO HEADER (on mobile menu) ==========
   const footer = document.querySelector(".footer");
   const footerClone = footer.cloneNode(true);
