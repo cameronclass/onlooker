@@ -297,12 +297,20 @@
             padding: 0;
             flex-wrap: wrap;
             margin-top: 60px;
+            margin-bottom: 600px;
+        }
+
+        @include mobile {
             margin-bottom: 500px;
         }
 
         &_action {
             @include netbook {
                 position: absolute;
+                top: 450px;
+            }
+
+            @include mobile {
                 top: 330px;
             }
         }
@@ -315,14 +323,6 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-            }
-        }
-
-        &_preview {
-            width: 45%;
-
-            @include netbook {
-                width: 100%;
             }
         }
 
@@ -370,6 +370,11 @@
 
         &_preview {
             position: relative;
+            width: 45%;
+
+            @include netbook {
+                width: 100%;
+            }
 
             @include netbook {
                 position: absolute;
@@ -413,8 +418,9 @@
                 height: 320px;
                 border-radius: 20px;
                 overflow: hidden;
+                width: 100%;
 
-                @include netbook {
+                @include mobile {
                     width: 100%;
                     height: 180px;
                 }
@@ -467,7 +473,7 @@
 }
 
 .second {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 300px;
 
     @include netbook {
@@ -529,6 +535,7 @@
             @include netbook {
                 margin-top: 20px;
                 padding: 15px;
+                margin-right: auto;
             }
         }
 
@@ -847,7 +854,7 @@
 
 .third {
 
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -1390,7 +1397,7 @@
 }
 
 .fourth {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 300px;
 
     @include netbook {
@@ -1508,6 +1515,7 @@
 
             @include netbook {
                 margin: 0 0 30px;
+                max-width: 100%;
             }
         }
 
@@ -1649,7 +1657,7 @@
 }
 
 .sixth {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -1770,7 +1778,7 @@
 
 .seventh {
 
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -1828,12 +1836,13 @@
     &__block {
         margin-top: 80px;
         display: grid;
-        grid-template-columns: 37% 1fr;
-        grid-template-rows: auto auto;
+        grid-template-areas: 'title title img img img img img'
+            'titlesecond titlesecond img img img img img';
 
-        @media (max-width: 1400px) {
-            grid-template-columns: auto;
-            grid-template-rows: auto;
+        @include netbook {
+            grid-template-areas: 'title'
+                'img'
+                'titlesecond';
         }
     }
 
@@ -1841,6 +1850,8 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 40px;
+
+        grid-area: title;
 
         @include netbook {
             width: 100%;
@@ -1860,14 +1871,19 @@
         }
 
         &_block {
-            margin-top: 40px;
+            margin-top: 20px;
             display: flex;
             align-items: center;
             padding: 24px;
             background: linear-gradient(275.98deg, #121212 3.53%, #181818 97.46%), #121212;
             border-radius: 10px;
-            min-width: 520px;
             z-index: 2;
+
+            grid-area: titlesecond;
+
+            @include netbook {
+                justify-content: center;
+            }
 
 
             @include mobile {
@@ -1912,23 +1928,11 @@
     }
 
     &__img {
-        grid-row-start: 1;
-        grid-row-end: 3;
-        grid-column-start: 2;
-        grid-column-end: 2;
-        display: grid;
         z-index: 3;
+        grid-area: img;
 
         .main-screen__top {
             height: unset;
-        }
-
-        @media (max-width: 1400px) {
-            grid-row-start: 2;
-            grid-row-end: 2;
-            grid-column-start: 1;
-            grid-column-end: 1;
-            padding: 40px 0;
         }
 
         @include netbook {
@@ -1938,7 +1942,7 @@
 }
 
 .eighth {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     // .eighth__bg
@@ -1980,17 +1984,20 @@
 
     &__block {
         display: grid;
-        grid-template-columns: 53% 1fr;
-        grid-template-rows: auto;
+        grid-template-areas: 'title title img img img img img'
+            'titlesecond titlesecond img img img img img';
 
-        @media (max-width: 1400px) {
-            grid-template-columns: auto;
-            grid-template-rows: auto;
+        @include netbook {
+            grid-template-areas: 'title'
+                'img'
+                'titlesecond';
         }
     }
 
     &__content {
         z-index: 2;
+
+        grid-area: title;
 
         @include netbook {
             width: 100%;
@@ -1998,7 +2005,6 @@
         }
 
         &_block {
-            min-width: 800px;
             margin-top: 50px;
             margin-bottom: 30px;
             padding: 28px;
@@ -2006,12 +2012,14 @@
             border-radius: 11px;
             font-weight: 400;
             font-size: 24px;
+            width: 130%;
 
             @include netbook {
                 min-width: auto;
                 font-size: 18px;
                 margin-top: 30px;
                 border-radius: 8px;
+                width: 100%;
             }
 
             &_title {
@@ -2045,15 +2053,16 @@
         }
 
         &_btn {
-            margin-top: 50px;
             position: relative;
             display: flex;
             align-items: center;
+            width: 115%;
 
             @include netbook {
                 flex-direction: column;
                 justify-content: center;
                 margin-top: 20px;
+                width: 100%;
             }
 
             .main-btn {
@@ -2092,46 +2101,22 @@
     }
 
     &__img {
-        grid-row-start: 1;
-        grid-row-end: 3;
-        grid-column-start: 2;
-        grid-column-end: 2;
-        display: grid;
         z-index: 3;
         position: relative;
 
-        @media (max-width: 1400px) {
-            grid-row-start: 2;
-            grid-row-end: 2;
-            grid-column-start: 1;
-            grid-column-end: 1;
-        }
+        grid-area: img;
 
         &_item {
-            position: absolute;
-            width: 140%;
-            top: -24%;
-            left: -14%;
-
-            @media (max-width: 1400px) {
-                position: relative;
-                justify-self: center;
-                width: 80%;
-                top: 0;
-                left: 0;
-            }
-
-            @include netbook {
-                width: 70%;
-            }
-
-            @include mobile {
-                width: 100%;
-            }
+            position: relative;
+            justify-self: center;
+            width: 110%;
+            top: 0;
+            left: 0;
         }
     }
 
     &__buy {
+        grid-area: titlesecond;
 
         @include netbook {
             align-items: center;
@@ -2144,7 +2129,7 @@
 }
 
 .ninth {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -2243,7 +2228,7 @@
 }
 
 .tenth {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -2424,7 +2409,7 @@
 }
 
 .eleventh {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -2713,7 +2698,7 @@
 }
 
 .twelfth {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -2758,61 +2743,44 @@
     }
 
     &__subtitle {
-        margin-bottom: 30px;
         margin-top: 35px;
 
-        @media (max-width: 1400px) {
+        @include netbook {
             display: none;
         }
     }
 
     &__block {
         display: grid;
-        grid-template-columns: 50% 1fr;
-        grid-template-rows: auto;
+        grid-template-areas: 'title title img img img img img'
+            'titlesecond titlesecond img img img img img';
 
-        @media (max-width: 1400px) {
-            grid-template-columns: auto;
-            grid-template-rows: auto;
+        @include netbook {
+            grid-template-areas: 'title'
+                'img'
+                'titlesecond';
         }
     }
 
-    &__content {}
+    &__content {
+        grid-area: title;
+        align-self: center;
+    }
 
     &__img {
-        grid-row-start: 1;
-        grid-row-end: 3;
-        grid-column-start: 2;
-        grid-column-end: 2;
-        display: grid;
         z-index: 3;
         position: relative;
+        grid-area: img;
 
-        @media (max-width: 1400px) {
-            grid-row-start: 2;
-            grid-row-end: 2;
-            grid-column-start: 1;
-            grid-column-end: 1;
-            padding: 26px 0 10px;
-        }
 
         &_img {
-            position: absolute;
-            top: -25%;
-            left: -10%;
-            width: 110%;
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            justify-self: center;
 
-            @media (max-width: 1400px) {
-                position: relative;
-                top: 0;
-                left: 0;
-                width: 80%;
-                justify-self: center;
-            }
 
-            @include tablet {
-                width: 90%;
-            }
         }
     }
 
@@ -2822,10 +2790,8 @@
         border-radius: 12px;
         padding: 30px;
         width: 130%;
-
-        @media (max-width: 1400px) {
-            width: 100%;
-        }
+        grid-area: titlesecond;
+        height: max-content;
 
         @include tablet {
             text-align: center;
@@ -2870,7 +2836,7 @@
 }
 
 .thirteen {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -3207,7 +3173,7 @@
 
     &__type-camera {
         position: relative;
-        margin-top: 150px;
+        margin-top: 250px;
 
         position: relative;
         z-index: 2;
@@ -3387,7 +3353,7 @@
 }
 
 .fourteen {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -3829,7 +3795,7 @@
 }
 
 .fifteen {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -4127,7 +4093,7 @@
 }
 
 .sixteen {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
 
@@ -4292,7 +4258,7 @@
 }
 
 .seventeen {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
 
@@ -4362,7 +4328,7 @@
 }
 
 .eighteenth {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
 
@@ -4480,7 +4446,7 @@
 }
 
 .nineteenth {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     &__bg {
@@ -4626,7 +4592,7 @@
 }
 
 .twentieth {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     &__bg {
@@ -4812,7 +4778,7 @@
 }
 
 .twenty-one {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     &__bg {
@@ -4987,7 +4953,7 @@
 }
 
 .twenty-two {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -5306,7 +5272,7 @@
 }
 
 .twenty-three {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -5431,7 +5397,7 @@
 }
 
 .twenty-four {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -5705,7 +5671,7 @@
 }
 
 .twenty-five {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -5833,7 +5799,7 @@
 }
 
 .twenty-six {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -5993,7 +5959,7 @@
 }
 
 .twenty-seven {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -6201,7 +6167,7 @@
 }
 
 .twenty-eight {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -6664,7 +6630,7 @@
 }
 
 .twenty-nine {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
     position: relative;
 
@@ -6794,12 +6760,7 @@
         gap: 16px;
         max-width: 980px;
 
-        @media (max-width: 1400px) {
-            flex-direction: column;
-            width: 60%;
-        }
-
-        @include tablet {
+        @include netbook {
             width: 100%;
         }
     }
@@ -6820,6 +6781,8 @@
         font-size: 18px;
         line-height: 1.2;
 
+        text-align: left;
+
         @media (any-hover: hover) {
             &:hover {
                 color: $main;
@@ -6831,13 +6794,12 @@
             }
         }
 
-        @include tablet {
+        @include netbook {
             font-size: 15px;
             padding: 10px 25px;
         }
     }
 
-    //
     &__downld-icon {
         width: auto;
         height: 26px;
@@ -6849,6 +6811,9 @@
         bottom: -40px;
         right: -55px;
         width: 28%;
+        height: 100%;
+        object-fit: contain;
+        object-position: bottom;
 
         @include netbook {
             width: 40%;
@@ -6881,7 +6846,7 @@
 }
 
 .thirty {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -6989,7 +6954,7 @@
 }
 
 .thirty-one {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -7047,7 +7012,7 @@
 }
 
 .thirty-two {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -7190,7 +7155,7 @@
 }
 
 .thirty-three {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 200px;
 
     @include netbook {
@@ -7342,7 +7307,7 @@
 }
 
 .thirty-four {
-    margin-top: 300px;
+    margin-top: 200px;
     margin-bottom: 100px;
 
     @include netbook {

@@ -21,6 +21,14 @@ body {
     color: white;
     line-height: 1.3;
     overflow-x: hidden;
+
+    @media (min-width:1000px) and (max-width:1400px) {
+        width: 1400px;
+    }
+
+    @include netbook {
+        width: auto;
+    }
 }
 
 img {
@@ -39,12 +47,16 @@ button {
 }
 
 .container {
-    width: 100%;
+    width: 1400px;
     max-width: 1400px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
+
+    @include netbook {
+        width: 100%;
+    }
 
     @include mobile {
         padding-left: 15px;
@@ -66,10 +78,10 @@ button {
     }
 }
 
-.main{
+.main {
     margin-top: 200px;
 
-    @include tablet{
+    @include tablet {
         margin-top: 100px;
     }
 }
@@ -84,6 +96,10 @@ button {
     text-transform: uppercase;
     position: relative;
     z-index: 2;
+
+    @include netbook {
+        font-size: 40px;
+    }
 
     @include mobile {
         flex-direction: column;
@@ -192,6 +208,10 @@ button {
     font-size: 24px;
     position: relative;
     z-index: 2;
+
+    @include netbook {
+        font-size: 20px;
+    }
 
     @include mobile {
         font-size: 18px;
